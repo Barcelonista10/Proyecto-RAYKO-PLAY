@@ -1,21 +1,27 @@
 [
   {
-    "partido": "Real Madrid vs FC Barcelona",
-    "liga": "12:25 LaLiga",
+    "partido": "Agenda Rústico TV",
+    "liga": "EVENTOS 2",
     "fecha": "",
-    "url": "https://streamx-hd.com/live1.php?stream=zapping_ec"
+    "url": "https://mirusticotv.su/agenda.php"
+  },
+  {
+    "partido": "Real Madrid vs FC Barcelona",
+    "liga": "23:15 LaLiga",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=laligatvbar"
   },
   {
     "partido": "Manchester City vs Liverpool",
     "liga": "23:30 Premier League",
     "fecha": "",
-    "url": "https://futbollibre.ch/online/canales.php?stream=liga1max"
+    "url": "https://la14hd.com/vivo/canales.php?stream=espn1_nl"
   },
   {
     "partido": "Boca Juniors vs River Plate",
     "liga": "23:45 Copa Argentina",
     "fecha": "",
-    "url": "https://futbollibre.ch/online/canales.php?stream=tudn"
+    "url": "https://la14hd.com/vivo/canales.php?stream=espnpremium"
   },
   {
     "partido": "ESPN 1",
