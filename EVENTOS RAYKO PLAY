@@ -1,0 +1,656 @@
+[
+  {
+    "partido": "Real Madrid vs FC Barcelona",
+    "liga": "23:15 LaLiga",
+    "fecha": "",
+    "url": "https://futbollibre.ch/canales.php?stream=winsports2"
+  },
+  {
+    "partido": "Manchester City vs Liverpool",
+    "liga": "23:30 Premier League",
+    "fecha": "",
+    "url": "https://futbollibre.ch/online/canales.php?stream=liga1max"
+  },
+  {
+    "partido": "Boca Juniors vs River Plate",
+    "liga": "23:45 Copa Argentina",
+    "fecha": "",
+    "url": "https://futbollibre.ch/online/canales.php?stream=tudn"
+  },
+  {
+    "partido": "ESPN 1",
+    "liga": "LATINOAMERICA",
+    "fecha": "",
+    "url": "https://futbollibre.ch/online/canal.php?stream=espn"
+  },
+  {
+    "partido": "ESPN 2",
+    "liga": "LATINOAMERICA",
+    "fecha": "",
+    "url": "https://futbollibre.ch/canales.php?stream=winsports2"
+  },
+  {
+    "partido": "Talleres Córdoba vs Vélez Sarsfield",
+    "liga": "22:50 🇦🇷 Liga Profesional",
+    "fecha": "",
+    "url": "https://streamtp99a.sbs/global1.php?stream=espnpremium"
+  },
+  {
+    "partido": "TUDN",
+    "liga": "LATINOAMERICA",
+    "fecha": "",
+    "url": "https://embed.ksdjugfsddeports.com/embed2/movistarligadecampeones.php"
+  },
+  {
+    "partido": "ESPN 5",
+    "liga": "LATINOAMERICA",
+    "fecha": "",
+    "url": "https://streamx-hd.com/live2.php?stream=zapping_ec"
+  },
+  {
+    "partido": "prueba",
+    "liga": "LATINOAMERICA",
+    "fecha": "",
+    "url": "https://playvi.org/tntargentina.php"
+  },
+  {
+    "partido": "ECUA",
+    "liga": "LATINOAMERICA",
+    "fecha": "",
+    "url": "https://playvi.org/ecu1.php"
+  },
+  {
+    "partido": "DSports",
+    "liga": "LATINOAMERICA",
+    "fecha": "",
+    "url": "https://embed.ksdjugfsddeports.com/embed2/tudn.php"
+  },
+  {
+    "partido": "DSports 2",
+    "liga": "LATINOAMERICA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=dsports2"
+  },
+  {
+    "partido": "DSports Plus",
+    "liga": "LATINOAMERICA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=dsportsplus"
+  },
+  {
+    "partido": "GOLTV",
+    "liga": "LATINOAMERICA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=goltv"
+  },
+  {
+    "partido": "VTV Plus",
+    "liga": "LATINOAMERICA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=vtvplus"
+  },
+  {
+    "partido": "ECDF LigaPro (eventos)",
+    "liga": "LATINOAMERICA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=ecdf_ligapro"
+  },
+  {
+    "partido": "Fox Sports",
+    "liga": "ARGENTINA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=foxsports"
+  },
+  {
+    "partido": "Fox Sports 2",
+    "liga": "ARGENTINA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=foxsports2"
+  },
+  {
+    "partido": "Fox Sports 3",
+    "liga": "ARGENTINA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=foxsports3"
+  },
+  {
+    "partido": "TNT Sports",
+    "liga": "ARGENTINA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=tntsports"
+  },
+  {
+    "partido": "ESPN Premium",
+    "liga": "ARGENTINA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=espnpremium"
+  },
+  {
+    "partido": "TyC Sports",
+    "liga": "ARGENTINA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=tycsports"
+  },
+  {
+    "partido": "TyC Sports Internacional (USA)",
+    "liga": "ARGENTINA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=tycinternacional"
+  },
+  {
+    "partido": "Telefe",
+    "liga": "ARGENTINA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=telefe"
+  },
+  {
+    "partido": "TV Pública",
+    "liga": "ARGENTINA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=tvpublica"
+  },
+  {
+    "partido": "Liga1 MAX",
+    "liga": "PERÚ",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=liga1max"
+  },
+  {
+    "partido": "Movistar Deportes",
+    "liga": "PERÚ",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=movistar"
+  },
+  {
+    "partido": "Win Sports Plus",
+    "liga": "COLOMBIA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=winsportsplus"
+  },
+  {
+    "partido": "Win Sports plus (2)",
+    "liga": "COLOMBIA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=winsports2"
+  },
+  {
+    "partido": "Win Sports",
+    "liga": "COLOMBIA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=winsports"
+  },
+  {
+    "partido": "Fox Sports",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=foxsportsmx"
+  },
+  {
+    "partido": "Fox Sports 2",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=foxsports2mx"
+  },
+  {
+    "partido": "Fox Sports 3",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=foxsports3mx"
+  },
+  {
+    "partido": "Fox Sports Premium",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=foxsportspremium"
+  },
+  {
+    "partido": "TUDN",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=tudn_mx"
+  },
+  {
+    "partido": "ESPN",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=espnmx"
+  },
+  {
+    "partido": "ESPN 2",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=espn2mx"
+  },
+  {
+    "partido": "ESPN 3",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=espn3mx"
+  },
+  {
+    "partido": "ESPN 4",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=espn4mx"
+  },
+  {
+    "partido": "Caliente TV",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=calientetv"
+  },
+  {
+    "partido": "Azteca 7",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=azteca7"
+  },
+  {
+    "partido": "Canal 5",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=canal5"
+  },
+  {
+    "partido": "TVC Deportes",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=tvc_deportes"
+  },
+  {
+    "partido": "Azteca Deportes",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=azteca_deportes"
+  },
+  {
+    "partido": "Hisports",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=hisports"
+  },
+  {
+    "partido": "Sky Sports LaLiga",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sky_sports_laliga"
+  },
+  {
+    "partido": "Sky Sports Bundesliga",
+    "liga": "MÉXICO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sky_bundesliga_mx"
+  },
+  {
+    "partido": "Fox Deportes",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=foxdeportes"
+  },
+  {
+    "partido": "ESPN Deportes",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=espndeportes"
+  },
+  {
+    "partido": "TUDN",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=tudn"
+  },
+  {
+    "partido": "Univisión",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=univision"
+  },
+  {
+    "partido": "Fox Sports 1",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=foxsports1_usa"
+  },
+  {
+    "partido": "Fox Sports 2",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=foxsports2_usa"
+  },
+  {
+    "partido": "Universo",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=universo"
+  },
+  {
+    "partido": "BeIN Sports Español",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=beinsportes"
+  },
+  {
+    "partido": "Unimás",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=unimas"
+  },
+  {
+    "partido": "BeIN Sports Xtra Español",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=beinsport_xtra_espanol"
+  },
+  {
+    "partido": "ESPN",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=espn_usa"
+  },
+  {
+    "partido": "ESPN2",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=espn2_usa"
+  },
+  {
+    "partido": "ESPN U",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=espnu"
+  },
+  {
+    "partido": "CBS Sports Network",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=cbs_sports_network"
+  },
+  {
+    "partido": "USAnetwork",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=usanetwork"
+  },
+  {
+    "partido": "Telemundo",
+    "liga": "USA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=telemundo"
+  },
+  {
+    "partido": "TNT Sports Chile",
+    "liga": "CHILE",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=eventos13"
+  },
+  {
+    "partido": "Premiere 1",
+    "liga": "BRASIL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=premiere1"
+  },
+  {
+    "partido": "Premiere 2",
+    "liga": "BRASIL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=premiere2"
+  },
+  {
+    "partido": "Premiere 3",
+    "liga": "BRASIL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=premiere3"
+  },
+  {
+    "partido": "Premiere 4",
+    "liga": "BRASIL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=premiere4"
+  },
+  {
+    "partido": "Premiere 5",
+    "liga": "BRASIL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=premiere5"
+  },
+  {
+    "partido": "Premiere 6",
+    "liga": "BRASIL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=premiere6"
+  },
+  {
+    "partido": "Premiere 7",
+    "liga": "BRASIL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=premiere7"
+  },
+  {
+    "partido": "Premiere 8",
+    "liga": "BRASIL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=premiere8"
+  },
+  {
+    "partido": "Sportv",
+    "liga": "BRASIL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sportv"
+  },
+  {
+    "partido": "Sportv 2",
+    "liga": "BRASIL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sportv2"
+  },
+  {
+    "partido": "Sportv 3",
+    "liga": "BRASIL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sportv3"
+  },
+  {
+    "partido": "Sport TV 1",
+    "liga": "PORTUGAL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sporttv1"
+  },
+  {
+    "partido": "Sport TV 2",
+    "liga": "PORTUGAL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sporttv2"
+  },
+  {
+    "partido": "Sport TV 3",
+    "liga": "PORTUGAL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sporttv3"
+  },
+  {
+    "partido": "Sport TV 4",
+    "liga": "PORTUGAL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sporttv4"
+  },
+  {
+    "partido": "Sport TV 5",
+    "liga": "PORTUGAL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sporttv5"
+  },
+  {
+    "partido": "Sport TV 6",
+    "liga": "PORTUGAL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sporttv6"
+  },
+  {
+    "partido": "Canal 11",
+    "liga": "PORTUGAL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=canal11_pt"
+  },
+  {
+    "partido": "Dazn Eleven 1",
+    "liga": "PORTUGAL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=eleven1_pt"
+  },
+  {
+    "partido": "Dazn Eleven 2",
+    "liga": "PORTUGAL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=eleven2_pt"
+  },
+  {
+    "partido": "Dazn Eleven 3",
+    "liga": "PORTUGAL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=eleven3_pt"
+  },
+  {
+    "partido": "Dazn Eleven 4",
+    "liga": "PORTUGAL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=eleven4_pt"
+  },
+  {
+    "partido": "Dazn Eleven 5",
+    "liga": "PORTUGAL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=eleven5_pt"
+  },
+  {
+    "partido": "Dazn Eleven 6",
+    "liga": "PORTUGAL",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=eleven6_pt"
+  },
+  {
+    "partido": "DAZN 1",
+    "liga": "ESPAÑA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=dazn1"
+  },
+  {
+    "partido": "DAZN 2",
+    "liga": "ESPAÑA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=dazn2"
+  },
+  {
+    "partido": "DAZN 3 (eventos)",
+    "liga": "ESPAÑA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=dazn3"
+  },
+  {
+    "partido": "DAZN 4 (eventos)",
+    "liga": "ESPAÑA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=dazn4"
+  },
+  {
+    "partido": "DAZN LaLiga",
+    "liga": "ESPAÑA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=dazn_laliga"
+  },
+  {
+    "partido": "La 1 TVE",
+    "liga": "ESPAÑA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=la1tve"
+  },
+  {
+    "partido": "Liga de Campeones 1",
+    "liga": "ESPAÑA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=ligadecampeones1"
+  },
+  {
+    "partido": "Liga de Campeones 2",
+    "liga": "ESPAÑA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=ligadecampeones2"
+  },
+  {
+    "partido": "Liga de Campeones 3",
+    "liga": "ESPAÑA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=ligadecampeones3"
+  },
+  {
+    "partido": "LaLigaTV BAR",
+    "liga": "ESPAÑA",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=laligatvbar"
+  },
+  {
+    "partido": "Sky Bundesliga 1",
+    "liga": "MUNDO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sky_bundesliga1"
+  },
+  {
+    "partido": "Sky Bundesliga 2",
+    "liga": "MUNDO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sky_bundesliga2"
+  },
+  {
+    "partido": "Sky Bundesliga 3",
+    "liga": "MUNDO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sky_bundesliga3"
+  },
+  {
+    "partido": "Sky Bundesliga 4",
+    "liga": "MUNDO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sky_bundesliga4"
+  },
+  {
+    "partido": "Sky Bundesliga 5",
+    "liga": "MUNDO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=sky_bundesliga5"
+  },
+  {
+    "partido": "DAZN 1 DE",
+    "liga": "MUNDO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=dazn1_de"
+  },
+  {
+    "partido": "DAZN 2 DE",
+    "liga": "MUNDO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=dazn2_de"
+  },
+  {
+    "partido": "ESPN 1 NL",
+    "liga": "MUNDO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=espn1_nl"
+  },
+  {
+    "partido": "ESPN 2 NL",
+    "liga": "MUNDO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=espn2_nl"
+  },
+  {
+    "partido": "ESPN 3 NL",
+    "liga": "MUNDO",
+    "fecha": "",
+    "url": "https://la14hd.com/vivo/canales.php?stream=espn3_nl"
+  },
+  {
+    "partido": "Prueba 53",
+    "liga": "MUNDO",
+    "fecha": "",
+    "url": "https://filemoon.sx/e/6x9cakskp2ff"
+  }
+]
