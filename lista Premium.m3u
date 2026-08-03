@@ -1,6 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="" tvg-name="HD | ESPN 1 COL" tvg-logo="https://go4.pw/AMERICA/USA/ESPN.png" group-title="⚽ DEPORTES ʜᴅ",HD | ESPN 1 COL
 http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/74.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep | EUROSPORT 2 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1756" group-title="⚽ DEPORTES +3Mbps",Dep | EUROSPORT 2 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345266.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="DHD | BEIN SPORTS  EXTRA USA" tvg-logo="https://ia800809.us.archive.org/25/items/BeinSportsUsaHd/bein%20sports%20usa%20hd.png" group-title="⚽ DEPORTES ʜᴅ",DHD | BEIN SPORTS  EXTRA USA
 http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/64.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="DHD | BEIN SPORTS Ñ" tvg-logo="http://easytv.mx/wp-content/uploads/tv-logos/DEPORTES/beinsportn.png" group-title="⚽ DEPORTES ʜᴅ",DHD | BEIN SPORTS Ñ
@@ -233,3 +235,481 @@ http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/329047.m3u8
 http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/327377.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="DHD | ZONA TUDN MX" tvg-logo="https://iili.io/J2wureR.md.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ZONA TUDN MX
 http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1399343.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ADRENALINA SPORTS HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1466" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ADRENALINA SPORTS HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345269.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | BEIN SPORTS USA  HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=642" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | BEIN SPORTS USA  HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345285.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | CLARO SPORTS HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1762" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | CLARO SPORTS HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345271.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | DAZN 1 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1819" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | DAZN 1 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345248.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | DAZN 2 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1819" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | DAZN 2 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345247.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | DAZN 3 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1819" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | DAZN 3 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345246.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | DAZN 4 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1819" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | DAZN 4 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345245.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | DIRECTV SPORTS 1" tvg-logo="https://i.imgur.com/jtYG9k8.jpg" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | DIRECTV SPORTS 1
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345291.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | DIRECTV SPORTS 2 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1824" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | DIRECTV SPORTS 2 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345264.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | DIRECTV SPORTS + HD" tvg-logo="https://i.imgur.com/TE1hgew.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | DIRECTV SPORTS + HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345293.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN 1 ARG" tvg-logo="https://i.imgur.com/GL8U2qC.jpg" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN 1 ARG
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345292.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN 1 MX HD" tvg-logo="https://i.imgur.com/GL8U2qC.jpg" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN 1 MX HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345283.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN 1 USA HD" tvg-logo="https://i.imgur.com/GL8U2qC.jpg" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN 1 USA HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345282.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN 2 MX HD" tvg-logo="https://i.imgur.com/zQoasWk.jpg" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN 2 MX HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345281.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN 2 USA HD" tvg-logo="https://i.imgur.com/zQoasWk.jpg" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN 2 USA HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345272.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN 3 HD" tvg-logo="https://i.imgur.com/wjBRbMW.jpg" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN 3 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345265.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN 4 HD" tvg-logo="https://i.imgur.com/AMGIfMt.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN 4 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345268.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN DEPORTES SD" tvg-logo="https://i.imgur.com/7P5pVlG.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN DEPORTES SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345284.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | EUROSPORT 1 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1756" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | EUROSPORT 1 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345267.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FIGHT NETWORK HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1758" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FIGHT NETWORK HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345260.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FISH NETWORK HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=979" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FISH NETWORK HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345259.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FORMULA 1 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1584" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FORMULA 1 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345289.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FOX DEPORTES HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=188" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FOX DEPORTES HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345263.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FOX SOCCER" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=202" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FOX SOCCER
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345276.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FOX SPORTS 1 MX HD" tvg-logo="https://i.imgur.com/u6dJgey.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FOX SPORTS 1 MX HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345280.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FOX SPORTS 2 MX HD" tvg-logo="https://i.imgur.com/GdkLKEd.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FOX SPORTS 2 MX HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345279.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FOX SPORTS 3 MX HD" tvg-logo="https://i.imgur.com/BeIDgpM.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FOX SPORTS 3 MX HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345278.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FOX SPORTS PREMIUM HD" tvg-logo="https://i.imgur.com/dRRAFca.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FOX SPORTS PREMIUM HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345277.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FOX SPORTS US HD" tvg-logo="https://i.imgur.com/BEFaYzg.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FOX SPORTS US HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345275.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | MLB NETWORK HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=179" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | MLB NETWORK HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345258.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | MOTOR TREND HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1644" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | MOTOR TREND HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345252.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | Movistar Liga De Campeones HD" tvg-logo="https://i.imgur.com/2aZfEzy.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | Movistar Liga De Campeones HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345295.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | NBA TV HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1343" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | NBA TV HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345243.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | NFL NETWORK HD" tvg-logo="http://51.222.43.170:8001/images/45c466aa2042c9fbcc75d02e6b7b2f6a.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | NFL NETWORK HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345273.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | SKY SPORTS 16 HD" tvg-logo="https://i.imgur.com/KKTEot6.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | SKY SPORTS 16 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345242.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | TSN 1 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1787" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | TSN 1 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345254.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | TSN 2 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1787" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | TSN 2 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345253.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | TUDN MX  HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1450" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | TUDN MX  HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345286.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | TUDN USA SD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1450" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | TUDN USA SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345274.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | TYC SPORTS HD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/61/TyC_Sports.png/revision/latest/scale-to-width-down/320?cb=20190620182054&path-prefix=es" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | TYC SPORTS HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345262.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | TYC SPORTS INTERNACIONAL HD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/61/TyC_Sports.png/revision/latest/scale-to-width-down/320?cb=20190620182054&path-prefix=es" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | TYC SPORTS INTERNACIONAL HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345294.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | UFC NETWORK HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=17" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | UFC NETWORK HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345261.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | WWE NETWORK HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1300" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | WWE NETWORK HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/345290.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| BETIS FHD" tvg-logo="https://lo1.in/sp/BETIS%20FHD.png" group-title="SPAIN DEPORTES",ES| BETIS FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621103.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 01" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 01
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621086.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 02" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 02
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621114.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 03" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 03
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621102.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 04" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 04
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621112.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 05" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 05
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621109.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 06" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 06
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621093.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 07" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 07
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621107.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 08" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 08
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621095.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 09" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 09
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621104.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 1 ESPAÑA FHD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN 1 ESPAÑA FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621099.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 1 ESPAÑA HEVC" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN 1 ESPAÑA HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621085.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 1 ESPAÑA SD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN 1 ESPAÑA SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621106.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 1 ESPAÑA HD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN 1 ESPAÑA HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621108.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 2 ESPAÑA FHD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN 2 ESPAÑA FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621087.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 2 ESPAÑA HD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN 2 ESPAÑA HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621097.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 2 ESPAÑA HEVC" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN 2 ESPAÑA HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621094.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 2 ESPAÑA SD" tvg-logo="https://lo1.in/sp/DAZN%202%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 2 ESPAÑA SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621088.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 3 ESPAÑA FHD" tvg-logo="https://lo1.in/sp/DAZN%203%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 3 ESPAÑA FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621113.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 3 ESPAÑA HD" tvg-logo="https://lo1.in/sp/DAZN%203%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 3 ESPAÑA HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621092.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 3 ESPAÑA HEVC" tvg-logo="https://lo1.in/sp/DAZN%203%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 3 ESPAÑA HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621111.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 3 ESPAÑA SD" tvg-logo="https://lo1.in/sp/DAZN%203%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 3 ESPAÑA SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621110.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 4 ESPAÑA FHD" tvg-logo="https://lo1.in/sp/DAZN%204%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 4 ESPAÑA FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621091.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 4 ESPAÑA HD" tvg-logo="https://lo1.in/sp/DAZN%204%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 4 ESPAÑA HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621089.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 4 ESPAÑA HEVC" tvg-logo="https://lo1.in/sp/DAZN%204%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 4 ESPAÑA HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621101.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 4 ESPAÑA SD" tvg-logo="https://lo1.in/sp/DAZN%204%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 4 ESPAÑA SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621098.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN ACB 1" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN ACB 1
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621090.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN ACB 2" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN ACB 2
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621105.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN ACB 3" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN ACB 3
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621100.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN ACB 4" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN ACB 4
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621096.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN ACB 5" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN ACB 5
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621067.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN Baloncesto 1 FHD" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN Baloncesto 1 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621053.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN Baloncesto 2 FHD" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN Baloncesto 2 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621041.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN Baloncesto 3 FHD" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN Baloncesto 3 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621074.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN F1 ESPAÑA FHD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN F1 ESPAÑA FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621039.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN F1 ESPAÑA HD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN F1 ESPAÑA HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621036.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN F1 ESPAÑA HEVC" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN F1 ESPAÑA HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621058.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN F1 ESPAÑA SD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN F1 ESPAÑA SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621082.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 1 FHD" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 1 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621083.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 1 HD" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 1 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621043.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 1 HEVC" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 1 HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621081.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 1 SD" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 1 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621071.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 2 FHD" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 2 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621061.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 2 HD" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 2 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621072.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 2 HEVC" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 2 HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621038.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 2 SD" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 2 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621073.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DBIKE FHD" tvg-logo="https://lo1.in/sp/DBIKE%20FHD.png" group-title="SPAIN DEPORTES",ES| DBIKE FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621059.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DBIKE HD" tvg-logo="https://lo1.in/sp/DBIKE%20FHD.png" group-title="SPAIN DEPORTES",ES| DBIKE HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621077.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| DBIKE SD" tvg-logo="https://lo1.in/sp/DBIKE%20FHD.png" group-title="SPAIN DEPORTES",ES| DBIKE SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621064.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| EL TORO TV FHD" tvg-logo="https://lo1.in/sp/viajarhd.png" group-title="SPAIN DEPORTES",ES| EL TORO TV FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621044.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| EL TORO TV HD" tvg-logo="https://lo1.in/sp/viajarhd.png" group-title="SPAIN DEPORTES",ES| EL TORO TV HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621066.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| Esport3 HD" tvg-logo="https://lo1.in/sp/Esport3%20SD.png" group-title="SPAIN DEPORTES",ES| Esport3 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621054.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| EUROSPORT 1 FHD" tvg-logo="https://lo1.in/sp/EUROSPORT%201.png" group-title="SPAIN DEPORTES",ES| EUROSPORT 1 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621049.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| EUROSPORT 1 HD" tvg-logo="https://lo1.in/sp/EUROSPORT%201.png" group-title="SPAIN DEPORTES",ES| EUROSPORT 1 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621078.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| EUROSPORT 1 SD" tvg-logo="https://lo1.in/sp/EUROSPORT%201.png" group-title="SPAIN DEPORTES",ES| EUROSPORT 1 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621055.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| EUROSPORT 2 FHD" tvg-logo="https://lo1.in/sp/erosp2.png" group-title="SPAIN DEPORTES",ES| EUROSPORT 2 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621046.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| EUROSPORT 2 HD" tvg-logo="https://lo1.in/sp/erosp2.png" group-title="SPAIN DEPORTES",ES| EUROSPORT 2 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621084.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| EUROSPORT 2 SD" tvg-logo="https://lo1.in/sp/erosp2.png" group-title="SPAIN DEPORTES",ES| EUROSPORT 2 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621057.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEDERACION FHD (LaLiga+)" tvg-logo="https://lo1.in/sp/sp.png" group-title="SPAIN DEPORTES",ES| FEDERACION FHD (LaLiga+)
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621045.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEDERACION FHD (Movistar+)" tvg-logo="https://lo1.in/sp/sp.png" group-title="SPAIN DEPORTES",ES| FEDERACION FHD (Movistar+)
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621068.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEDERACION HD" tvg-logo="https://lo1.in/sp/sp.png" group-title="SPAIN DEPORTES",ES| FEDERACION HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621037.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEDERACION SD" tvg-logo="https://lo1.in/sp/sp.png" group-title="SPAIN DEPORTES",ES| FEDERACION SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621080.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEF TV  20 FHD (Solo Eventos)" tvg-logo="https://lo1.in/sp/FEF%20TV%2020.png" group-title="SPAIN DEPORTES",ES| FEF TV  20 FHD (Solo Eventos)
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621048.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEF TV 1 FHD (Solo Eventos)" tvg-logo="https://lo1.in/sp/FEF%20TV%2020.png" group-title="SPAIN DEPORTES",ES| FEF TV 1 FHD (Solo Eventos)
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621050.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEF TV 2 FHD (Solo Eventos)" tvg-logo="https://lo1.in/sp/FEF%20TV%2020.png" group-title="SPAIN DEPORTES",ES| FEF TV 2 FHD (Solo Eventos)
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621063.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEF TV 3 FHD (Solo Eventos)" tvg-logo="https://lo1.in/sp/FEF%20TV%2020.png" group-title="SPAIN DEPORTES",ES| FEF TV 3 FHD (Solo Eventos)
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621035.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEF TV 4 FHD (Solo Eventos)" tvg-logo="https://lo1.in/sp/FEF%20TV%2020.png" group-title="SPAIN DEPORTES",ES| FEF TV 4 FHD (Solo Eventos)
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621065.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEF TV 5 FHD (Solo Eventos)" tvg-logo="https://lo1.in/sp/FEF%20TV%2020.png" group-title="SPAIN DEPORTES",ES| FEF TV 5 FHD (Solo Eventos)
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621052.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| FUEL TV FHD" tvg-logo="https://lo1.in/por/fuelhd.png" group-title="SPAIN DEPORTES",ES| FUEL TV FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621056.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| GOL FHD" tvg-logo="https://lo1.in/sp/gol.png" group-title="SPAIN DEPORTES",ES| GOL FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621079.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| GOL HD" tvg-logo="https://lo1.in/sp/gol.png" group-title="SPAIN DEPORTES",ES| GOL HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621051.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| GOL SD" tvg-logo="https://lo1.in/sp/gol.png" group-title="SPAIN DEPORTES",ES| GOL SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621069.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| LA 1 FHD [BK]" tvg-logo="https://lo1.in/sp/LA%201%20FHD.png" group-title="SPAIN DEPORTES",ES| LA 1 FHD [BK]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621075.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| LA 1 HD [BK]" tvg-logo="https://lo1.in/sp/LA%201%20FHD.png" group-title="SPAIN DEPORTES",ES| LA 1 HD [BK]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621047.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 01 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 01 [EVENT ONLY]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621060.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 02 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 02 [EVENT ONLY]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621042.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 03 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 03 [EVENT ONLY]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621040.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 04 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 04 [EVENT ONLY]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621070.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 05 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 05 [EVENT ONLY]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621062.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 06 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 06 [EVENT ONLY]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621076.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 07 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 07 [EVENT ONLY]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621018.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 08 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 08 [EVENT ONLY]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621027.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 09 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 09 [EVENT ONLY]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621017.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 10 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 10 [EVENT ONLY]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621025.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ 2 PLUS HD [BK]" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ 2 PLUS HD [BK]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621033.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ COPA AMERICA 1 FHD" tvg-logo="https://lo1.in/sp/m+.png" group-title="SPAIN DEPORTES",ES| M+ COPA AMERICA 1 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621023.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ COPA AMERICA 2 FHD" tvg-logo="https://lo1.in/sp/m+.png" group-title="SPAIN DEPORTES",ES| M+ COPA AMERICA 2 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621032.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ COPA DEL REY FHD" tvg-logo="https://lo1.in/sp/sp.png" group-title="SPAIN DEPORTES",ES| M+ COPA DEL REY FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621029.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ COPA DEL REY HD" tvg-logo="https://lo1.in/sp/sp.png" group-title="SPAIN DEPORTES",ES| M+ COPA DEL REY HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621026.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 1 FHD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 1 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621020.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 1 HD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 1 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621030.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 1 HEVC" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 1 HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621028.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 1 SD" tvg-logo="https://lo1.in/sp/M+%20DEPORTES%201.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 1 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621024.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 2 FHD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 2 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621019.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 2 HD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 2 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621031.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 2 HEVC" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 2 HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621022.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 2 SD" tvg-logo="https://lo1.in/sp/deprts2.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 2 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621034.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 3 FHD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 3 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621021.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 3 HD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 3 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621016.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 3 HEVC" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 3 HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621015.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 3 SD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 3 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621014.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 4 FHD" tvg-logo="https://lo1.in/sp/teledepo.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 4 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621013.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 4 HD" tvg-logo="https://lo1.in/sp/teledepo.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 4 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621012.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 4 SD" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 4 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621011.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 5 FHD" tvg-logo="https://lo1.in/sp/mvstlg8.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 5 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621010.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 5 HD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 5 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621009.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 5 SD" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 5 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621008.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 6 FHD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 6 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621007.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 6 HD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 6 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621006.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 6 SD" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 6 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621005.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 7 FHD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 7 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621004.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 7 HD" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 7 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621003.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 7 SD" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 7 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621002.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 8 SD" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 8 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621001.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ ELLAS HD" tvg-logo="https://lo1.in/sp/M+%20ELLAS%20FHD.png" group-title="SPAIN DEPORTES",ES| M+ ELLAS HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1621000.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ ELLAS HEVC" tvg-logo="https://lo1.in/sp/M+%20ELLAS%20FHD.png" group-title="SPAIN DEPORTES",ES| M+ ELLAS HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620999.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ ELLAS SD" tvg-logo="https://lo1.in/sp/M+%20ELLAS%20FHD.png" group-title="SPAIN DEPORTES",ES| M+ ELLAS SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620998.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ GOLF 2 FHD" tvg-logo="https://lo1.in/sp/mvstgolf.png" group-title="SPAIN DEPORTES",ES| M+ GOLF 2 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620997.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ GOLF 2 HD" tvg-logo="https://lo1.in/sp/mvstgolf.png" group-title="SPAIN DEPORTES",ES| M+ GOLF 2 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620996.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ GOLF 2 SD" tvg-logo="https://lo1.in/sp/mvstgolf.png" group-title="SPAIN DEPORTES",ES| M+ GOLF 2 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620995.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ GOLF FHD" tvg-logo="https://lo1.in/sp/mvstgolf.png" group-title="SPAIN DEPORTES",ES| M+ GOLF FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620994.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ GOLF HD" tvg-logo="https://lo1.in/sp/mvstgolf.png" group-title="SPAIN DEPORTES",ES| M+ GOLF HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620993.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ GOLF HEVC" tvg-logo="https://lo1.in/sp/mvstgolf.png" group-title="SPAIN DEPORTES",ES| M+ GOLF HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620992.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ GOLF SD" tvg-logo="https://lo1.in/sp/mvstgolf.png" group-title="SPAIN DEPORTES",ES| M+ GOLF SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620991.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 2 FHD" tvg-logo="https://lo1.in/sp/mvstlg2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 2 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620990.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 2 HD" tvg-logo="https://lo1.in/sp/mvstlg2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 2 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620989.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 2 SD" tvg-logo="https://lo1.in/sp/mvstlg2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 2 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620988.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 3 FHD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%203.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 3 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620987.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 3 HD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%203.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 3 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620986.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 4 FHD" tvg-logo="https://lo1.in/sp/mvstlg4.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 4 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620985.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 4 HD" tvg-logo="https://lo1.in/sp/mvstlg4.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 4 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620984.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 5 FHD" tvg-logo="https://lo1.in/sp/mvstlg5.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 5 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620983.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 5 HD" tvg-logo="https://lo1.in/sp/mvstlg6.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 5 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620982.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA FHD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%203.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620981.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA HD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%203.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620980.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA HEVC" tvg-logo="https://lo1.in/sp/M+%20LALIGA%203.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620979.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA SD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%203.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620978.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION FHD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%20TV.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620974.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION HD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%20TV.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620973.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION M2 FHD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%20TV.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION M2 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620972.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION M2 HD" tvg-logo="https://lo1.in/sp/ligasmbam2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION M2 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620971.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION M2 SD" tvg-logo="https://lo1.in/sp/ligasmbam2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION M2 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620970.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION M3 FHD" tvg-logo="https://lo1.in/sp/ligasmbam2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION M3 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620969.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION M3 HD" tvg-logo="https://lo1.in/sp/ligasmbam2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION M3 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620968.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION M3 SD" tvg-logo="https://lo1.in/sp/ligasmbam2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION M3 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620967.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION SD" tvg-logo="https://lo1.in/sp/ligasmbam2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620966.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGATV BAR FHD" tvg-logo="https://lo1.in/sp/M+%20LALIGATV%20BAR.png" group-title="SPAIN DEPORTES",ES| M+ LALIGATV BAR FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620977.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGATV BAR HD" tvg-logo="https://lo1.in/sp/M+%20LALIGATV%20BAR.png" group-title="SPAIN DEPORTES",ES| M+ LALIGATV BAR HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620976.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGATV BAR HEVC" tvg-logo="https://lo1.in/sp/M+%20LALIGA%203.png" group-title="SPAIN DEPORTES",ES| M+ LALIGATV BAR HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620975.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LCAMPEONS 4K" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LCAMPEONS 4K
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620965.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 1 FHD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 1 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620964.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 1 FHD [BK]" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 1 FHD [BK]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620963.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 1 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 1 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620962.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 1 HD [BK]" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 1 HD [BK]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620961.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 1 HEVC" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 1 HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620960.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 1 SD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 1 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620959.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 2 FHD" tvg-logo="https://lo1.in/sp/M+%20LIGA%20DE%20CAMPEONES%204.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 2 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620958.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 2 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 2 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620957.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 2 HEVC" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 2 HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620956.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 2 SD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 2 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620955.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 3 FHD" tvg-logo="https://lo1.in/sp/mvstlg10.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 3 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620954.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 3 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 3 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620953.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 3 HEVC" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 3 HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620952.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 3 SD" tvg-logo="https://lo1.in/sp/sender.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 3 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620951.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 4 FHD" tvg-logo="https://lo1.in/sp/mvstlg9.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 4 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620950.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 4 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 4 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620949.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 4 HEVC" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 4 HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620948.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 4 SD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 4 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620947.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 5 FHD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 5 FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620946.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 5 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 5 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620945.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 5 SD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 5 SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620944.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 6 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 6 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620943.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 7 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 7 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620942.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 8 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 8 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620941.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 9 HD" tvg-logo="https://lo1.in/sp/M+%20LALIGATV%20BAR.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 9 HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620940.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ PLUS HD  [BK]" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ PLUS HD  [BK]
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620939.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ PRIMERA FEDERACION FHD" tvg-logo="https://lo1.in/sp/m+.png" group-title="SPAIN DEPORTES",ES| M+ PRIMERA FEDERACION FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620938.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ PRIMERA FEDERACION HD" tvg-logo="https://lo1.in/sp/m+.png" group-title="SPAIN DEPORTES",ES| M+ PRIMERA FEDERACION HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620937.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| MUNDOTORO TV HD" tvg-logo="https://lo1.in/sp/MUNDOTORO%20TV.png" group-title="SPAIN DEPORTES",ES| MUNDOTORO TV HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620936.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| ONE TORO TV FHD" tvg-logo="https://lo1.in/sp/ONE%20TORO%20TV.png" group-title="SPAIN DEPORTES",ES| ONE TORO TV FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620935.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| ONE TORO TV HEVC" tvg-logo="https://lo1.in/sp/ONE%20TORO%20TV.png" group-title="SPAIN DEPORTES",ES| ONE TORO TV HEVC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620933.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| ONE TORO TV SD" tvg-logo="https://lo1.in/sp/ONE%20TORO%20TV.png" group-title="SPAIN DEPORTES",ES| ONE TORO TV SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620932.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| RALLY TV (EVENT ONLY)" tvg-logo="https://lo1.in/sp/RALLY%20TV.png" group-title="SPAIN DEPORTES",ES| RALLY TV (EVENT ONLY)
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620931.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| REAL MADRID TV FHD" tvg-logo="https://lo1.in/sp/REAL%20MADRID%20TV.png" group-title="SPAIN DEPORTES",ES| REAL MADRID TV FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620930.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| REAL MADRID TV HD" tvg-logo="https://lo1.in/sp/REAL%20MADRID%20TV.png" group-title="SPAIN DEPORTES",ES| REAL MADRID TV HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620929.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| REAL MADRID TV SD" tvg-logo="https://lo1.in/sp/rmatv.png" group-title="SPAIN DEPORTES",ES| REAL MADRID TV SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620928.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| SEVILLA FC" tvg-logo="https://lo1.in/sp/sevillatv.png" group-title="SPAIN DEPORTES",ES| SEVILLA FC
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620926.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| TELEDEPORTE FHD" tvg-logo="https://lo1.in/sp/teledepo.png" group-title="SPAIN DEPORTES",ES| TELEDEPORTE FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620925.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| TELEDEPORTE HD" tvg-logo="https://lo1.in/sp/teledepo.png" group-title="SPAIN DEPORTES",ES| TELEDEPORTE HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620924.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| TELEDEPORTE SD" tvg-logo="https://lo1.in/sp/teledepo.png" group-title="SPAIN DEPORTES",ES| TELEDEPORTE SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620923.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| ToroleTV FHD" tvg-logo="https://lo1.in/sp/ToroleTV.png" group-title="SPAIN DEPORTES",ES| ToroleTV FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620922.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| ToroleTV HD" tvg-logo="https://lo1.in/sp/ToroleTV.png" group-title="SPAIN DEPORTES",ES| ToroleTV HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620921.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| ToroleTV SD" tvg-logo="https://lo1.in/sp/ToroleTV.png" group-title="SPAIN DEPORTES",ES| ToroleTV SD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620920.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| TOROS HD" tvg-logo="https://lo1.in/sp/ToroleTV.png" group-title="SPAIN DEPORTES",ES| TOROS HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620919.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| UBEAT FHD" tvg-logo="https://lo1.in/sp/erosp2.png" group-title="SPAIN DEPORTES",ES| UBEAT FHD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620918.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="ES| UBEAT HD" tvg-logo="https://lo1.in/sp/erosp2.png" group-title="SPAIN DEPORTES",ES| UBEAT HD
+http://s21-iptval.ddns.net:8080/live/hsgggew4g/sdf42sf22f4/1620917.m3u8
