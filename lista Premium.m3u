@@ -1,0 +1,40 @@
+#EXTM3U
+# --- LIVE ---
+#EXTINF:-1 tvg-id="" group-title="⚡️ENTRETENIMIENTO⚡️", Golf Channel
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/109279.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", INVESTIGACION DISCOVERY  HD*
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/159240.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", ANIMAL PLANET HD 1080.*
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167557.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", ANIMAL PLANET HD 720 MX
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167558.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", ANIMAL PLANET SD*
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167559.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", DISCOVERY CHANNEL HD*
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167560.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", DISCOVERY CHANNEL HD.
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167561.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", DISCOVERY CHANNEL SD*
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167562.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", DISCOVERY FAMILY
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167564.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", DISCOVERY H&H HD...
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167565.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", DISCOVERY H&H HD*
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167566.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", DISCOVERY H&H SD (ᴍx)
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167567.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", DISCOVERY SCIENCE HD
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167568.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", DISCOVERY THEATER 720 MX
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167569.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", DISCOVERY TLC SD
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167571.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", DISCOVERY TURBO FULL HD
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167572.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", DISCOVERY TURBO HD*
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167573.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", DISCOVERY TURBO SD*
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167574.m3u8
+#EXTINF:-1 tvg-id="" group-title="⚡️MUNDO Y CULTURA☘️⚡️", DISCOVERY WORLD HD*
+http://mundocorp.pro:55577/live/Carro4433/Carro4433/167575.m3u8
