@@ -1,0 +1,17 @@
+[
+  {
+    "category": "Eventos",
+    "label": "Eventos",
+    "url": "https://raw.githubusercontent.com/Barcelonista10/Proyecto-RAYKO-PLAY/refs/heads/main/EVENTOS%20RAYKO%20PLAY"
+  },
+  {
+    "category": "Deportes",
+    "label": "Deportes",
+    "url": "https://raw.githubusercontent.com/Barcelonista10/Proyecto-RAYKO-PLAY/refs/heads/main/lista%20Premium.m3u"
+  },
+  {
+    "category": "Cine y Series",
+    "label": "Cine y Series",
+    "url": "https://raw.githubusercontent.com/Barcelonista10/Proyecto-RAYKO-PLAY/refs/heads/main/Deportrtes2.m3u"
+  }
+]
