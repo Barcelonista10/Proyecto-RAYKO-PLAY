@@ -1,137 +1,461 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="D3PÖRT3S | [$ŠPN-3]" tvg-logo="http://redworld.pro:8880/images/65b140dd9ebf0ec2b2a8c1565fa90080.png" group-title="⭐️ DƏPORTE VIP",D3PÖRT3S | [$ŠPN-3]
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167725
+#EXTINF:-1 tvg-id="" tvg-name="D3PØRT3S | $ŠPN-4" tvg-logo="http://redworld.pro:8880/images/9c83acb71e6f939bae03936d2c827d7c.png" group-title="⭐️ DƏPORTE VIP",D3PØRT3S | $ŠPN-4
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167726
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | $ŠPN PR3MIUM EXCLUSIVO" tvg-logo="http://redworld.pro:8880/images/71e4e80a43e761809353568e3f2dff5f.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | $ŠPN PR3MIUM EXCLUSIVO
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167727
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | * $.Š.P.N U" tvg-logo="http://redworld.pro:8880/images/aa94a21674567eb1ab35b6e3a9408b26.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | * $.Š.P.N U
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167729
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | D GAMES 1" tvg-logo="http://redworld.pro:8880/images/c8e7a6a4e47e499e60e09efbf6347eee.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | D GAMES 1
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167731
+#EXTINF:-1 tvg-id="DIRECTVSports+.pe" tvg-name="DEPORTES | D GAMES +" tvg-logo="http://redworld.pro:8880/images/c8e7a6a4e47e499e60e09efbf6347eee.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | D GAMES +
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167732
+#EXTINF:-1 tvg-id="DIRECTVSports2.pe" tvg-name="DEPORTES | D GAMES 2" tvg-logo="http://redworld.pro:8880/images/c8e7a6a4e47e499e60e09efbf6347eee.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | D GAMES 2
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167733
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | F0X $PORTS 1" tvg-logo="http://redworld.pro:8880/images/6dc7503c4fbdb327b24ffc5318ae0f7a.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | F0X $PORTS 1
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167734
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | F0X $PORTS 2" tvg-logo="http://redworld.pro:8880/images/777b383eea161b73957a45bcc559efb9.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | F0X $PORTS 2
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167735
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | F0X $PORTS 3" tvg-logo="http://redworld.pro:8880/images/777b383eea161b73957a45bcc559efb9.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | F0X $PORTS 3
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167736
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | F0X $PORTS PREMIUM" tvg-logo="http://redworld.pro:8880/images/65d1b536a5c2eb33ca65344adeabdfba.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | F0X $PORTS PREMIUM
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167737
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | WIN SPORTS +" tvg-logo="http://redworld.pro:8880/images/b7594559b9125fc15131b3463e383aa3.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | WIN SPORTS +
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167738
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | WIN SPORTS " tvg-logo="http://redworld.pro:8880/images/b7594559b9125fc15131b3463e383aa3.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | WIN SPORTS
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167739
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | F1" tvg-logo="http://redworld.pro:8880/images/1a13829ef621f7393ece854690b87731.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | F1
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167742
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | GOLF CHANNEL" tvg-logo="http://redworld.pro:8880/images/89b80113c1ed34f36bfe6936fcf5ed20.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | GOLF CHANNEL
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167746
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | TENNIS CHANEL " tvg-logo="http://redworld.pro:8880/images/74d04d280b936817eb8146241d8521c9.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | TENNIS CHANEL
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167748
+#EXTINF:-1 tvg-id="" tvg-name="Deportes | AFIZZIONADOS" tvg-logo="http://redworld.pro:8880/images/e679f9f23ad226c87b4dd9acaa2fe186.png" group-title="⭐️ DƏPORTE VIP",Deportes | AFIZZIONADOS
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167762
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | ADRENALINA" tvg-logo="http://redworld.pro:8880/images/2865df59d49ef3ec9f4381fc018c078c.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | ADRENALINA
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167764
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | TUDN" tvg-logo="http://redworld.pro:8880/images/125560725d883246b914f26e00667bce.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | TUDN
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167770
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | TUDN XTRA" tvg-logo="http://redworld.pro:8880/images/125560725d883246b914f26e00667bce.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | TUDN XTRA
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167771
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | TVG" tvg-logo="http://redworld.pro:8880/images/d6bd13dae2fc753e0993c6b45644fa17.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | TVG
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167772
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | TVG 2" tvg-logo="http://redworld.pro:8880/images/1c1b76b4f7192db1dd44528889d848f9.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | TVG 2
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167773
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | TVC Deportes" tvg-logo="http://redworld.pro:8880/images/5766b163e6c57795a1d69de316aa9954.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | TVC Deportes
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167775
+#EXTINF:-1 tvg-id="" tvg-name="D3PORTES | *Ê$P*N D3PORTES" tvg-logo="http://redworld.pro:8880/images/f4ba5e57ae936428596903dc26f482cc.png" group-title="⭐️ DƏPORTE VIP",D3PORTES | *Ê$P*N D3PORTES
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167728
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | $ŠPN  NEWS" tvg-logo="http://redworld.pro:8880/images/cb88103bd31fe7d6cf58e9a7c023b120.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | $ŠPN  NEWS
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167730
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | SPORTV" tvg-logo="http://redworld.pro:8880/images/20498f15eb9325a86465744668037e26.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | SPORTV
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/167774
+#EXTINF:-1 tvg-id="DiscoveryChannel.pe" tvg-name="Discovery Channel HD" tvg-logo="http://redworld.pro:8880/images/12a8ebd221c1cc385dc020a7d31e8cce.png" group-title="⭐️ CULTURA",Discovery Channel HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318603
+#EXTINF:-1 tvg-id="DiscoveryChannel.pe" tvg-name="Discovery Channel SD" tvg-logo="http://redworld.pro:8880/images/12a8ebd221c1cc385dc020a7d31e8cce.png" group-title="⭐️ CULTURA",Discovery Channel SD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318604
+#EXTINF:-1 tvg-id="" tvg-name="Discovery Home & Health HD" tvg-logo="http://redworld.pro:8880/images/980dba9f836545ed57db65c90a92b7a7.png" group-title="⭐️ CULTURA",Discovery Home & Health HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318605
+#EXTINF:-1 tvg-id="" tvg-name="Discovery Home & Health SD" tvg-logo="http://redworld.pro:8880/images/980dba9f836545ed57db65c90a92b7a7.png" group-title="⭐️ CULTURA",Discovery Home & Health SD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318606
+#EXTINF:-1 tvg-id="" tvg-name="Discovery Investigation HD" tvg-logo="http://redworld.pro:8880/images/b77369bd453a2ebf8b5391cfac3ab24a.png" group-title="⭐️ CULTURA",Discovery Investigation HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318607
+#EXTINF:-1 tvg-id="" tvg-name="DISCOVERY Science" tvg-logo="http://redworld.pro:8880/images/d69e2b874961c77fcc63cc7798a56b85.png" group-title="⭐️ CULTURA",DISCOVERY Science
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318608
+#EXTINF:-1 tvg-id="" tvg-name="DISCOVERY Theater HD" tvg-logo="http://redworld.pro:8880/images/a109eebfce6f68ed725f7fa89a059728.png" group-title="⭐️ CULTURA",DISCOVERY Theater HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318609
+#EXTINF:-1 tvg-id="" tvg-name="DISCOVERY Theater" tvg-logo="http://redworld.pro:8880/images/a109eebfce6f68ed725f7fa89a059728.png" group-title="⭐️ CULTURA",DISCOVERY Theater
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318610
+#EXTINF:-1 tvg-id="" tvg-name="DISCOVERY Turbo HD" tvg-logo="http://redworld.pro:8880/images/1463afaef86d27073fa41c8053a853a4.png" group-title="⭐️ CULTURA",DISCOVERY Turbo HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318611
+#EXTINF:-1 tvg-id="" tvg-name="DISCOVERY World SD" tvg-logo="http://redworld.pro:8880/images/8cd8bfde4f3359975e55ffef11065a50.png" group-title="⭐️ CULTURA",DISCOVERY World SD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318612
+#EXTINF:-1 tvg-id="" tvg-name="DISCOVERY World HD" tvg-logo="http://redworld.pro:8880/images/8cd8bfde4f3359975e55ffef11065a50.png" group-title="⭐️ CULTURA",DISCOVERY World HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318613
+#EXTINF:-1 tvg-id="" tvg-name="Discovery Familia FHD" tvg-logo="http://redworld.pro:8880/images/b7664c449eaa2b5da315f071351f39e7.png" group-title="⭐️ CULTURA",Discovery Familia FHD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318614
+#EXTINF:-1 tvg-id="" tvg-name="Discovery Familia HD" tvg-logo="http://redworld.pro:8880/images/b7664c449eaa2b5da315f071351f39e7.png" group-title="⭐️ CULTURA",Discovery Familia HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318615
+#EXTINF:-1 tvg-id="" tvg-name="EL GOURMET" tvg-logo="http://redworld.pro:8880/images/0e8398e1532318e98927555bc11e0ae1.png" group-title="⭐️ CULTURA",EL GOURMET
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318616
+#EXTINF:-1 tvg-id="History.pe" tvg-name="HISTORY HD" tvg-logo="http://redworld.pro:8880/images/808e99e2aae48ae0129de1185b97dccb.png" group-title="⭐️ CULTURA",HISTORY HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318617
+#EXTINF:-1 tvg-id="History2.pe" tvg-name="History 2 " tvg-logo="http://redworld.pro:8880/images/f9038ee8520c9eef7f168d1877caac8b.png" group-title="⭐️ CULTURA",History 2
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318618
+#EXTINF:-1 tvg-id="History2.pe" tvg-name="History 2 HD" tvg-logo="http://redworld.pro:8880/images/f9038ee8520c9eef7f168d1877caac8b.png" group-title="⭐️ CULTURA",History 2 HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318619
+#EXTINF:-1 tvg-id="" tvg-name="NATIONAL Geographic FHD" tvg-logo="http://redworld.pro:8880/images/7a9d62e859726cf7afa212b05ad79f7f.png" group-title="⭐️ CULTURA",NATIONAL Geographic FHD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318620
+#EXTINF:-1 tvg-id="" tvg-name="NAT Geo HD" tvg-logo="http://redworld.pro:8880/images/7a9d62e859726cf7afa212b05ad79f7f.png" group-title="⭐️ CULTURA",NAT Geo HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318621
+#EXTINF:-1 tvg-id="" tvg-name="NATGEO WILD HD" tvg-logo="http://redworld.pro:8880/images/2f41b8dc685ce23fc3d65959372de685.png" group-title="⭐️ CULTURA",NATGEO WILD HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318623
+#EXTINF:-1 tvg-id="" tvg-name="ANIMAL Planet HD." tvg-logo="http://redworld.pro:8880/images/eeafe792a8138ea5239764881a44e50e.png" group-title="⭐️ CULTURA",ANIMAL Planet HD.
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318624
+#EXTINF:-1 tvg-id="" tvg-name="E! Entretainment FHD" tvg-logo="http://redworld.pro:8880/images/d2013b7cc5f536c09e36980ede2b5ebc.png" group-title="⭐️ CULTURA",E! Entretainment FHD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318626
+#EXTINF:-1 tvg-id="" tvg-name="E! Entretainment HD" tvg-logo="http://redworld.pro:8880/images/d2013b7cc5f536c09e36980ede2b5ebc.png" group-title="⭐️ CULTURA",E! Entretainment HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318627
+#EXTINF:-1 tvg-id="" tvg-name="CANAL COCINA HD." tvg-logo="http://redworld.pro:8880/images/faced036eb73698d8950976cac5c442d.png" group-title="⭐️ CULTURA",CANAL COCINA HD.
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318628
+#EXTINF:-1 tvg-id="" tvg-name="TLC FHD" tvg-logo="http://redworld.pro:8880/images/aa27e0d625d7cc2eee7e173496c16fca.png" group-title="⭐️ CULTURA",TLC FHD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318629
+#EXTINF:-1 tvg-id="" tvg-name="TLC HD" tvg-logo="http://redworld.pro:8880/images/aa27e0d625d7cc2eee7e173496c16fca.png" group-title="⭐️ CULTURA",TLC HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318630
+#EXTINF:-1 tvg-id="" tvg-name="HGTV FHD" tvg-logo="http://redworld.pro:8880/images/8361b0aa15c201aba7d73d0b6193b6c7.png" group-title="⭐️ CULTURA",HGTV FHD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318631
+#EXTINF:-1 tvg-id="" tvg-name="LIFETIME HD" tvg-logo="http://redworld.pro:8880/images/4e6a938c29df214ad11bef9ee275cd76.png" group-title="⭐️ CULTURA",LIFETIME HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/318632
+#EXTINF:-1 tvg-id="" tvg-name="KIDS | BABY FIRST" tvg-logo="http://redworld.pro:8880/images/3b3a23dcc02f40038cfc34d8c58c313f.png" group-title="⭐️ Infantiles",KIDS | BABY FIRST
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/321968
+#EXTINF:-1 tvg-id="" tvg-name="KIDS | BABY TV" tvg-logo="http://redworld.pro:8880/images/637e562dbf5fd427957eb42dcd838054.png" group-title="⭐️ Infantiles",KIDS | BABY TV
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/321969
+#EXTINF:-1 tvg-id="" tvg-name="KIDS | CARTOON NETWORK | OPC2" tvg-logo="http://redworld.pro:8880/images/c67ab172eb643fea7070b0a3514f4459.png" group-title="⭐️ Infantiles",KIDS | CARTOON NETWORK | OPC2
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/321973
+#EXTINF:-1 tvg-id="" tvg-name="KIDS | CARTOON NETWORK" tvg-logo="http://redworld.pro:8880/images/c67ab172eb643fea7070b0a3514f4459.png" group-title="⭐️ Infantiles",KIDS | CARTOON NETWORK
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/321974
+#EXTINF:-1 tvg-id="" tvg-name="KIDS | CARTOONITO" tvg-logo="http://redworld.pro:8880/images/be37514186ea0e9928444db722509319.png" group-title="⭐️ Infantiles",KIDS | CARTOONITO
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/321975
+#EXTINF:-1 tvg-id="" tvg-name="KIDS | DISCOVERY KIDS" tvg-logo="http://redworld.pro:8880/images/9616dc155d8f864cd00ba06266376b5e.png" group-title="⭐️ Infantiles",KIDS | DISCOVERY KIDS
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/321976
+#EXTINF:-1 tvg-id="" tvg-name="KIDS | DISNEY CHANNEL" tvg-logo="http://redworld.pro:8880/images/0b2fee0f1f24fda95232e562d8326026.png" group-title="⭐️ Infantiles",KIDS | DISNEY CHANNEL
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/321978
+#EXTINF:-1 tvg-id="" tvg-name="KIDS | DISNEY JUNIOR" tvg-logo="http://redworld.pro:8880/images/69ee308370f166ebd34ee64895d1c9a8.png" group-title="⭐️ Infantiles",KIDS | DISNEY JUNIOR
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/321981
+#EXTINF:-1 tvg-id="" tvg-name="KIDS | NICK" tvg-logo="http://redworld.pro:8880/images/3b20a55bd85dcd304da6ac81000a30c7.png" group-title="⭐️ Infantiles",KIDS | NICK
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/321982
+#EXTINF:-1 tvg-id="" tvg-name="KIDS | NICKELODEON" tvg-logo="http://redworld.pro:8880/images/5a9d428b61a7941c724e7c16747e0390.png" group-title="⭐️ Infantiles",KIDS | NICKELODEON
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/321984
+#EXTINF:-1 tvg-id="" tvg-name="KIDS | NICKTOONS" tvg-logo="http://redworld.pro:8880/images/2c60790cd9470a61cf2e3c265f9589de.png" group-title="⭐️ Infantiles",KIDS | NICKTOONS
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/321985
+#EXTINF:-1 tvg-id="" tvg-name="Love Planet HD" tvg-logo="http://redworld.pro:8880/images/ad4943043f51563d2cf7eddc96b98be1.png" group-title="⭐️ CULTURA",Love Planet HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/348755
+#EXTINF:-1 tvg-id="" tvg-name="GARAGE TV HD" tvg-logo="http://redworld.pro:8880/images/56bb2effa7b012aab23daf887370e1e1.png" group-title="⭐️ CULTURA",GARAGE TV HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/362420
+#EXTINF:-1 tvg-id="" tvg-name="Videos de Paisajes 4K" tvg-logo="http://redworld.pro:8880/images/952787d87ff3e80bc242faf3452059e1.png" group-title="⭐️ CULTURA",Videos de Paisajes 4K
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/364245
+#EXTINF:-1 tvg-id="" tvg-name="D3PORTES | Ŕ3@L M@DRÏD TV" tvg-logo="http://redworld.pro:8880/images/2fd2e62cfdb93942bf08272680866ceb.png" group-title="⭐️ DƏPORTE VIP",D3PORTES | Ŕ3@L M@DRÏD TV
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/394445
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | CLARO SPORTS" tvg-logo="" group-title="⭐️ DƏPORTE VIP",DEPORTES | CLARO SPORTS
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/407036
 #EXTINF:-1 tvg-id="" tvg-name="CINE  | A&E FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQjV-u5jw-GdHMR9tjbDC9wxDWINx3jLXRUQ&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE  | A&E FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414453
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414453
 #EXTINF:-1 tvg-id="" tvg-name="CINE  | A&E HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQjV-u5jw-GdHMR9tjbDC9wxDWINx3jLXRUQ&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE  | A&E HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414454
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414454
 #EXTINF:-1 tvg-id="" tvg-name="CINE  | A&E SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQjV-u5jw-GdHMR9tjbDC9wxDWINx3jLXRUQ&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE  | A&E SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414455
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414455
 #EXTINF:-1 tvg-id="" tvg-name="CINE  | *C1NEMAX* HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkxewXQeeMqr4uYRrmID1JE2WWx2qoDvNddQ&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE  | *C1NEMAX* HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414457
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414457
 #EXTINF:-1 tvg-id="" tvg-name="CINE  | *C1NEMAX* SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkxewXQeeMqr4uYRrmID1JE2WWx2qoDvNddQ&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE  | *C1NEMAX* SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414458
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414458
 #EXTINF:-1 tvg-id="" tvg-name="CINE | STAR CHANNEL  HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpUSC9j9pUIeP68TVeZFtU_BOi3beYtu0zAw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | STAR CHANNEL  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414459
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414459
 #EXTINF:-1 tvg-id="" tvg-name="CINE | STAR CHANNEL  SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpUSC9j9pUIeP68TVeZFtU_BOi3beYtu0zAw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | STAR CHANNEL  SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414460
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414460
 #EXTINF:-1 tvg-id="" tvg-name="CINE  | *HBÖ* 2 HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8lZ0U7y83aMg8VcxHcLWyr8k4eK-vVK_TPw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE  | *HBÖ* 2 HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414462
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414462
 #EXTINF:-1 tvg-id="" tvg-name="CINE | *HBÖ* 2 SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8lZ0U7y83aMg8VcxHcLWyr8k4eK-vVK_TPw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | *HBÖ* 2 SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414463
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414463
 #EXTINF:-1 tvg-id="" tvg-name="CINE | STAR CHANNEL  FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpUSC9j9pUIeP68TVeZFtU_BOi3beYtu0zAw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | STAR CHANNEL  FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414464
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414464
 #EXTINF:-1 tvg-id="" tvg-name="CINE | *HBO* F@MILY  HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA4WC_DVLdy7I-kMJhcpStbdiBOe00hos0AA&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | *HBO* F@MILY  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414465
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414465
 #EXTINF:-1 tvg-id="" tvg-name="CINE | *HBO* F@MILY  SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA4WC_DVLdy7I-kMJhcpStbdiBOe00hos0AA&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | *HBO* F@MILY  SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414466
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414466
 #EXTINF:-1 tvg-id="" tvg-name="CINE | *HBO* HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUtbjnKsynnCmmwzyL97_V5eVimvq_l9nScg&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | *HBO* HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414468
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414468
 #EXTINF:-1 tvg-id="" tvg-name="CINE  | *HBO* SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUtbjnKsynnCmmwzyL97_V5eVimvq_l9nScg&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE  | *HBO* SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414469
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414469
 #EXTINF:-1 tvg-id="" tvg-name="CINE  | *HBO* POP  HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUrjaVQ_67o7XMUHTLunr3MrCREj8_Mfn_-g&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE  | *HBO* POP  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414471
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414471
 #EXTINF:-1 tvg-id="" tvg-name="CINE  | *HBO* POP SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUrjaVQ_67o7XMUHTLunr3MrCREj8_Mfn_-g&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE  | *HBO* POP SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414472
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414472
 #EXTINF:-1 tvg-id="" tvg-name="CINE  | TNT  FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREx6xag_8jHvToBLGBqlHfK3Y6oMAi5cqnLw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE  | TNT  FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414473
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414473
 #EXTINF:-1 tvg-id="" tvg-name="CINE  | TNT  HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREx6xag_8jHvToBLGBqlHfK3Y6oMAi5cqnLw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE  | TNT  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414474
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414474
 #EXTINF:-1 tvg-id="" tvg-name="CINE  | TNT  SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREx6xag_8jHvToBLGBqlHfK3Y6oMAi5cqnLw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE  | TNT  SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414475
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414475
 #EXTINF:-1 tvg-id="" tvg-name="CINE  | TNT SERIES  FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS412_DLemKjbNR286Bqh-5--md7yWlo7F9sw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE  | TNT SERIES  FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414476
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414476
 #EXTINF:-1 tvg-id="" tvg-name="CINE | TNT SERIES  HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS412_DLemKjbNR286Bqh-5--md7yWlo7F9sw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | TNT SERIES  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414477
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414477
 #EXTINF:-1 tvg-id="" tvg-name="CINE |  TNT SERIES  SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS412_DLemKjbNR286Bqh-5--md7yWlo7F9sw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE |  TNT SERIES  SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414478
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414478
 #EXTINF:-1 tvg-id="" tvg-name="CINE | CINECANAL  FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfY_V6-B2g_kEqycv8FnYBzZZca7242M3uLw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | CINECANAL  FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414479
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414479
 #EXTINF:-1 tvg-id="" tvg-name="CINE | CINECANAL  HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfY_V6-B2g_kEqycv8FnYBzZZca7242M3uLw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | CINECANAL  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414480
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414480
 #EXTINF:-1 tvg-id="" tvg-name="CINE | CINECANAL  SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfY_V6-B2g_kEqycv8FnYBzZZca7242M3uLw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | CINECANAL  SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414481
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414481
 #EXTINF:-1 tvg-id="" tvg-name="CINE | AXN  HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDesPfe1ZHPS8Manr4Gh-S3dP6FhllqYVjg&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | AXN  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414483
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414483
 #EXTINF:-1 tvg-id="" tvg-name="CINE | AXN  SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDesPfe1ZHPS8Manr4Gh-S3dP6FhllqYVjg&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | AXN  SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414484
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414484
 #EXTINF:-1 tvg-id="" tvg-name="CINE | WARNER  FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHNIfv7VLUeS2w8eoF4b-k5psDxmpHYqkxew&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | WARNER  FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414485
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414485
 #EXTINF:-1 tvg-id="" tvg-name="CINE | WARNER  HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHNIfv7VLUeS2w8eoF4b-k5psDxmpHYqkxew&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | WARNER  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414486
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414486
 #EXTINF:-1 tvg-id="" tvg-name="CINE | SONY  FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUM5s02mVJaBsX8VO8xATB9ivrYta859D9g&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | SONY  FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414488
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414488
 #EXTINF:-1 tvg-id="" tvg-name="CINE | SONY  HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUM5s02mVJaBsX8VO8xATB9ivrYta859D9g&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | SONY  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414489
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414489
 #EXTINF:-1 tvg-id="" tvg-name="CINE | SONY  SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUM5s02mVJaBsX8VO8xATB9ivrYta859D9g&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | SONY  SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414490
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414490
 #EXTINF:-1 tvg-id="" tvg-name="CINE | TCM  FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5C2mxnbZhloXPJ9g7G5nwhyJmJNq06VlqpQ&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | TCM  FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414491
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414491
 #EXTINF:-1 tvg-id="" tvg-name="CINE | TCM  HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5C2mxnbZhloXPJ9g7G5nwhyJmJNq06VlqpQ&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | TCM  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414492
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414492
 #EXTINF:-1 tvg-id="" tvg-name="CINE |  TCM  SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5C2mxnbZhloXPJ9g7G5nwhyJmJNq06VlqpQ&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE |  TCM  SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414493
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414493
 #EXTINF:-1 tvg-id="" tvg-name="CINE | UNIVERSAL CHANEL  FHD" tvg-logo="http://127.0.0.1/" group-title="⭐️ CINE PREMIUM",CINE | UNIVERSAL CHANEL  FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414494
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414494
 #EXTINF:-1 tvg-id="" tvg-name="CINE | UNIVERSAL CHANEL  HD" tvg-logo="http://127.0.0.1/" group-title="⭐️ CINE PREMIUM",CINE | UNIVERSAL CHANEL  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414495
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414495
 #EXTINF:-1 tvg-id="" tvg-name="CINE | UNIVERSAL CHANEL  SD" tvg-logo="http://127.0.0.1/" group-title="⭐️ CINE PREMIUM",CINE | UNIVERSAL CHANEL  SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414496
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414496
 #EXTINF:-1 tvg-id="" tvg-name="CINE | FX  FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJq1YUknstlcWYR_a39Pbh-VKNQP_noF_rDg&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | FX  FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414497
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414497
 #EXTINF:-1 tvg-id="" tvg-name="CINE | FX  HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJq1YUknstlcWYR_a39Pbh-VKNQP_noF_rDg&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | FX  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414498
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414498
 #EXTINF:-1 tvg-id="" tvg-name="CINE | FX  SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJq1YUknstlcWYR_a39Pbh-VKNQP_noF_rDg&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | FX  SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414499
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414499
 #EXTINF:-1 tvg-id="" tvg-name="CINE | SPACE CHANEL  FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaPteTsp2zPkNGIK2aC8M1_bKG7FUZBaFHrg&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | SPACE CHANEL  FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414500
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414500
 #EXTINF:-1 tvg-id="" tvg-name="CINE | SPACE CHANEL  HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaPteTsp2zPkNGIK2aC8M1_bKG7FUZBaFHrg&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | SPACE CHANEL  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414501
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414501
 #EXTINF:-1 tvg-id="" tvg-name="CINE | SPACE CHANEL  SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaPteTsp2zPkNGIK2aC8M1_bKG7FUZBaFHrg&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | SPACE CHANEL  SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414502
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414502
 #EXTINF:-1 tvg-id="" tvg-name="CINE | AMC  FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRPXbkxZVQKnNqZ0tcPBhMhdHUgLcP3Kw0fw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | AMC  FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414503
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414503
 #EXTINF:-1 tvg-id="" tvg-name="CINE | AMC HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRPXbkxZVQKnNqZ0tcPBhMhdHUgLcP3Kw0fw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | AMC HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414504
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414504
 #EXTINF:-1 tvg-id="" tvg-name="CINE | AMC  SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRPXbkxZVQKnNqZ0tcPBhMhdHUgLcP3Kw0fw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | AMC  SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414505
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414505
 #EXTINF:-1 tvg-id="" tvg-name="CINE | GOLDEN  FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxytfwU0t7hq8tWkwnq1tr0_J-NnCk_nV1Ow&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | GOLDEN  FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414506
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414506
 #EXTINF:-1 tvg-id="" tvg-name="CINE | GOLDEN  HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxytfwU0t7hq8tWkwnq1tr0_J-NnCk_nV1Ow&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | GOLDEN  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414507
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414507
 #EXTINF:-1 tvg-id="" tvg-name="CINE | GOLDEN  SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxytfwU0t7hq8tWkwnq1tr0_J-NnCk_nV1Ow&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | GOLDEN  SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414508
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414508
 #EXTINF:-1 tvg-id="" tvg-name="CINE | GOLDEN EDG  FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw_MXCN8YTJUs_t4zTDTivh73cIHqA2A3Drw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | GOLDEN EDG  FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414509
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414509
 #EXTINF:-1 tvg-id="" tvg-name="CINE | GOLDEN EDG  HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw_MXCN8YTJUs_t4zTDTivh73cIHqA2A3Drw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | GOLDEN EDG  HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414510
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414510
 #EXTINF:-1 tvg-id="" tvg-name="CINE | GOLDEN EDG  SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw_MXCN8YTJUs_t4zTDTivh73cIHqA2A3Drw&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | GOLDEN EDG  SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414511
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414511
 #EXTINF:-1 tvg-id="" tvg-name="CINE | PARAMOUNT CHANEL FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoLcVhN7sW34YgTU8sCI6EtLwRAeGUp9-h_A&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | PARAMOUNT CHANEL FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414512
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414512
 #EXTINF:-1 tvg-id="" tvg-name="CINE | PARAMOUNT CHANEL HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoLcVhN7sW34YgTU8sCI6EtLwRAeGUp9-h_A&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | PARAMOUNT CHANEL HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414513
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414513
 #EXTINF:-1 tvg-id="" tvg-name="CINE | PARAMOUNT CHANEL SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoLcVhN7sW34YgTU8sCI6EtLwRAeGUp9-h_A&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | PARAMOUNT CHANEL SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414514
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414514
 #EXTINF:-1 tvg-id="" tvg-name="CINE GOLDEN PLUS FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEUkFenrLxGFpEKOzzTEl2crLHBNePJehWFQ&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE GOLDEN PLUS FHD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414515
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414515
 #EXTINF:-1 tvg-id="" tvg-name="CINE | GOLDEN PLUS HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEUkFenrLxGFpEKOzzTEl2crLHBNePJehWFQ&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | GOLDEN PLUS HD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414516
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414516
 #EXTINF:-1 tvg-id="" tvg-name="CINE | GOLDEN PLUS SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEUkFenrLxGFpEKOzzTEl2crLHBNePJehWFQ&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | GOLDEN PLUS SD
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414517
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414517
 #EXTINF:-1 tvg-id="" tvg-name="CINE | CINE LATINO" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYLWKA2w7UzyAaT3-EA29E7bvcPQ9SsvHoMQ&usqp=CAU" group-title="⭐️ CINE PREMIUM",CINE | CINE LATINO
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414518
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414518
 #EXTINF:-1 tvg-id="" tvg-name="P | Universal Comedy" tvg-logo="http://daleplay.club:8080/images/10960c1507792b39f21c3a1066a426a9.png" group-title="⭐️ CINE PREMIUM",P | Universal Comedy
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414519
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414519
 #EXTINF:-1 tvg-id="" tvg-name="P | Universal Crime Este" tvg-logo="http://goldfull.pro:8880/images/5f9bdadd92cc63bf5567b22706b25391.png" group-title="⭐️ CINE PREMIUM",P | Universal Crime Este
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414520
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414520
 #EXTINF:-1 tvg-id="" tvg-name="P | Universal Premier Este" tvg-logo="http://redworld.pro:8880/images/f8ad17fe253c743c4d755af0d8675f77.png" group-title="⭐️ CINE PREMIUM",P | Universal Premier Este
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414521
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414521
 #EXTINF:-1 tvg-id="" tvg-name="P | Universal Reality" tvg-logo="http://daleplay.club:8080/images/b5cd18267789d07c58596bcae4f0055f.png" group-title="⭐️ CINE PREMIUM",P | Universal Reality
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414522
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414522
 #EXTINF:-1 tvg-id="" tvg-name="P | Universal Cinema" tvg-logo="http://daleplay.club:8080/images/2f9119fd3e55f3968f4c683b2e9916d9.png" group-title="⭐️ CINE PREMIUM",P | Universal Cinema
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414523
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414523
 #EXTINF:-1 tvg-id="" tvg-name="P | Universal Crime Oeste" tvg-logo="http://daleplay.club:8080/images/ddab0de6d960b6f7ce2b83fcf5c7392d.png" group-title="⭐️ CINE PREMIUM",P | Universal Crime Oeste
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414524
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414524
 #EXTINF:-1 tvg-id="" tvg-name="P | Universal Premier Oeste" tvg-logo="http://todoen1.xyz:8080/Altoquetv83/ALt3Q34Re9372/149705" group-title="⭐️ CINE PREMIUM",P | Universal Premier Oeste
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/414525
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/414525
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | $.Š.P.N 5" tvg-logo="http://redworld.pro:8880/images/4d22fe6b127ecce043d9482a792b020f.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | $.Š.P.N 5
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/418591
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | *ESP*N 6" tvg-logo="" group-title="⭐️ DƏPORTE VIP",DEPORTES | *ESP*N 6
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/418592
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | *ESP*N 7" tvg-logo="" group-title="⭐️ DƏPORTE VIP",DEPORTES | *ESP*N 7
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/418593
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | Ty€ 5PORT5" tvg-logo="http://redworld.pro:8880/images/c5509c4b9b2f0749da4aed3a5ae3d7c3.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | Ty€ 5PORT5
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/443250
+#EXTINF:-1 tvg-id="" tvg-name="*$ports Fight" tvg-logo="http://redworld.pro:8880/images/e76bff944d6d8d9b979b0938aeaf7a49.png" group-title="⭐️ DƏPORTE VIP",*$ports Fight
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/443359
+#EXTINF:-1 tvg-id="" tvg-name="3UR0$P0RT$ 1 HD" tvg-logo="http://redworld.pro:8880/images/74e323da1aaf5d3a48ba061e0aef9b2d.png" group-title="⭐️ DƏPORTE VIP",3UR0$P0RT$ 1 HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/447768
+#EXTINF:-1 tvg-id="" tvg-name="3UR0$P0RT$ 2 HD" tvg-logo="http://redworld.pro:8880/images/801ac82b4df21e08f0f71db1affb0f89.png" group-title="⭐️ DƏPORTE VIP",3UR0$P0RT$ 2 HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/447769
 #EXTINF:-1 tvg-id="" tvg-name="CINE PARAMOUNT+" tvg-logo="http://redworld.pro:8880/images/29938cae6727790a47491882e556fce7.png" group-title="⭐️ CINE PREMIUM",CINE PARAMOUNT+
-http://redworld.pro:8880/Estrella123/gGmhcPuMCuRD/449493
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/449493
+#EXTINF:-1 tvg-id="" tvg-name="RED BULL TV" tvg-logo="http://redworld.pro:8880/images/638254815f3d64d903e8c9fccaec4d1a.png" group-title="⭐️ DƏPORTE VIP",RED BULL TV
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/456701
+#EXTINF:-1 tvg-id="lch2775" tvg-name="D3PØRT3S | [$ŠPN-1]" tvg-logo="http://redworld.pro:8880/images/669465c0bb8b14bd996ebeb2e1b3d0da.png" group-title="⭐️ DƏPORTE VIP",D3PØRT3S | [$ŠPN-1]
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/514017
+#EXTINF:-1 tvg-id="" tvg-name="D3PØRTĘS | [$ŠPN-2]" tvg-logo="http://redworld.pro:8880/images/06f8b949029a4cf1f5b2021eed2e8159.png" group-title="⭐️ DƏPORTE VIP",D3PØRTĘS | [$ŠPN-2]
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/514018
+#EXTINF:-1 tvg-id="" tvg-name="DEPORTES | ÑBÆ" tvg-logo="http://redworld.pro:8880/images/cb9ba08fe282681f4ae34fdc866f0c41.png" group-title="⭐️ DƏPORTE VIP",DEPORTES | ÑBÆ
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/514112
+#EXTINF:-1 tvg-id="lch2775" tvg-name="PE*| E$PN 1 HD" tvg-logo="http://redworld.pro:8880/images/669465c0bb8b14bd996ebeb2e1b3d0da.png" group-title="⭐️ DƏPORTES PE",PE*| E$PN 1 HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533395
+#EXTINF:-1 tvg-id="lch3952" tvg-name="PE | 3$PN 2 HD" tvg-logo="http://redworld.pro:8880/images/06f8b949029a4cf1f5b2021eed2e8159.png" group-title="⭐️ DƏPORTES PE",PE | 3$PN 2 HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533397
+#EXTINF:-1 tvg-id="lch2776" tvg-name="PE*| €SPN* 3 HD" tvg-logo="http://redworld.pro:8880/images/65b140dd9ebf0ec2b2a8c1565fa90080.png" group-title="⭐️ DƏPORTES PE",PE*| €SPN* 3 HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533398
+#EXTINF:-1 tvg-id="lch2813" tvg-name="PE*| 3$PN 4 HD" tvg-logo="http://redworld.pro:8880/images/9c83acb71e6f939bae03936d2c827d7c.png" group-title="⭐️ DƏPORTES PE",PE*| 3$PN 4 HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533399
+#EXTINF:-1 tvg-id="lch2339" tvg-name="PE*| 3$PN 5 HD" tvg-logo="http://redworld.pro:8880/images/4d22fe6b127ecce043d9482a792b020f.png" group-title="⭐️ DƏPORTES PE",PE*| 3$PN 5 HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533400
+#EXTINF:-1 tvg-id="lch2341" tvg-name="PE*| 3$PN 6 HD" tvg-logo="http://redworld.pro:8880/images/fd5601481f6a11427ecbf909ecdaffb5.png" group-title="⭐️ DƏPORTES PE",PE*| 3$PN 6 HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533401
+#EXTINF:-1 tvg-id="lch2340" tvg-name="PE*| 3$PN 7 HD" tvg-logo="http://redworld.pro:8880/images/6f2d6bdb1f6a118e736d2126df503e12.png" group-title="⭐️ DƏPORTES PE",PE*| 3$PN 7 HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533402
+#EXTINF:-1 tvg-id="lch7217" tvg-name="PE | *LIGA 1 MAX HD" tvg-logo="http://redworld.pro:8880/images/32e8419a7ecb8f918c70fdadf783e3d8.png" group-title="⭐️ DƏPORTES PE",PE | *LIGA 1 MAX HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533403
+#EXTINF:-1 tvg-id="lch7217" tvg-name="PE | *LIGA 1 MAX SD" tvg-logo="http://redworld.pro:8880/images/32e8419a7ecb8f918c70fdadf783e3d8.png" group-title="⭐️ DƏPORTES PE",PE | *LIGA 1 MAX SD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533404
+#EXTINF:-1 tvg-id="lch7216" tvg-name="PE | *LIGA 1" tvg-logo="http://redworld.pro:8880/images/32e8419a7ecb8f918c70fdadf783e3d8.png" group-title="⭐️ DƏPORTES PE",PE | *LIGA 1
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533405
+#EXTINF:-1 tvg-id="DIRECTVSports.pe" tvg-name="PE | D GAMES 1" tvg-logo="http://redworld.pro:8880/images/c8e7a6a4e47e499e60e09efbf6347eee.png" group-title="⭐️ DƏPORTES PE",PE | D GAMES 1
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533406
+#EXTINF:-1 tvg-id="DIRECTVSports2.pe" tvg-name="PE | D GAMES 2" tvg-logo="http://redworld.pro:8880/images/c8e7a6a4e47e499e60e09efbf6347eee.png" group-title="⭐️ DƏPORTES PE",PE | D GAMES 2
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533407
+#EXTINF:-1 tvg-id="DIRECTVSports+.pe" tvg-name="PE |  D GAMES +" tvg-logo="http://redworld.pro:8880/images/c8e7a6a4e47e499e60e09efbf6347eee.png" group-title="⭐️ DƏPORTES PE",PE |  D GAMES +
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533408
+#EXTINF:-1 tvg-id="lch3298" tvg-name="PE| MOVISTAR DEPORTES HD" tvg-logo="http://redworld.pro:8880/images/d433e275a9107f856d8c228da5603b8a.png" group-title="⭐️ DƏPORTES PE",PE| MOVISTAR DEPORTES HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533409
+#EXTINF:-1 tvg-id="lch3298" tvg-name="PE| MOVISTAR DEPORTES SD" tvg-logo="http://redworld.pro:8880/images/d433e275a9107f856d8c228da5603b8a.png" group-title="⭐️ DƏPORTES PE",PE| MOVISTAR DEPORTES SD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/533410
+#EXTINF:-1 tvg-id="" tvg-name="MX | CANAL DE LAS ESTRELLAS OP2" tvg-logo="http://redworld.pro:8880/images/894a70f37f59ac14d4042b1dba66ea00.png" group-title="⭐️ México",MX | CANAL DE LAS ESTRELLAS OP2
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534766
+#EXTINF:-1 tvg-id="" tvg-name="MX | CANAL DE LAS ESTRELLAS OP3" tvg-logo="http://redworld.pro:8880/images/894a70f37f59ac14d4042b1dba66ea00.png" group-title="⭐️ México",MX | CANAL DE LAS ESTRELLAS OP3
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534767
+#EXTINF:-1 tvg-id="" tvg-name="MX | 01 • AZTECA UNO" tvg-logo="http://redworld.pro:8880/images/2487746efe0de2d02265bb9f5262e078.png" group-title="⭐️ México",MX | 01 • AZTECA UNO
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534768
+#EXTINF:-1 tvg-id="" tvg-name="MX | AZTECA UNO OP2" tvg-logo="http://redworld.pro:8880/images/2487746efe0de2d02265bb9f5262e078.png" group-title="⭐️ México",MX | AZTECA UNO OP2
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534769
+#EXTINF:-1 tvg-id="" tvg-name="MX | CANAL 5+ OP2" tvg-logo="http://redworld.pro:8880/images/7c5f138da031d6efef359be7ce395d48.png" group-title="⭐️ México",MX | CANAL 5+ OP2
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534770
+#EXTINF:-1 tvg-id="" tvg-name="MX | AZTECA 7 OP1" tvg-logo="http://redworld.pro:8880/images/3a1aedf21b4c1c6d640c5a73f62d0e86.png" group-title="⭐️ México",MX | AZTECA 7 OP1
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534771
+#EXTINF:-1 tvg-id="" tvg-name="MX | AZTECA 7 OP2" tvg-logo="http://redworld.pro:8880/images/3a1aedf21b4c1c6d640c5a73f62d0e86.png" group-title="⭐️ México",MX | AZTECA 7 OP2
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534772
+#EXTINF:-1 tvg-id="" tvg-name="MX | IMAGEN TELEVISION OP1" tvg-logo="http://redworld.pro:8880/images/3af751f9a6edfd18d62b3c62d537dd59.png" group-title="⭐️ México",MX | IMAGEN TELEVISION OP1
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534774
+#EXTINF:-1 tvg-id="" tvg-name="MX | FORO TV OP1" tvg-logo="http://redworld.pro:8880/images/d2873c21020a5f7e72e448bd7e65c205.png" group-title="⭐️ México",MX | FORO TV OP1
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534775
+#EXTINF:-1 tvg-id="" tvg-name="MX | ADN 40 OP1" tvg-logo="http://redworld.pro:8880/images/6b6a99ae85088bf784c9900899d8fcf9.png" group-title="⭐️ México",MX | ADN 40 OP1
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534776
+#EXTINF:-1 tvg-id="" tvg-name="MX | ADN 40 OP2" tvg-logo="http://redworld.pro:8880/images/6b6a99ae85088bf784c9900899d8fcf9.png" group-title="⭐️ México",MX | ADN 40 OP2
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534777
+#EXTINF:-1 tvg-id="" tvg-name="MX | NU9VE OP1" tvg-logo="http://redworld.pro:8880/images/f9beba5fea8179aef7979f7bce7557bd.png" group-title="⭐️ México",MX | NU9VE OP1
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534778
+#EXTINF:-1 tvg-id="" tvg-name="MX | DISTRITO COMEDIA OP1" tvg-logo="http://redworld.pro:8880/images/97d0f28a2d3f59df709661f256b9b753.png" group-title="⭐️ México",MX | DISTRITO COMEDIA OP1
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534779
+#EXTINF:-1 tvg-id="" tvg-name="MX | DISTRITO COMEDIA OP2" tvg-logo="http://redworld.pro:8880/images/97d0f28a2d3f59df709661f256b9b753.png" group-title="⭐️ México",MX | DISTRITO COMEDIA OP2
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534780
+#EXTINF:-1 tvg-id="" tvg-name="MX | DISTRITO COMEDIA OP3" tvg-logo="http://redworld.pro:8880/images/97d0f28a2d3f59df709661f256b9b753.png" group-title="⭐️ México",MX | DISTRITO COMEDIA OP3
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534781
+#EXTINF:-1 tvg-id="" tvg-name="MX | UNICABLE OP2" tvg-logo="http://redworld.pro:8880/images/81a8a63f9cfd3c8dbd9aa33b4949e5e0.png" group-title="⭐️ México",MX | UNICABLE OP2
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534783
+#EXTINF:-1 tvg-id="" tvg-name="MX | TL NOVELAS" tvg-logo="http://redworld.pro:8880/images/7cc78a42ec1ce6a16ea08ceacdc2dd25.png" group-title="⭐️ México",MX | TL NOVELAS
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534784
+#EXTINF:-1 tvg-id="" tvg-name="MX | AZ MUNDO" tvg-logo="http://redworld.pro:8880/images/8bebeb502027b3d6eb16e19f0ced3499.png" group-title="⭐️ México",MX | AZ MUNDO
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534785
+#EXTINF:-1 tvg-id="" tvg-name="MX | AZ CINEMA" tvg-logo="http://redworld.pro:8880/images/bd65143c223736937a94fd8c5aecb24b.png" group-title="⭐️ México",MX | AZ CINEMA
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534786
+#EXTINF:-1 tvg-id="" tvg-name="MX | AZ CLIC" tvg-logo="http://redworld.pro:8880/images/4e2199d5c23700b0b54c2383b522184a.png" group-title="⭐️ México",MX | AZ CLIC
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534787
+#EXTINF:-1 tvg-id="" tvg-name="MX | CANAL 6 MULTIMEDIOS" tvg-logo="http://redworld.pro:8880/images/d6f92508cfc42fd3861eabc720d3fe96.png" group-title="⭐️ México",MX | CANAL 6 MULTIMEDIOS
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534788
+#EXTINF:-1 tvg-id="" tvg-name="MX | CANAL ONCE NACIONAL" tvg-logo="http://redworld.pro:8880/images/c8dcb6cc1425cd9de310d8eda1bed231.png" group-title="⭐️ México",MX | CANAL ONCE NACIONAL
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534789
+#EXTINF:-1 tvg-id="" tvg-name="MX | HOLA TV" tvg-logo="http://redworld.pro:8880/images/8c719c19c406ff800c60130a594a21ec.png" group-title="⭐️ México",MX | HOLA TV
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534790
+#EXTINF:-1 tvg-id="" tvg-name="MX | A+" tvg-logo="http://redworld.pro:8880/images/ef7c9461a72bfa1407826f02088236ac.png" group-title="⭐️ México",MX | A+
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534791
+#EXTINF:-1 tvg-id="" tvg-name="MX | ALCARRIA TV" tvg-logo="http://redworld.pro:8880/images/a08b21c5f6983666a0a9e8ed7218f6bd.png" group-title="⭐️ México",MX | ALCARRIA TV
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534792
+#EXTINF:-1 tvg-id="" tvg-name="MX | CANAL 10 CANCUN" tvg-logo="http://redworld.pro:8880/images/78805a221a988e79ef3f42d7c5bfd418.png" group-title="⭐️ México",MX | CANAL 10 CANCUN
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534793
+#EXTINF:-1 tvg-id="" tvg-name="MX | MEXIQUENSE TV" tvg-logo="http://redworld.pro:8880/images/bf93b4d64ff458098826860e4b945fc1.png" group-title="⭐️ México",MX | MEXIQUENSE TV
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534794
+#EXTINF:-1 tvg-id="" tvg-name="MX | MAS CHIC" tvg-logo="http://redworld.pro:8880/images/ffa6d65bbbcdbda230c37ff5a49ca239.png" group-title="⭐️ México",MX | MAS CHIC
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534795
+#EXTINF:-1 tvg-id="" tvg-name="MX | MILENIO HD" tvg-logo="http://redworld.pro:8880/images/78805a221a988e79ef3f42d7c5bfd418.png" group-title="⭐️ México",MX | MILENIO HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534796
+#EXTINF:-1 tvg-id="" tvg-name="MX Teleformula" tvg-logo="http://redworld.pro:8880/images/45d417a5f2fad42a3f707b46b1331816.png" group-title="⭐️ México",MX Teleformula
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534797
+#EXTINF:-1 tvg-id="" tvg-name="MX | AZTECA CLIC" tvg-logo="http://redworld.pro:8880/images/78805a221a988e79ef3f42d7c5bfd418.png" group-title="⭐️ México",MX | AZTECA CLIC
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534798
+#EXTINF:-1 tvg-id="" tvg-name="MX | AZ MUNDO" tvg-logo="http://redworld.pro:8880/images/78805a221a988e79ef3f42d7c5bfd418.png" group-title="⭐️ México",MX | AZ MUNDO
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534799
+#EXTINF:-1 tvg-id="" tvg-name="MX | TELEVISA PUEBLA" tvg-logo="http://redworld.pro:8880/images/78805a221a988e79ef3f42d7c5bfd418.png" group-title="⭐️ México",MX | TELEVISA PUEBLA
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534800
+#EXTINF:-1 tvg-id="" tvg-name="MX | ALCANCE TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV4aAtmKnHL3mADcP2kkREw4srHVC0r3rYSA&s" group-title="⭐️ México",MX | ALCANCE TV
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534801
+#EXTINF:-1 tvg-id="" tvg-name="MX | AMX NOTICIAS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXYlyPSJrzQiDmNHeK306g-gZxRbEyNT6ITw&s" group-title="⭐️ México",MX | AMX NOTICIAS
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534802
+#EXTINF:-1 tvg-id="" tvg-name="MX | CANAL 44" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo0b0YaeJZsf3VYeAyKZUc-SLjZfeqaYQj-Q&s" group-title="⭐️ México",MX | CANAL 44
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534803
+#EXTINF:-1 tvg-id="" tvg-name="MX | ILCE TV" tvg-logo="http://redworld.pro:8880/images/78805a221a988e79ef3f42d7c5bfd418.png" group-title="⭐️ México",MX | ILCE TV
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534804
+#EXTINF:-1 tvg-id="" tvg-name="MX UNIVISION NOTICIAS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbUosVlbnYJnLvdrLrokjyX_M4lnNphe7_SQ&s" group-title="⭐️ México",MX UNIVISION NOTICIAS
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534805
+#EXTINF:-1 tvg-id="" tvg-name="MX | Canal 22 Jalisco YV" tvg-logo="http://redworld.pro:8880/images/69632d7f984236830410b1e3d8bc477b.png" group-title="⭐️ México",MX | Canal 22 Jalisco YV
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534806
+#EXTINF:-1 tvg-id="" tvg-name="8NTV (MX)" tvg-logo="http://redworld.pro:8880/images/78805a221a988e79ef3f42d7c5bfd418.png" group-title="⭐️ México",8NTV (MX)
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534807
+#EXTINF:-1 tvg-id="" tvg-name="ANTENA TV (MX)" tvg-logo="http://127.0.0.1/" group-title="⭐️ México",ANTENA TV (MX)
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534808
+#EXTINF:-1 tvg-id="" tvg-name="MX | 4 GUADALAJARA" tvg-logo="https://yt3.googleusercontent.com/phG3wG22EQSsOC2CfDu6hemmIUblbSOZFra0qoed_-l7DlshAtMxqb0S6mgkbXMsWNtem4hS=s900-c-k-c0x00ffffff-no-rj" group-title="⭐️ México",MX | 4 GUADALAJARA
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534809
+#EXTINF:-1 tvg-id="" tvg-name="MX: CINE MEXICANO" tvg-logo="http://redworld.pro:8880/images/78805a221a988e79ef3f42d7c5bfd418.png" group-title="⭐️ México",MX: CINE MEXICANO
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534810
+#EXTINF:-1 tvg-id="" tvg-name="a más +" tvg-logo="http://novabox.club:80/images/6v55_crIG8GngvBc5xCq9bJ8cGtWKemdPKiY1Bw6VmPDWgTGL4pNYK4aD-7RxczsBOwNLDGoH_F-984kivF5VC8o9JvNrhA9FAlPox9BKaE.jpg" group-title="⭐️ México",a más +
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534813
+#EXTINF:-1 tvg-id="" tvg-name="CANAL ONCE OP1" tvg-logo="http://redworld.pro:8880/images/1f93df939b2826d34d67fab28ff87b44.png" group-title="⭐️ México",CANAL ONCE OP1
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534814
+#EXTINF:-1 tvg-id="" tvg-name="MEX II AZTECA INTERNACIONAL HD (PP)" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs-Wfr_kRdeHrHpDDyPZ-O__nV2Vm57Wj6oqHovOzBlw&s" group-title="⭐️ México",MEX II AZTECA INTERNACIONAL HD (PP)
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534815
+#EXTINF:-1 tvg-id="" tvg-name="MX | UMTV | MX" tvg-logo="http://redworld.pro:8880/images/3ae6ba11d11a7b950d343f573b354b2a.png" group-title="⭐️ México",MX | UMTV | MX
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534816
+#EXTINF:-1 tvg-id="" tvg-name="MX | Bandamax Hd®" tvg-logo="http://redworld.pro:8880/images/3ae6ba11d11a7b950d343f573b354b2a.png" group-title="⭐️ México",MX | Bandamax Hd®
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534817
+#EXTINF:-1 tvg-id="" tvg-name="MX | AZ Mundo Hd®" tvg-logo="http://redworld.pro:8880/images/3ae6ba11d11a7b950d343f573b354b2a.png" group-title="⭐️ México",MX | AZ Mundo Hd®
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534818
+#EXTINF:-1 tvg-id="" tvg-name="SYFY HD" tvg-logo="http://redworld.pro:8880/images/4819f8c63a16d13f9f52cbe5ea3be3b1.png" group-title="⭐️ México",SYFY HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534819
+#EXTINF:-1 tvg-id="" tvg-name="MX | E! ENTERTAINMENT HD" tvg-logo="http://redworld.pro:8880/images/13e13f8201410be8b597098322cbf3eb.png" group-title="⭐️ México",MX | E! ENTERTAINMENT HD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534820
+#EXTINF:-1 tvg-id="" tvg-name="MX |* DISCOVERY TLC FHD" tvg-logo="http://redworld.pro:8880/images/a08e51db65905e05929c38ec7af217f1.png" group-title="⭐️ México",MX |* DISCOVERY TLC FHD
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534822
+#EXTINF:-1 tvg-id="" tvg-name="CINEMAX" tvg-logo="http://redworld.pro:8880/images/8d977b8d465c9db48d7ece30651d2605.png" group-title="⭐️ México",CINEMAX
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534823
+#EXTINF:-1 tvg-id="" tvg-name="Coral TV (480p)" tvg-logo="http://onerestream.us:80/images/YNKPF0uS6GOfopdjzrfmIHvBimC8Hdfh4mjE8mP6rmNugQKXWV8dPh_ICEZ4ZF5S.png" group-title="⭐️ México",Coral TV (480p)
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534825
+#EXTINF:-1 tvg-id="" tvg-name="Conecta TV" tvg-logo="http://onerestream.us:80/images/5yO0q3KiCJJhxVmvmdRMb7sfdzI5SlxnY0IfVfXXJW0.png" group-title="⭐️ México",Conecta TV
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534826
+#EXTINF:-1 tvg-id="" tvg-name="Classic Arts Showcase" tvg-logo="http://onerestream.us:80/images/5yO0q3KiCJJhxVmvmdRMbyCu7zjBncI-MTQR5K1CEk4.png" group-title="⭐️ México",Classic Arts Showcase
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534828
+#EXTINF:-1 tvg-id="" tvg-name="Tele Yucatán" tvg-logo="https://yt3.googleusercontent.com/7ShsIkAKLC-HyoKQwSKVaujG6IN8cOrCxfeEUFnUGtoVRZVLKuhgH43UlZG2oKE6FDHawAptJCE=s900-c-k-c0x00ffffff-no-rj" group-title="⭐️ México",Tele Yucatán
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534830
+#EXTINF:-1 tvg-id="" tvg-name="TVP MAZATLAN" tvg-logo="http://redworld.pro:8880/images/c4ca4238a0b923820dcc509a6f75849b.png" group-title="⭐️ México",TVP MAZATLAN
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534832
+#EXTINF:-1 tvg-id="" tvg-name="TELEVISA MONTERREY" tvg-logo="http://127.0.0.1/" group-title="⭐️ México",TELEVISA MONTERREY
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534834
+#EXTINF:-1 tvg-id="" tvg-name="MULTIMEDIOS JUAREZ" tvg-logo="http://127.0.0.1/" group-title="⭐️ México",MULTIMEDIOS JUAREZ
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534837
+#EXTINF:-1 tvg-id="" tvg-name="MULTIMEDIOS GUADALAJARA" tvg-logo="http://127.0.0.1/" group-title="⭐️ México",MULTIMEDIOS GUADALAJARA
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534838
+#EXTINF:-1 tvg-id="" tvg-name="AZTECA INTERNACIONAL" tvg-logo="http://127.0.0.1/" group-title="⭐️ México",AZTECA INTERNACIONAL
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534843
+#EXTINF:-1 tvg-id="" tvg-name="MILENIO" tvg-logo="http://127.0.0.1/" group-title="⭐️ México",MILENIO
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534844
+#EXTINF:-1 tvg-id="" tvg-name="MX GOURMET" tvg-logo="http://127.0.0.1/" group-title="⭐️ México",MX GOURMET
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/534847
+#EXTINF:-1 tvg-id="" tvg-name="PE | EVENTOS PERU DEPORTES" tvg-logo="http://redworld.pro:8880/images/d0696fc56d4f72caafad5032dd351b58.png" group-title="⭐️ DƏPORTES PE",PE | EVENTOS PERU DEPORTES
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/430211
+#EXTINF:-1 tvg-id="lch6519" tvg-name="PE| NATIVA TV" tvg-logo="http://redworld.pro:8880/images/183f2d3cb69d859eb233c796e47959f5.png" group-title="⭐️ DƏPORTES PE",PE| NATIVA TV
+http://starlatino.tv:8880/Andy/aCwNw4JYCcqq/430210
