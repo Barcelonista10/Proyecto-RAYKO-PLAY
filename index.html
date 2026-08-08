@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>GolStream Mini App</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+  :root{
+    --bg: var(--tg-theme-bg-color, #0d1117);
+    --text: var(--tg-theme-text-color, #ffffff);
+    --hint: var(--tg-theme-hint-color, #8b949e);
+    --link: var(--tg-theme-link-color, #58a6ff);
+    --btn: var(--tg-theme-button-color, #2ea043);
+    --btn-text: var(--tg-theme-button-text-color, #ffffff);
+    --secondary-bg: var(--tg-theme-secondary-bg-color, #161b22);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    min-height:100vh;
+    padding:16px;
+    padding-bottom:80px;
+  }
+  header{
+    text-align:center;
+    padding:24px 0 16px;
+  }
+  header h1{
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:.5px;
+  }
+  header p{
+    color:var(--hint);
+    font-size:13px;
+    margin-top:4px;
+  }
+  .card{
+    background:var(--secondary-bg);
+    border-radius:14px;
+    padding:16px;
+    margin-bottom:12px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    cursor:pointer;
+    transition:transform .1s ease, opacity .1s ease;
+  }
+  .card:active{
+    transform:scale(0.97);
+    opacity:0.85;
+  }
+  .card .icon{
+    width:42px;
+    height:42px;
+    border-radius:10px;
+    background:var(--btn);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    flex-shrink:0;
+  }
+  .card .info{flex:1;}
+  .card .info .title{font-weight:600;font-size:15px;}
+  .card .info .sub{color:var(--hint);font-size:12px;margin-top:2px;}
+  .card .arrow{color:var(--hint);font-size:18px;}
+  .status{
+    text-align:center;
+    color:var(--hint);
+    font-size:11px;
+    margin-top:20px;
+  }
+  .cta{
+    background:var(--btn);
+    color:var(--btn-text);
+    border:none;
+    border-radius:12px;
+    padding:14px;
+    width:100%;
+    font-size:15px;
+    font-weight:600;
+    margin-top:8px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>⚽ GolStream</h1>
+  <p>Señales en vivo · LATAM</p>
+</header>
+
+<div class="card" onclick="openLink('https://alexito10.blogspot.com')">
+  <div class="icon">📺</div>
+  <div class="info">
+    <div class="title">Ver señales en vivo</div>
+    <div class="sub">Fútbol en directo ahora</div>
+  </div>
+  <div class="arrow">›</div>
+</div>
+
+<div class="card" onclick="openLink('https://redvelvetclub.blogspot.com')">
+  <div class="icon">📅</div>
+  <div class="info">
+    <div class="title">Agenda del día</div>
+    <div class="sub">Próximos partidos y horarios</div>
+  </div>
+  <div class="arrow">›</div>
+</div>
+
+<div class="card" onclick="openLink('https://telepluslive.blogspot.com')">
+  <div class="icon">🎬</div>
+  <div class="info">
+    <div class="title">TelePlus Live</div>
+    <div class="sub">Canales adicionales</div>
+  </div>
+  <div class="arrow">›</div>
+</div>
+
+<button class="cta" onclick="shareApp()">Compartir con amigos</button>
+
+<div class="status" id="status">Cargando...</div>
+
+<script>
+  const tg = window.Telegram?.WebApp;
+
+  if (tg) {
+    tg.ready();
+    tg.expand();
+
+    // Ajusta el color de la barra superior al tema de Telegram
+    tg.setHeaderColor('secondary_bg_color');
+
+    // Botón principal nativo de Telegram (abajo)
+    tg.MainButton.setText('Ver en vivo ahora');
+    tg.MainButton.show();
+    tg.MainButton.onClick(() => openLink('https://alexito10.blogspot.com'));
+
+    // Botón de retroceso nativo
+    tg.BackButton.hide();
+
+    document.getElementById('status').textContent =
+      `Hola ${tg.initDataUnsafe?.user?.first_name || ''} · v${tg.version}`;
+  } else {
+    document.getElementById('status').textContent =
+      'Abrí esta app desde Telegram para la mejor experiencia';
+  }
+
+  function openLink(url){
+    if (tg && tg.HapticFeedback) tg.HapticFeedback.impactOccurred('light');
+    if (tg) {
+      tg.openLink(url); // abre en navegador externo dentro del contexto de Telegram
+    } else {
+      window.open(url, '_blank');
+    }
+  }
+
+  function shareApp(){
+    if (tg) {
+      tg.HapticFeedback?.impactOccurred('medium');
+      const shareUrl = `https://t.me/share/url?url=${encodeURIComponent('https://t.me/TU_BOT/TU_APP')}&text=${encodeURIComponent('Mira fútbol en vivo gratis 🔴⚽')}`;
+      tg.openTelegramLink(shareUrl);
+    }
+  }
+</script>
+
+</body>
+</html>
