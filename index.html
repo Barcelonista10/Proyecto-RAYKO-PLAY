@@ -177,23 +177,6 @@
     }
   }
 
-  // In-App Interstitial (automático, controlado por Monetag)
-  // Muestra hasta 2 anuncios dentro de una ventana de 6 minutos,
-  // con 30s entre ellos y 5s de espera antes del primero.
-  // El último parámetro (0) mantiene la sesión al navegar entre páginas.
-  if (typeof show_11536430 === 'function') {
-    show_11536430({
-      type: 'inApp',
-      inAppSettings: {
-        frequency: 2,
-        capping: 0.1,
-        interval: 30,
-        timeout: 5,
-        everyPage: false
-      }
-    });
-  }
-
   function shareApp(){
     if (tg) {
       tg.HapticFeedback?.impactOccurred('medium');
