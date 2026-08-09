@@ -164,14 +164,20 @@
 
     // Rewarded interstitial: el usuario ve el anuncio y, como recompensa,
     // se desbloquea el acceso a la señal/canal.
+    // Se agrega un timeout de seguridad: si el anuncio no responde
+    // (sin inventario disponible, se queda colgado, etc.) navegamos igual.
     if (typeof show_11536430 === 'function') {
-      show_11536430().then(() => {
-        goToUrl(url); // recompensa: navega al contenido tras ver el anuncio
-      }).catch(() => {
-        // no había anuncio disponible o el usuario lo cerró antes de tiempo:
-        // igual dejamos pasar para no bloquear la experiencia
+      let navigated = false;
+      const goOnce = () => {
+        if (navigated) return;
+        navigated = true;
         goToUrl(url);
-      });
+      };
+
+      show_11536430().then(goOnce).catch(goOnce);
+
+      // Salvavidas: si en 8 segundos no pasó nada, navega de todas formas
+      setTimeout(goOnce, 8000);
     } else {
       goToUrl(url);
     }
