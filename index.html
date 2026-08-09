@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>GolStream Mini App</title>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src='//libtl.com/sdk.js' data-zone='11536430' data-sdk='show_11536430'></script>
 <style>
   :root{
     --bg: var(--tg-theme-bg-color, #0d1117);
@@ -150,13 +151,47 @@
       'Abrí esta app desde Telegram para la mejor experiencia';
   }
 
-  function openLink(url){
-    if (tg && tg.HapticFeedback) tg.HapticFeedback.impactOccurred('light');
+  function goToUrl(url){
     if (tg) {
       tg.openLink(url); // abre en navegador externo dentro del contexto de Telegram
     } else {
-      window.open(url, '_blank');
+      location.href = url; // funciona bien dentro de un WebView nativo (Android)
     }
+  }
+
+  function openLink(url){
+    if (tg && tg.HapticFeedback) tg.HapticFeedback.impactOccurred('light');
+
+    // Rewarded interstitial: el usuario ve el anuncio y, como recompensa,
+    // se desbloquea el acceso a la señal/canal.
+    if (typeof show_11536430 === 'function') {
+      show_11536430().then(() => {
+        goToUrl(url); // recompensa: navega al contenido tras ver el anuncio
+      }).catch(() => {
+        // no había anuncio disponible o el usuario lo cerró antes de tiempo:
+        // igual dejamos pasar para no bloquear la experiencia
+        goToUrl(url);
+      });
+    } else {
+      goToUrl(url);
+    }
+  }
+
+  // In-App Interstitial (automático, controlado por Monetag)
+  // Muestra hasta 2 anuncios dentro de una ventana de 6 minutos,
+  // con 30s entre ellos y 5s de espera antes del primero.
+  // El último parámetro (0) mantiene la sesión al navegar entre páginas.
+  if (typeof show_11536430 === 'function') {
+    show_11536430({
+      type: 'inApp',
+      inAppSettings: {
+        frequency: 2,
+        capping: 0.1,
+        interval: 30,
+        timeout: 5,
+        everyPage: false
+      }
+    });
   }
 
   function shareApp(){
