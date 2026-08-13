@@ -6,123 +6,211 @@
 <title>GolStream Mini App</title>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script src='//libtl.com/sdk.js' data-zone='11536430' data-sdk='show_11536430'></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg: var(--tg-theme-bg-color, #0d1117);
-    --text: var(--tg-theme-text-color, #ffffff);
-    --hint: var(--tg-theme-hint-color, #8b949e);
-    --link: var(--tg-theme-link-color, #58a6ff);
-    --btn: var(--tg-theme-button-color, #2ea043);
-    --btn-text: var(--tg-theme-button-text-color, #ffffff);
-    --secondary-bg: var(--tg-theme-secondary-bg-color, #161b22);
+    --bg: #141414;
+    --surface: #1F1F1F;
+    --surface-hover: #2A2A2A;
+    --red: #E50914;
+    --text: #FFFFFF;
+    --hint: #A3A3A3;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
-  body{
+  html,body{
     background:var(--bg);
     color:var(--text);
-    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     min-height:100vh;
-    padding:16px;
-    padding-bottom:80px;
   }
+  body{ padding:0 16px 96px; }
+
+  /* ---------- Header ---------- */
   header{
-    text-align:center;
-    padding:24px 0 16px;
-  }
-  header h1{
-    font-size:22px;
-    font-weight:700;
-    letter-spacing:.5px;
-  }
-  header p{
-    color:var(--hint);
-    font-size:13px;
-    margin-top:4px;
-  }
-  .card{
-    background:var(--secondary-bg);
-    border-radius:14px;
-    padding:16px;
-    margin-bottom:12px;
     display:flex;
     align-items:center;
-    gap:12px;
+    justify-content:space-between;
+    padding:20px 0 18px;
+  }
+  .logo{
+    font-size:22px;
+    font-weight:800;
+    letter-spacing:-0.3px;
+  }
+  .logo span{ color:var(--red); }
+  .live-tag{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:0.5px;
+    color:var(--red);
+    text-transform:uppercase;
+  }
+  .live-dot{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--red);
+    animation:pulse 1.8s infinite;
+  }
+  @keyframes pulse{
+    0%{ opacity:1; }
+    50%{ opacity:0.35; }
+    100%{ opacity:1; }
+  }
+
+  /* ---------- Section label ---------- */
+  .section-title{
+    font-size:17px;
+    font-weight:700;
+    margin:10px 0 12px 2px;
+  }
+
+  /* ---------- Signal rows ---------- */
+  .signal{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    background:var(--surface);
+    border-radius:8px;
+    padding:12px;
+    margin-bottom:10px;
     cursor:pointer;
-    transition:transform .1s ease, opacity .1s ease;
+    transition:background .12s ease, transform .12s ease;
   }
-  .card:active{
-    transform:scale(0.97);
-    opacity:0.85;
+  .signal:active{
+    background:var(--surface-hover);
+    transform:scale(0.98);
   }
-  .card .icon{
-    width:42px;
-    height:42px;
-    border-radius:10px;
-    background:var(--btn);
+  .thumb{
+    flex-shrink:0;
+    width:64px;
+    height:64px;
+    border-radius:6px;
+    background:linear-gradient(160deg, #333 0%, #1a1a1a 100%);
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:20px;
-    flex-shrink:0;
+    font-size:24px;
+    position:relative;
+    overflow:hidden;
   }
-  .card .info{flex:1;}
-  .card .info .title{font-weight:600;font-size:15px;}
-  .card .info .sub{color:var(--hint);font-size:12px;margin-top:2px;}
-  .card .arrow{color:var(--hint);font-size:18px;}
+  .thumb .badge{
+    position:absolute;
+    bottom:4px;
+    left:4px;
+    right:4px;
+    background:var(--red);
+    color:#fff;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:0.5px;
+    text-align:center;
+    border-radius:3px;
+    padding:2px 0;
+  }
+  .signal-info{ flex:1; min-width:0; }
+  .signal-info .title{
+    font-size:15px;
+    font-weight:700;
+  }
+  .signal-info .sub{
+    color:var(--hint);
+    font-size:12.5px;
+    margin-top:3px;
+  }
+  .play-icon{
+    flex-shrink:0;
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.08);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--text);
+    font-size:14px;
+  }
+
+  /* ---------- CTA ---------- */
+  .cta-primary{
+    display:block;
+    width:100%;
+    background:var(--red);
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:14px;
+    font-size:15px;
+    font-weight:700;
+    margin-top:14px;
+  }
+  .cta-ghost{
+    display:block;
+    width:100%;
+    background:rgba(255,255,255,0.08);
+    color:var(--text);
+    border:none;
+    border-radius:8px;
+    padding:13px;
+    font-size:14px;
+    font-weight:600;
+    margin-top:10px;
+  }
+
+  /* ---------- Status ---------- */
   .status{
     text-align:center;
     color:var(--hint);
     font-size:11px;
-    margin-top:20px;
-  }
-  .cta{
-    background:var(--btn);
-    color:var(--btn-text);
-    border:none;
-    border-radius:12px;
-    padding:14px;
-    width:100%;
-    font-size:15px;
-    font-weight:600;
-    margin-top:8px;
+    margin-top:22px;
   }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>⚽ GolStream</h1>
-  <p>Señales en vivo · LATAM</p>
+  <div class="logo">Gol<span>Stream</span></div>
+  <div class="live-tag">
+    <span class="live-dot"></span>
+    En vivo
+  </div>
 </header>
 
-<div class="card" onclick="openLink('https://redvelvetclub.blogspot.com/p/blog-page_06.html')">
-  <div class="icon">📺</div>
-  <div class="info">
+<div class="section-title">Señales disponibles</div>
+
+<div class="signal" onclick="openLink('https://redvelvetclub.blogspot.com/p/blog-page_06.html')">
+  <div class="thumb">📺<div class="badge">VIVO</div></div>
+  <div class="signal-info">
     <div class="title">Señal 1</div>
     <div class="sub">Fútbol en directo ahora</div>
   </div>
-  <div class="arrow">›</div>
+  <div class="play-icon">▶</div>
 </div>
 
-<div class="card" onclick="openLink('https://redvelvetclub.blogspot.com/p/blog-page_06.html')">
-  <div class="icon">📺</div>
-  <div class="info">
+<div class="signal" onclick="openLink('https://redvelvetclub.blogspot.com/p/blog-page_06.html')">
+  <div class="thumb">📺<div class="badge">VIVO</div></div>
+  <div class="signal-info">
     <div class="title">Señal 2</div>
     <div class="sub">Fútbol en directo ahora</div>
   </div>
-  <div class="arrow">›</div>
+  <div class="play-icon">▶</div>
 </div>
 
-<div class="card" onclick="openLink('https://redvelvetclub.blogspot.com/p/blog-page_06.html')">
-  <div class="icon">📺</div>
-  <div class="info">
+<div class="signal" onclick="openLink('https://redvelvetclub.blogspot.com/p/blog-page_06.html')">
+  <div class="thumb">📺<div class="badge">VIVO</div></div>
+  <div class="signal-info">
     <div class="title">Señal 3</div>
     <div class="sub">Fútbol en directo ahora</div>
   </div>
-  <div class="arrow">›</div>
+  <div class="play-icon">▶</div>
 </div>
 
-<button class="cta" onclick="shareApp()">Compartir con amigos</button>
+<button class="cta-ghost" onclick="shareApp()">Compartir con amigos</button>
 
 <div class="status" id="status">Cargando...</div>
 
@@ -146,6 +234,17 @@
 
     document.getElementById('status').textContent =
       `Hola ${tg.initDataUnsafe?.user?.first_name || ''} · v${tg.version}`;
+
+    // Interstitial de bienvenida — se dispara una sola vez por sesión,
+    // apenas carga la app, sin que el usuario tenga que tocar nada.
+    if (!sessionStorage.getItem('welcomeAdShown') && typeof show_11536430 === 'function') {
+      sessionStorage.setItem('welcomeAdShown', '1');
+      // Pequeño delay para que la UI ya esté pintada antes del ad
+      setTimeout(() => {
+        show_11536430({ type: 'inApp' }).catch(() => {});
+      }, 600);
+    }
+
   } else {
     document.getElementById('status').textContent =
       'Abrí esta app desde Telegram para la mejor experiencia';
