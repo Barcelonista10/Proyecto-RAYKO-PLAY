@@ -15,6 +15,9 @@
             overflow-x: hidden;
             height: 100vh;
             height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
         }
         .neon-box {
             background: linear-gradient(145deg, rgba(16, 30, 54, 0.9), rgba(11, 21, 38, 0.95));
@@ -27,33 +30,33 @@
             border-color: #00d4ff;
             transform: translateY(-2px) scale(1.01);
         }
-        .neon-text {
-            background: linear-gradient(to right, #00d4ff, #0072ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.5));
-        }
         .channel-card {
             background: linear-gradient(145deg, #ffffff, #e6f0fa);
             color: #000;
-            border-radius: 14px;
+            border-radius: 18px;
             overflow: hidden;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: 0 4px 20px rgba(0,114,255,0.2);
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
         .channel-card:hover {
             transform: translateY(-3px) scale(1.02);
             box-shadow: 0 8px 25px rgba(0, 212, 255, 0.5);
         }
+        /* Ajuste del área de scroll para que ocupe todo el espacio */
         .scrollable-channels {
-            max-height: 48vh;
+            flex-grow: 1;
             overflow-y: auto;
-            padding-right: 4px;
+            padding-right: 6px;
             scrollbar-width: thin;
             scrollbar-color: #00d4ff #0b1526;
+            max-height: none; /* Quitamos el límite fijo */
         }
         ::-webkit-scrollbar {
-            width: 5px;
+            width: 6px;
         }
         ::-webkit-scrollbar-track {
             background: #0b1526;
@@ -63,68 +66,62 @@
             background: linear-gradient(to bottom, #00d4ff, #0072ff);
             border-radius: 3px;
         }
+        /* Ajustes para el contenedor principal */
+        #app-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+        .content-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
     </style>
 </head>
-<body class="flex flex-col justify-between overflow-hidden">
+<body>
 
-    <!-- Top Header with Live Clock -->
-    <header class="w-full pt-4 pb-2 px-4 flex flex-col items-center relative flex-shrink-0">
-        <div class="w-full max-w-md flex justify-between items-center px-1 mb-1">
-            <span id="live-clock" class="text-xs font-bold text-cyan-300 tracking-wider">00:00</span>
-            <span class="bg-gradient-to-r from-cyan-500/20 to-blue-600/20 border border-cyan-500/40 text-cyan-300 text-[9px] uppercase font-extrabold px-3 py-0.5 rounded-full tracking-widest shadow">
-                ✨ HD Activa
-            </span>
-        </div>
-        <h1 class="text-3xl sm:text-4xl font-black tracking-wider text-white">
-            RAYKO <span class="neon-text">PLAY</span>
-        </h1>
-        <p class="text-[10px] uppercase tracking-[0.25em] text-cyan-200/70 mt-1 font-bold">
-            ENTRETENIMIENTO FREEMIUM 2026
-        </p>
-    </header>
+    <!-- ✅ ELIMINADO: Header con Logo, Reloj y HD Activa -->
 
-    <!-- Main Container -->
-    <main id="app-container" class="w-full max-w-md mx-auto px-4 flex-grow flex flex-col justify-center overflow-y-auto py-2">
+    <!-- Main Container (Ocupa todo el espacio) -->
+    <main id="app-container" class="w-full max-w-2xl mx-auto flex flex-col h-full overflow-hidden">
         <!-- Dynamic Views Rendered Here -->
     </main>
-
-    <!-- Footer -->
-    <footer class="w-full py-2.5 text-center text-[11px] text-cyan-300/50 tracking-wider border-t border-cyan-950/80 bg-slate-950/60 backdrop-blur-sm flex-shrink-0">
-        RAYKO PLAY FREEMIUM &copy; 2026
-    </footer>
 
     <!-- Video Modal / Live Stream Player Simulator -->
     <div id="video-modal" class="fixed inset-0 bg-slate-950/95 z-50 hidden flex flex-col items-center justify-center p-4 backdrop-blur-md">
         <div class="w-full max-w-md bg-slate-900 rounded-2xl overflow-hidden border border-cyan-500/50 shadow-[0_0_50px_rgba(0,212,255,0.35)] relative transform transition-all">
-            <div class="bg-slate-950 p-3.5 flex justify-between items-center border-b border-cyan-950">
+            <div class="bg-slate-950 p-4 flex justify-between items-center border-b border-cyan-950">
                 <div class="flex items-center gap-2">
                     <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
-                    <h3 id="modal-title" class="font-bold text-cyan-300 tracking-wide text-xs uppercase">CONECTANDO SEÑAL...</h3>
+                    <h3 id="modal-title" class="font-bold text-cyan-300 tracking-wide text-sm uppercase">CONECTANDO SEÑAL...</h3>
                 </div>
-                <button onclick="closePlayer()" class="text-cyan-300 hover:text-white font-bold text-lg px-2.5 py-0.5 bg-slate-800/50 hover:bg-slate-800 rounded-lg transition">✕</button>
+                <button onclick="closePlayer()" class="text-cyan-300 hover:text-white font-bold text-lg px-3 py-1 bg-slate-800/50 hover:bg-slate-800 rounded-lg transition">✕</button>
             </div>
             <div class="relative aspect-video bg-slate-950 flex items-center justify-center overflow-hidden">
                 <div id="loading-spinner" class="absolute inset-0 flex flex-col items-center justify-center bg-slate-950/90 z-20 transition-opacity">
-                    <div class="w-10 h-10 border-4 border-cyan-400 border-t-transparent rounded-full animate-spin mb-3 shadow-[0_0_15px_rgba(0,212,255,0.8)]"></div>
-                    <span class="text-[11px] text-cyan-200 tracking-widest font-semibold animate-pulse">CARGANDO RECURSOS 4K...</span>
+                    <div class="w-12 h-12 border-4 border-cyan-400 border-t-transparent rounded-full animate-spin mb-4 shadow-[0_0_15px_rgba(0,212,255,0.8)]"></div>
+                    <span class="text-sm text-cyan-200 tracking-widest font-semibold animate-pulse">CARGANDO RECURSOS...</span>
                 </div>
                 <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-950/40 via-slate-950 to-slate-950 opacity-90"></div>
                 <div class="text-center p-5 z-10">
-                    <div class="text-5xl mb-2 animate-pulse">📡</div>
-                    <p id="playing-text" class="text-sm font-bold text-white tracking-wide">Reproduciendo Contenido...</p>
-                    <p class="text-[11px] text-cyan-300 mt-1 font-medium bg-cyan-950/60 py-0.5 px-3 rounded-full inline-block border border-cyan-500/30">Señal Optimizada • 60 FPS</p>
+                    <div class="text-6xl mb-3 animate-pulse">📡</div>
+                    <p id="playing-text" class="text-lg font-bold text-white tracking-wide">Reproduciendo Contenido...</p>
+                    <p class="text-sm text-cyan-300 mt-2 font-medium bg-cyan-950/60 py-1 px-4 rounded-full inline-block border border-cyan-500/30">Señal Optimizada</p>
                 </div>
             </div>
-            <div class="p-3.5 bg-slate-900 flex justify-between items-center border-t border-cyan-950">
-                <span class="text-[11px] text-cyan-300/70 flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> Servidor Estable</span>
-                <button onclick="closePlayer()" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-white text-xs px-4 py-2 rounded-xl font-bold shadow-lg shadow-cyan-500/30 transition transform active:scale-95">Cerrar Reproductor</button>
+            <div class="p-4 bg-slate-900 flex justify-between items-center border-t border-cyan-950">
+                <span class="text-sm text-cyan-300/70 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> Servidor Estable</span>
+                <button onclick="closePlayer()" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-white text-sm px-6 py-3 rounded-xl font-bold shadow-lg shadow-cyan-500/30 transition transform active:scale-95">Cerrar Reproductor</button>
             </div>
         </div>
     </div>
 
     <!-- JavaScript Application Logic -->
     <script>
-        // 🟢 1. VARIABLE GLOBAL PARA GUARDAR LOS CANALES DE LA APP
         let allChannels = [];
 
         const state = {
@@ -134,85 +131,58 @@
             searchQuery: ''
         };
 
-        // 🟢 2. RECIBIR CANALES DE LA APP Y GENERAR MENÚ DINÁMICO
         function receiveChannelsFromApp(jsonData) {
             try {
                 allChannels = JSON.parse(jsonData);
                 
-                // Modificamos el menú de inicio dinámicamente basado en las categorías reales
                 const categories = [
-                    { id: 'tv', title: 'TV EN VIVO', icon: '📺', action: 'goToServers', desc: 'Canales en alta definición 24/7' },
-                    { id: 'Deportes', title: 'DEPORTES', icon: '⚽', action: 'goToContent', type: 'Deportes', desc: 'Todo el deporte en vivo' },
-                    { id: 'Cine y Series', title: 'CINE Y SERIES', icon: '🎬', action: 'goToContent', type: 'Cine y Series', desc: 'Lo más reciente del cine mundial' },
-                    { id: 'Eventos', title: 'EVENTOS DESTACADOS', icon: '🔥', action: 'goToContent', type: 'Eventos', desc: 'Sagas completas y universos épicos' },
-                    { id: 'General', title: 'GENERAL', icon: '📡', action: 'goToContent', type: 'General', desc: 'Contenido variado para todos' },
-                    { id: 'Series', title: 'SERIES', icon: '🎭', action: 'goToContent', type: 'Series', desc: 'Temporadas completas en HD' }
+                    { id: 'tv', title: '📺 TODOS LOS CANALES', action: 'goToServers', desc: 'Navega por todos los canales' },
+                    { id: 'Deportes', title: '⚽ DEPORTES', action: 'goToContent', type: 'Deportes', desc: 'Todo el deporte en vivo' },
+                    { id: 'Cine y Series', title: '🎬 CINE Y SERIES', action: 'goToContent', type: 'Cine y Series', desc: 'Lo más reciente del cine' },
+                    { id: 'Eventos', title: '🔥 EVENTOS', action: 'goToContent', type: 'Eventos', desc: 'Sagas y eventos destacados' },
+                    { id: 'General', title: '📡 GENERAL', action: 'goToContent', type: 'General', desc: 'Contenido variado' }
                 ];
                 
-                // Guardamos las categorías dinámicas para usarlas en la app
                 window.categories = categories;
-                
                 render();
             } catch (e) {
                 console.error("Error al recibir los canales", e);
             }
         }
 
+        // Simulamos 1 solo servidor ya que no es necesario elegir para ver canales
         const servers = [
-            { id: 1, name: 'TV FREEMIUM 1', icon: '⚡', ping: '10ms' },
-            { id: 2, name: 'TV FREEMIUM 2', icon: '🚀', ping: '15ms' }
+            { id: 1, name: 'TV FREEMIUM', icon: '⚡', ping: '10ms' }
         ];
 
-        // 🟢 3. CONEXIÓN CON LA APP (Para simular la reproducción)
         function playFromApp(name) {
             if (window.Android) {
                 window.Android.playChannelFromWeb(name);
-                // Si quieres cerrar el modal al iniciar la reproducción, descomenta la línea de abajo:
-                // closePlayer();
             } else {
-                // Si estás en navegador, simula la reproducción abriendo el modal
                 openPlayer(name);
             }
         }
-
-        function updateClock() {
-            const now = new Date();
-            let hours = now.getHours();
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            hours = String(hours).padStart(2, '0');
-            const clockEl = document.getElementById('live-clock');
-            if (clockEl) {
-                clockEl.innerText = `${hours}:${minutes}`;
-            }
-        }
-        setInterval(updateClock, 1000);
 
         function render() {
             const container = document.getElementById('app-container');
             container.innerHTML = '';
 
-            // ⚠️ Asegurarnos de que allChannels está disponible para las vistas
             const channelsArray = allChannels && allChannels.length > 0 ? allChannels : [];
 
             if (state.currentView === 'home') {
-                let html = '<div class="space-y-3 w-full">';
+                let html = '<div class="content-area space-y-3 w-full">';
                 const cats = window.categories || [
-                    { id: 'tv', title: 'TV EN VIVO', icon: '📺', action: 'goToServers', desc: 'Ver todos los canales' }
+                    { id: 'tv', title: '📺 TODOS LOS CANALES', action: 'goToServers', desc: 'Ver todos los canales' }
                 ];
                 
                 cats.forEach(cat => {
                     html += `
-                        <div onclick="${cat.action}('${cat.type || cat.id}')" class="neon-box rounded-xl p-3.5 flex items-center justify-between cursor-pointer group">
-                            <div class="flex items-center gap-3.5">
-                                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500/30 via-blue-600/20 to-indigo-600/20 flex items-center justify-center text-xl border border-cyan-400/40 group-hover:scale-110 transition duration-300 shadow-inner">
-                                    ${cat.icon}
-                                </div>
-                                <div>
-                                    <h3 class="font-bold tracking-wide text-xs sm:text-sm text-white group-hover:text-cyan-300 transition">${cat.title}</h3>
-                                    <p class="text-[10px] text-cyan-200/60 font-medium">${cat.desc}</p>
-                                </div>
+                        <div onclick="${cat.action}('${cat.type || cat.id}')" class="neon-box rounded-2xl p-5 flex items-center justify-between cursor-pointer group">
+                            <div>
+                                <h3 class="font-black tracking-wide text-lg sm:text-xl text-white group-hover:text-cyan-300 transition">${cat.title}</h3>
+                                <p class="text-sm text-cyan-200/60 font-medium mt-1">${cat.desc}</p>
                             </div>
-                            <span class="text-cyan-400/60 group-hover:text-cyan-300 group-hover:translate-x-1 transition font-black text-base">›</span>
+                            <span class="text-cyan-400/60 group-hover:text-cyan-300 group-hover:translate-x-1 transition font-black text-xl">›</span>
                         </div>
                     `;
                 });
@@ -220,77 +190,53 @@
                 container.innerHTML = html;
             } 
             else if (state.currentView === 'servers') {
-                let html = `
-                    <div class="mb-3 flex items-center justify-between">
-                        <div>
-                            <h2 class="text-sm font-black tracking-wider text-white">SELECCIONAR SERVIDOR</h2>
-                            <p class="text-[11px] text-cyan-300 font-semibold">Líneas de transmisión optimizadas</p>
-                        </div>
-                        <button onclick="goHome()" class="text-xs bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-3 py-1.5 rounded-xl text-cyan-200 font-bold transition shadow-md">← Menú</button>
-                    </div>
-                    <div class="space-y-3 w-full">
-                `;
-                servers.forEach(srv => {
-                    html += `
-                        <div onclick="selectServer('${srv.name}')" class="neon-box rounded-xl p-3.5 flex items-center justify-between cursor-pointer border-l-4 border-l-cyan-400 group">
-                            <div class="flex items-center gap-3.5">
-                                <span class="text-xl">${srv.icon}</span>
-                                <div>
-                                    <h3 class="font-bold tracking-wide text-xs sm:text-sm text-white group-hover:text-cyan-300 transition">${srv.name}</h3>
-                                    <span class="text-[10px] bg-emerald-500/15 text-emerald-300 px-2 py-0.5 rounded-md font-semibold">Latencia: ${srv.ping}</span>
-                                </div>
-                            </div>
-                            <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-3 py-1.5 rounded-xl shadow-md group-hover:scale-105 transition">Conectar</span>
-                        </div>
-                    `;
-                });
-                html += '</div>';
-                container.innerHTML = html;
+                // Saltamos directamente a los canales para que sea más rápido
+                state.currentView = 'channels';
+                render();
             }
             else if (state.currentView === 'channels') {
-                // 🟢 4. FILTRADO REAL DE CANALES DE LA APP
                 let filteredChannels = channelsArray.filter(ch => 
                     ch.name.toLowerCase().includes(state.searchQuery.toLowerCase()) || 
                     ch.category.toLowerCase().includes(state.searchQuery.toLowerCase())
                 );
 
                 let html = `
-                    <div class="mb-2.5 flex items-center justify-between">
+                    <div class="flex-shrink-0 mb-3 flex items-center justify-between">
                         <div>
-                            <h2 class="text-sm font-black tracking-wider text-white">TV EN VIVO</h2>
-                            <p class="text-[10px] text-cyan-300 font-semibold">${state.selectedServer || 'Cargando...'}</p>
+                            <h2 class="text-lg font-black tracking-wider text-white">📺 CANALES EN VIVO</h2>
+                            <p class="text-sm text-cyan-300 font-semibold">${state.selectedServer || 'Todos los canales'}</p>
                         </div>
-                        <button onclick="goToServers()" class="text-xs bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-3 py-1.5 rounded-xl text-cyan-200 font-bold transition shadow-md">← Servidores</button>
+                        <button onclick="goHome()" class="text-sm bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-4 py-2 rounded-xl text-cyan-200 font-bold transition shadow-md">← Menú</button>
                     </div>
 
-                    <div class="mb-3 relative">
-                        <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-cyan-400">🔍</span>
-                        <input type="text" id="channel-search" value="${state.searchQuery}" oninput="handleSearch(event)" placeholder="Buscar canal o categoría..." class="w-full bg-slate-900 border border-cyan-900/60 focus:border-cyan-400 rounded-xl pl-10 pr-4 py-2.5 text-xs text-white placeholder-cyan-500/50 focus:outline-none transition shadow-inner">
-                        ${state.searchQuery ? `<button onclick="clearSearch()" class="absolute inset-y-0 right-0 flex items-center pr-3.5 text-cyan-300 hover:text-white text-xs font-bold">✕</button>` : ''}
+                    <div class="flex-shrink-0 mb-4 relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-cyan-400 text-lg">🔍</span>
+                        <input type="text" id="channel-search" value="${state.searchQuery}" oninput="handleSearch(event)" placeholder="Buscar canal..." class="w-full bg-slate-900 border border-cyan-900/60 focus:border-cyan-400 rounded-2xl pl-12 pr-4 py-4 text-base text-white placeholder-cyan-500/50 focus:outline-none transition shadow-inner">
+                        ${state.searchQuery ? `<button onclick="clearSearch()" class="absolute inset-y-0 right-0 flex items-center pr-4 text-cyan-300 hover:text-white text-lg font-bold">✕</button>` : ''}
                     </div>
 
                     <div class="scrollable-channels w-full">
-                        <div class="grid grid-cols-2 gap-2.5 pb-2">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-4">
                 `;
 
                 if (filteredChannels.length === 0) {
                     html += `
-                        <div class="col-span-2 text-center py-10 bg-slate-900/50 rounded-xl border border-cyan-950">
-                            <span class="text-2xl mb-1 block">📡</span>
-                            <p class="text-xs text-cyan-300/70 font-semibold">No se encontraron canales</p>
+                        <div class="col-span-full text-center py-16 bg-slate-900/50 rounded-2xl border border-cyan-950">
+                            <span class="text-4xl mb-3 block">📡</span>
+                            <p class="text-base text-cyan-300/70 font-semibold">No se encontraron canales</p>
                         </div>
                     `;
                 } else {
                     filteredChannels.forEach(ch => {
                         html += `
-                            <div class="channel-card p-2.5 flex flex-col justify-between items-center text-center">
-                                <div class="w-full">
-                                    <span class="text-[8px] uppercase font-bold tracking-widest text-slate-700 bg-cyan-100 px-2 py-0.5 rounded-full mb-1.5 inline-block">${ch.category || 'GENERAL'}</span>
+                            <div class="channel-card p-4 flex flex-col gap-3">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm uppercase font-bold tracking-widest text-slate-700 bg-cyan-100 px-3 py-1 rounded-full">${ch.category || 'GENERAL'}</span>
                                 </div>
-                                <div class="h-14 w-full bg-slate-950 rounded-lg flex items-center justify-center p-2 my-1 border border-cyan-500/30 shadow-inner overflow-hidden">
-                                    <img src="${ch.logoUrl}" alt="${ch.name}" class="max-h-10 max-w-full object-contain filter brightness-110" onerror="this.onerror=null; this.src=''; this.parentNode.innerHTML='<span class=\'text-cyan-300 font-black text-xs\'>${ch.name}</span>'">
+                                <div class="h-20 w-full bg-slate-950 rounded-xl flex items-center justify-center p-3 border border-cyan-500/30 shadow-inner overflow-hidden">
+                                    <img src="${ch.logoUrl}" alt="${ch.name}" class="max-h-14 max-w-full object-contain filter brightness-110" onerror="this.onerror=null; this.src=''; this.parentNode.innerHTML='<span class=\'text-cyan-300 font-black text-lg\'>${ch.name}</span>'">
                                 </div>
-                                <button onclick="playFromApp('${ch.name}')" class="w-full bg-gradient-to-r from-slate-900 to-blue-950 hover:from-cyan-500 hover:to-blue-600 text-white font-bold text-[11px] py-1.5 rounded-lg tracking-wider transition shadow active:scale-95">VER CANAL</button>
+                                <button onclick="playFromApp('${ch.name}')" class="w-full bg-gradient-to-r from-slate-900 to-blue-950 hover:from-cyan-500 hover:to-blue-600 text-white font-bold text-base py-3 rounded-xl tracking-wider transition shadow active:scale-95">▶ REPRODUCIR</button>
                             </div>
                         `;
                     });
@@ -310,48 +256,48 @@
                 }, 10);
             }
             else if (state.currentView === 'movies') {
-                // 🟢 5. FILTRAR PELÍCULAS/SERIES USANDO LAS CATEGORÍAS REALES DE LA APP
+                // Vistas de categorías específicas (Deportes, Eventos, etc.)
                 let filteredChannels = channelsArray.filter(ch => 
                     ch.category === state.selectedCategory && 
                     ch.name.toLowerCase().includes(state.searchQuery.toLowerCase())
                 );
 
                 let html = `
-                    <div class="mb-3 flex items-center justify-between">
+                    <div class="flex-shrink-0 mb-3 flex items-center justify-between">
                         <div>
-                            <h2 class="text-sm font-black tracking-wider text-white uppercase">${state.selectedCategory}</h2>
-                            <p class="text-[10px] text-cyan-300 font-semibold">Selección Exclusiva</p>
+                            <h2 class="text-lg font-black tracking-wider text-white uppercase">${state.selectedCategory}</h2>
+                            <p class="text-sm text-cyan-300 font-semibold">Selección Exclusiva</p>
                         </div>
-                        <button onclick="goHome()" class="text-xs bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-3 py-1.5 rounded-xl text-cyan-200 font-bold transition shadow-md">← Menú</button>
+                        <button onclick="goHome()" class="text-sm bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-4 py-2 rounded-xl text-cyan-200 font-bold transition shadow-md">← Menú</button>
                     </div>
 
-                    <div class="mb-3 relative">
-                        <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-cyan-400">🔍</span>
-                        <input type="text" id="movie-search" value="${state.searchQuery}" oninput="handleSearch(event)" placeholder="Buscar título..." class="w-full bg-slate-900 border border-cyan-900/60 focus:border-cyan-400 rounded-xl pl-10 pr-4 py-2.5 text-xs text-white placeholder-cyan-500/50 focus:outline-none transition shadow-inner">
-                        ${state.searchQuery ? `<button onclick="clearSearch()" class="absolute inset-y-0 right-0 flex items-center pr-3.5 text-cyan-300 hover:text-white text-xs font-bold">✕</button>` : ''}
+                    <div class="flex-shrink-0 mb-4 relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-cyan-400 text-lg">🔍</span>
+                        <input type="text" id="movie-search" value="${state.searchQuery}" oninput="handleSearch(event)" placeholder="Buscar..." class="w-full bg-slate-900 border border-cyan-900/60 focus:border-cyan-400 rounded-2xl pl-12 pr-4 py-4 text-base text-white placeholder-cyan-500/50 focus:outline-none transition shadow-inner">
+                        ${state.searchQuery ? `<button onclick="clearSearch()" class="absolute inset-y-0 right-0 flex items-center pr-4 text-cyan-300 hover:text-white text-lg font-bold">✕</button>` : ''}
                     </div>
 
-                    <div class="scrollable-channels w-full space-y-2.5">
+                    <div class="scrollable-channels w-full space-y-3">
                 `;
 
                 if (filteredChannels.length === 0) {
                     html += `
-                        <div class="text-center py-10 bg-slate-900/50 rounded-xl border border-cyan-950">
-                            <span class="text-2xl mb-1 block">🎬</span>
-                            <p class="text-xs text-cyan-300/70 font-semibold">No hay contenido en esta categoría</p>
+                        <div class="text-center py-16 bg-slate-900/50 rounded-2xl border border-cyan-950">
+                            <span class="text-4xl mb-3 block">🎬</span>
+                            <p class="text-base text-cyan-300/70 font-semibold">No hay contenido en esta categoría</p>
                         </div>
                     `;
                 } else {
                     filteredChannels.forEach(ch => {
                         html += `
-                            <div class="neon-box rounded-xl p-3 flex items-center justify-between cursor-pointer group" onclick="playFromApp('${ch.name}')">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-9 h-9 rounded-lg bg-cyan-500/15 flex items-center justify-center text-base border border-cyan-400/40 group-hover:scale-110 transition">
+                            <div class="neon-box rounded-2xl p-4 flex items-center justify-between cursor-pointer group" onclick="playFromApp('${ch.name}')">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 rounded-xl bg-cyan-500/15 flex items-center justify-center text-2xl border border-cyan-400/40 group-hover:scale-110 transition">
                                         🎬
                                     </div>
-                                    <span class="font-bold text-xs text-white group-hover:text-cyan-300 transition">${ch.name}</span>
+                                    <span class="font-bold text-lg text-white group-hover:text-cyan-300 transition">${ch.name}</span>
                                 </div>
-                                <span class="text-[10px] bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-3 py-1 rounded-lg font-bold shadow transition">Reproducir</span>
+                                <span class="text-sm bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-xl font-bold shadow transition">Reproducir</span>
                             </div>
                         `;
                     });
@@ -376,13 +322,7 @@
         }
 
         function goToServers() {
-            state.searchQuery = '';
-            state.currentView = 'servers';
-            render();
-        }
-
-        function selectServer(serverName) {
-            state.selectedServer = serverName;
+            // Saltamos directamente a los canales para simplificar
             state.searchQuery = '';
             state.currentView = 'channels';
             render();
@@ -428,17 +368,13 @@
             document.getElementById('loading-spinner').style.display = 'flex';
         }
 
-        // 🟢 6. AL CARGAR LA PÁGINA, LE PEDIMOS LA LISTA A LA APP
         window.onload = () => {
-            updateClock();
-            // Pedimos los canales a la app
             if (window.Android) {
                 window.Android.sendChannelsToWeb();
             } else {
-                // Si estás en el navegador (debug), cargamos los canales de prueba
                 receiveChannelsFromApp(JSON.stringify([
-                    { name: "AMC HD MX", category: "Cine y Series", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/AMC_Logo_%282020%29.svg/320px-AMC_Logo_%282020%29.svg.png" },
-                    { name: "AXN FHD", category: "Cine y Series", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/AXN_logo_2017.svg/320px-AXN_logo_2017.svg.png" },
+                    { name: "GOLDEN EDGE | AR", category: "Cine y Series", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/AMC_Logo_%282020%29.svg/320px-AMC_Logo_%282020%29.svg.png" },
+                    { name: "GOLDEN PREMIER", category: "Cine y Series", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/AXN_logo_2017.svg/320px-AXN_logo_2017.svg.png" },
                     { name: "Real Madrid vs Barcelona", category: "Eventos", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/ESPN_logo.svg/320px-ESPN_logo.svg.png" }
                 ]));
             }
