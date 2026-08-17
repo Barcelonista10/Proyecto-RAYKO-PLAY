@@ -76,6 +76,10 @@
         .nav-item { text-align: center; color: #8899AA; font-size: 12px; cursor: pointer; transition: color 0.2s; }
         .nav-item i { display: block; font-size: 24px; margin-bottom: 5px; }
         .nav-item.active { color: #3B82F6; }
+        
+        .loading-text {
+            padding: 30px; text-align: center; color: #8899AA; font-size: 16px;
+        }
     </style>
 </head>
 <body>
@@ -93,7 +97,9 @@
     </div>
 
     <div class="filter-scroll" id="filtrosContainer"></div>
-    <div class="channel-list-container" id="channelList"></div>
+    <div class="channel-list-container" id="channelList">
+        <div class="loading-text">Cargando canales desde la app...</div>
+    </div>
 
     <div class="bottom-nav">
         <div class="nav-item" onclick="cambiarNav(this)">
@@ -108,16 +114,35 @@
     </div>
 
     <script>
-        // 1. LISTA DE CANALES (Debes cambiar los nombres aquí por los de tu JSON)
-        const allChannels = [
-            { id: "015", name: "AXN WHITE HD", epg: "", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/AXN_White_Logo.svg/1200px-AXN_White_Logo.svg.png", category: "Cine y Series" },
-            { id: "016", name: "AXN ESPAÑA HD", epg: "", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/AXN_Spain_Logo.svg/1200px-AXN_Spain_Logo.svg.png", category: "Cine y Series" },
-            { id: "017", name: "Adult Swim", epg: "", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Adult_Swim_2018_logo.svg/1200px-Adult_Swim_2018_logo.svg.png", category: "Cine y Series" },
-            { id: "018", name: "Adn40", epg: "Sala de guerra", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/ADN40_Logo.svg/1200px-ADN40_Logo.svg.png", category: "Noticias" },
-            { id: "019", name: "ATV", epg: "Día D", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/ATV_Logo_2010.svg/1200px-ATV_Logo_2010.svg.png", category: "General" },
-            { id: "020", name: "ATV Plus HD", epg: "Nutrissa", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/ATV_Logo_2010.svg/1200px-ATV_Logo_2010.svg.png", category: "General" },
-            { id: "021", name: "ALQUILER Cinema", epg: "Dreamworks", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/DreamWorks_Animation_Logo_2022.svg/1200px-DreamWorks_Animation_Logo_2022.svg.png", category: "Cine y Series" },
-        ];
+        let allChannels = [];
+
+        // 1. LE PIDE LA LISTA DE CANALES A LA APP AL CARGAR
+        function requestChannelsFromApp() {
+            if (window.Android) {
+                window.Android.sendChannelsToWeb();
+            } else {
+                // Si se abre en el navegador normal, carga un mensaje
+                setTimeout(() => { 
+                    document.getElementById('channelList').innerHTML = '<div class="loading-text">Abre esta web desde la App RAYKO PLAY</div>';
+                }, 1000);
+            }
+        }
+
+        // 2. RECIBE LA LISTA EN FORMATO JSON DESDE LA APP
+        function receiveChannelsFromApp(jsonData) {
+            try {
+                allChannels = JSON.parse(jsonData);
+                // Añadir un ID ficticio basado en el índice si no viene del JSON
+                allChannels.forEach((c, index) => {
+                    if(!c.id) c.id = String(index + 1).padStart(3, '0');
+                });
+                renderFilters();
+                renderChannels();
+            } catch (e) {
+                console.error("Error al recibir los canales", e);
+                document.getElementById('channelList').innerHTML = '<div class="loading-text">Error al cargar los datos</div>';
+            }
+        }
 
         function getCategories() {
             let cats = ["Todos"];
@@ -143,6 +168,12 @@
         function renderChannels() {
             const container = document.getElementById('channelList');
             container.innerHTML = '';
+            
+            if (allChannels.length === 0) {
+                container.innerHTML = '<div class="loading-text">No se encontraron canales en la app</div>';
+                return;
+            }
+
             let filtered = allChannels;
             if (currentCategory !== "Todos") filtered = allChannels.filter(c => c.category === currentCategory);
 
@@ -150,26 +181,23 @@
             if (query) filtered = filtered.filter(c => c.name.toLowerCase().includes(query));
 
             if (filtered.length === 0) {
-                container.innerHTML = `<div style="padding:30px; text-align:center; color:#8899AA;">No hay canales disponibles</div>`;
+                container.innerHTML = `<div class="loading-text">No hay canales disponibles</div>`;
                 return;
             }
 
             filtered.forEach(c => {
                 const item = document.createElement('div');
                 item.className = 'channel-item';
-                // 🟢 CONEXIÓN CON LA APP: Aquí se pasa el NOMBRE del canal
+                // 3. AL HACER CLIC, SE LLAMA AL PUENTE DE JAVA CON EL NOMBRE EXACTO
                 item.onclick = () => {
                     if (window.Android) {
                         window.Android.playChannelFromWeb(c.name);
-                    } else {
-                        // Si abres la web en el navegador normal, abre el link real
-                        window.location.href = "https://raw.githubusercontent.com/Barcelonista10/Proyecto-RAYKO-PLAY/main/lista%20Premium.m3u";
                     }
                 };
 
                 item.innerHTML = `
-                    <img class="channel-logo" src="${c.logo}" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/RAYKO_LOGO.svg/1200px-RAYKO_LOGO.svg.png'">
-                    <div class="channel-number">${c.id}</div>
+                    <img class="channel-logo" src="${c.logoUrl || ''}" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/RAYKO_LOGO.svg/1200px-RAYKO_LOGO.svg.png'">
+                    <div class="channel-number">${c.id || ''}</div>
                     <div class="channel-info"><div class="channel-name">${c.name}</div><div class="channel-epg">${c.epg || 'En vivo'}</div></div>
                     <div class="channel-arrow"><i class="fas fa-arrow-right"></i></div>
                 `;
@@ -189,8 +217,10 @@
 
         function filtrarCanales() { renderChannels(); }
 
-        renderFilters();
-        renderChannels();
+        // Inicializar
+        window.onload = function() {
+            requestChannelsFromApp();
+        };
     </script>
 </body>
 </html>
