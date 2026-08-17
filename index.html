@@ -20,6 +20,7 @@
                         'cyber-accent': '#ff0044',
                         'cyber-cyan': '#00f0ff',
                         'cyber-purple': '#7000ff',
+                        'cyber-gold': '#ffb700',
                     },
                     boxShadow: {
                         'neon-red': '0 0 20px rgba(255, 0, 68, 0.4), 0 0 40px rgba(255, 0, 68, 0.1)',
@@ -49,7 +50,7 @@
             font-family: 'Orbitron', sans-serif;
         }
 
-        /* Background grid effect */
+        /* Fondo de cuadrícula estilo Cyber */
         .bg-grid {
             background-size: 30px 30px;
             background-image: 
@@ -57,7 +58,7 @@
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
         }
 
-        /* Glassmorphism Cards */
+        /* Tarjetas estilo Glassmorphism */
         .cyber-card {
             background: linear-gradient(135deg, rgba(20, 24, 33, 0.85) 0%, rgba(10, 12, 18, 0.95) 100%);
             backdrop-filter: blur(12px);
@@ -84,15 +85,18 @@
             transform: scale(0.98);
         }
 
-        /* Border Glow Effect */
+        /* Bordes resaltados */
         .cyber-border-red {
             border-left: 3px solid #ff0044;
         }
         .cyber-border-cyan {
             border-left: 3px solid #00f0ff;
         }
+        .cyber-border-gold {
+            border-left: 3px solid #ffb700;
+        }
 
-        /* Screen Transitions */
+        /* Transiciones de pantallas */
         .screen {
             display: none;
             opacity: 0;
@@ -106,7 +110,7 @@
             transform: translateY(0);
         }
 
-        /* Custom Scrollbar */
+        /* Personalización de la barra de desplazamiento */
         ::-webkit-scrollbar {
             width: 4px;
         }
@@ -118,7 +122,7 @@
             border-radius: 10px;
         }
 
-        /* Pulse Animations */
+        /* Animaciones Neón */
         @keyframes cyberPulse {
             0%, 100% {
                 box-shadow: 0 0 15px rgba(255,0,68,0.4), inset 0 0 15px rgba(255,0,68,0.2);
@@ -130,11 +134,26 @@
             }
         }
 
+        @keyframes goldPulse {
+            0%, 100% {
+                box-shadow: 0 0 15px rgba(255,183,0,0.4), inset 0 0 15px rgba(255,183,0,0.2);
+                border-color: rgba(255,183,0,0.6);
+            }
+            50% {
+                box-shadow: 0 0 25px rgba(255,183,0,0.7), inset 0 0 20px rgba(255,183,0,0.4);
+                border-color: rgba(255,183,0,1);
+            }
+        }
+
         .pulse-neon {
             animation: cyberPulse 2.5s infinite ease-in-out;
         }
 
-        /* Animated Scanline */
+        .pulse-gold {
+            animation: goldPulse 2.5s infinite ease-in-out;
+        }
+
+        /* Línea de escaneo futurista */
         .scanline {
             width: 100%;
             height: 2px;
@@ -155,31 +174,18 @@
 </head>
 <body class="flex justify-center items-center min-h-screen p-0 sm:p-4 bg-black">
 
-    <!-- Mockup de Contenedor Móvil/TV -->
+    <!-- Contenedor Móvil / TV -->
     <div class="w-full max-w-md h-[100vh] sm:h-[880px] bg-cyber-dark sm:rounded-[44px] border-0 sm:border-[5px] border-zinc-800/80 shadow-card-glow flex flex-col justify-between relative overflow-hidden bg-grid">
         
         <!-- Línea de escaneo futurista -->
         <div class="scanline"></div>
 
-        <!-- Ambient Glow FX Background -->
+        <!-- Efectos de luz ambient de fondo -->
         <div class="absolute -top-24 -left-24 w-60 h-60 bg-cyber-accent/20 rounded-full blur-[80px] pointer-events-none"></div>
         <div class="absolute -bottom-24 -right-24 w-60 h-60 bg-cyber-cyan/15 rounded-full blur-[80px] pointer-events-none"></div>
 
-        <!-- Barra Superior Simulada -->
-        <div class="w-full pt-3.5 px-6 flex justify-between items-center text-xs text-zinc-400 z-50 font-cyber">
-            <div class="flex items-center space-x-1.5">
-                <span class="w-2 h-2 rounded-full bg-cyber-accent animate-ping"></span>
-                <span id="clock" class="font-bold tracking-widest text-white">12:00</span>
-            </div>
-            <div class="flex items-center space-x-3 text-zinc-400">
-                <i class="fas fa-wifi text-xs text-cyber-cyan"></i>
-                <i class="fas fa-[#ff0044] fa-bolt text-[10px] text-cyber-accent"></i>
-                <i class="fas fa-battery-three-quarters text-xs text-white"></i>
-            </div>
-        </div>
-
-        <!-- Header Navegación / Botón Atrás -->
-        <div id="nav-header" class="hidden px-5 pt-3 pb-1 flex items-center justify-between z-50">
+        <!-- Header de Navegación / Botón Atrás -->
+        <div id="nav-header" class="hidden px-5 pt-4 pb-2 flex items-center justify-between z-50">
             <button onclick="goBack()" class="flex items-center space-x-2 text-white bg-zinc-900/90 hover:bg-zinc-800 px-3.5 py-1.5 rounded-xl border border-zinc-700/60 active:scale-95 transition shadow-lg backdrop-blur-md">
                 <i class="fas fa-chevron-left text-xs text-cyber-accent"></i>
                 <span class="text-xs font-bold tracking-wider uppercase font-cyber">Atrás</span>
@@ -191,9 +197,9 @@
         </div>
 
         <!-- VISTA 1: MENÚ PRINCIPAL -->
-        <div id="screen-home" class="screen active flex-col flex-1 px-5 py-4 justify-between overflow-y-auto z-10">
+        <div id="screen-home" class="screen active flex-col flex-1 px-5 py-6 justify-between overflow-y-auto z-10">
             
-            <!-- Branding Logo -->
+            <!-- Logo de la Marca -->
             <div class="text-center my-4 relative">
                 <div class="inline-block relative">
                     <h1 class="text-4xl font-black tracking-wider text-white font-cyber italic">
@@ -207,7 +213,7 @@
                 </div>
             </div>
 
-            <!-- Menú Principal de Opciones -->
+            <!-- Opciones del Menú Principal -->
             <div class="space-y-3.5 my-auto">
                 <button onclick="navigateTo('screen-servers')" class="w-full cyber-card pulse-neon p-4 rounded-2xl flex items-center justify-between hover:border-cyber-accent/80 transition group">
                     <div class="flex items-center space-x-4">
@@ -275,14 +281,14 @@
                 </button>
             </div>
 
-            <!-- Footer -->
+            <!-- Pie de página -->
             <div class="text-center py-2 flex flex-col items-center justify-center space-y-1">
                 <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-zinc-800 to-transparent mb-1"></div>
-                <span class="text-[10px] text-zinc-500 font-cyber tracking-widest uppercase">RAYKO PLAY FREEMIUM v2.5</span>
+                <span class="text-[10px] text-zinc-500 font-cyber tracking-widest uppercase">RAYKO PLAY FREEMIUM © 2026</span>
             </div>
         </div>
 
-        <!-- VISTA 2: SERVIDORES TV -->
+        <!-- VISTA 2: SERVIDORES TV (Servidor 1, 2 y Eventos) -->
         <div id="screen-servers" class="screen flex-col flex-1 px-5 py-4 justify-between overflow-y-auto z-10">
             <div class="text-center my-4">
                 <h1 class="text-2xl font-black tracking-wider text-white font-cyber uppercase">
@@ -292,7 +298,8 @@
             </div>
 
             <div class="space-y-4 my-auto">
-                <button onclick="loadServerChannels()" class="w-full cyber-card pulse-neon p-5 rounded-2xl flex items-center justify-between hover:bg-zinc-900 transition group">
+                <!-- SERVIDOR 1 -->
+                <button onclick="loadServerChannels(1)" class="w-full cyber-card pulse-neon p-5 rounded-2xl flex items-center justify-between hover:bg-zinc-900 transition group">
                     <div class="flex items-center space-x-4">
                         <div class="relative">
                             <div class="w-12 h-12 rounded-xl bg-cyber-accent/20 border border-cyber-accent flex items-center justify-center text-cyber-accent text-xl">
@@ -311,30 +318,44 @@
                     <i class="fas fa-play text-xs text-cyber-accent group-hover:translate-x-1 transition"></i>
                 </button>
 
-                <button onclick="showToast('Servidor 2 en mantenimiento')" class="w-full cyber-card p-5 rounded-2xl flex items-center justify-between opacity-70 hover:opacity-100 transition group">
+                <!-- SERVIDOR 2 (SISTEMA HABILITADO) -->
+                <button onclick="loadServerChannels(2)" class="w-full cyber-card cyber-border-cyan p-5 rounded-2xl flex items-center justify-between hover:bg-zinc-900 transition group">
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-zinc-500 text-xl">
-                            <i class="fas fa-server"></i>
+                        <div class="relative">
+                            <div class="w-12 h-12 rounded-xl bg-cyber-cyan/20 border border-cyber-cyan flex items-center justify-center text-cyber-cyan text-xl">
+                                <i class="fas fa-satellite"></i>
+                            </div>
+                            <span class="absolute -top-1 -right-1 flex h-3 w-3">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
+                            </span>
                         </div>
                         <div class="text-left">
-                            <span class="block text-base font-bold text-zinc-300 tracking-wider font-cyber">TV FREEMIUM 2</span>
-                            <span class="text-[11px] text-amber-500/90 font-mono">▲ MANTENIMIENTO</span>
+                            <span class="block text-base font-extrabold text-white tracking-wider font-cyber">TV FREEMIUM 2</span>
+                            <span class="text-[11px] text-cyber-cyan font-mono">● ONLINE (Respaldos)</span>
                         </div>
                     </div>
-                    <i class="fas fa-lock text-xs text-zinc-600"></i>
+                    <i class="fas fa-play text-xs text-cyber-cyan group-hover:translate-x-1 transition"></i>
                 </button>
 
-                <button onclick="showToast('Servidor 3 en mantenimiento')" class="w-full cyber-card p-5 rounded-2xl flex items-center justify-between opacity-70 hover:opacity-100 transition group">
+                <!-- EVENTOS (ANTES SERVIDOR 3) -->
+                <button onclick="loadServerChannels(3)" class="w-full cyber-card pulse-gold p-5 rounded-2xl flex items-center justify-between hover:bg-zinc-900 transition group">
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-zinc-500 text-xl">
-                            <i class="fas fa-server"></i>
+                        <div class="relative">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500 flex items-center justify-center text-amber-400 text-xl">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <span class="absolute -top-1 -right-1 flex h-3 w-3">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
+                            </span>
                         </div>
                         <div class="text-left">
-                            <span class="block text-base font-bold text-zinc-300 tracking-wider font-cyber">TV FREEMIUM 3</span>
-                            <span class="text-[11px] text-amber-500/90 font-mono">▲ MANTENIMIENTO</span>
+                            <span class="block text-base font-extrabold text-white tracking-wider font-cyber">EVENTOS</span>
+                            <span class="text-[11px] text-amber-400 font-mono">⚡ ESPECIALES & EN VIVO</span>
                         </div>
                     </div>
-                    <i class="fas fa-lock text-xs text-zinc-600"></i>
+                    <i class="fas fa-bolt text-xs text-amber-400 group-hover:translate-x-1 transition"></i>
                 </button>
             </div>
 
@@ -343,49 +364,56 @@
             </div>
         </div>
 
-        <!-- VISTA 3: PARRILLA DE CANALES -->
-        <div id="screen-channels" class="screen flex-col flex-1 px-4 py-3 overflow-y-auto z-10">
+        <!-- VISTA 3: PARRILLA DE CANALES (Cabecera fija, scroll solo en los canales) -->
+        <div id="screen-channels" class="screen flex-col flex-1 h-full overflow-hidden z-10">
             
-            <div class="text-center mb-3">
-                <h2 class="text-lg font-black text-white font-cyber tracking-wider">CANALES DISPONIBLES</h2>
-                <div class="flex items-center justify-center space-x-1.5">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                    <p class="text-[10px] text-cyber-cyan font-mono uppercase tracking-wider">Servidor Freemium 1 Activo</p>
+            <!-- CABECERA FIJA DE LA SECCIÓN DE CANALES -->
+            <div class="px-4 pt-2 pb-2 flex-none bg-cyber-dark/80 backdrop-blur-md">
+                <div class="text-center mb-3">
+                    <h2 class="text-lg font-black text-white font-cyber tracking-wider" id="server-channels-title">CANALES DISPONIBLES</h2>
+                    <div class="flex items-center justify-center space-x-1.5">
+                        <span id="server-status-dot" class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                        <p id="active-server-badge" class="text-[10px] text-cyber-cyan font-mono uppercase tracking-wider">Servidor Freemium 1 Activo</p>
+                    </div>
+                </div>
+
+                <!-- BUSCADOR FIJO -->
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-zinc-500">
+                        <i class="fas fa-search text-xs"></i>
+                    </div>
+                    <input 
+                        type="text" 
+                        id="channel-search" 
+                        oninput="filterChannels()" 
+                        placeholder="Buscar canal o evento..." 
+                        class="w-full bg-zinc-900/90 border border-zinc-700/80 text-white placeholder-zinc-500 text-xs rounded-xl pl-9 pr-8 py-2.5 focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition backdrop-blur-md"
+                    >
+                    <button id="clear-search" onclick="clearSearch()" class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-zinc-400 hover:text-white">
+                        <i class="fas fa-times text-xs"></i>
+                    </button>
                 </div>
             </div>
 
-            <!-- BUSCADOR DE CANALES -->
-            <div class="relative mb-4">
-                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-zinc-500">
-                    <i class="fas fa-search text-xs"></i>
+            <!-- CONTENEDOR CON SCROLL SÓLO PARA LA LISTA DE CANALES -->
+            <div class="flex-1 overflow-y-auto px-4 py-2">
+                <!-- Grid de Canales -->
+                <div id="channels-grid" class="grid grid-cols-2 gap-3 pb-6">
+                    <!-- Se cargan dinámicamente los canales aquí -->
                 </div>
-                <input 
-                    type="text" 
-                    id="channel-search" 
-                    oninput="filterChannels()" 
-                    placeholder="Buscar canal en vivo..." 
-                    class="w-full bg-zinc-900/90 border border-zinc-700/80 text-white placeholder-zinc-500 text-xs rounded-xl pl-9 pr-8 py-2.5 focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition backdrop-blur-md"
-                >
-                <button id="clear-search" onclick="clearSearch()" class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-zinc-400 hover:text-white">
-                    <i class="fas fa-times text-xs"></i>
-                </button>
+
+                <!-- Mensaje cuando no hay resultados de búsqueda -->
+                <div id="no-results" class="hidden text-center py-12">
+                    <div class="w-16 h-16 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center mx-auto mb-3 text-zinc-600 text-2xl">
+                        <i class="fas fa-search-minus"></i>
+                    </div>
+                    <p class="text-zinc-400 text-xs font-cyber">No se encontraron coincidencias</p>
+                </div>
             </div>
 
-            <!-- Grid de Canales -->
-            <div id="channels-grid" class="grid grid-cols-2 gap-3 pb-6">
-                <!-- Se cargan los canales dinámicamente -->
-            </div>
-
-            <!-- Estado sin resultados -->
-            <div id="no-results" class="hidden text-center py-12">
-                <div class="w-16 h-16 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center mx-auto mb-3 text-zinc-600 text-2xl">
-                    <i class="fas fa-search-minus"></i>
-                </div>
-                <p class="text-zinc-400 text-xs font-cyber">No se encontraron coincidencias</p>
-            </div>
         </div>
 
-        <!-- TOAST / NOTIFICACIÓN FLOATING -->
+        <!-- NOTIFICACIÓN TIPO TOAST -->
         <div id="toast" class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-zinc-900/95 border border-cyber-accent/60 text-white px-5 py-2.5 rounded-2xl text-xs font-semibold shadow-2xl opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center space-x-2.5 backdrop-blur-md">
             <i class="fas fa-info-circle text-cyber-accent text-sm"></i>
             <span id="toast-message" class="tracking-wide">Mensaje</span>
@@ -393,11 +421,12 @@
 
     </div>
 
-    <!-- LÓGICA JAVASCRIPT INTACTA -->
+    <!-- CÓDIGO JAVASCRIPT NATIVO -->
     <script>
         let allChannels = [];
+        let currentServer = 1;
 
-        // Inyección desde la app Android
+        // Función llamada desde la app Android para cargar la lista global de canales
         function receiveChannelsFromApp(jsonData) {
             try {
                 allChannels = JSON.parse(jsonData);
@@ -407,16 +436,55 @@
             }
         }
 
-        function loadServerChannels() {
+        // Carga el servidor seleccionado (1, 2 o 3 para Eventos)
+        function loadServerChannels(serverNum = 1) {
+            currentServer = serverNum;
+
             if (allChannels.length === 0) {
                 showToast("Esperando datos de la App...");
                 if (window.Android) {
-                    window.Android.sendChannelsToWeb();
+                    // Se le pasa opcionalmente el ID del servidor a la app Android si lo soporta
+                    if (window.Android.sendChannelsToWebWithServer) {
+                        window.Android.sendChannelsToWebWithServer(serverNum);
+                    } else {
+                        window.Android.sendChannelsToWeb();
+                    }
+                }
+                // Si se prueba en navegador sin Android, permite avanzar
+                if (!window.Android) {
+                    navigateTo('screen-channels');
+                    updateServerBadge(serverNum);
+                    renderChannels();
                 }
                 return;
             }
+
             navigateTo('screen-channels');
+            updateServerBadge(serverNum);
             renderChannels();
+        }
+
+        function updateServerBadge(serverNum) {
+            const badge = document.getElementById('active-server-badge');
+            const dot = document.getElementById('server-status-dot');
+            const title = document.getElementById('server-channels-title');
+
+            if (serverNum === 1) {
+                title.textContent = "CANALES DISPONIBLES";
+                badge.textContent = "Servidor Freemium 1 Activo";
+                badge.className = "text-[10px] text-cyber-cyan font-mono uppercase tracking-wider";
+                dot.className = "w-1.5 h-1.5 rounded-full bg-emerald-400";
+            } else if (serverNum === 2) {
+                title.textContent = "CANALES DISPONIBLES";
+                badge.textContent = "Servidor Freemium 2 Activo";
+                badge.className = "text-[10px] text-cyber-cyan font-mono uppercase tracking-wider";
+                dot.className = "w-1.5 h-1.5 rounded-full bg-cyan-400";
+            } else if (serverNum === 3) {
+                title.textContent = "EVENTOS Y TRANSMISIONES";
+                badge.textContent = "Servidor de Eventos Activo";
+                badge.className = "text-[10px] text-amber-400 font-mono uppercase tracking-wider";
+                dot.className = "w-1.5 h-1.5 rounded-full bg-amber-400";
+            }
         }
 
         function renderChannels() {
@@ -429,7 +497,7 @@
                 grid.innerHTML = `
                     <div class="col-span-2 text-center py-12 text-zinc-500 text-xs font-cyber">
                         <i class="fas fa-satellite-dish text-3xl mb-3 block text-zinc-600"></i>
-                        No hay canales disponibles en este momento.
+                        No hay transmisiones disponibles en este servidor.
                     </div>
                 `;
                 return;
@@ -437,7 +505,6 @@
 
             allChannels.forEach(ch => {
                 const card = document.createElement('div');
-                // Tarjeta estilizada con estética Cyber
                 card.className = "channel-card cyber-card rounded-2xl p-2.5 flex flex-col justify-between border border-zinc-800/80 hover:border-cyber-accent/50 transition";
                 card.setAttribute('data-name', ch.name.toLowerCase());
 
@@ -445,7 +512,6 @@
                 if (ch.logoUrl && ch.logoUrl.trim() !== '' && ch.logoUrl !== 'default_icon') {
                     logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="max-h-16 max-w-full object-contain transition-transform duration-300 hover:scale-105" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\\'text-white font-bold text-center tracking-wider text-xs font-cyber\\'>${ch.name}</div>'"/>`;
                 } else {
-                    // Logo vectorial predeterminado estilizado para RAYKO PLAY
                     logoHtml = `
                         <div class="flex flex-col items-center justify-center w-full h-full bg-zinc-950/80 rounded-xl p-1 border border-zinc-800/50">
                             <span class="text-cyber-accent text-xl font-black font-cyber tracking-tight drop-shadow-[0_0_8px_rgba(255,0,68,0.8)]">RAYKO</span>
@@ -472,7 +538,7 @@
         }
 
         function playChannel(channelName) {
-            showToast(`Cargando canal: ${channelName}`);
+            showToast(`Cargando transmisión: ${channelName}`);
             if (window.Android) {
                 window.Android.playChannelFromWeb(channelName);
             } else {
@@ -481,15 +547,6 @@
         }
 
         const navigationHistory = ['screen-home'];
-
-        function updateClock() {
-            const now = new Date();
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            document.getElementById('clock').textContent = `${hours}:${minutes}`;
-        }
-        setInterval(updateClock, 1000);
-        updateClock();
 
         function navigateTo(screenId) {
             const currentScreen = navigationHistory[navigationHistory.length - 1];
@@ -525,7 +582,7 @@
                 if (currentScreen === 'screen-servers') {
                     titleSpan.textContent = 'Servidores';
                 } else if (currentScreen === 'screen-channels') {
-                    titleSpan.textContent = 'Parrilla TV';
+                    titleSpan.textContent = currentServer === 3 ? 'Eventos TV' : 'Parrilla TV';
                 }
             }
         }
