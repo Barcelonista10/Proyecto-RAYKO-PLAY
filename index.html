@@ -1,295 +1,386 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>GolStream Mini App</title>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
-<script src='//libtl.com/sdk.js' data-zone='11536430' data-sdk='show_11536430'></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg: #141414;
-    --surface: #1F1F1F;
-    --surface-hover: #2A2A2A;
-    --red: #E50914;
-    --text: #FFFFFF;
-    --hint: #A3A3A3;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html,body{
-    background:var(--bg);
-    color:var(--text);
-    font-family:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    min-height:100vh;
-  }
-  body{ padding:0 16px 96px; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>RAYKO PLAY - IPTV</title>
+    <!-- Iconos de FontAwesome para los iconos de la interfaz -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* --- ESTILOS GENERALES --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        
+        body {
+            background-color: #0F1621; /* Fondo azul oscuro estilo IPTV */
+            color: #FFFFFF;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Evita scroll en el body completo */
+        }
 
-  /* ---------- Header ---------- */
-  header{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:20px 0 18px;
-  }
-  .logo{
-    font-size:22px;
-    font-weight:800;
-    letter-spacing:-0.3px;
-  }
-  .logo span{ color:var(--red); }
-  .live-tag{
-    display:flex;
-    align-items:center;
-    gap:6px;
-    font-size:11px;
-    font-weight:700;
-    letter-spacing:0.5px;
-    color:var(--red);
-    text-transform:uppercase;
-  }
-  .live-dot{
-    width:7px;
-    height:7px;
-    border-radius:50%;
-    background:var(--red);
-    animation:pulse 1.8s infinite;
-  }
-  @keyframes pulse{
-    0%{ opacity:1; }
-    50%{ opacity:0.35; }
-    100%{ opacity:1; }
-  }
+        /* --- ZONA DE VIDEO EN FONDO --- */
+        .background-video-container {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 35%;
+            z-index: 0;
+            background: url('https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg') center/cover no-repeat;
+            /* Opcional: Si quieres poner un video real, descomenta esto: */
+            /* background: none; */
+        }
+        /* Overlay oscuro para que se lean bien los textos sobre el video */
+        .background-video-container::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to top, #0F1621 10%, transparent 100%);
+        }
 
-  /* ---------- Section label ---------- */
-  .section-title{
-    font-size:17px;
-    font-weight:700;
-    margin:10px 0 12px 2px;
-  }
+        /* --- BARRA DE BÚSQUEDA --- */
+        .search-bar {
+            position: absolute;
+            top: 20px; right: 20px;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .search-bar i { color: #FFF; font-size: 18px; }
+        .search-bar input {
+            background: transparent;
+            border: none;
+            color: #FFF;
+            outline: none;
+            width: 100px;
+            font-size: 14px;
+        }
+        .search-bar input::placeholder { color: #AAA; }
 
-  /* ---------- Signal rows ---------- */
-  .signal{
-    display:flex;
-    align-items:center;
-    gap:14px;
-    background:var(--surface);
-    border-radius:8px;
-    padding:12px;
-    margin-bottom:10px;
-    cursor:pointer;
-    transition:background .12s ease, transform .12s ease;
-  }
-  .signal:active{
-    background:var(--surface-hover);
-    transform:scale(0.98);
-  }
-  .thumb{
-    flex-shrink:0;
-    width:64px;
-    height:64px;
-    border-radius:6px;
-    background:linear-gradient(160deg, #333 0%, #1a1a1a 100%);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:24px;
-    position:relative;
-    overflow:hidden;
-  }
-  .thumb .badge{
-    position:absolute;
-    bottom:4px;
-    left:4px;
-    right:4px;
-    background:var(--red);
-    color:#fff;
-    font-size:9px;
-    font-weight:800;
-    letter-spacing:0.5px;
-    text-align:center;
-    border-radius:3px;
-    padding:2px 0;
-  }
-  .signal-info{ flex:1; min-width:0; }
-  .signal-info .title{
-    font-size:15px;
-    font-weight:700;
-  }
-  .signal-info .sub{
-    color:var(--hint);
-    font-size:12.5px;
-    margin-top:3px;
-  }
-  .play-icon{
-    flex-shrink:0;
-    width:34px;
-    height:34px;
-    border-radius:50%;
-    background:rgba(255,255,255,0.08);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:var(--text);
-    font-size:14px;
-  }
+        /* --- TABS SUPERIORES --- */
+        .tabs-top {
+            position: relative;
+            z-index: 10;
+            margin-top: 38vh; /* Debajo del video */
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            border-bottom: 1px solid #253040;
+        }
+        .tab-btn {
+            background: transparent;
+            border: none;
+            color: #8899AA;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            padding-bottom: 10px;
+            position: relative;
+        }
+        .tab-btn.active {
+            color: #3B82F6; /* Azul brillante */
+        }
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px; left: 0; width: 100%; height: 3px;
+            background: #3B82F6;
+            border-radius: 10px;
+        }
 
-  /* ---------- CTA ---------- */
-  .cta-primary{
-    display:block;
-    width:100%;
-    background:var(--red);
-    color:#fff;
-    border:none;
-    border-radius:8px;
-    padding:14px;
-    font-size:15px;
-    font-weight:700;
-    margin-top:14px;
-  }
-  .cta-ghost{
-    display:block;
-    width:100%;
-    background:rgba(255,255,255,0.08);
-    color:var(--text);
-    border:none;
-    border-radius:8px;
-    padding:13px;
-    font-size:14px;
-    font-weight:600;
-    margin-top:10px;
-  }
+        /* --- SUB-FILTROS (Botones redondeados) --- */
+        .filter-scroll {
+            z-index: 10;
+            padding: 15px 20px;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        .filter-scroll::-webkit-scrollbar { display: none; }
+        
+        .filter-chip {
+            display: inline-block;
+            background: #1E293B;
+            color: #CBD5E1;
+            padding: 8px 18px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .filter-chip.active {
+            background: #3B82F6;
+            color: #FFF;
+            box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
+        }
 
-  /* ---------- Status ---------- */
-  .status{
-    text-align:center;
-    color:var(--hint);
-    font-size:11px;
-    margin-top:22px;
-  }
-</style>
+        /* --- LISTA DE CANALES --- */
+        .channel-list-container {
+            flex: 1; /* Ocupa el resto del espacio */
+            overflow-y: auto;
+            z-index: 10;
+            padding-bottom: 80px; /* Espacio para el menú inferior */
+        }
+        .channel-list-container::-webkit-scrollbar { width: 4px; }
+        .channel-list-container::-webkit-scrollbar-thumb { background: #3B82F6; border-radius: 10px; }
+
+        .channel-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #1A2332;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .channel-item:active { background: #1A2332; }
+        
+        .channel-logo {
+            width: 40px; height: 40px;
+            object-fit: contain;
+            margin-right: 15px;
+            background: #0F1621;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .channel-number {
+            font-size: 16px;
+            font-weight: bold;
+            color: #8899AA;
+            width: 40px;
+            text-align: center;
+            margin-right: 15px;
+        }
+        .channel-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .channel-name {
+            font-size: 15px;
+            font-weight: 600;
+            color: #FFF;
+        }
+        .channel-epg {
+            font-size: 12px;
+            color: #8899AA;
+            margin-top: 3px;
+        }
+        .channel-arrow {
+            color: #8899AA;
+            font-size: 18px;
+            background: rgba(255,255,255,0.05);
+            width: 30px; height: 30px;
+            display: flex; justify-content: center; align-items: center;
+            border-radius: 50%;
+            border: 1px solid #2D3A4D;
+        }
+
+        /* --- MENÚ INFERIOR --- */
+        .bottom-nav {
+            position: absolute;
+            bottom: 0; width: 100%;
+            background: #0F1621;
+            border-top: 1px solid #1A2332;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0 20px 0;
+            z-index: 20;
+        }
+        .nav-item {
+            text-align: center;
+            color: #8899AA;
+            font-size: 12px;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .nav-item i {
+            display: block;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .nav-item.active { color: #3B82F6; }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 480px) {
+            .tabs-top { gap: 15px; font-size: 14px; }
+            .channel-number { width: 30px; font-size: 14px; }
+            .channel-logo { width: 30px; height: 30px; }
+            .background-video-container { height: 30%; }
+            .tabs-top { margin-top: 32vh; }
+        }
+    </style>
 </head>
 <body>
 
-<header>
-  <div class="logo">Gol<span>Stream</span></div>
-  <div class="live-tag">
-    <span class="live-dot"></span>
-    En vivo
-  </div>
-</header>
+    <!-- Fondo de Video (Cine) -->
+    <div class="background-video-container"></div>
 
-<div class="section-title">Señales disponibles</div>
+    <!-- Lupa de búsqueda -->
+    <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Buscar..." id="searchInput" onkeyup="filtrarCanales()">
+    </div>
 
-<div class="signal" onclick="openLink('https://redvelvetclub.blogspot.com/p/adbloc-repro.html?r=aHR0cHM6Ly9mdXRib2xsaWJyZS5jaC9oZC5waHA/c3RyZWFtPWZveGRlcG9ydGVz')">
-  <div class="thumb">📺<div class="badge">VIVO</div></div>
-  <div class="signal-info">
-    <div class="title"> Al Hilal vs Al Faisaly</div>
-    <div class="sub">13:00 🇸🇦 Pro League</div>
-  </div>
-  <div class="play-icon">▶</div>
-</div>
+    <!-- Tabs superiores -->
+    <div class="tabs-top">
+        <button class="tab-btn active" onclick="cambiarTab(this, 'categoria')">Categoría</button>
+        <button class="tab-btn" onclick="cambiarTab(this, 'favoritos')">Favoritos</button>
+    </div>
 
-<div class="signal" onclick="openLink('https://redvelvetclub.blogspot.com/p/adbloc-repro.html?r=aHR0cHM6Ly9mdXRib2xsaWJyZS5jaC9oZC5waHA/c3RyZWFtPWVzcG41')">
-  <div class="thumb">📺<div class="badge">VIVO</div></div>
-  <div class="signal-info">
-    <div class="title">Wolverhampton Wanderers vs Blackburn Rovers</div>
-    <div class="sub">14:00 🏆 Championship</div>
-  </div>
-  <div class="play-icon">▶</div>
-</div>
+    <!-- Filtros redondeados -->
+    <div class="filter-scroll" id="filtrosContainer">
+        <!-- Los filtros se generan con JS -->
+    </div>
 
-<div class="signal" onclick="openLink('https://redvelvetclub.blogspot.com/p/blog-page_06.html')">
-  <div class="thumb">📺<div class="badge">VIVO</div></div>
-  <div class="signal-info">
-    <div class="title">Señal 3</div>
-    <div class="sub">Fútbol en directo ahora</div>
-  </div>
-  <div class="play-icon">▶</div>
-</div>
+    <!-- Lista de Canales -->
+    <div class="channel-list-container" id="channelList">
+        <!-- Los canales se generan con JS -->
+    </div>
 
-<button class="cta-ghost" onclick="shareApp()">Compartir con amigos</button>
+    <!-- Menú Inferior -->
+    <div class="bottom-nav">
+        <div class="nav-item" onclick="cambiarNav(this)">
+            <i class="fas fa-home"></i>
+            <span>Inicio</span>
+        </div>
+        <div class="nav-item active" onclick="cambiarNav(this)">
+            <i class="fas fa-tv"></i>
+            <span>Canales</span>
+        </div>
+        <div class="nav-item" onclick="cambiarNav(this)">
+            <i class="fas fa-user"></i>
+            <span>Perfil</span>
+        </div>
+    </div>
 
-<div class="status" id="status">Cargando...</div>
+    <script>
+        // ==========================================
+        // 1. CONFIGURACIÓN Y DATOS (SIMULADOS AQUÍ)
+        // ==========================================
+        // NOTA: En un futuro, esto se puede cargar desde un JSON externo
+        const allChannels = [
+            { id: "015", name: "AXN WHITE HD", epg: "", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/AXN_White_Logo.svg/1200px-AXN_White_Logo.svg.png", category: "Cine y Series" },
+            { id: "016", name: "AXN ESPAÑA HD", epg: "", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/AXN_Spain_Logo.svg/1200px-AXN_Spain_Logo.svg.png", category: "Cine y Series" },
+            { id: "017", name: "Adult Swim", epg: "", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Adult_Swim_2018_logo.svg/1200px-Adult_Swim_2018_logo.svg.png", category: "Cine y Series" },
+            { id: "018", name: "Adn40", epg: "Sala de guerra", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/ADN40_Logo.svg/1200px-ADN40_Logo.svg.png", category: "Noticias" },
+            { id: "019", name: "ATV", epg: "Día D", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/ATV_Logo_2010.svg/1200px-ATV_Logo_2010.svg.png", category: "General" },
+            { id: "020", name: "ATV Plus HD", epg: "Nutrissa", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/ATV_Logo_2010.svg/1200px-ATV_Logo_2010.svg.png", category: "General" },
+            { id: "021", name: "ALQUILER Cinema", epg: "Dreamworks", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/DreamWorks_Animation_Logo_2022.svg/1200px-DreamWorks_Animation_Logo_2022.svg.png", category: "Cine y Series" },
+            { id: "022", name: "Discovery", epg: "Mitos del Mundo", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Discovery_Channel_Logo_2025.svg/1200px-Discovery_Channel_Logo_2025.svg.png", category: "Documentales" },
+        ];
 
-<script>
-  const tg = window.Telegram?.WebApp;
+        // Función para obtener las categorías únicas
+        function getCategories() {
+            let cats = ["Todos"];
+            allChannels.forEach(c => {
+                if (!cats.includes(c.category)) cats.push(c.category);
+            });
+            return cats;
+        }
 
-  if (tg) {
-    tg.ready();
-    tg.expand();
+        let currentCategory = "Todos";
 
-    // Ajusta el color de la barra superior al tema de Telegram
-    tg.setHeaderColor('secondary_bg_color');
+        // ==========================================
+        // 2. FUNCIONES DE RENDERIZADO
+        // ==========================================
 
-    // Botón principal nativo de Telegram (abajo)
-    tg.MainButton.setText('Ver en vivo ahora');
-    tg.MainButton.show();
-    tg.MainButton.onClick(() => openLink('https://redvelvetclub.blogspot.com/p/blog-page_06.html'));
+        // Generar botones de filtro
+        function renderFilters() {
+            const container = document.getElementById('filtrosContainer');
+            container.innerHTML = '';
+            const categories = getCategories();
+            categories.forEach(cat => {
+                const btn = document.createElement('div');
+                btn.className = 'filter-chip' + (cat === currentCategory ? ' active' : '');
+                btn.innerText = cat;
+                btn.onclick = () => {
+                    currentCategory = cat;
+                    renderFilters();
+                    renderChannels();
+                };
+                container.appendChild(btn);
+            });
+        }
 
-    // Botón de retroceso nativo
-    tg.BackButton.hide();
+        // Generar la lista de canales
+        function renderChannels() {
+            const container = document.getElementById('channelList');
+            container.innerHTML = '';
+            
+            // Filtrar canales
+            let filtered = allChannels;
+            if (currentCategory !== "Todos") {
+                filtered = allChannels.filter(c => c.category === currentCategory);
+            }
 
-    document.getElementById('status').textContent =
-      `Hola ${tg.initDataUnsafe?.user?.first_name || ''} · v${tg.version}`;
+            // Aplicar búsqueda
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            if (query) {
+                filtered = filtered.filter(c => c.name.toLowerCase().includes(query));
+            }
 
-    // Interstitial de bienvenida — se dispara una sola vez por sesión,
-    // apenas carga la app, sin que el usuario tenga que tocar nada.
-    if (!sessionStorage.getItem('welcomeAdShown') && typeof show_11536430 === 'function') {
-      sessionStorage.setItem('welcomeAdShown', '1');
-      // Pequeño delay para que la UI ya esté pintada antes del ad
-      setTimeout(() => {
-        show_11536430({ type: 'inApp' }).catch(() => {});
-      }, 600);
-    }
+            if (filtered.length === 0) {
+                container.innerHTML = `<div style="padding:30px; text-align:center; color:#8899AA;">No hay canales disponibles</div>`;
+                return;
+            }
 
-  } else {
-    document.getElementById('status').textContent =
-      'Abrí esta app desde Telegram para la mejor experiencia';
-  }
+            filtered.forEach(c => {
+                const item = document.createElement('div');
+                item.className = 'channel-item';
+                item.onclick = () => {
+                    // 🟢 AQUÍ SE CONECTA CON LA APP ANDROID
+                    if (window.Android) {
+                        window.Android.playChannelFromWeb(c.name);
+                    } else {
+                        alert("Simulación: Reproduciendo " + c.name);
+                    }
+                };
 
-  function goToUrl(url){
-    if (tg) {
-      tg.openLink(url); // abre en navegador externo dentro del contexto de Telegram
-    } else {
-      location.href = url; // funciona bien dentro de un WebView nativo (Android)
-    }
-  }
+                item.innerHTML = `
+                    <img class="channel-logo" src="${c.logo}" alt="${c.name}" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/RAYKO_LOGO.svg/1200px-RAYKO_LOGO.svg.png'">
+                    <div class="channel-number">${c.id}</div>
+                    <div class="channel-info">
+                        <div class="channel-name">${c.name}</div>
+                        <div class="channel-epg">${c.epg || 'En vivo'}</div>
+                    </div>
+                    <div class="channel-arrow"><i class="fas fa-arrow-right"></i></div>
+                `;
+                container.appendChild(item);
+            });
+        }
 
-  function openLink(url){
-    if (tg && tg.HapticFeedback) tg.HapticFeedback.impactOccurred('light');
+        // ==========================================
+        // 3. FUNCIONES DE INTERACCIÓN (UI)
+        // ==========================================
 
-    // Rewarded interstitial: el usuario ve el anuncio y, como recompensa,
-    // se desbloquea el acceso a la señal/canal.
-    // Se agrega un timeout de seguridad: si el anuncio no responde
-    // (sin inventario disponible, se queda colgado, etc.) navegamos igual.
-    if (typeof show_11536430 === 'function') {
-      let navigated = false;
-      const goOnce = () => {
-        if (navigated) return;
-        navigated = true;
-        goToUrl(url);
-      };
+        function cambiarTab(btn, tabName) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            // Aquí podrías añadir lógica para cambiar entre "Categoría" y "Favoritos"
+            // Si es Favoritos, filtrar por c.favorito = true;
+        }
 
-      show_11536430().then(goOnce).catch(goOnce);
+        function cambiarNav(item) {
+            document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+        }
 
-      // Salvavidas: si en 8 segundos no pasó nada, navega de todas formas
-      setTimeout(goOnce, 8000);
-    } else {
-      goToUrl(url);
-    }
-  }
+        function filtrarCanales() {
+            renderChannels();
+        }
 
-  function shareApp(){
-    if (tg) {
-      tg.HapticFeedback?.impactOccurred('medium');
-      const shareUrl = `https://t.me/share/url?url=${encodeURIComponent('https://t.me/TurboTVPlus_bot/golstream')}&text=${encodeURIComponent('Mira fútbol en vivo gratis 🔴⚽')}`;
-      tg.openTelegramLink(shareUrl);
-    }
-  }
-</script>
+        // ==========================================
+        // 4. INICIALIZACIÓN
+        // ==========================================
+        renderFilters();
+        renderChannels();
 
+    </script>
 </body>
 </html>
