@@ -91,7 +91,7 @@
 </head>
 <body>
 
-    <!-- ENCABEZADO (Visible solo en el Menú Principal) -->
+    <!-- ENCABEZADO -->
     <header id="app-header" class="w-full flex-shrink-0 mb-2">
         <div class="w-full max-w-2xl mx-auto flex justify-between items-center px-1 mb-1">
             <span id="live-clock" class="text-xs font-bold text-cyan-300 tracking-wider">00:00</span>
@@ -246,8 +246,8 @@
                     filteredChannels.forEach(ch => {
                         let logoHtml = '';
                         if (ch.logoUrl && ch.logoUrl.trim() !== '') {
-                            // 🟢 CAMBIO VISUAL: object-cover y background oscuro para igualar tamaños
-                            logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="w-full h-full object-cover bg-slate-950 filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
+                            // 🟢 CORREGIDO: Usamos object-contain con padding para que todos los logos se vean perfectos
+                            logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="w-full h-full object-contain p-2 bg-slate-950 filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
                         } else {
                             logoHtml = `<span class="text-cyan-300 font-black text-lg">${ch.name}</span>`;
                         }
@@ -257,7 +257,7 @@
                                 <div class="flex items-center justify-between">
                                     <span class="text-sm uppercase font-bold tracking-widest text-slate-700 bg-cyan-100 px-3 py-1 rounded-full">${ch.category || 'GENERAL'}</span>
                                 </div>
-                                <div class="h-20 w-full bg-slate-950 rounded-xl flex items-center justify-center p-0 overflow-hidden border border-cyan-500/30 shadow-inner">
+                                <div class="h-20 w-full bg-slate-950 rounded-xl flex items-center justify-center overflow-hidden border border-cyan-500/30 shadow-inner">
                                     ${logoHtml}
                                 </div>
                                 <button onclick="playFromApp('${ch.name}')" class="w-full bg-gradient-to-r from-slate-900 to-blue-950 hover:from-cyan-500 hover:to-blue-600 text-white font-bold text-base py-3 rounded-xl tracking-wider transition shadow active:scale-95">▶ REPRODUCIR</button>
@@ -314,7 +314,7 @@
                     filteredChannels.forEach(ch => {
                         let logoHtml = '';
                         if (ch.logoUrl && ch.logoUrl.trim() !== '') {
-                            logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="w-full h-full object-cover bg-slate-950 filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
+                            logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="w-full h-full object-contain p-2 bg-slate-950 filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
                         } else {
                             logoHtml = `<span class="text-cyan-300 font-black text-lg">${ch.name}</span>`;
                         }
