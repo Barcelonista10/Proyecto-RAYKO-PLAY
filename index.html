@@ -306,7 +306,7 @@
                 if (filteredChannels.length === 0) {
                     html += `
                         <div class="text-center py-16 bg-slate-900/50 rounded-2xl border border-cyan-950">
-                            <span class="text-4xl mb-3 block">🎬</span>
+                            <span class="text-4xl mb-3 block">📺 </span>
                             <p class="text-base text-cyan-300/70 font-semibold">No hay contenido en esta categoría</p>
                         </div>
                     `;
@@ -404,7 +404,7 @@
                 window.Android.sendChannelsToWeb();
             } else {
                 receiveChannelsFromApp(JSON.stringify([
-                    { name: "A&E OP1", category: "Cine y Series", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/AMC_Logo_%282020%29.svg/320px-AMC_Logo_%282020%29.svg.png" },
+                    { name: "A&E OP1", category: "TV PREMIUN ", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/AMC_Logo_%282020%29.svg/320px-AMC_Logo_%282020%29.svg.png" },
                     { name: "A&E OP2 | AR", category: "Cine y Series", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/AXN_logo_2017.svg/320px-AXN_logo_2017.svg.png" }
                 ]));
             }
