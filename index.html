@@ -2,225 +2,344 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>RAYKO PLAY IPTV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEUS TV - Entretenimiento Freemium</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap">
+
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        body { background-color: #0F1621; color: #FFFFFF; height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
-        
-        .background-video-container {
-            position: absolute; top: 0; left: 0; width: 100%; height: 32%;
-            z-index: 0;
-            background: url('https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg') center/cover no-repeat;
-        }
-        .background-video-container::after {
-            content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to top, #0F1621 15%, transparent 100%);
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            user-select: none;
+            overflow-x: hidden;
         }
 
-        .search-bar {
-            position: absolute; top: 20px; right: 20px; z-index: 10;
-            background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px);
-            border-radius: 30px; padding: 10px 15px; display: flex; align-items: center; gap: 10px;
-        }
-        .search-bar i { color: #FFF; font-size: 18px; }
-        .search-bar input {
-            background: transparent; border: none; color: #FFF; outline: none; width: 100px; font-size: 14px;
-        }
-        .search-bar input::placeholder { color: #AAA; }
-
-        .tabs-top {
-            position: relative; z-index: 10; margin-top: 34vh;
-            display: flex; justify-content: center; gap: 30px; padding: 15px 0;
-            border-bottom: 1px solid #253040;
-        }
-        .tab-btn {
-            background: transparent; border: none; color: #8899AA; font-size: 16px; font-weight: 600; cursor: pointer;
-            padding-bottom: 10px; position: relative;
-        }
-        .tab-btn.active { color: #3B82F6; }
-        .tab-btn.active::after {
-            content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; height: 3px;
-            background: #3B82F6; border-radius: 10px;
+        /* Red Neon Glow Effects */
+        .neon-glow-red {
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.6), inset 0 0 10px rgba(255, 0, 0, 0.3);
+            border-color: #ff1a1a;
         }
 
-        .filter-scroll { z-index: 10; padding: 15px 20px; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
-        .filter-scroll::-webkit-scrollbar { display: none; }
-        .filter-chip {
-            display: inline-block; background: #1E293B; color: #CBD5E1; padding: 8px 18px;
-            border-radius: 20px; margin-right: 10px; font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.3s;
+        .neon-text-red {
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.5);
         }
-        .filter-chip.active { background: #3B82F6; color: #FFF; box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4); }
 
-        .channel-list-container { flex: 1; overflow-y: auto; z-index: 10; padding-bottom: 80px; }
-        .channel-list-container::-webkit-scrollbar { width: 4px; }
-        .channel-list-container::-webkit-scrollbar-thumb { background: #3B82F6; border-radius: 10px; }
-
-        .channel-item {
-            display: flex; align-items: center; padding: 15px 20px; border-bottom: 1px solid #1A2332;
-            cursor: pointer; transition: background 0.2s;
+        /* Menu Button Styling mimicking original image */
+        .zeus-btn {
+            background: linear-gradient(180deg, #1c1d22 0%, #0f1013 100%);
+            border: 2px solid transparent;
+            position: relative;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .channel-item:active { background: #1A2332; }
-        .channel-logo { width: 40px; height: 40px; object-fit: contain; margin-right: 15px; background: #0F1621; border-radius: 5px; padding: 5px; }
-        .channel-number { font-size: 16px; font-weight: bold; color: #8899AA; width: 40px; text-align: center; margin-right: 15px; }
-        .channel-info { flex: 1; display: flex; flex-direction: column; }
-        .channel-name { font-size: 15px; font-weight: 600; color: #FFF; }
-        .channel-epg { font-size: 12px; color: #8899AA; margin-top: 3px; }
-        .channel-arrow { color: #8899AA; font-size: 18px; background: rgba(255,255,255,0.05); width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; border-radius: 50%; border: 1px solid #2D3A4D; }
 
-        .bottom-nav {
-            position: absolute; bottom: 0; width: 100%; background: #0F1621; border-top: 1px solid #1A2332;
-            display: flex; justify-content: space-around; padding: 10px 0 20px 0; z-index: 20;
+        /* Top red highlight glow bar like image */
+        .zeus-btn::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 10%;
+            right: 10%;
+            height: 3px;
+            background: #ff0000;
+            border-radius: 50%;
+            box-shadow: 0 0 12px #ff0000, 0 0 20px #ff0000;
+            opacity: 0.9;
         }
-        .nav-item { text-align: center; color: #8899AA; font-size: 12px; cursor: pointer; transition: color 0.2s; }
-        .nav-item i { display: block; font-size: 24px; margin-bottom: 5px; }
-        .nav-item.active { color: #3B82F6; }
-        
-        .loading-text {
-            padding: 30px; text-align: center; color: #8899AA; font-size: 16px;
+
+        /* Hover & Focus State for TV Remote navigation */
+        .zeus-btn:hover, .zeus-btn.focused {
+            transform: scale(1.03);
+            background: linear-gradient(180deg, #25272e 0%, #15161b 100%);
+            border-color: #ff0000;
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.7), inset 0 0 15px rgba(255, 0, 0, 0.2);
+        }
+
+        .zeus-btn:hover::before, .zeus-btn.focused::before {
+            left: 5%;
+            right: 5%;
+            height: 4px;
+            box-shadow: 0 0 18px #ff0000, 0 0 30px #ff0000;
+        }
+
+        /* Ambient background glow */
+        .ambient-red {
+            background: radial-gradient(circle, rgba(200, 0, 0, 0.18) 0%, rgba(5, 5, 5, 0.95) 70%);
+        }
+
+        /* Glassmorphism modals */
+        .glass-modal {
+            background: rgba(12, 12, 15, 0.92);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 0, 0, 0.2);
         }
     </style>
 </head>
-<body>
+<body class="min-h-screen flex flex-col items-center justify-between p-4 sm:p-6 ambient-red relative">
 
-    <div class="background-video-container"></div>
-
-    <div class="search-bar">
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="Buscar..." id="searchInput" onkeyup="filtrarCanales()">
-    </div>
-
-    <div class="tabs-top">
-        <button class="tab-btn active" onclick="cambiarTab(this, 'categoria')">Categoría</button>
-        <button class="tab-btn" onclick="cambiarTab(this, 'favoritos')">Favoritos</button>
-    </div>
-
-    <div class="filter-scroll" id="filtrosContainer"></div>
-    <div class="channel-list-container" id="channelList">
-        <div class="loading-text">Cargando canales desde la app...</div>
-    </div>
-
-    <div class="bottom-nav">
-        <div class="nav-item" onclick="cambiarNav(this)">
-            <i class="fas fa-home"></i><span>Inicio</span>
+    <!-- Top Status Bar -->
+    <header class="w-full max-w-md flex justify-between items-center text-xs text-zinc-400 pt-2 px-2 z-10">
+        <div class="flex items-center space-x-2">
+            <span class="w-2 h-2 rounded-full bg-red-600 animate-ping"></span>
+            <span class="font-bold text-zinc-300">SERVIDOR ACTIVO</span>
         </div>
-        <div class="nav-item active" onclick="cambiarNav(this)">
-            <i class="fas fa-tv"></i><span>Canales</span>
+        <div class="flex items-center space-x-3">
+            <i class="fa-solid fa-wifi text-zinc-300"></i>
+            <span id="clock" class="font-semibold text-white">00:00</span>
         </div>
-        <div class="nav-item" onclick="cambiarNav(this)">
-            <i class="fas fa-user"></i><span>Perfil</span>
+    </header>
+
+    <!-- Main Container replicating image layout -->
+    <main class="w-full max-w-md flex flex-col items-center my-auto py-4 z-10">
+
+        <!-- LOGO BRANDING -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl sm:text-5xl font-black tracking-wider uppercase text-white flex items-center justify-center gap-2">
+                <span class="text-zinc-200">ZEUS</span> 
+                <span class="text-red-600 neon-text-red">TV</span>
+            </h1>
+            <p class="text-[11px] sm:text-xs font-semibold tracking-[0.35em] text-zinc-400 mt-2 uppercase">
+                ENTRETENIMIENTO FREEMIUM
+            </p>
         </div>
-    </div>
 
-    <script>
-        let allChannels = [];
-
-        // 1. LE PIDE LA LISTA DE CANALES A LA APP AL CARGAR
-        function requestChannelsFromApp() {
-            if (window.Android) {
-                window.Android.sendChannelsToWeb();
-            } else {
-                // Si se abre en el navegador normal, carga un mensaje
-                setTimeout(() => { 
-                    document.getElementById('channelList').innerHTML = '<div class="loading-text">Abre esta web desde la App RAYKO PLAY</div>';
-                }, 1000);
-            }
-        }
-
-        // 2. RECIBE LA LISTA EN FORMATO JSON DESDE LA APP
-        function receiveChannelsFromApp(jsonData) {
-            try {
-                allChannels = JSON.parse(jsonData);
-                // Añadir un ID ficticio basado en el índice si no viene del JSON
-                allChannels.forEach((c, index) => {
-                    if(!c.id) c.id = String(index + 1).padStart(3, '0');
-                });
-                renderFilters();
-                renderChannels();
-            } catch (e) {
-                console.error("Error al recibir los canales", e);
-                document.getElementById('channelList').innerHTML = '<div class="loading-text">Error al cargar los datos</div>';
-            }
-        }
-
-        function getCategories() {
-            let cats = ["Todos"];
-            allChannels.forEach(c => { if (!cats.includes(c.category)) cats.push(c.category); });
-            return cats;
-        }
-
-        let currentCategory = "Todos";
-
-        function renderFilters() {
-            const container = document.getElementById('filtrosContainer');
-            container.innerHTML = '';
-            const categories = getCategories();
-            categories.forEach(cat => {
-                const btn = document.createElement('div');
-                btn.className = 'filter-chip' + (cat === currentCategory ? ' active' : '');
-                btn.innerText = cat;
-                btn.onclick = () => { currentCategory = cat; renderFilters(); renderChannels(); };
-                container.appendChild(btn);
-            });
-        }
-
-        function renderChannels() {
-            const container = document.getElementById('channelList');
-            container.innerHTML = '';
+        <!-- MENU BUTTONS LIST -->
+        <div class="w-full flex flex-col gap-4 sm:gap-5" id="menu-list">
             
-            if (allChannels.length === 0) {
-                container.innerHTML = '<div class="loading-text">No se encontraron canales en la app</div>';
+            <!-- OPTION 1: TV EN VIVO -->
+            <button class="zeus-btn focused w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="0" onclick="openSection('TV EN VIVO', 'canales')">
+                <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
+                    <i class="fa-solid fa-tv text-2xl text-cyan-400 group-hover:scale-110 transition-transform"></i>
+                </div>
+                <span class="text-base sm:text-lg font-extrabold tracking-wide text-white uppercase">
+                    TV EN VIVO
+                </span>
+            </button>
+
+            <!-- OPTION 2: PELÍCULAS ESTRENO -->
+            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="1" onclick="openSection('PELÍCULAS ESTRENO', 'estrenos')">
+                <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
+                    <i class="fa-solid fa-clapperboard text-2xl text-zinc-300 group-hover:scale-110 transition-transform"></i>
+                </div>
+                <span class="text-base sm:text-lg font-extrabold tracking-wide text-white uppercase">
+                    PELÍCULAS ESTRENO
+                </span>
+            </button>
+
+            <!-- OPTION 3: PELÍCULAS PLUS -->
+            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="2" onclick="openSection('PELÍCULAS PLUS', 'plus')">
+                <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
+                    <i class="fa-solid fa-video text-2xl text-amber-400 group-hover:scale-110 transition-transform"></i>
+                </div>
+                <span class="text-base sm:text-lg font-extrabold tracking-wide text-white uppercase">
+                    PELÍCULAS PLUS
+                </span>
+            </button>
+
+            <!-- OPTION 4: PELÍCULAS COLECCIÓN -->
+            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="3" onclick="openSection('PELÍCULAS COLECCIÓN', 'coleccion')">
+                <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
+                    <i class="fa-solid fa-film text-2xl text-amber-600 group-hover:scale-110 transition-transform"></i>
+                </div>
+                <span class="text-base sm:text-lg font-extrabold tracking-wide text-white uppercase">
+                    PELÍCULAS COLECCIÓN
+                </span>
+            </button>
+
+            <!-- OPTION 5: SERIES -->
+            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="4" onclick="openSection('SERIES', 'series')">
+                <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
+                    <i class="fa-solid fa-masks-theater text-2xl text-amber-500 group-hover:scale-110 transition-transform"></i>
+                </div>
+                <span class="text-base sm:text-lg font-extrabold tracking-wide text-white uppercase">
+                    SERIES
+                </span>
+            </button>
+
+        </div>
+    </main>
+
+    <!-- TV Remote Control Guidance Footer -->
+    <footer class="w-full max-w-md text-center py-2 z-10">
+        <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-zinc-900/90 border border-zinc-800 text-[11px] text-zinc-400">
+            <span><i class="fa-solid fa-arrows-up-down text-red-500"></i> Mover</span>
+            <span class="text-zinc-600">•</span>
+            <span><strong class="text-zinc-200">ENTER</strong> Seleccionar</span>
+        </div>
+    </footer>
+
+    <!-- Interactive Content Modal -->
+    <div id="content-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+        <div class="glass-modal w-full max-w-lg rounded-3xl p-6 relative flex flex-col max-h-[85vh] shadow-2xl border-red-600/40">
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-zinc-800 text-zinc-300 hover:text-white hover:bg-red-600 flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Modal Header -->
+            <div class="flex items-center gap-3 mb-4">
+                <i class="fa-solid fa-circle-play text-red-500 text-2xl"></i>
+                <h2 id="modal-title" class="text-xl font-black text-white uppercase tracking-wider">Categoría</h2>
+            </div>
+
+            <!-- Modal Body / Content List -->
+            <div id="modal-content" class="overflow-y-auto space-y-3 pr-1 my-2 max-h-[60vh]">
+                <!-- Dynamic Content Loaded via JS -->
+            </div>
+
+            <div class="pt-4 border-t border-zinc-800 text-center text-xs text-zinc-500">
+                Pulse <span class="text-red-400 font-bold">ESC</span> o haga clic afuera para volver
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        let currentIndex = 0;
+        const buttons = document.querySelectorAll('.zeus-btn');
+        const modal = document.getElementById('content-modal');
+
+        // Sample Data for Categories
+        const categoryData = {
+            canales: [
+                { name: "Deportes HD - En Vivo", icon: "fa-volleyball", badge: "HD 1080p" },
+                { name: "Cine Premium VIP", icon: "fa-film", badge: "4K UHD" },
+                { name: "Noticias 24/7", icon: "fa-newspaper", badge: "EN VIVO" },
+                { name: "Infantil & Animación", icon: "fa-child", badge: "HD" },
+                { name: "Música & Conciertos", icon: "fa-music", badge: "AUDIO 5.1" }
+            ],
+            estrenos: [
+                { name: "Gladiador II (2024)", desc: "Acción / Drama", badge: "Estreno" },
+                { name: "Duna: Parte Dos", desc: "Ciencia Ficción", badge: "4K" },
+                { name: "Deadpool & Wolverine", desc: "Comedia / Acción", badge: "TOP 1" },
+                { name: "Intensa-Mente 2", desc: "Animación / Familia", badge: "HD" }
+            ],
+            plus: [
+                { name: "Avatar: El Camino del Agua", desc: "Fantástico", badge: "PLUS" },
+                { name: "Oppenheimer", desc: "Historia / Biografía", badge: "PLUS" },
+                { name: "Spider-Man: Across the Spider-Verse", desc: "Animación", badge: "PLUS" }
+            ],
+            coleccion: [
+                { name: "Saga El Señor de los Anillos (Trilogía)", desc: "3 Películas", badge: "SAGA" },
+                { name: "Saga Harry Potter Completa", desc: "8 Películas", badge: "SAGA" },
+                { name: "Saga Rápido y Furioso 1 - 10", desc: "10 Películas", badge: "SAGA" }
+            ],
+            series: [
+                { name: "La Casa del Dragón - T2", desc: "8 Episodios", badge: "NUEVO" },
+                { name: "The Last of Us - T1", desc: "9 Episodios", badge: "COMPLETA" },
+                { name: "Stranger Things - T4", desc: "9 Episodios", badge: "COMPLETA" },
+                { name: "Breaking Bad (Serie Completa)", desc: "5 Temporadas", badge: "VIP" }
+            ]
+        };
+
+        // Update focus state visually
+        function updateFocus(index) {
+            buttons.forEach((btn, i) => {
+                if (i === index) {
+                    btn.classList.add('focused');
+                    btn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                } else {
+                    btn.classList.remove('focused');
+                }
+            });
+            currentIndex = index;
+        }
+
+        // Mouse hover support
+        buttons.forEach((btn, index) => {
+            btn.addEventListener('mouseenter', () => {
+                updateFocus(index);
+            });
+        });
+
+        // Remote Control Keyboard Navigation
+        document.addEventListener('keydown', (e) => {
+            if (modal.classList.contains('hidden') === false) {
+                if (e.key === 'Escape' || e.key === 'BackSpace') {
+                    closeModal();
+                }
                 return;
             }
 
-            let filtered = allChannels;
-            if (currentCategory !== "Todos") filtered = allChannels.filter(c => c.category === currentCategory);
-
-            const query = document.getElementById('searchInput').value.toLowerCase();
-            if (query) filtered = filtered.filter(c => c.name.toLowerCase().includes(query));
-
-            if (filtered.length === 0) {
-                container.innerHTML = `<div class="loading-text">No hay canales disponibles</div>`;
-                return;
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                const nextIndex = (currentIndex + 1) % buttons.length;
+                updateFocus(nextIndex);
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                const prevIndex = (currentIndex - 1 + buttons.length) % buttons.length;
+                updateFocus(prevIndex);
+            } else if (e.key === 'Enter') {
+                e.preventDefault();
+                buttons[currentIndex].click();
             }
+        });
 
-            filtered.forEach(c => {
-                const item = document.createElement('div');
-                item.className = 'channel-item';
-                // 3. AL HACER CLIC, SE LLAMA AL PUENTE DE JAVA CON EL NOMBRE EXACTO
-                item.onclick = () => {
+        // Open Modal function
+        function openSection(title, key) {
+            document.getElementById('modal-title').innerText = title;
+            const container = document.getElementById('modal-content');
+            container.innerHTML = '';
+
+            const items = categoryData[key] || [];
+            
+            items.forEach(item => {
+                const el = document.createElement('div');
+                el.className = "flex items-center justify-between p-3.5 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-red-500 hover:bg-zinc-800 transition cursor-pointer group";
+                
+                // 🟢 CAMBIO IMPORTANTE: Aquí se conecta con la app
+                el.onclick = () => {
                     if (window.Android) {
-                        window.Android.playChannelFromWeb(c.name);
+                        // Le pasa el nombre exacto del canal a tu app
+                        window.Android.playChannelFromWeb(item.name);
+                    } else {
+                        alert(`Simulación: Iniciando reproducción de: ${item.name}`);
                     }
                 };
 
-                item.innerHTML = `
-                    <img class="channel-logo" src="${c.logoUrl || ''}" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/RAYKO_LOGO.svg/1200px-RAYKO_LOGO.svg.png'">
-                    <div class="channel-number">${c.id || ''}</div>
-                    <div class="channel-info"><div class="channel-name">${c.name}</div><div class="channel-epg">${c.epg || 'En vivo'}</div></div>
-                    <div class="channel-arrow"><i class="fas fa-arrow-right"></i></div>
+                el.innerHTML = `
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-red-950/60 border border-red-600/30 flex items-center justify-center text-red-500 group-hover:bg-red-600 group-hover:text-white transition">
+                            <i class="fa-solid ${item.icon || 'fa-play'} text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">${item.name}</h4>
+                            ${item.desc ? `<p class="text-xs text-zinc-400">${item.desc}</p>` : ''}
+                        </div>
+                    </div>
+                    <span class="text-[10px] font-extrabold px-2.5 py-1 rounded-full bg-zinc-800 border border-zinc-700 text-amber-400 group-hover:border-red-500/60">
+                        ${item.badge}
+                    </span>
                 `;
-                container.appendChild(item);
+                container.appendChild(el);
             });
+
+            modal.classList.remove('hidden');
         }
 
-        function cambiarTab(btn, tabName) {
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+        function closeModal() {
+            modal.classList.add('hidden');
         }
 
-        function cambiarNav(item) {
-            document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
-            item.classList.add('active');
+        // Close on clicking backdrop
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        // Realtime Clock
+        function updateClock() {
+            const now = new Date();
+            const h = String(now.getHours()).padStart(2, '0');
+            const m = String(now.getMinutes()).padStart(2, '0');
+            document.getElementById('clock').innerText = `${h}:${m}`;
         }
-
-        function filtrarCanales() { renderChannels(); }
-
-        // Inicializar
-        window.onload = function() {
-            requestChannelsFromApp();
-        };
+        setInterval(updateClock, 1000);
+        updateClock();
     </script>
 </body>
 </html>
