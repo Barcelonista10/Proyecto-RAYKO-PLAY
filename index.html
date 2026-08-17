@@ -13,61 +13,47 @@
             color: #ffffff;
             user-select: none;
             overflow-x: hidden;
+            height: 100vh;
+            height: 100dvh;
         }
         .neon-box {
             background: linear-gradient(145deg, rgba(16, 30, 54, 0.9), rgba(11, 21, 38, 0.95));
             border: 1px solid rgba(0, 212, 255, 0.35);
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.15), inset 0 0 12px rgba(255, 255, 255, 0.05);
-            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.12), inset 0 0 10px rgba(255, 255, 255, 0.03);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .neon-box:hover {
-            box-shadow: 0 0 30px rgba(0, 212, 255, 0.5), inset 0 0 18px rgba(0, 212, 255, 0.25);
+            box-shadow: 0 0 25px rgba(0, 212, 255, 0.45), inset 0 0 15px rgba(0, 212, 255, 0.2);
             border-color: #00d4ff;
-            transform: translateY(-3px) scale(1.01);
+            transform: translateY(-2px) scale(1.01);
         }
         .neon-text {
             background: linear-gradient(to right, #00d4ff, #0072ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.6));
+            filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.5));
         }
         .channel-card {
             background: linear-gradient(145deg, #ffffff, #e6f0fa);
             color: #000;
-            border-radius: 16px;
+            border-radius: 14px;
             overflow: hidden;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 6px 25px rgba(0,114,255,0.25);
+            box-shadow: 0 4px 20px rgba(0,114,255,0.2);
         }
         .channel-card:hover {
-            transform: translateY(-4px) scale(1.02);
-            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.6);
-        }
-        @keyframes pulseGlow {
-            0%, 100% { opacity: 0.4; transform: translateX(-50%) scale(1); }
-            50% { opacity: 0.7; transform: translateX(-50%) scale(1.1); }
-        }
-        .bg-glow {
-            position: absolute;
-            width: 350px;
-            height: 350px;
-            background: radial-gradient(circle, rgba(0, 212, 255, 0.25) 0%, rgba(0, 114, 255, 0.1) 40%, rgba(0,0,0,0) 75%);
-            top: -80px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: -1;
-            pointer-events: none;
-            animation: pulseGlow 5s infinite ease-in-out;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.5);
         }
         .scrollable-channels {
-            max-height: 520px;
+            max-height: 48vh;
             overflow-y: auto;
             padding-right: 4px;
             scrollbar-width: thin;
             scrollbar-color: #00d4ff #0b1526;
         }
         ::-webkit-scrollbar {
-            width: 6px;
+            width: 5px;
         }
         ::-webkit-scrollbar-track {
             background: #0b1526;
@@ -79,60 +65,59 @@
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between relative">
+<body class="flex flex-col justify-between overflow-hidden">
 
-    <div class="bg-glow"></div>
-
-    <!-- Top Header -->
-    <header class="w-full pt-8 pb-4 px-4 text-center relative">
-        <div class="inline-block animate-pulse mb-1.5">
-            <span class="bg-gradient-to-r from-cyan-500/20 to-blue-600/20 border border-cyan-500/40 text-cyan-300 text-[10px] uppercase font-extrabold px-3.5 py-1 rounded-full tracking-widest shadow-lg">
-                ✨ Transmisión Ultra HD Activa
+    <!-- Top Header with Live Clock -->
+    <header class="w-full pt-4 pb-2 px-4 flex flex-col items-center relative flex-shrink-0">
+        <div class="w-full max-w-md flex justify-between items-center px-1 mb-1">
+            <span id="live-clock" class="text-xs font-bold text-cyan-300 tracking-wider">00:00</span>
+            <span class="bg-gradient-to-r from-cyan-500/20 to-blue-600/20 border border-cyan-500/40 text-cyan-300 text-[9px] uppercase font-extrabold px-3 py-0.5 rounded-full tracking-widest shadow">
+                ✨ HD Activa
             </span>
         </div>
-        <h1 class="text-4xl sm:text-5xl font-black tracking-wider text-white">
+        <h1 class="text-3xl sm:text-4xl font-black tracking-wider text-white">
             RAYKO <span class="neon-text">PLAY</span>
         </h1>
-        <p class="text-xs uppercase tracking-[0.3em] text-cyan-200/70 mt-2 font-bold">
+        <p class="text-[10px] uppercase tracking-[0.25em] text-cyan-200/70 mt-1 font-bold">
             ENTRETENIMIENTO FREEMIUM 2026
         </p>
     </header>
 
     <!-- Main Container -->
-    <main id="app-container" class="w-full max-w-md mx-auto px-4 flex-grow pb-12">
+    <main id="app-container" class="w-full max-w-md mx-auto px-4 flex-grow flex flex-col justify-center overflow-y-auto py-2">
         <!-- Dynamic Views Rendered Here -->
     </main>
 
     <!-- Footer -->
-    <footer class="w-full py-4 text-center text-xs text-cyan-300/50 tracking-wider border-t border-cyan-950/80 bg-slate-950/40 backdrop-blur-sm">
-        RAYKO PLAY FREEMIUM &copy; 2026 - Experiencia Inmersiva
+    <footer class="w-full py-2.5 text-center text-[11px] text-cyan-300/50 tracking-wider border-t border-cyan-950/80 bg-slate-950/60 backdrop-blur-sm flex-shrink-0">
+        RAYKO PLAY FREEMIUM &copy; 2026
     </footer>
 
     <!-- Video Modal / Live Stream Player Simulator -->
     <div id="video-modal" class="fixed inset-0 bg-slate-950/95 z-50 hidden flex flex-col items-center justify-center p-4 backdrop-blur-md">
-        <div class="w-full max-w-md bg-slate-900 rounded-2xl overflow-hidden border border-cyan-500/50 shadow-[0_0_60px_rgba(0,212,255,0.35)] relative transform transition-all">
-            <div class="bg-slate-950 p-4 flex justify-between items-center border-b border-cyan-950">
+        <div class="w-full max-w-md bg-slate-900 rounded-2xl overflow-hidden border border-cyan-500/50 shadow-[0_0_50px_rgba(0,212,255,0.35)] relative transform transition-all">
+            <div class="bg-slate-950 p-3.5 flex justify-between items-center border-b border-cyan-950">
                 <div class="flex items-center gap-2">
                     <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
-                    <h3 id="modal-title" class="font-bold text-cyan-300 tracking-wide text-xs sm:text-sm uppercase">CONECTANDO SEÑAL...</h3>
+                    <h3 id="modal-title" class="font-bold text-cyan-300 tracking-wide text-xs uppercase">CONECTANDO SEÑAL...</h3>
                 </div>
-                <button onclick="closePlayer()" class="text-cyan-300 hover:text-white font-bold text-xl px-2.5 py-0.5 bg-slate-800/50 hover:bg-slate-800 rounded-lg transition">✕</button>
+                <button onclick="closePlayer()" class="text-cyan-300 hover:text-white font-bold text-lg px-2.5 py-0.5 bg-slate-800/50 hover:bg-slate-800 rounded-lg transition">✕</button>
             </div>
             <div class="relative aspect-video bg-slate-950 flex items-center justify-center overflow-hidden">
                 <div id="loading-spinner" class="absolute inset-0 flex flex-col items-center justify-center bg-slate-950/90 z-20 transition-opacity">
-                    <div class="w-12 h-12 border-4 border-cyan-400 border-t-transparent rounded-full animate-spin mb-3 shadow-[0_0_20px_rgba(0,212,255,0.8)]"></div>
-                    <span class="text-xs text-cyan-200 tracking-widest font-semibold animate-pulse">CARGANDO RECURSOS 4K...</span>
+                    <div class="w-10 h-10 border-4 border-cyan-400 border-t-transparent rounded-full animate-spin mb-3 shadow-[0_0_15px_rgba(0,212,255,0.8)]"></div>
+                    <span class="text-[11px] text-cyan-200 tracking-widest font-semibold animate-pulse">CARGANDO RECURSOS 4K...</span>
                 </div>
                 <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-950/40 via-slate-950 to-slate-950 opacity-90"></div>
-                <div class="text-center p-6 z-10">
-                    <div class="text-6xl mb-3 animate-pulse">📡</div>
-                    <p id="playing-text" class="text-base font-bold text-white tracking-wide">Reproduciendo Contenido...</p>
-                    <p class="text-xs text-cyan-300 mt-1.5 font-medium bg-cyan-950/60 py-1 px-3.5 rounded-full inline-block border border-cyan-500/30">Señal Optimizada • 60 FPS</p>
+                <div class="text-center p-5 z-10">
+                    <div class="text-5xl mb-2 animate-pulse">📡</div>
+                    <p id="playing-text" class="text-sm font-bold text-white tracking-wide">Reproduciendo Contenido...</p>
+                    <p class="text-[11px] text-cyan-300 mt-1 font-medium bg-cyan-950/60 py-0.5 px-3 rounded-full inline-block border border-cyan-500/30">Señal Optimizada • 60 FPS</p>
                 </div>
             </div>
-            <div class="p-4 bg-slate-900 flex justify-between items-center border-t border-cyan-950">
-                <span class="text-xs text-cyan-300/70 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> Servidor Estable</span>
-                <button onclick="closePlayer()" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-white text-xs px-5 py-2.5 rounded-xl font-bold shadow-lg shadow-cyan-500/30 transition transform active:scale-95">Cerrar Reproductor</button>
+            <div class="p-3.5 bg-slate-900 flex justify-between items-center border-t border-cyan-950">
+                <span class="text-[11px] text-cyan-300/70 flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> Servidor Estable</span>
+                <button onclick="closePlayer()" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-white text-xs px-4 py-2 rounded-xl font-bold shadow-lg shadow-cyan-500/30 transition transform active:scale-95">Cerrar Reproductor</button>
             </div>
         </div>
     </div>
@@ -161,22 +146,18 @@
         ];
 
         const channelsList = [
-            { name: 'AMC', logo: 'AMC', category: 'Series y Películas' },
-            { name: 'ANIMAL PLANET', logo: 'ANIMAL PLANET', category: 'Documentales' },
-            { name: 'AXN', logo: 'AXN', category: 'Acción y Series' },
-            { name: 'ADN 40', logo: 'ADN 40', category: 'Noticias' },
-            { name: 'AZ CORAZÓN', logo: 'AZ CORAZÓN', category: 'Novelas' },
-            { name: 'AZ CINEMA', logo: 'AZ CINEMA', category: 'Cine Latino' },
-            { name: 'AZ MUNDO', logo: 'AZ MUNDO', category: 'Internacional' },
-            { name: 'CANAL 7', logo: 'CANAL 7', category: 'Abierta' },
-            { name: 'ESPN HD', logo: 'ESPN', category: 'Deportes' },
-            { name: 'FOX SPORTS', logo: 'FOX SPORTS', category: 'Deportes' },
-            { name: 'DISCOVERY', logo: 'DISCOVERY', category: 'Documentales' },
-            { name: 'CARTOON NETWORK', logo: 'CARTOON', category: 'Infantil' },
-            { name: 'TNT SPORTS', logo: 'TNT SPORTS', category: 'Deportes' },
-            { name: 'HBO HD', logo: 'HBO', category: 'Películas' },
-            { name: 'WARNER TV', logo: 'WARNER', category: 'Series' },
-            { name: 'UNIVERSAL TV', logo: 'UNIVERSAL', category: 'Series' }
+            { name: 'AMC', category: 'Series y Películas', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/AMC_Logo_%282020%29.svg/320px-AMC_Logo_%282020%29.svg.png' },
+            { name: 'ANIMAL PLANET', category: 'Documentales', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Animal_Planet_logo_%282018%29.svg/320px-Animal_Planet_logo_%282018%29.svg.png' },
+            { name: 'AXN', category: 'Acción y Series', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/AXN_logo_2017.svg/320px-AXN_logo_2017.svg.png' },
+            { name: 'ADN 40', category: 'Noticias', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Adn40_logo.svg/320px-Adn40_logo.svg.png' },
+            { name: 'ESPN HD', category: 'Deportes', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/ESPN_logo.svg/320px-ESPN_logo.svg.png' },
+            { name: 'FOX SPORTS', category: 'Deportes', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fox_Sports_logo_%282020%29.svg/320px-Fox_Sports_logo_%282020%29.svg.png' },
+            { name: 'DISCOVERY', category: 'Documentales', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Discovery_Channel_Logo_2019.svg/320px-Discovery_Channel_Logo_2019.svg.png' },
+            { name: 'CARTOON NETWORK', category: 'Infantil', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/320px-Cartoon_Network_2010_logo.svg.png' },
+            { name: 'TNT SPORTS', category: 'Deportes', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/TNT_Sports_Logo_2021.svg/320px-TNT_Sports_Logo_2021.svg.png' },
+            { name: 'HBO HD', category: 'Películas', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/320px-HBO_logo.svg.png' },
+            { name: 'WARNER TV', category: 'Series', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Warner_TV_logo_2023.svg/320px-Warner_TV_logo_2023.svg.png' },
+            { name: 'UNIVERSAL TV', category: 'Series', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Universal_TV_logo_%282018%29.svg/320px-Universal_TV_logo_%282018%29.svg.png' }
         ];
 
         const moviesList = {
@@ -186,25 +167,37 @@
             'Series': ['Breaking Bad', 'Game of Thrones', 'Stranger Things', 'The Last of Us', 'Chernobyl', 'Peaky Blinders']
         };
 
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            hours = String(hours).padStart(2, '0');
+            const clockEl = document.getElementById('live-clock');
+            if (clockEl) {
+                clockEl.innerText = `${hours}:${minutes}`;
+            }
+        }
+        setInterval(updateClock, 1000);
+
         function render() {
             const container = document.getElementById('app-container');
             container.innerHTML = '';
 
             if (state.currentView === 'home') {
-                let html = '<div class="space-y-4">';
+                let html = '<div class="space-y-3 w-full">';
                 categories.forEach(cat => {
                     html += `
-                        <div onclick="${cat.action}('${cat.type || cat.id}')" class="neon-box rounded-2xl p-4.5 flex items-center justify-between cursor-pointer group">
-                            <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/30 via-blue-600/20 to-indigo-600/20 flex items-center justify-center text-2xl border border-cyan-400/40 group-hover:scale-110 transition duration-300 shadow-inner">
+                        <div onclick="${cat.action}('${cat.type || cat.id}')" class="neon-box rounded-xl p-3.5 flex items-center justify-between cursor-pointer group">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500/30 via-blue-600/20 to-indigo-600/20 flex items-center justify-center text-xl border border-cyan-400/40 group-hover:scale-110 transition duration-300 shadow-inner">
                                     ${cat.icon}
                                 </div>
                                 <div>
-                                    <h3 class="font-bold tracking-wide text-sm sm:text-base text-white group-hover:text-cyan-300 transition">${cat.title}</h3>
-                                    <p class="text-[11px] text-cyan-200/60 font-medium">${cat.desc}</p>
+                                    <h3 class="font-bold tracking-wide text-xs sm:text-sm text-white group-hover:text-cyan-300 transition">${cat.title}</h3>
+                                    <p class="text-[10px] text-cyan-200/60 font-medium">${cat.desc}</p>
                                 </div>
                             </div>
-                            <span class="text-cyan-400/60 group-hover:text-cyan-300 group-hover:translate-x-1 transition font-black text-lg">›</span>
+                            <span class="text-cyan-400/60 group-hover:text-cyan-300 group-hover:translate-x-1 transition font-black text-base">›</span>
                         </div>
                     `;
                 });
@@ -213,26 +206,26 @@
             } 
             else if (state.currentView === 'servers') {
                 let html = `
-                    <div class="mb-5 flex items-center justify-between">
+                    <div class="mb-3 flex items-center justify-between">
                         <div>
-                            <h2 class="text-base font-black tracking-wider text-white">SELECCIONAR SERVIDOR</h2>
-                            <p class="text-xs text-cyan-300 font-semibold">Líneas de transmisión optimizadas</p>
+                            <h2 class="text-sm font-black tracking-wider text-white">SELECCIONAR SERVIDOR</h2>
+                            <p class="text-[11px] text-cyan-300 font-semibold">Líneas de transmisión optimizadas</p>
                         </div>
-                        <button onclick="goHome()" class="text-xs bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-3.5 py-2 rounded-xl text-cyan-200 font-bold transition flex items-center gap-1.5 shadow-md">← Menú</button>
+                        <button onclick="goHome()" class="text-xs bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-3 py-1.5 rounded-xl text-cyan-200 font-bold transition shadow-md">← Menú</button>
                     </div>
-                    <div class="space-y-3.5">
+                    <div class="space-y-3 w-full">
                 `;
                 servers.forEach(srv => {
                     html += `
-                        <div onclick="selectServer('${srv.name}')" class="neon-box rounded-2xl p-4 flex items-center justify-between cursor-pointer border-l-4 border-l-cyan-400 group">
-                            <div class="flex items-center gap-4">
-                                <span class="text-2xl">${srv.icon}</span>
+                        <div onclick="selectServer('${srv.name}')" class="neon-box rounded-xl p-3.5 flex items-center justify-between cursor-pointer border-l-4 border-l-cyan-400 group">
+                            <div class="flex items-center gap-3.5">
+                                <span class="text-xl">${srv.icon}</span>
                                 <div>
-                                    <h3 class="font-bold tracking-wide text-sm sm:text-base text-white group-hover:text-cyan-300 transition">${srv.name}</h3>
+                                    <h3 class="font-bold tracking-wide text-xs sm:text-sm text-white group-hover:text-cyan-300 transition">${srv.name}</h3>
                                     <span class="text-[10px] bg-emerald-500/15 text-emerald-300 px-2 py-0.5 rounded-md font-semibold">Latencia: ${srv.ping}</span>
                                 </div>
                             </div>
-                            <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-3.5 py-2 rounded-xl shadow-md group-hover:scale-105 transition">Conectar</span>
+                            <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-3 py-1.5 rounded-xl shadow-md group-hover:scale-105 transition">Conectar</span>
                         </div>
                     `;
                 });
@@ -246,44 +239,42 @@
                 );
 
                 let html = `
-                    <div class="mb-3 flex items-center justify-between">
+                    <div class="mb-2.5 flex items-center justify-between">
                         <div>
-                            <h2 class="text-base font-black tracking-wider text-white">TV EN VIVO</h2>
-                            <p class="text-[11px] text-cyan-300 font-semibold">${state.selectedServer}</p>
+                            <h2 class="text-sm font-black tracking-wider text-white">TV EN VIVO</h2>
+                            <p class="text-[10px] text-cyan-300 font-semibold">${state.selectedServer}</p>
                         </div>
-                        <button onclick="goToServers()" class="text-xs bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-3.5 py-2 rounded-xl text-cyan-200 font-bold transition shadow-md">← Servidores</button>
+                        <button onclick="goToServers()" class="text-xs bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-3 py-1.5 rounded-xl text-cyan-200 font-bold transition shadow-md">← Servidores</button>
                     </div>
 
-                    <!-- Buscador en tiempo real -->
-                    <div class="mb-4 relative">
-                        <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-cyan-400">🔍</span>
-                        <input type="text" id="channel-search" value="${state.searchQuery}" oninput="handleSearch(event)" placeholder="Buscar canal o categoría..." class="w-full bg-slate-900 border border-cyan-900/60 focus:border-cyan-400 rounded-xl pl-11 pr-4 py-3 text-xs sm:text-sm text-white placeholder-cyan-500/50 focus:outline-none transition shadow-inner">
-                        ${state.searchQuery ? `<button onclick="clearSearch()" class="absolute inset-y-0 right-0 flex items-center pr-4 text-cyan-300 hover:text-white text-xs font-bold">✕</button>` : ''}
+                    <div class="mb-3 relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-cyan-400">🔍</span>
+                        <input type="text" id="channel-search" value="${state.searchQuery}" oninput="handleSearch(event)" placeholder="Buscar canal o categoría..." class="w-full bg-slate-900 border border-cyan-900/60 focus:border-cyan-400 rounded-xl pl-10 pr-4 py-2.5 text-xs text-white placeholder-cyan-500/50 focus:outline-none transition shadow-inner">
+                        ${state.searchQuery ? `<button onclick="clearSearch()" class="absolute inset-y-0 right-0 flex items-center pr-3.5 text-cyan-300 hover:text-white text-xs font-bold">✕</button>` : ''}
                     </div>
 
-                    <!-- Contenedor con scroll vertical fluido -->
-                    <div class="scrollable-channels">
-                        <div class="grid grid-cols-2 gap-3 pb-2">
+                    <div class="scrollable-channels w-full">
+                        <div class="grid grid-cols-2 gap-2.5 pb-2">
                 `;
 
                 if (filteredChannels.length === 0) {
                     html += `
-                        <div class="col-span-2 text-center py-12 bg-slate-900/50 rounded-2xl border border-cyan-950">
-                            <span class="text-3xl mb-2 block">📡</span>
-                            <p class="text-xs text-cyan-300/70 font-semibold">No se encontraron canales con "${state.searchQuery}"</p>
+                        <div class="col-span-2 text-center py-10 bg-slate-900/50 rounded-xl border border-cyan-950">
+                            <span class="text-2xl mb-1 block">📡</span>
+                            <p class="text-xs text-cyan-300/70 font-semibold">No se encontraron canales</p>
                         </div>
                     `;
                 } else {
                     filteredChannels.forEach(ch => {
                         html += `
-                            <div class="channel-card p-3 flex flex-col justify-between items-center text-center">
+                            <div class="channel-card p-2.5 flex flex-col justify-between items-center text-center">
                                 <div class="w-full">
-                                    <span class="text-[9px] uppercase font-bold tracking-widest text-slate-700 bg-cyan-100 px-2.5 py-0.5 rounded-full mb-2 inline-block">${ch.category}</span>
+                                    <span class="text-[8px] uppercase font-bold tracking-widest text-slate-700 bg-cyan-100 px-2 py-0.5 rounded-full mb-1.5 inline-block">${ch.category}</span>
                                 </div>
-                                <div class="h-16 w-full bg-slate-950 rounded-xl flex items-center justify-center p-2 my-2 border border-cyan-500/30 shadow-inner">
-                                    <span class="text-cyan-300 font-black text-xs sm:text-sm tracking-tighter">${ch.logo}</span>
+                                <div class="h-14 w-full bg-slate-950 rounded-lg flex items-center justify-center p-2 my-1 border border-cyan-500/30 shadow-inner overflow-hidden">
+                                    <img src="${ch.logo}" alt="${ch.name}" class="max-h-10 max-w-full object-contain filter brightness-110" onerror="this.onerror=null; this.src=''; this.parentNode.innerHTML='<span class=\'text-cyan-300 font-black text-xs\'>${ch.name}</span>'">
                                 </div>
-                                <button onclick="openPlayer('${ch.name}')" class="w-full bg-gradient-to-r from-slate-900 to-blue-950 hover:from-cyan-500 hover:to-blue-600 text-white font-bold text-xs py-2 rounded-lg tracking-wider transition shadow-md active:scale-95">VER CANAL</button>
+                                <button onclick="openPlayer('${ch.name}')" class="w-full bg-gradient-to-r from-slate-900 to-blue-950 hover:from-cyan-500 hover:to-blue-600 text-white font-bold text-[11px] py-1.5 rounded-lg tracking-wider transition shadow active:scale-95">VER CANAL</button>
                             </div>
                         `;
                     });
@@ -307,41 +298,41 @@
                 let filteredMovies = items.filter(m => m.toLowerCase().includes(state.searchQuery.toLowerCase()));
 
                 let html = `
-                    <div class="mb-4 flex items-center justify-between">
+                    <div class="mb-3 flex items-center justify-between">
                         <div>
-                            <h2 class="text-base font-black tracking-wider text-white uppercase">${state.selectedCategory}</h2>
-                            <p class="text-[11px] text-cyan-300 font-semibold">Selección Exclusiva</p>
+                            <h2 class="text-sm font-black tracking-wider text-white uppercase">${state.selectedCategory}</h2>
+                            <p class="text-[10px] text-cyan-300 font-semibold">Selección Exclusiva</p>
                         </div>
-                        <button onclick="goHome()" class="text-xs bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-3.5 py-2 rounded-xl text-cyan-200 font-bold transition shadow-md">← Menú</button>
+                        <button onclick="goHome()" class="text-xs bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-3 py-1.5 rounded-xl text-cyan-200 font-bold transition shadow-md">← Menú</button>
                     </div>
 
-                    <div class="mb-5 relative">
-                        <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-cyan-400">🔍</span>
-                        <input type="text" id="movie-search" value="${state.searchQuery}" oninput="handleSearch(event)" placeholder="Buscar título..." class="w-full bg-slate-900 border border-cyan-900/60 focus:border-cyan-400 rounded-xl pl-11 pr-4 py-3 text-xs sm:text-sm text-white placeholder-cyan-500/50 focus:outline-none transition shadow-inner">
-                        ${state.searchQuery ? `<button onclick="clearSearch()" class="absolute inset-y-0 right-0 flex items-center pr-4 text-cyan-300 hover:text-white text-xs font-bold">✕</button>` : ''}
+                    <div class="mb-3 relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-cyan-400">🔍</span>
+                        <input type="text" id="movie-search" value="${state.searchQuery}" oninput="handleSearch(event)" placeholder="Buscar título..." class="w-full bg-slate-900 border border-cyan-900/60 focus:border-cyan-400 rounded-xl pl-10 pr-4 py-2.5 text-xs text-white placeholder-cyan-500/50 focus:outline-none transition shadow-inner">
+                        ${state.searchQuery ? `<button onclick="clearSearch()" class="absolute inset-y-0 right-0 flex items-center pr-3.5 text-cyan-300 hover:text-white text-xs font-bold">✕</button>` : ''}
                     </div>
 
-                    <div class="space-y-3">
+                    <div class="scrollable-channels w-full space-y-2.5">
                 `;
 
                 if (filteredMovies.length === 0) {
                     html += `
-                        <div class="text-center py-12 bg-slate-900/50 rounded-2xl border border-cyan-950">
-                            <span class="text-3xl mb-2 block">🎬</span>
+                        <div class="text-center py-10 bg-slate-900/50 rounded-xl border border-cyan-950">
+                            <span class="text-2xl mb-1 block">🎬</span>
                             <p class="text-xs text-cyan-300/70 font-semibold">No se encontraron títulos</p>
                         </div>
                     `;
                 } else {
                     filteredMovies.forEach(item => {
                         html += `
-                            <div class="neon-box rounded-2xl p-4 flex items-center justify-between cursor-pointer group" onclick="openPlayer('${item}')">
-                                <div class="flex items-center gap-3.5">
-                                    <div class="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center text-lg border border-cyan-400/40 group-hover:scale-110 transition">
+                            <div class="neon-box rounded-xl p-3 flex items-center justify-between cursor-pointer group" onclick="openPlayer('${item}')">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-9 h-9 rounded-lg bg-cyan-500/15 flex items-center justify-center text-base border border-cyan-400/40 group-hover:scale-110 transition">
                                         🎬
                                     </div>
-                                    <span class="font-bold text-xs sm:text-sm text-white group-hover:text-cyan-300 transition">${item}</span>
+                                    <span class="font-bold text-xs text-white group-hover:text-cyan-300 transition">${item}</span>
                                 </div>
-                                <span class="text-[11px] bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-3.5 py-1.5 rounded-xl font-bold shadow-md group-hover:scale-105 transition">Reproducir</span>
+                                <span class="text-[10px] bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-3 py-1 rounded-lg font-bold shadow transition">Reproducir</span>
                             </div>
                         `;
                     });
@@ -359,7 +350,6 @@
             }
         }
 
-        // Navigation Actions
         function goHome() {
             state.searchQuery = '';
             state.currentView = 'home';
@@ -396,7 +386,6 @@
             render();
         }
 
-        // Player Modal Handlers
         function openPlayer(title) {
             const modal = document.getElementById('video-modal');
             const modalTitle = document.getElementById('modal-title');
@@ -420,8 +409,8 @@
             document.getElementById('loading-spinner').style.display = 'flex';
         }
 
-        // Initial Render
         window.onload = () => {
+            updateClock();
             render();
         };
     </script>
