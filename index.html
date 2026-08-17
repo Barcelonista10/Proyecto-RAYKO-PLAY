@@ -2,413 +2,493 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAYKO PLAY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>RAYKO PLAY - Entretenimiento Freemium</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-bg': '#0a0a0a',
+                        'card-bg': '#141414',
+                        'neon-red': '#ff002b',
+                    },
+                    boxShadow: {
+                        'neon': '0 0 15px rgba(255, 0, 43, 0.6), 0 0 30px rgba(255, 0, 43, 0.3)',
+                        'neon-glow': '0 0 20px rgba(255, 0, 50, 0.75)',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
         body {
-            font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #091325 0%, #050b16 50%, #0d1b32 100%);
+            background-color: #050505;
             color: #ffffff;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             user-select: none;
-            overflow-x: hidden;
-            height: 100vh;
-            height: 100dvh;
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
+            -webkit-tap-highlight-color: transparent;
         }
-        .neon-box {
-            background: linear-gradient(145deg, rgba(16, 30, 54, 0.9), rgba(11, 21, 38, 0.95));
-            border: 1px solid rgba(0, 212, 255, 0.35);
-            box-shadow: 0 0 15px rgba(0, 212, 255, 0.12), inset 0 0 10px rgba(255, 255, 255, 0.03);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .neon-box:hover {
-            box-shadow: 0 0 25px rgba(0, 212, 255, 0.45), inset 0 0 15px rgba(0, 212, 255, 0.2);
-            border-color: #00d4ff;
-            transform: translateY(-2px) scale(1.01);
-        }
-        .neon-text {
-            background: linear-gradient(to right, #00d4ff, #0072ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.5));
-        }
-        .channel-card {
-            background: linear-gradient(145deg, #ffffff, #e6f0fa);
-            color: #000;
-            border-radius: 18px;
+
+        /* Estilos específicos de borde tipo app */
+        .app-card {
+            background: #121212;
+            border-radius: 24px;
+            border: 1.5px solid #2a2a2a;
+            position: relative;
             overflow: hidden;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 4px 20px rgba(0,114,255,0.2);
-            padding: 16px;
+            transition: all 0.25s ease;
+        }
+
+        .app-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border-radius: 24px;
+            padding: 2px;
+            background: linear-gradient(135deg, rgba(255, 0, 43, 0.8) 0%, transparent 50%, rgba(255, 0, 43, 0.4) 100%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        /* Transición suave de pantallas */
+        .screen {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .screen.active {
             display: flex;
-            flex-direction: column;
-            gap: 12px;
+            opacity: 1;
         }
-        .channel-card:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.5);
+
+        /* Animación pulso neón */
+        @keyframes pulseGlow {
+            0%, 100% {
+                box-shadow: 0 0 10px rgba(255,0,43,0.5), 0 0 20px rgba(255,0,43,0.3);
+            }
+            50% {
+                box-shadow: 0 0 18px rgba(255,0,43,0.8), 0 0 30px rgba(255,0,43,0.5);
+            }
         }
-        .scrollable-channels {
-            flex-grow: 1;
-            overflow-y: auto;
-            padding-right: 6px;
-            scrollbar-width: thin;
-            scrollbar-color: #00d4ff #0b1526;
-            max-height: none;
-        }
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0b1526;
-            border-radius: 3px;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: linear-gradient(to bottom, #00d4ff, #0072ff);
-            border-radius: 3px;
-        }
-        #app-container {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            overflow: hidden;
-        }
-        .content-area {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-        .header-hidden {
-            display: none !important;
+
+        .pulse-glow {
+            animation: pulseGlow 2.5s infinite;
         }
     </style>
 </head>
-<body>
+<body class="flex justify-center items-center min-h-screen p-0 sm:p-4 bg-black">
 
-    <!-- ENCABEZADO -->
-    <header id="app-header" class="w-full flex-shrink-0 mb-2">
-        <div class="w-full max-w-2xl mx-auto flex justify-between items-center px-1 mb-1">
-            <span id="live-clock" class="text-xs font-bold text-cyan-300 tracking-wider">00:00</span>
-            <span class="bg-gradient-to-r from-cyan-500/20 to-blue-600/20 border border-cyan-500/40 text-cyan-300 text-[9px] uppercase font-extrabold px-3 py-0.5 rounded-full tracking-widest shadow">
-                ✨ HD Activa
-            </span>
-        </div>
-        <div class="w-full max-w-2xl mx-auto text-center">
-            <h1 class="text-3xl sm:text-4xl font-black tracking-wider text-white">
-                RAYKO <span class="neon-text">PLAY</span>
-            </h1>
-            <p class="text-[10px] uppercase tracking-[0.25em] text-cyan-200/70 mt-1 font-bold">
-                ENTRETENIMIENTO FREEMIUM 2026
-            </p>
-        </div>
-    </header>
-
-    <!-- Main Container -->
-    <main id="app-container" class="w-full max-w-2xl mx-auto flex flex-col h-full overflow-hidden">
-        <!-- Dynamic Views Rendered Here -->
-    </main>
-
-    <!-- Video Modal -->
-    <div id="video-modal" class="fixed inset-0 bg-slate-950/95 z-50 hidden flex flex-col items-center justify-center p-4 backdrop-blur-md">
-        <div class="w-full max-w-md bg-slate-900 rounded-2xl overflow-hidden border border-cyan-500/50 shadow-[0_0_50px_rgba(0,212,255,0.35)] relative transform transition-all">
-            <div class="bg-slate-950 p-4 flex justify-between items-center border-b border-cyan-950">
-                <div class="flex items-center gap-2">
-                    <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
-                    <h3 id="modal-title" class="font-bold text-cyan-300 tracking-wide text-sm uppercase">CONECTANDO SEÑAL...</h3>
-                </div>
-                <button onclick="closePlayer()" class="text-cyan-300 hover:text-white font-bold text-lg px-3 py-1 bg-slate-800/50 hover:bg-slate-800 rounded-lg transition">✕</button>
-            </div>
-            <div class="relative aspect-video bg-slate-950 flex items-center justify-center overflow-hidden">
-                <div id="loading-spinner" class="absolute inset-0 flex flex-col items-center justify-center bg-slate-950/90 z-20 transition-opacity">
-                    <div class="w-12 h-12 border-4 border-cyan-400 border-t-transparent rounded-full animate-spin mb-4 shadow-[0_0_15px_rgba(0,212,255,0.8)]"></div>
-                    <span class="text-sm text-cyan-200 tracking-widest font-semibold animate-pulse">CARGANDO RECURSOS...</span>
-                </div>
-                <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-950/40 via-slate-950 to-slate-950 opacity-90"></div>
-                <div class="text-center p-5 z-10">
-                    <div class="text-6xl mb-3 animate-pulse">📡</div>
-                    <p id="playing-text" class="text-lg font-bold text-white tracking-wide">Reproduciendo Contenido...</p>
-                    <p class="text-sm text-cyan-300 mt-2 font-medium bg-cyan-950/60 py-1 px-4 rounded-full inline-block border border-cyan-500/30">Señal Optimizada</p>
-                </div>
-            </div>
-            <div class="p-4 bg-slate-900 flex justify-between items-center border-t border-cyan-950">
-                <span class="text-sm text-cyan-300/70 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> Servidor Estable</span>
-                <button onclick="closePlayer()" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-white text-sm px-6 py-3 rounded-xl font-bold shadow-lg shadow-cyan-500/30 transition transform active:scale-95">Cerrar Reproductor</button>
+    <!-- Mockup de Contenedor Móvil/TV para la APK -->
+    <div class="w-full max-w-md h-[100vh] sm:h-[880px] bg-black sm:rounded-[40px] border-0 sm:border-[6px] border-[#222] shadow-2xl flex flex-col justify-between relative overflow-hidden">
+        
+        <!-- Barra superior simulada -->
+        <div class="w-full pt-3 px-6 flex justify-between items-center text-xs text-gray-400 z-50">
+            <span id="clock">12:00</span>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
             </div>
         </div>
+
+        <!-- Botón Volver (Global cuando no está en Home) -->
+        <div id="nav-header" class="hidden px-5 pt-2 pb-1 flex items-center justify-between z-40">
+            <button onclick="goBack()" class="flex items-center space-x-2 text-white bg-zinc-900/80 px-3 py-1.5 rounded-full border border-zinc-700 active:scale-95 transition">
+                <i class="fas fa-arrow-left text-sm text-red-500"></i>
+                <span class="text-xs font-semibold">Atrás</span>
+            </button>
+            <span id="current-screen-title" class="text-xs tracking-wider text-gray-400 uppercase font-mono"></span>
+        </div>
+
+        <!-- VISTA 1: MENÚ PRINCIPAL (RAYKO PLAY) -->
+        <div id="screen-home" class="screen active flex-col flex-1 px-5 py-4 justify-between overflow-y-auto">
+            <!-- Header Logo -->
+            <div class="text-center my-4">
+                <h1 class="text-4xl font-extrabold tracking-wide text-white inline-flex items-center gap-2">
+                    RAYKO <span class="text-red-600 drop-shadow-[0_0_12px_rgba(255,0,43,0.9)]">PLAY</span>
+                </h1>
+                <p class="text-xs text-gray-400 font-mono tracking-[0.25em] mt-2 uppercase">
+                    ENTRETENIMIENTO FREEMIUM
+                </p>
+            </div>
+
+            <!-- Botones del Menú Principal -->
+            <div class="space-y-4 my-auto">
+                
+                <!-- TV EN VIVO -->
+                <button onclick="navigateTo('screen-servers')" class="w-full app-card pulse-glow p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl text-cyan-400 shadow-inner">
+                        📺
+                    </div>
+                    <span class="text-lg font-bold text-white tracking-wide uppercase">TV EN VIVO</span>
+                </button>
+
+                <!-- PELÍCULAS ESTRENO -->
+                <button onclick="showToast('Sección de Películas Estreno')" class="w-full app-card p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">
+                        🎬
+                    </div>
+                    <span class="text-lg font-bold text-white tracking-wide uppercase">PELÍCULAS ESTRENO</span>
+                </button>
+
+                <!-- PELÍCULAS PLUS -->
+                <button onclick="showToast('Sección de Películas Plus')" class="w-full app-card p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">
+                        🎥
+                    </div>
+                    <span class="text-lg font-bold text-white tracking-wide uppercase">PELÍCULAS PLUS</span>
+                </button>
+
+                <!-- PELÍCULAS COLECCIÓN -->
+                <button onclick="showToast('Sección de Películas Colección')" class="w-full app-card p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">
+                        🎞️
+                    </div>
+                    <span class="text-lg font-bold text-white tracking-wide uppercase">PELÍCULAS COLECCIÓN</span>
+                </button>
+
+                <!-- SERIES -->
+                <button onclick="showToast('Sección de Series')" class="w-full app-card p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">
+                        🎭
+                    </div>
+                    <span class="text-lg font-bold text-white tracking-wide uppercase">SERIES</span>
+                </button>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center py-2">
+                <span class="text-[10px] text-zinc-600 font-mono tracking-widest uppercase">RAYKO PLAY FREEMIUM © 2026</span>
+            </div>
+        </div>
+
+        <!-- VISTA 2: SERVIDORES TV -->
+        <div id="screen-servers" class="screen flex-col flex-1 px-5 py-4 justify-between overflow-y-auto">
+            <!-- Header Logo -->
+            <div class="text-center my-6">
+                <h1 class="text-3xl font-black tracking-wider text-white">
+                    SERVIDORES<span class="text-red-600 drop-shadow-[0_0_12px_rgba(255,0,43,0.9)]">TV</span>
+                </h1>
+                <p class="text-xs text-gray-400 font-mono tracking-[0.3em] mt-2 uppercase">
+                    RAYKO PLAY FREEMIUM
+                </p>
+            </div>
+
+            <!-- Lista de Servidores -->
+            <div class="space-y-5 my-auto">
+                
+                <!-- TV FREEMIUM 1 -->
+                <button onclick="navigateTo('screen-channels')" class="w-full app-card pulse-glow p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
+                    <span class="text-2xl">📺</span>
+                    <span class="text-lg font-extrabold text-white tracking-wider uppercase">TV FREEMIUM 1</span>
+                </button>
+
+                <!-- TV FREEMIUM 2 -->
+                <button onclick="navigateTo('screen-channels')" class="w-full app-card p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
+                    <span class="text-2xl">📺</span>
+                    <span class="text-lg font-extrabold text-white tracking-wider uppercase">TV FREEMIUM 2</span>
+                </button>
+
+                <!-- TV FREEMIUM 3 -->
+                <button onclick="navigateTo('screen-channels')" class="w-full app-card p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
+                    <span class="text-2xl">📺</span>
+                    <span class="text-lg font-extrabold text-white tracking-wider uppercase">TV FREEMIUM 3</span>
+                </button>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center py-4">
+                <span class="text-xs text-zinc-500 font-mono tracking-widest uppercase">RAYKO PLAY © 2026</span>
+            </div>
+        </div>
+
+        <!-- VISTA 3: PARRILLA DE CANALES -->
+        <div id="screen-channels" class="screen flex-col flex-1 px-4 py-3 overflow-y-auto">
+            
+            <div class="text-center mb-3">
+                <h2 class="text-xl font-bold text-white tracking-wide">CANALES DISPONIBLES</h2>
+                <p class="text-[11px] text-red-500 font-semibold uppercase tracking-wider">Servidor Freemium Activo</p>
+            </div>
+
+            <!-- BUSCADOR DE CANALES -->
+            <div class="relative mb-4">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
+                    <i class="fas fa-search text-sm"></i>
+                </div>
+                <input 
+                    type="text" 
+                    id="channel-search" 
+                    oninput="filterChannels()" 
+                    placeholder="Buscar canal..." 
+                    class="w-full bg-zinc-900 border border-zinc-700 text-white placeholder-gray-500 text-sm rounded-full pl-9 pr-8 py-2.5 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition"
+                >
+                <button id="clear-search" onclick="clearSearch()" class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-white">
+                    <i class="fas fa-times text-xs"></i>
+                </button>
+            </div>
+
+            <!-- Grid de Canales con Carga Automática de Logos y Tamaño Uniforme -->
+            <div id="channels-grid" class="grid grid-cols-2 gap-4 pb-6">
+                <!-- Los canales se cargarán automáticamente desde JS -->
+            </div>
+
+            <!-- Mensaje cuando no se encuentran resultados -->
+            <div id="no-results" class="hidden text-center py-10">
+                <i class="fas fa-search-minus text-4xl text-gray-600 mb-3"></i>
+                <p class="text-gray-400 text-sm">No se encontraron canales</p>
+            </div>
+        </div>
+
+        <!-- TOAST / NOTIFICACIÓN -->
+        <div id="toast" class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-zinc-800 border border-red-500/50 text-white px-4 py-2.5 rounded-full text-xs font-semibold shadow-2xl opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center space-x-2">
+            <i class="fas fa-info-circle text-red-500"></i>
+            <span id="toast-message">Mensaje</span>
+        </div>
+
     </div>
 
-    <!-- JavaScript Application Logic -->
+    <!-- Script de Interacciones y Carga Automática de Canales -->
     <script>
-        let allChannels = [];
-
-        const state = {
-            currentView: 'home', 
-            selectedCategory: '',
-            selectedServer: 'TV FREEMIUM',
-            searchQuery: ''
-        };
-
-        function receiveChannelsFromApp(jsonData) {
-            try {
-                allChannels = JSON.parse(jsonData);
-                
-                const categories = [
-                    { id: 'Deportes', title: '⚽ DEPORTES', action: 'goToContent', type: 'Deportes', desc: 'Todo el deporte en vivo' },
-                    { id: 'Cine y Series', title: '🎬 CINE Y SERIES', action: 'goToContent', type: 'Cine y Series', desc: 'Lo más reciente del cine' },
-                    { id: 'Eventos', title: '🔥 EVENTOS', action: 'goToContent', type: 'Eventos', desc: 'Sagas y eventos destacados' },
-                    { id: 'General', title: '📡 GENERAL', action: 'goToContent', type: 'General', desc: 'Contenido variado' }
-                ];
-                
-                window.categories = categories;
-                render();
-            } catch (e) {
-                console.error("Error al recibir los canales", e);
+        // Lista de Canales con URLs públicas de logos y enlaces de streaming
+        // 🟢 En una versión real, estos datos vendrían de tu App usando Android.sendChannelsToWeb()
+        const channelsData = [
+            {
+                id: "amc",
+                name: "AMC",
+                searchKeywords: "amc",
+                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AMC_logo_%282019%29.svg/512px-AMC_logo_%282019%29.svg.png",
+                fallbackText: "AMC"
+            },
+            {
+                id: "animal_planet",
+                name: "Animal Planet",
+                searchKeywords: "animal planet",
+                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Animal_Planet_logo_2018.svg/512px-Animal_Planet_logo_2018.svg.png",
+                fallbackText: "ANIMAL PLANET"
+            },
+            {
+                id: "axn",
+                name: "AXN",
+                searchKeywords: "axn",
+                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/AXN_logo_2015.svg/512px-AXN_logo_2015.svg.png",
+                fallbackText: "AXN"
+            },
+            {
+                id: "adn40",
+                name: "ADN 40",
+                searchKeywords: "adn 40 adn40",
+                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Adn40_logo.png/512px-Adn40_logo.png",
+                fallbackText: "ADN 40"
+            },
+            {
+                id: "az_corazon",
+                name: "AZ Corazón",
+                searchKeywords: "az corazon azcorazon",
+                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/AZ_Coraz%C3%B3n.png/512px-AZ_Coraz%C3%B3n.png",
+                fallbackText: "azcorazón"
+            },
+            {
+                id: "az_cinema",
+                name: "AZ Cinema",
+                searchKeywords: "az cinema azcinema",
+                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/AZ_Cinema.png/512px-AZ_Cinema.png",
+                fallbackText: "az cinema"
+            },
+            {
+                id: "azteca_7",
+                name: "Azteca 7",
+                searchKeywords: "azteca 7 azteca7",
+                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Azteca_7_logo_2023.svg/512px-Azteca_7_logo_2023.svg.png",
+                fallbackText: "azteca 7"
+            },
+            {
+                id: "cinemax",
+                name: "Cinemax",
+                searchKeywords: "cinemax",
+                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Cinemax_logo_2011.svg/512px-Cinemax_logo_2011.svg.png",
+                fallbackText: "CINEMAX"
             }
-        }
+        ];
 
-        function playFromApp(name) {
-            if (window.Android) {
-                window.Android.playChannelFromWeb(name);
-            } else {
-                openPlayer(name);
-            }
-        }
+        // Función para renderizar los canales
+        function renderChannels() {
+            const grid = document.getElementById('channels-grid');
+            grid.innerHTML = '';
 
-        function render() {
-            const container = document.getElementById('app-container');
-            container.innerHTML = '';
+            channelsData.forEach(channel => {
+                const card = document.createElement('div');
+                card.className = "channel-card bg-white rounded-3xl p-3 flex flex-col items-center justify-between shadow-lg border-2 border-gray-200";
+                card.setAttribute('data-name', channel.searchKeywords);
 
-            const channelsArray = allChannels && allChannels.length > 0 ? allChannels : [];
-
-            if (state.currentView === 'home') {
-                document.getElementById('app-header').classList.remove('header-hidden');
-                
-                let html = '<div class="content-area space-y-3 w-full">';
-                const cats = window.categories || [];
-                
-                cats.forEach(cat => {
-                    html += `
-                        <div onclick="${cat.action}('${cat.type || cat.id}')" class="neon-box rounded-2xl p-5 flex items-center justify-between cursor-pointer group">
-                            <div>
-                                <h3 class="font-black tracking-wide text-lg sm:text-xl text-white group-hover:text-cyan-300 transition">${cat.title}</h3>
-                                <p class="text-sm text-cyan-200/60 font-medium mt-1">${cat.desc}</p>
-                            </div>
-                            <span class="text-cyan-400/60 group-hover:text-cyan-300 group-hover:translate-x-1 transition font-black text-xl">›</span>
-                        </div>
-                    `;
-                });
-                html += '</div>';
-                container.innerHTML = html;
-            } 
-            else {
-                document.getElementById('app-header').classList.add('header-hidden');
-            }
-
-            if (state.currentView === 'channels') {
-                let filteredChannels = channelsArray.filter(ch => 
-                    ch.name.toLowerCase().includes(state.searchQuery.toLowerCase()) || 
-                    ch.category.toLowerCase().includes(state.searchQuery.toLowerCase())
-                );
-
-                let html = `
-                    <div class="flex-shrink-0 mb-3 flex items-center justify-between">
-                        <div>
-                            <h2 class="text-lg font-black tracking-wider text-white">📺 CANALES</h2>
-                            <p class="text-sm text-cyan-300 font-semibold">${state.selectedServer}</p>
-                        </div>
-                        <button onclick="goHome()" class="text-sm bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-4 py-2 rounded-xl text-cyan-200 font-bold transition shadow-md">← Menú</button>
+                // 🟢 AJUSTE DE TAMAÑO DE LOGOS: object-contain con fondo oscuro y padding para uniformidad
+                card.innerHTML = `
+                    <div class="w-full h-24 flex items-center justify-center p-2 rounded-2xl bg-zinc-900 overflow-hidden relative">
+                        <img 
+                            src="${channel.logoUrl}" 
+                            alt="Logo ${channel.name}" 
+                            class="w-full h-full object-contain transition-transform duration-200 hover:scale-105"
+                            loading="lazy"
+                            onerror="handleImageError(this, '${channel.fallbackText}')"
+                        />
                     </div>
-
-                    <div class="flex-shrink-0 mb-4 relative">
-                        <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-cyan-400 text-lg">🔍</span>
-                        <input type="text" id="channel-search" value="${state.searchQuery}" oninput="handleSearch(event)" placeholder="Buscar canal..." class="w-full bg-slate-900 border border-cyan-900/60 focus:border-cyan-400 rounded-2xl pl-12 pr-4 py-4 text-base text-white placeholder-cyan-500/50 focus:outline-none transition shadow-inner">
-                        ${state.searchQuery ? `<button onclick="clearSearch()" class="absolute inset-y-0 right-0 flex items-center pr-4 text-cyan-300 hover:text-white text-lg font-bold">✕</button>` : ''}
-                    </div>
-
-                    <div class="scrollable-channels w-full">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-4">
+                    <button onclick="playChannel('${channel.name}')" class="w-full mt-2 bg-black hover:bg-zinc-800 text-white font-bold py-2 px-3 rounded-xl text-xs uppercase tracking-wider transition active:scale-95 shadow">
+                        VER CANAL
+                    </button>
                 `;
 
-                if (filteredChannels.length === 0) {
-                    html += `
-                        <div class="col-span-full text-center py-16 bg-slate-900/50 rounded-2xl border border-cyan-950">
-                            <span class="text-4xl mb-3 block">📡</span>
-                            <p class="text-base text-cyan-300/70 font-semibold">No se encontraron canales</p>
-                        </div>
-                    `;
-                } else {
-                    filteredChannels.forEach(ch => {
-                        let logoHtml = '';
-                        if (ch.logoUrl && ch.logoUrl.trim() !== '') {
-                            // 🟢 CORREGIDO: Usamos object-contain con padding para que todos los logos se vean perfectos
-                            logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="w-full h-full object-contain p-2 bg-slate-950 filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
-                        } else {
-                            logoHtml = `<span class="text-cyan-300 font-black text-lg">${ch.name}</span>`;
-                        }
-
-                        html += `
-                            <div class="channel-card p-4 flex flex-col gap-3">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-sm uppercase font-bold tracking-widest text-slate-700 bg-cyan-100 px-3 py-1 rounded-full">${ch.category || 'GENERAL'}</span>
-                                </div>
-                                <div class="h-20 w-full bg-slate-950 rounded-xl flex items-center justify-center overflow-hidden border border-cyan-500/30 shadow-inner">
-                                    ${logoHtml}
-                                </div>
-                                <button onclick="playFromApp('${ch.name}')" class="w-full bg-gradient-to-r from-slate-900 to-blue-950 hover:from-cyan-500 hover:to-blue-600 text-white font-bold text-base py-3 rounded-xl tracking-wider transition shadow active:scale-95">▶ REPRODUCIR</button>
-                            </div>
-                        `;
-                    });
-                }
-                html += `
-                        </div>
-                    </div>
-                `;
-                container.innerHTML = html;
-                
-                setTimeout(() => {
-                    const input = document.getElementById('channel-search');
-                    if (input && state.searchQuery) {
-                        input.focus();
-                        input.setSelectionRange(input.value.length, input.value.length);
-                    }
-                }, 10);
-            }
-            else if (state.currentView === 'movies') {
-                let filteredChannels = channelsArray.filter(ch => 
-                    ch.category === state.selectedCategory && 
-                    ch.name.toLowerCase().includes(state.searchQuery.toLowerCase())
-                );
-
-                let html = `
-                    <div class="flex-shrink-0 mb-3 flex items-center justify-between">
-                        <div>
-                            <h2 class="text-lg font-black tracking-wider text-white uppercase">${state.selectedCategory}</h2>
-                            <p class="text-sm text-cyan-300 font-semibold">Selección Exclusiva</p>
-                        </div>
-                        <button onclick="goHome()" class="text-sm bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-4 py-2 rounded-xl text-cyan-200 font-bold transition shadow-md">← Menú</button>
-                    </div>
-
-                    <div class="flex-shrink-0 mb-4 relative">
-                        <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-cyan-400 text-lg">🔍</span>
-                        <input type="text" id="movie-search" value="${state.searchQuery}" oninput="handleSearch(event)" placeholder="Buscar..." class="w-full bg-slate-900 border border-cyan-900/60 focus:border-cyan-400 rounded-2xl pl-12 pr-4 py-4 text-base text-white placeholder-cyan-500/50 focus:outline-none transition shadow-inner">
-                        ${state.searchQuery ? `<button onclick="clearSearch()" class="absolute inset-y-0 right-0 flex items-center pr-4 text-cyan-300 hover:text-white text-lg font-bold">✕</button>` : ''}
-                    </div>
-
-                    <div class="scrollable-channels w-full space-y-3">
-                `;
-
-                if (filteredChannels.length === 0) {
-                    html += `
-                        <div class="text-center py-16 bg-slate-900/50 rounded-2xl border border-cyan-950">
-                            <span class="text-4xl mb-3 block">📺 </span>
-                            <p class="text-base text-cyan-300/70 font-semibold">No hay contenido en esta categoría</p>
-                        </div>
-                    `;
-                } else {
-                    filteredChannels.forEach(ch => {
-                        let logoHtml = '';
-                        if (ch.logoUrl && ch.logoUrl.trim() !== '') {
-                            logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="w-full h-full object-contain p-2 bg-slate-950 filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
-                        } else {
-                            logoHtml = `<span class="text-cyan-300 font-black text-lg">${ch.name}</span>`;
-                        }
-
-                        html += `
-                            <div class="neon-box rounded-2xl p-4 flex items-center justify-between cursor-pointer group" onclick="playFromApp('${ch.name}')">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-xl bg-cyan-500/15 flex items-center justify-center text-2xl border border-cyan-400/40 group-hover:scale-110 transition overflow-hidden">
-                                        ${logoHtml}
-                                    </div>
-                                    <span class="font-bold text-lg text-white group-hover:text-cyan-300 transition">${ch.name}</span>
-                                </div>
-                                <span class="text-sm bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-xl font-bold shadow transition">Reproducir</span>
-                            </div>
-                        `;
-                    });
-                }
-                html += '</div>';
-                container.innerHTML = html;
-
-                setTimeout(() => {
-                    const input = document.getElementById('movie-search');
-                    if (input && state.searchQuery) {
-                        input.focus();
-                        input.setSelectionRange(input.value.length, input.value.length);
-                    }
-                }, 10);
-            }
+                grid.appendChild(card);
+            });
         }
 
-        function goHome() {
-            state.searchQuery = '';
-            state.currentView = 'home';
-            render();
+        // Manejo automático si falla la red en la APK
+        function handleImageError(imgElement, fallbackText) {
+            const container = imgElement.parentElement;
+            container.innerHTML = `
+                <div class="bg-black text-white font-black text-lg px-3 py-1.5 rounded-lg text-center tracking-wider uppercase border border-gray-300">
+                    ${fallbackText}
+                </div>
+            `;
         }
 
-        function goToContent(type) {
-            state.selectedCategory = type;
-            state.searchQuery = '';
-            state.currentView = 'movies';
-            render();
-        }
+        // Sistema de navegación interna
+        const navigationHistory = ['screen-home'];
 
-        function handleSearch(e) {
-            state.searchQuery = e.target.value;
-            render();
-        }
-
-        function clearSearch() {
-            state.searchQuery = '';
-            render();
-        }
-
-        function openPlayer(title) {
-            const modal = document.getElementById('video-modal');
-            const modalTitle = document.getElementById('modal-title');
-            const playingText = document.getElementById('playing-text');
-            const spinner = document.getElementById('loading-spinner');
-
-            modalTitle.innerText = `TRANSMISIÓN ACTIVA: ${title.toUpperCase()}`;
-            playingText.innerText = `Reproduciendo: ${title}`;
-            modal.classList.remove('hidden');
-
-            spinner.style.opacity = '1';
-            setTimeout(() => {
-                spinner.style.opacity = '0';
-                setTimeout(() => { spinner.style.display = 'none'; }, 300);
-            }, 1000);
-        }
-
-        function closePlayer() {
-            const modal = document.getElementById('video-modal');
-            modal.classList.add('hidden');
-            document.getElementById('loading-spinner').style.display = 'flex';
-        }
-
-        // Reloj en tiempo real
-        setInterval(() => {
+        function updateClock() {
             const now = new Date();
             const hours = String(now.getHours()).padStart(2, '0');
             const minutes = String(now.getMinutes()).padStart(2, '0');
-            document.getElementById('live-clock').innerText = `${hours}:${minutes}`;
-        }, 1000);
+            document.getElementById('clock').textContent = `${hours}:${minutes}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
 
-        window.onload = () => {
-            if (window.Android) {
-                window.Android.sendChannelsToWeb();
+        function navigateTo(screenId) {
+            const currentScreen = navigationHistory[navigationHistory.length - 1];
+            if (currentScreen === screenId) return;
+
+            document.getElementById(currentScreen).classList.remove('active');
+            
+            navigationHistory.push(screenId);
+            const nextScreen = document.getElementById(screenId);
+            nextScreen.classList.add('active');
+
+            updateHeader();
+        }
+
+        function goBack() {
+            if (navigationHistory.length <= 1) return;
+
+            const currentScreen = navigationHistory.pop();
+            document.getElementById(currentScreen).classList.remove('active');
+
+            const previousScreen = navigationHistory[navigationHistory.length - 1];
+            document.getElementById(previousScreen).classList.add('active');
+
+            updateHeader();
+        }
+
+        function updateHeader() {
+            const header = document.getElementById('nav-header');
+            const titleSpan = document.getElementById('current-screen-title');
+            const currentScreen = navigationHistory[navigationHistory.length - 1];
+
+            if (currentScreen === 'screen-home') {
+                header.classList.add('hidden');
             } else {
-                receiveChannelsFromApp(JSON.stringify([
-                    { name: "A&E OP1", category: "TV PREMIUN ", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/AMC_Logo_%282020%29.svg/320px-AMC_Logo_%282020%29.svg.png" },
-                    { name: "A&E OP2 | AR", category: "Cine y Series", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/AXN_logo_2017.svg/320px-AXN_logo_2017.svg.png" }
-                ]));
+                header.classList.remove('hidden');
+                if (currentScreen === 'screen-servers') {
+                    titleSpan.textContent = 'Servidores';
+                } else if (currentScreen === 'screen-channels') {
+                    titleSpan.textContent = 'Parrilla TV';
+                }
             }
-        };
+        }
+
+        // Buscador dinámico de canales
+        function filterChannels() {
+            const query = document.getElementById('channel-search').value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.channel-card');
+            const clearBtn = document.getElementById('clear-search');
+            const noResults = document.getElementById('no-results');
+            let visibleCount = 0;
+
+            if (query.length > 0) {
+                clearBtn.classList.remove('hidden');
+            } else {
+                clearBtn.classList.add('hidden');
+            }
+
+            cards.forEach(card => {
+                const channelName = card.getAttribute('data-name');
+                if (channelName.includes(query)) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (visibleCount === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        function clearSearch() {
+            const searchInput = document.getElementById('channel-search');
+            searchInput.value = '';
+            filterChannels();
+            searchInput.focus();
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toast-message');
+            toastMessage.textContent = message;
+            
+            toast.classList.remove('opacity-0', 'pointer-events-none');
+            toast.classList.add('opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('opacity-100');
+                toast.classList.add('opacity-0', 'pointer-events-none');
+            }, 2500);
+        }
+
+        // 🟢 CONEXIÓN CON LA APP: Acción al hacer clic en "VER CANAL"
+        function playChannel(channelName) {
+            // Notificación visual en la app
+            showToast(`Cargando canal: ${channelName}`);
+
+            // 🟢 LLAMADA AL PUENTE DE LA APP
+            if (window.Android) {
+                // Le pasamos el nombre exacto del canal a tu MainActivity.java
+                window.Android.playChannelFromWeb(channelName);
+            } else {
+                // Si se abre en un navegador normal, solo muestra el mensaje
+                console.log("Modo navegador: reproduciendo " + channelName);
+            }
+        }
+
+        // Carga inicial
+        window.addEventListener('DOMContentLoaded', () => {
+            renderChannels();
+            
+            // 🟢 Si estás en la App, puedes pedir la lista real así:
+            // if (window.Android) {
+            //     window.Android.sendChannelsToWeb();
+            // }
+        });
     </script>
 </body>
 </html>
