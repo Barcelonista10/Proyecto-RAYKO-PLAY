@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAYKO PLAY - Entretenimiento Freemium</title>
+    <title>RAYKO PLAY</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -100,19 +100,26 @@
         <!-- LOGO BRANDING -->
         <div class="text-center mb-8">
             <h1 class="text-4xl sm:text-5xl font-black tracking-wider uppercase text-white flex items-center justify-center gap-2">
-                <span class="text-zinc-200">ZEUS</span> 
-                <span class="text-red-600 neon-text-red">TV</span>
+                <span class="text-zinc-200">RAYKO</span> 
+                <span class="text-red-600 neon-text-red">PLAY</span>
             </h1>
             <p class="text-[11px] sm:text-xs font-semibold tracking-[0.35em] text-zinc-400 mt-2 uppercase">
-                ENTRETENIMIENTO FREEMIUM
+                CANALES EN VIVO
             </p>
         </div>
 
         <!-- MENU BUTTONS LIST -->
         <div class="w-full flex flex-col gap-4 sm:gap-5" id="menu-list">
             
-            <!-- OPTION 1: TV EN VIVO -->
-            <button class="zeus-btn focused w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="0" onclick="openSection('TV EN VIVO', 'canales')">
+            <!-- 
+                🟢 CAMBIO CRUCIAL: 
+                En lugar de pasar una clave inventada, pasamos el nombre de la categoría 
+                que existe en tu JSON. EJEMPLOS: 'Deportes', 'Cine y Series', 'Eventos', etc.
+                Si pones 'TODOS', se mostrarán todos los canales.
+            -->
+
+            <!-- OPCIÓN 1: TV EN VIVO (Muestra TODOS los canales) -->
+            <button class="zeus-btn focused w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="0" onclick="openSection('TV EN VIVO', 'TODOS')">
                 <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
                     <i class="fa-solid fa-tv text-2xl text-cyan-400 group-hover:scale-110 transition-transform"></i>
                 </div>
@@ -121,43 +128,43 @@
                 </span>
             </button>
 
-            <!-- OPTION 2: PELÍCULAS ESTRENO -->
-            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="1" onclick="openSection('PELÍCULAS ESTRENO', 'estrenos')">
+            <!-- OPCIÓN 2: DEPORTES -->
+            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="1" onclick="openSection('DEPORTES', 'Deportes')">
                 <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
-                    <i class="fa-solid fa-clapperboard text-2xl text-zinc-300 group-hover:scale-110 transition-transform"></i>
+                    <i class="fa-solid fa-futbol text-2xl text-zinc-300 group-hover:scale-110 transition-transform"></i>
                 </div>
                 <span class="text-base sm:text-lg font-extrabold tracking-wide text-white uppercase">
-                    PELÍCULAS ESTRENO
+                    DEPORTES
                 </span>
             </button>
 
-            <!-- OPTION 3: PELÍCULAS PLUS -->
-            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="2" onclick="openSection('PELÍCULAS PLUS', 'plus')">
+            <!-- OPCIÓN 3: CINE Y SERIES -->
+            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="2" onclick="openSection('CINE Y SERIES', 'Cine y Series')">
                 <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
-                    <i class="fa-solid fa-video text-2xl text-amber-400 group-hover:scale-110 transition-transform"></i>
+                    <i class="fa-solid fa-clapperboard text-2xl text-amber-400 group-hover:scale-110 transition-transform"></i>
                 </div>
                 <span class="text-base sm:text-lg font-extrabold tracking-wide text-white uppercase">
-                    PELÍCULAS PLUS
+                    CINE Y SERIES
                 </span>
             </button>
 
-            <!-- OPTION 4: PELÍCULAS COLECCIÓN -->
-            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="3" onclick="openSection('PELÍCULAS COLECCIÓN', 'coleccion')">
+            <!-- OPCIÓN 4: EVENTOS DESTACADOS -->
+            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="3" onclick="openSection('EVENTOS', 'Eventos')">
                 <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
-                    <i class="fa-solid fa-film text-2xl text-amber-600 group-hover:scale-110 transition-transform"></i>
+                    <i class="fa-solid fa-calendar-days text-2xl text-amber-600 group-hover:scale-110 transition-transform"></i>
                 </div>
                 <span class="text-base sm:text-lg font-extrabold tracking-wide text-white uppercase">
-                    PELÍCULAS COLECCIÓN
+                    EVENTOS
                 </span>
             </button>
 
-            <!-- OPTION 5: SERIES -->
-            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="4" onclick="openSection('SERIES', 'series')">
+            <!-- OPCIÓN 5: GENERAL -->
+            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="4" onclick="openSection('GENERAL', 'General')">
                 <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
                     <i class="fa-solid fa-masks-theater text-2xl text-amber-500 group-hover:scale-110 transition-transform"></i>
                 </div>
                 <span class="text-base sm:text-lg font-extrabold tracking-wide text-white uppercase">
-                    SERIES
+                    GENERAL
                 </span>
             </button>
 
@@ -203,39 +210,28 @@
         let currentIndex = 0;
         const buttons = document.querySelectorAll('.zeus-btn');
         const modal = document.getElementById('content-modal');
+        let allChannels = []; // Aquí se guardará la lista real de la app
 
-        // Sample Data for Categories
-        const categoryData = {
-            canales: [
-                { name: "Deportes HD - En Vivo", icon: "fa-volleyball", badge: "HD 1080p" },
-                { name: "Cine Premium VIP", icon: "fa-film", badge: "4K UHD" },
-                { name: "Noticias 24/7", icon: "fa-newspaper", badge: "EN VIVO" },
-                { name: "Infantil & Animación", icon: "fa-child", badge: "HD" },
-                { name: "Música & Conciertos", icon: "fa-music", badge: "AUDIO 5.1" }
-            ],
-            estrenos: [
-                { name: "Gladiador II (2024)", desc: "Acción / Drama", badge: "Estreno" },
-                { name: "Duna: Parte Dos", desc: "Ciencia Ficción", badge: "4K" },
-                { name: "Deadpool & Wolverine", desc: "Comedia / Acción", badge: "TOP 1" },
-                { name: "Intensa-Mente 2", desc: "Animación / Familia", badge: "HD" }
-            ],
-            plus: [
-                { name: "Avatar: El Camino del Agua", desc: "Fantástico", badge: "PLUS" },
-                { name: "Oppenheimer", desc: "Historia / Biografía", badge: "PLUS" },
-                { name: "Spider-Man: Across the Spider-Verse", desc: "Animación", badge: "PLUS" }
-            ],
-            coleccion: [
-                { name: "Saga El Señor de los Anillos (Trilogía)", desc: "3 Películas", badge: "SAGA" },
-                { name: "Saga Harry Potter Completa", desc: "8 Películas", badge: "SAGA" },
-                { name: "Saga Rápido y Furioso 1 - 10", desc: "10 Películas", badge: "SAGA" }
-            ],
-            series: [
-                { name: "La Casa del Dragón - T2", desc: "8 Episodios", badge: "NUEVO" },
-                { name: "The Last of Us - T1", desc: "9 Episodios", badge: "COMPLETA" },
-                { name: "Stranger Things - T4", desc: "9 Episodios", badge: "COMPLETA" },
-                { name: "Breaking Bad (Serie Completa)", desc: "5 Temporadas", badge: "VIP" }
-            ]
-        };
+        // 🟢 1. LE PIDE LA LISTA DE CANALES A LA APP AL CARGAR
+        function requestChannelsFromApp() {
+            if (window.Android) {
+                window.Android.sendChannelsToWeb();
+            } else {
+                setTimeout(() => { 
+                    document.getElementById('channelList').innerHTML = '<div class="loading-text">Abre esta web desde la App RAYKO PLAY</div>';
+                }, 1000);
+            }
+        }
+
+        // 🟢 2. RECIBE LA LISTA EN FORMATO JSON DESDE LA APP
+        function receiveChannelsFromApp(jsonData) {
+            try {
+                allChannels = JSON.parse(jsonData);
+                console.log("Canales cargados desde la app: " + allChannels.length);
+            } catch (e) {
+                console.error("Error al recibir los canales", e);
+            }
+        }
 
         // Update focus state visually
         function updateFocus(index) {
@@ -280,22 +276,41 @@
             }
         });
 
-        // Open Modal function
-        function openSection(title, key) {
+        // 🟢 3. NUEVA FUNCIÓN PARA ABRIR EL MENÚ CON FILTRO DINÁMICO
+        function openSection(title, categoryFilter) {
             document.getElementById('modal-title').innerText = title;
             const container = document.getElementById('modal-content');
             container.innerHTML = '';
 
-            const items = categoryData[key] || [];
+            // Si no hay canales en la app, mostramos un mensaje
+            if (allChannels.length === 0) {
+                container.innerHTML = `<div class="text-zinc-400 text-center py-4">Esperando canales de la app...</div>`;
+                modal.classList.remove('hidden');
+                return;
+            }
+
+            // Filtrar la lista de canales según la categoría
+            let filteredItems = [];
+            if (categoryFilter === 'TODOS') {
+                filteredItems = allChannels; // Muestra todos si es TODOS
+            } else {
+                filteredItems = allChannels.filter(c => c.category === categoryFilter);
+            }
+
+            if (filteredItems.length === 0) {
+                container.innerHTML = `<div class="text-zinc-400 text-center py-4">No hay canales en la categoría: ${categoryFilter}</div>`;
+                modal.classList.remove('hidden');
+                return;
+            }
             
-            items.forEach(item => {
+            // Renderizar la lista generada dinámicamente
+            filteredItems.forEach(item => {
                 const el = document.createElement('div');
                 el.className = "flex items-center justify-between p-3.5 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-red-500 hover:bg-zinc-800 transition cursor-pointer group";
                 
-                // 🟢 CAMBIO IMPORTANTE: Aquí se conecta con la app
+                // 🟢 AL HACER CLIC, LLAMA AL PUENTE DE LA APP CON EL NOMBRE DEL CANAL
                 el.onclick = () => {
                     if (window.Android) {
-                        // Le pasa el nombre exacto del canal a tu app
                         window.Android.playChannelFromWeb(item.name);
                     } else {
                         alert(`Simulación: Iniciando reproducción de: ${item.name}`);
@@ -305,15 +320,15 @@
                 el.innerHTML = `
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 rounded-xl bg-red-950/60 border border-red-600/30 flex items-center justify-center text-red-500 group-hover:bg-red-600 group-hover:text-white transition">
-                            <i class="fa-solid ${item.icon || 'fa-play'} text-sm"></i>
+                            <i class="fa-solid fa-play text-sm"></i>
                         </div>
                         <div>
                             <h4 class="font-bold text-sm text-white">${item.name}</h4>
-                            ${item.desc ? `<p class="text-xs text-zinc-400">${item.desc}</p>` : ''}
+                            ${item.category ? `<p class="text-xs text-zinc-400">${item.category}</p>` : ''}
                         </div>
                     </div>
                     <span class="text-[10px] font-extrabold px-2.5 py-1 rounded-full bg-zinc-800 border border-zinc-700 text-amber-400 group-hover:border-red-500/60">
-                        ${item.badge}
+                        ${item.category || 'LIVE'}
                     </span>
                 `;
                 container.appendChild(el);
@@ -340,6 +355,11 @@
         }
         setInterval(updateClock, 1000);
         updateClock();
+
+        // Inicializar pidiendo los canales a la app
+        window.onload = function() {
+            requestChannelsFromApp();
+        };
     </script>
 </body>
 </html>
