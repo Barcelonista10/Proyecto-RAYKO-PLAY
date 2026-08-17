@@ -185,20 +185,20 @@
             <!-- Lista de Servidores -->
             <div class="space-y-5 my-auto">
                 
-                <!-- TV FREEMIUM 1 -->
-                <button onclick="navigateTo('screen-channels')" class="w-full app-card pulse-glow p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
+                <!-- TV FREEMIUM 1 (SOLO ESTE CARGARÁ LOS CANALES) -->
+                <button onclick="loadServerChannels()" class="w-full app-card pulse-glow p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
                     <span class="text-2xl">📺</span>
                     <span class="text-lg font-extrabold text-white tracking-wider uppercase">TV FREEMIUM 1</span>
                 </button>
 
-                <!-- TV FREEMIUM 2 -->
-                <button onclick="navigateTo('screen-channels')" class="w-full app-card p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
+                <!-- TV FREEMIUM 2 (Sin funcionalidad) -->
+                <button onclick="showToast('Servidor 2 en mantenimiento')" class="w-full app-card p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
                     <span class="text-2xl">📺</span>
                     <span class="text-lg font-extrabold text-white tracking-wider uppercase">TV FREEMIUM 2</span>
                 </button>
 
-                <!-- TV FREEMIUM 3 -->
-                <button onclick="navigateTo('screen-channels')" class="w-full app-card p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
+                <!-- TV FREEMIUM 3 (Sin funcionalidad) -->
+                <button onclick="showToast('Servidor 3 en mantenimiento')" class="w-full app-card p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
                     <span class="text-2xl">📺</span>
                     <span class="text-lg font-extrabold text-white tracking-wider uppercase">TV FREEMIUM 3</span>
                 </button>
@@ -236,9 +236,9 @@
                 </button>
             </div>
 
-            <!-- Grid de Canales con Carga Automática de Logos y Tamaño Uniforme -->
+            <!-- Grid de Canales con Carga Automática de Logos -->
             <div id="channels-grid" class="grid grid-cols-2 gap-4 pb-6">
-                <!-- Los canales se cargarán automáticamente desde JS -->
+                <!-- Los canales se cargarán automáticamente desde la App -->
             </div>
 
             <!-- Mensaje cuando no se encuentran resultados -->
@@ -258,89 +258,68 @@
 
     <!-- Script de Interacciones y Carga Automática de Canales -->
     <script>
-        // Lista de Canales con URLs públicas de logos y enlaces de streaming
-        // 🟢 En una versión real, estos datos vendrían de tu App usando Android.sendChannelsToWeb()
-        const channelsData = [
-            {
-                id: "amc",
-                name: "AMC",
-                searchKeywords: "amc",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AMC_logo_%282019%29.svg/512px-AMC_logo_%282019%29.svg.png",
-                fallbackText: "AMC"
-            },
-            {
-                id: "animal_planet",
-                name: "Animal Planet",
-                searchKeywords: "animal planet",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Animal_Planet_logo_2018.svg/512px-Animal_Planet_logo_2018.svg.png",
-                fallbackText: "ANIMAL PLANET"
-            },
-            {
-                id: "axn",
-                name: "AXN",
-                searchKeywords: "axn",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/AXN_logo_2015.svg/512px-AXN_logo_2015.svg.png",
-                fallbackText: "AXN"
-            },
-            {
-                id: "adn40",
-                name: "ADN 40",
-                searchKeywords: "adn 40 adn40",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Adn40_logo.png/512px-Adn40_logo.png",
-                fallbackText: "ADN 40"
-            },
-            {
-                id: "az_corazon",
-                name: "AZ Corazón",
-                searchKeywords: "az corazon azcorazon",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/AZ_Coraz%C3%B3n.png/512px-AZ_Coraz%C3%B3n.png",
-                fallbackText: "azcorazón"
-            },
-            {
-                id: "az_cinema",
-                name: "AZ Cinema",
-                searchKeywords: "az cinema azcinema",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/AZ_Cinema.png/512px-AZ_Cinema.png",
-                fallbackText: "az cinema"
-            },
-            {
-                id: "azteca_7",
-                name: "Azteca 7",
-                searchKeywords: "azteca 7 azteca7",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Azteca_7_logo_2023.svg/512px-Azteca_7_logo_2023.svg.png",
-                fallbackText: "azteca 7"
-            },
-            {
-                id: "cinemax",
-                name: "Cinemax",
-                searchKeywords: "cinemax",
-                logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Cinemax_logo_2011.svg/512px-Cinemax_logo_2011.svg.png",
-                fallbackText: "CINEMAX"
-            }
-        ];
+        // 🟢 1. Array vacío para recibir los canales de la App
+        let allChannels = [];
 
-        // Función para renderizar los canales
+        // 🟢 2. Función que recibe los datos desde la App Java (MainActivity.java)
+        function receiveChannelsFromApp(jsonData) {
+            try {
+                allChannels = JSON.parse(jsonData);
+                console.log("Canales cargados desde la App: " + allChannels.length);
+            } catch (e) {
+                console.error("Error al parsear los canales", e);
+            }
+        }
+
+        // 🟢 3. Función para cargar los canales en el grid (solo primer servidor)
+        function loadServerChannels() {
+            if (allChannels.length === 0) {
+                showToast("Esperando datos de la App...");
+                // Intentar pedir los datos si no llegaron solos
+                if (window.Android) {
+                    window.Android.sendChannelsToWeb();
+                }
+                return;
+            }
+            navigateTo('screen-channels');
+            renderChannels();
+        }
+
+        // Función para renderizar los canales en la parrilla
         function renderChannels() {
             const grid = document.getElementById('channels-grid');
             grid.innerHTML = '';
+            const noResults = document.getElementById('no-results');
+            noResults.classList.add('hidden');
 
-            channelsData.forEach(channel => {
+            if (allChannels.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-2 text-center py-10 text-gray-500 text-sm">
+                        <i class="fas fa-satellite-dish text-3xl mb-3 block"></i>
+                        No hay canales disponibles en este servidor.
+                    </div>
+                `;
+                return;
+            }
+
+            allChannels.forEach(ch => {
                 const card = document.createElement('div');
                 card.className = "channel-card bg-white rounded-3xl p-3 flex flex-col items-center justify-between shadow-lg border-2 border-gray-200";
-                card.setAttribute('data-name', channel.searchKeywords);
+                card.setAttribute('data-name', ch.name.toLowerCase());
 
-                // 🟢 AJUSTE DE TAMAÑO DE LOGOS: object-contain con fondo oscuro y padding para uniformidad
+                // 🟢 4. LOGICA DEL LOGO: Si viene URL, se muestra. Si no, se usa el nombre.
+                let logoHtml = '';
+                if (ch.logoUrl && ch.logoUrl.trim() !== '') {
+                    logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="w-full h-full object-contain transition-transform duration-200 hover:scale-105" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\\'bg-black text-white font-bold text-center tracking-wider\\'>${ch.name}</div>'"/>`;
+                } else {
+                    logoHtml = `<div class="bg-black text-white font-black text-lg px-3 py-1.5 rounded-lg text-center tracking-wider uppercase">${ch.name}</div>`;
+                }
+
                 card.innerHTML = `
                     <div class="w-full h-24 flex items-center justify-center p-2 rounded-2xl bg-zinc-900 overflow-hidden relative">
-                        <img 
-                            src="${channel.logoUrl}" 
-                            alt="Logo ${channel.name}" 
-                            class="w-full h-full object-contain transition-transform duration-200 hover:scale-105"
-                            loading="lazy"
-                            onerror="handleImageError(this, '${channel.fallbackText}')"
-                        />
+                        ${logoHtml}
                     </div>
-                    <button onclick="playChannel('${channel.name}')" class="w-full mt-2 bg-black hover:bg-zinc-800 text-white font-bold py-2 px-3 rounded-xl text-xs uppercase tracking-wider transition active:scale-95 shadow">
+                    <button onclick="playChannel('${ch.name}')" class="w-full mt-2 bg-black hover:bg-zinc-800 text-white font-bold py-2 px-3 rounded-xl text-xs uppercase tracking-wider transition active:scale-95 shadow">
                         VER CANAL
                     </button>
                 `;
@@ -349,14 +328,14 @@
             });
         }
 
-        // Manejo automático si falla la red en la APK
-        function handleImageError(imgElement, fallbackText) {
-            const container = imgElement.parentElement;
-            container.innerHTML = `
-                <div class="bg-black text-white font-black text-lg px-3 py-1.5 rounded-lg text-center tracking-wider uppercase border border-gray-300">
-                    ${fallbackText}
-                </div>
-            `;
+        // Función para el botón "VER CANAL"
+        function playChannel(channelName) {
+            showToast(`Cargando canal: ${channelName}`);
+            if (window.Android) {
+                window.Android.playChannelFromWeb(channelName);
+            } else {
+                console.log("Modo navegador: reproduciendo " + channelName);
+            }
         }
 
         // Sistema de navegación interna
@@ -386,13 +365,10 @@
 
         function goBack() {
             if (navigationHistory.length <= 1) return;
-
             const currentScreen = navigationHistory.pop();
             document.getElementById(currentScreen).classList.remove('active');
-
             const previousScreen = navigationHistory[navigationHistory.length - 1];
             document.getElementById(previousScreen).classList.add('active');
-
             updateHeader();
         }
 
@@ -413,7 +389,6 @@
             }
         }
 
-        // Buscador dinámico de canales
         function filterChannels() {
             const query = document.getElementById('channel-search').value.toLowerCase().trim();
             const cards = document.querySelectorAll('.channel-card');
@@ -465,29 +440,12 @@
             }, 2500);
         }
 
-        // 🟢 CONEXIÓN CON LA APP: Acción al hacer clic en "VER CANAL"
-        function playChannel(channelName) {
-            // Notificación visual en la app
-            showToast(`Cargando canal: ${channelName}`);
-
-            // 🟢 LLAMADA AL PUENTE DE LA APP
-            if (window.Android) {
-                // Le pasamos el nombre exacto del canal a tu MainActivity.java
-                window.Android.playChannelFromWeb(channelName);
-            } else {
-                // Si se abre en un navegador normal, solo muestra el mensaje
-                console.log("Modo navegador: reproduciendo " + channelName);
-            }
-        }
-
-        // Carga inicial
+        // 🟢 5. Carga inicial
         window.addEventListener('DOMContentLoaded', () => {
-            renderChannels();
-            
-            // 🟢 Si estás en la App, puedes pedir la lista real así:
-            // if (window.Android) {
-            //     window.Android.sendChannelsToWeb();
-            // }
+            // Si la App está presente, le pedimos los canales automáticamente
+            if (window.Android) {
+                window.Android.sendChannelsToWeb();
+            }
         });
     </script>
 </body>
