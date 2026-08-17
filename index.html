@@ -13,7 +13,7 @@
             theme: {
                 extend: {
                     colors: {
-                        'dark-bg': '#000000', /* Cambiado a negro puro */
+                        'dark-bg': '#000000',
                         'card-bg': '#141414',
                         'neon-red': '#ff002b',
                     },
@@ -27,14 +27,13 @@
     </script>
     <style>
         body {
-            background-color: #000000; /* Fondo negro puro para igualar la captura */
+            background-color: #000000;
             color: #ffffff;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             user-select: none;
             -webkit-tap-highlight-color: transparent;
         }
 
-        /* Estilos específicos de borde tipo app */
         .app-card {
             background: #121212;
             border-radius: 24px;
@@ -57,7 +56,6 @@
             pointer-events: none;
         }
 
-        /* Transición suave de pantallas */
         .screen {
             display: none;
             opacity: 0;
@@ -69,7 +67,6 @@
             opacity: 1;
         }
 
-        /* Animación pulso neón */
         @keyframes pulseGlow {
             0%, 100% {
                 box-shadow: 0 0 10px rgba(255,0,43,0.5), 0 0 20px rgba(255,0,43,0.3);
@@ -98,7 +95,7 @@
             </div>
         </div>
 
-        <!-- Botón Volver (Global cuando no está en Home) -->
+        <!-- Botón Volver -->
         <div id="nav-header" class="hidden px-5 pt-2 pb-1 flex items-center justify-between z-40">
             <button onclick="goBack()" class="flex items-center space-x-2 text-white bg-zinc-900/80 px-3 py-1.5 rounded-full border border-zinc-700 active:scale-95 transition">
                 <i class="fas fa-arrow-left text-sm text-red-500"></i>
@@ -107,64 +104,38 @@
             <span id="current-screen-title" class="text-xs tracking-wider text-gray-400 uppercase font-mono"></span>
         </div>
 
-        <!-- VISTA 1: MENÚ PRINCIPAL (RAYKO PLAY) -->
+        <!-- VISTA 1: MENÚ PRINCIPAL -->
         <div id="screen-home" class="screen active flex-col flex-1 px-5 py-4 justify-between overflow-y-auto">
-            <!-- Header Logo -->
             <div class="text-center my-4">
                 <h1 class="text-4xl font-extrabold tracking-wide text-white inline-flex items-center gap-2">
                     RAYKO <span class="text-red-600 drop-shadow-[0_0_12px_rgba(255,0,43,0.9)]">PLAY</span>
                 </h1>
-                <p class="text-xs text-gray-400 font-mono tracking-[0.25em] mt-2 uppercase">
-                    ENTRETENIMIENTO FREEMIUM
-                </p>
+                <p class="text-xs text-gray-400 font-mono tracking-[0.25em] mt-2 uppercase">ENTRETENIMIENTO FREEMIUM</p>
             </div>
 
-            <!-- Botones del Menú Principal -->
             <div class="space-y-4 my-auto">
-                
-                <!-- TV EN VIVO -->
                 <button onclick="navigateTo('screen-servers')" class="w-full app-card pulse-glow p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
-                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl text-cyan-400 shadow-inner">
-                        📺
-                    </div>
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl text-cyan-400 shadow-inner">📺</div>
                     <span class="text-lg font-bold text-white tracking-wide uppercase">TV EN VIVO</span>
                 </button>
-
-                <!-- PELÍCULAS ESTRENO -->
                 <button onclick="showToast('Sección de Películas Estreno')" class="w-full app-card p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
-                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">
-                        🎬
-                    </div>
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">🎬</div>
                     <span class="text-lg font-bold text-white tracking-wide uppercase">PELÍCULAS ESTRENO</span>
                 </button>
-
-                <!-- PELÍCULAS PLUS -->
                 <button onclick="showToast('Sección de Películas Plus')" class="w-full app-card p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
-                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">
-                        🎥
-                    </div>
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">🎥</div>
                     <span class="text-lg font-bold text-white tracking-wide uppercase">PELÍCULAS PLUS</span>
                 </button>
-
-                <!-- PELÍCULAS COLECCIÓN -->
                 <button onclick="showToast('Sección de Películas Colección')" class="w-full app-card p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
-                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">
-                        🎞️
-                    </div>
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">🎞️</div>
                     <span class="text-lg font-bold text-white tracking-wide uppercase">PELÍCULAS COLECCIÓN</span>
                 </button>
-
-                <!-- SERIES -->
                 <button onclick="showToast('Sección de Series')" class="w-full app-card p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
-                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">
-                        🎭
-                    </div>
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">🎭</div>
                     <span class="text-lg font-bold text-white tracking-wide uppercase">SERIES</span>
                 </button>
-
             </div>
 
-            <!-- Footer -->
             <div class="text-center py-2">
                 <span class="text-[10px] text-zinc-600 font-mono tracking-widest uppercase">RAYKO PLAY FREEMIUM © 2026</span>
             </div>
@@ -172,40 +143,26 @@
 
         <!-- VISTA 2: SERVIDORES TV -->
         <div id="screen-servers" class="screen flex-col flex-1 px-5 py-4 justify-between overflow-y-auto">
-            <!-- Header Logo -->
             <div class="text-center my-6">
-                <h1 class="text-3xl font-black tracking-wider text-white">
-                    SERVIDORES<span class="text-red-600 drop-shadow-[0_0_12px_rgba(255,0,43,0.9)]">TV</span>
-                </h1>
-                <p class="text-xs text-gray-400 font-mono tracking-[0.3em] mt-2 uppercase">
-                    RAYKO PLAY FREEMIUM
-                </p>
+                <h1 class="text-3xl font-black tracking-wider text-white">SERVIDORES<span class="text-red-600 drop-shadow-[0_0_12px_rgba(255,0,43,0.9)]">TV</span></h1>
+                <p class="text-xs text-gray-400 font-mono tracking-[0.3em] mt-2 uppercase">RAYKO PLAY FREEMIUM</p>
             </div>
 
-            <!-- Lista de Servidores -->
             <div class="space-y-5 my-auto">
-                
-                <!-- TV FREEMIUM 1 (SOLO ESTE CARGARÁ LOS CANALES) -->
                 <button onclick="loadServerChannels()" class="w-full app-card pulse-glow p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
                     <span class="text-2xl">📺</span>
                     <span class="text-lg font-extrabold text-white tracking-wider uppercase">TV FREEMIUM 1</span>
                 </button>
-
-                <!-- TV FREEMIUM 2 (Sin funcionalidad) -->
                 <button onclick="showToast('Servidor 2 en mantenimiento')" class="w-full app-card p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
                     <span class="text-2xl">📺</span>
                     <span class="text-lg font-extrabold text-white tracking-wider uppercase">TV FREEMIUM 2</span>
                 </button>
-
-                <!-- TV FREEMIUM 3 (Sin funcionalidad) -->
                 <button onclick="showToast('Servidor 3 en mantenimiento')" class="w-full app-card p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
                     <span class="text-2xl">📺</span>
                     <span class="text-lg font-extrabold text-white tracking-wider uppercase">TV FREEMIUM 3</span>
                 </button>
-
             </div>
 
-            <!-- Footer -->
             <div class="text-center py-4">
                 <span class="text-xs text-zinc-500 font-mono tracking-widest uppercase">RAYKO PLAY © 2026</span>
             </div>
@@ -236,9 +193,9 @@
                 </button>
             </div>
 
-            <!-- Grid de Canales con Carga Automática de Logos -->
+            <!-- Grid de Canales -->
             <div id="channels-grid" class="grid grid-cols-2 gap-4 pb-6">
-                <!-- Los canales se cargarán automáticamente desde la App -->
+                <!-- Los canales se cargarán aquí -->
             </div>
 
             <!-- Mensaje cuando no se encuentran resultados -->
@@ -256,12 +213,10 @@
 
     </div>
 
-    <!-- Script de Interacciones y Carga Automática de Canales -->
+    <!-- Scripts -->
     <script>
-        // 🟢 1. Array vacío para recibir los canales de la App
         let allChannels = [];
 
-        // 🟢 2. Función que recibe los datos desde la App Java (MainActivity.java)
         function receiveChannelsFromApp(jsonData) {
             try {
                 allChannels = JSON.parse(jsonData);
@@ -271,11 +226,9 @@
             }
         }
 
-        // 🟢 3. Función para cargar los canales en el grid (solo primer servidor)
         function loadServerChannels() {
             if (allChannels.length === 0) {
                 showToast("Esperando datos de la App...");
-                // Intentar pedir los datos si no llegaron solos
                 if (window.Android) {
                     window.Android.sendChannelsToWeb();
                 }
@@ -285,7 +238,6 @@
             renderChannels();
         }
 
-        // Función para renderizar los canales en la parrilla
         function renderChannels() {
             const grid = document.getElementById('channels-grid');
             grid.innerHTML = '';
@@ -304,15 +256,22 @@
 
             allChannels.forEach(ch => {
                 const card = document.createElement('div');
-                card.className = "channel-card bg-white rounded-3xl p-3 flex flex-col items-center justify-between shadow-lg border-2 border-gray-200";
+                // 🔥 CAMBIO AQUÍ (Línea 285): El borde blanco se cambió a gris oscuro (#2a2a2a)
+                card.className = "channel-card bg-white rounded-3xl p-3 flex flex-col items-center justify-between shadow-lg border-2 border-[#2a2a2a]";
                 card.setAttribute('data-name', ch.name.toLowerCase());
 
-                // 🟢 4. LOGICA DEL LOGO: Si viene URL, se muestra. Si no, se usa el nombre.
+                // 🔥 CAMBIO AQUÍ: Lógica para pintar el logo de RAYKO PLAY cuando llega "default_icon"
                 let logoHtml = '';
-                if (ch.logoUrl && ch.logoUrl.trim() !== '') {
+                if (ch.logoUrl && ch.logoUrl.trim() !== '' && ch.logoUrl !== 'default_icon') {
                     logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="w-full h-full object-contain transition-transform duration-200 hover:scale-105" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\\'bg-black text-white font-bold text-center tracking-wider\\'>${ch.name}</div>'"/>`;
                 } else {
-                    logoHtml = `<div class="bg-black text-white font-black text-lg px-3 py-1.5 rounded-lg text-center tracking-wider uppercase">${ch.name}</div>`;
+                    // Aquí dibujamos el logo de la App estilizado con CSS
+                    logoHtml = `
+                        <div class="flex flex-col items-center justify-center w-full h-full bg-black rounded-xl">
+                            <span class="text-red-500 text-2xl font-black tracking-tighter drop-shadow-[0_0_8px_rgba(255,0,43,0.9)]">RAYKO</span>
+                            <span class="text-white text-[10px] font-bold tracking-[0.2em] mt-0.5">PLAY</span>
+                        </div>
+                    `;
                 }
 
                 card.innerHTML = `
@@ -328,7 +287,6 @@
             });
         }
 
-        // Función para el botón "VER CANAL"
         function playChannel(channelName) {
             showToast(`Cargando canal: ${channelName}`);
             if (window.Android) {
@@ -338,7 +296,6 @@
             }
         }
 
-        // Sistema de navegación interna
         const navigationHistory = ['screen-home'];
 
         function updateClock() {
@@ -440,9 +397,7 @@
             }, 2500);
         }
 
-        // 🟢 5. Carga inicial
         window.addEventListener('DOMContentLoaded', () => {
-            // Si la App está presente, le pedimos los canales automáticamente
             if (window.Android) {
                 window.Android.sendChannelsToWeb();
             }
