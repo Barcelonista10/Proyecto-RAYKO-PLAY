@@ -30,6 +30,12 @@
             border-color: #00d4ff;
             transform: translateY(-2px) scale(1.01);
         }
+        .neon-text {
+            background: linear-gradient(to right, #00d4ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.5));
+        }
         .channel-card {
             background: linear-gradient(145deg, #ffffff, #e6f0fa);
             color: #000;
@@ -80,11 +86,31 @@
             flex-direction: column;
             overflow: hidden;
         }
+        /* Clase para ocultar el encabezado cuando estamos dentro de los canales */
+        .header-hidden {
+            display: none !important;
+        }
     </style>
 </head>
 <body>
 
-    <!-- ✅ ELIMINADO: Header con Logo, Reloj y HD Activa -->
+    <!-- ✅ ENCABEZADO (Visible solo en el Menú Principal) -->
+    <header id="app-header" class="w-full flex-shrink-0 mb-2">
+        <div class="w-full max-w-2xl mx-auto flex justify-between items-center px-1 mb-1">
+            <span id="live-clock" class="text-xs font-bold text-cyan-300 tracking-wider">00:00</span>
+            <span class="bg-gradient-to-r from-cyan-500/20 to-blue-600/20 border border-cyan-500/40 text-cyan-300 text-[9px] uppercase font-extrabold px-3 py-0.5 rounded-full tracking-widest shadow">
+                ✨ HD Activa
+            </span>
+        </div>
+        <div class="w-full max-w-2xl mx-auto text-center">
+            <h1 class="text-3xl sm:text-4xl font-black tracking-wider text-white">
+                RAYKO <span class="neon-text">PLAY</span>
+            </h1>
+            <p class="text-[10px] uppercase tracking-[0.25em] text-cyan-200/70 mt-1 font-bold">
+                ENTRETENIMIENTO FREEMIUM 2026
+            </p>
+        </div>
+    </header>
 
     <!-- Main Container (Ocupa todo el espacio) -->
     <main id="app-container" class="w-full max-w-2xl mx-auto flex flex-col h-full overflow-hidden">
@@ -150,7 +176,6 @@
             }
         }
 
-        // Simulamos 1 solo servidor ya que no es necesario elegir para ver canales
         const servers = [
             { id: 1, name: 'TV FREEMIUM', icon: '⚡', ping: '10ms' }
         ];
@@ -170,6 +195,9 @@
             const channelsArray = allChannels && allChannels.length > 0 ? allChannels : [];
 
             if (state.currentView === 'home') {
+                // 🟢 MOSTRAMOS EL ENCABEZADO EN LA VISTA PRINCIPAL
+                document.getElementById('app-header').classList.remove('header-hidden');
+                
                 let html = '<div class="content-area space-y-3 w-full">';
                 const cats = window.categories || [
                     { id: 'tv', title: '📺 TODOS LOS CANALES', action: 'goToServers', desc: 'Ver todos los canales' }
@@ -189,7 +217,12 @@
                 html += '</div>';
                 container.innerHTML = html;
             } 
-            else if (state.currentView === 'servers') {
+            else {
+                // 🟢 OCULTAMOS EL ENCABEZADO EN CUALQUIER OTRA VISTA (Canales o Películas)
+                document.getElementById('app-header').classList.add('header-hidden');
+            }
+
+            if (state.currentView === 'servers') {
                 // Saltamos directamente a los canales para que sea más rápido
                 state.currentView = 'channels';
                 render();
@@ -367,6 +400,14 @@
             modal.classList.add('hidden');
             document.getElementById('loading-spinner').style.display = 'flex';
         }
+
+        // Reloj en tiempo real
+        setInterval(() => {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            document.getElementById('live-clock').innerText = `${hours}:${minutes}`;
+        }, 1000);
 
         window.onload = () => {
             if (window.Android) {
