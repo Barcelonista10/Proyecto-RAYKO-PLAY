@@ -4,361 +4,425 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAYKO PLAY</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap">
-
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #050505;
+            background: linear-gradient(135deg, #091325 0%, #050b16 50%, #0d1b32 100%);
             color: #ffffff;
             user-select: none;
             overflow-x: hidden;
         }
-
-        /* Red Neon Glow Effects */
-        .neon-glow-red {
-            box-shadow: 0 0 15px rgba(255, 0, 0, 0.6), inset 0 0 10px rgba(255, 0, 0, 0.3);
-            border-color: #ff1a1a;
+        .neon-box {
+            background: linear-gradient(145deg, rgba(16, 30, 54, 0.9), rgba(11, 21, 38, 0.95));
+            border: 1px solid rgba(0, 212, 255, 0.35);
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.15), inset 0 0 12px rgba(255, 255, 255, 0.05);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
-        .neon-text-red {
-            text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.5);
+        .neon-box:hover {
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.5), inset 0 0 18px rgba(0, 212, 255, 0.25);
+            border-color: #00d4ff;
+            transform: translateY(-3px) scale(1.01);
         }
-
-        /* Menu Button Styling mimicking original image */
-        .zeus-btn {
-            background: linear-gradient(180deg, #1c1d22 0%, #0f1013 100%);
-            border: 2px solid transparent;
-            position: relative;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        .neon-text {
+            background: linear-gradient(to right, #00d4ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.6));
         }
-
-        /* Top red highlight glow bar like image */
-        .zeus-btn::before {
-            content: '';
+        .channel-card {
+            background: linear-gradient(145deg, #ffffff, #e6f0fa);
+            color: #000;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 6px 25px rgba(0,114,255,0.25);
+        }
+        .channel-card:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.6);
+        }
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.4; transform: translateX(-50%) scale(1); }
+            50% { opacity: 0.7; transform: translateX(-50%) scale(1.1); }
+        }
+        .bg-glow {
             position: absolute;
-            top: -2px;
-            left: 10%;
-            right: 10%;
-            height: 3px;
-            background: #ff0000;
-            border-radius: 50%;
-            box-shadow: 0 0 12px #ff0000, 0 0 20px #ff0000;
-            opacity: 0.9;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.25) 0%, rgba(0, 114, 255, 0.1) 40%, rgba(0,0,0,0) 75%);
+            top: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            pointer-events: none;
+            animation: pulseGlow 5s infinite ease-in-out;
         }
-
-        /* Hover & Focus State for TV Remote navigation */
-        .zeus-btn:hover, .zeus-btn.focused {
-            transform: scale(1.03);
-            background: linear-gradient(180deg, #25272e 0%, #15161b 100%);
-            border-color: #ff0000;
-            box-shadow: 0 0 25px rgba(255, 0, 0, 0.7), inset 0 0 15px rgba(255, 0, 0, 0.2);
+        .scrollable-channels {
+            max-height: 520px;
+            overflow-y: auto;
+            padding-right: 4px;
+            scrollbar-width: thin;
+            scrollbar-color: #00d4ff #0b1526;
         }
-
-        .zeus-btn:hover::before, .zeus-btn.focused::before {
-            left: 5%;
-            right: 5%;
-            height: 4px;
-            box-shadow: 0 0 18px #ff0000, 0 0 30px #ff0000;
+        ::-webkit-scrollbar {
+            width: 6px;
         }
-
-        /* Ambient background glow */
-        .ambient-red {
-            background: radial-gradient(circle, rgba(200, 0, 0, 0.18) 0%, rgba(5, 5, 5, 0.95) 70%);
+        ::-webkit-scrollbar-track {
+            background: #0b1526;
+            border-radius: 3px;
         }
-
-        /* Glassmorphism modals */
-        .glass-modal {
-            background: rgba(12, 12, 15, 0.92);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 0, 0, 0.2);
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #00d4ff, #0072ff);
+            border-radius: 3px;
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-between p-4 sm:p-6 ambient-red relative">
+<body class="min-h-screen flex flex-col justify-between relative">
 
-    <!-- Top Status Bar -->
-    <header class="w-full max-w-md flex justify-between items-center text-xs text-zinc-400 pt-2 px-2 z-10">
-        <div class="flex items-center space-x-2">
-            <span class="w-2 h-2 rounded-full bg-red-600 animate-ping"></span>
-            <span class="font-bold text-zinc-300">SERVIDOR ACTIVO</span>
+    <div class="bg-glow"></div>
+
+    <!-- Top Header -->
+    <header class="w-full pt-8 pb-4 px-4 text-center relative">
+        <div class="inline-block animate-pulse mb-1.5">
+            <span class="bg-gradient-to-r from-cyan-500/20 to-blue-600/20 border border-cyan-500/40 text-cyan-300 text-[10px] uppercase font-extrabold px-3.5 py-1 rounded-full tracking-widest shadow-lg">
+                ✨ Transmisión Ultra HD Activa
+            </span>
         </div>
-        <div class="flex items-center space-x-3">
-            <i class="fa-solid fa-wifi text-zinc-300"></i>
-            <span id="clock" class="font-semibold text-white">00:00</span>
-        </div>
+        <h1 class="text-4xl sm:text-5xl font-black tracking-wider text-white">
+            RAYKO <span class="neon-text">PLAY</span>
+        </h1>
+        <p class="text-xs uppercase tracking-[0.3em] text-cyan-200/70 mt-2 font-bold">
+            ENTRETENIMIENTO FREEMIUM 2026
+        </p>
     </header>
 
-    <!-- Main Container replicating image layout -->
-    <main class="w-full max-w-md flex flex-col items-center my-auto py-4 z-10">
-
-        <!-- LOGO BRANDING -->
-        <div class="text-center mb-8">
-            <h1 class="text-4xl sm:text-5xl font-black tracking-wider uppercase text-white flex items-center justify-center gap-2">
-                <span class="text-zinc-200">RAYKO</span> 
-                <span class="text-red-600 neon-text-red">PLAY</span>
-            </h1>
-            <p class="text-[11px] sm:text-xs font-semibold tracking-[0.35em] text-zinc-400 mt-2 uppercase">
-                CANALES EN VIVO
-            </p>
-        </div>
-
-        <!-- MENU BUTTONS LIST -->
-        <div class="w-full flex flex-col gap-4 sm:gap-5" id="menu-list">
-            
-            <!-- 
-                🟢 CAMBIO CRUCIAL: 
-                En lugar de pasar una clave inventada, pasamos el nombre de la categoría 
-                que existe en tu JSON. EJEMPLOS: 'Deportes', 'Cine y Series', 'Eventos', etc.
-                Si pones 'TODOS', se mostrarán todos los canales.
-            -->
-
-            <!-- OPCIÓN 1: TV EN VIVO (Muestra TODOS los canales) -->
-            <button class="zeus-btn focused w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="0" onclick="openSection('TV EN VIVO', 'TODOS')">
-                <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
-                    <i class="fa-solid fa-tv text-2xl text-cyan-400 group-hover:scale-110 transition-transform"></i>
-                </div>
-                <span class="text-base sm:text-lg font-extrabold tracking-wide text-white uppercase">
-                    TV EN VIVO
-                </span>
-            </button>
-
-            <!-- OPCIÓN 2: DEPORTES -->
-            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="1" onclick="openSection('DEPORTES', 'Deportes')">
-                <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
-                    <i class="fa-solid fa-futbol text-2xl text-zinc-300 group-hover:scale-110 transition-transform"></i>
-                </div>
-                <span class="text-base sm:text-lg font-extrabold tracking-wide text-white uppercase">
-                    DEPORTES
-                </span>
-            </button>
-
-            <!-- OPCIÓN 3: CINE Y SERIES -->
-            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="2" onclick="openSection('CINE Y SERIES', 'Cine y Series')">
-                <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
-                    <i class="fa-solid fa-clapperboard text-2xl text-amber-400 group-hover:scale-110 transition-transform"></i>
-                </div>
-                <span class="text-base sm:text-lg font-extrabold tracking-wide text-white uppercase">
-                    CINE Y SERIES
-                </span>
-            </button>
-
-            <!-- OPCIÓN 4: EVENTOS DESTACADOS -->
-            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="3" onclick="openSection('EVENTOS', 'Eventos')">
-                <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
-                    <i class="fa-solid fa-calendar-days text-2xl text-amber-600 group-hover:scale-110 transition-transform"></i>
-                </div>
-                <span class="text-base sm:text-lg font-extrabold tracking-wide text-white uppercase">
-                    EVENTOS
-                </span>
-            </button>
-
-            <!-- OPCIÓN 5: GENERAL -->
-            <button class="zeus-btn w-full py-4 px-6 rounded-3xl flex items-center gap-5 group cursor-pointer" data-index="4" onclick="openSection('GENERAL', 'General')">
-                <div class="w-12 h-12 rounded-2xl bg-zinc-800/80 flex items-center justify-center border border-zinc-700/50 group-hover:border-red-500/50">
-                    <i class="fa-solid fa-masks-theater text-2xl text-amber-500 group-hover:scale-110 transition-transform"></i>
-                </div>
-                <span class="text-base sm:text-lg font-extrabold tracking-wide text-white uppercase">
-                    GENERAL
-                </span>
-            </button>
-
-        </div>
+    <!-- Main Container -->
+    <main id="app-container" class="w-full max-w-md mx-auto px-4 flex-grow pb-12">
+        <!-- Dynamic Views Rendered Here -->
     </main>
 
-    <!-- TV Remote Control Guidance Footer -->
-    <footer class="w-full max-w-md text-center py-2 z-10">
-        <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-zinc-900/90 border border-zinc-800 text-[11px] text-zinc-400">
-            <span><i class="fa-solid fa-arrows-up-down text-red-500"></i> Mover</span>
-            <span class="text-zinc-600">•</span>
-            <span><strong class="text-zinc-200">ENTER</strong> Seleccionar</span>
-        </div>
+    <!-- Footer -->
+    <footer class="w-full py-4 text-center text-xs text-cyan-300/50 tracking-wider border-t border-cyan-950/80 bg-slate-950/40 backdrop-blur-sm">
+        RAYKO PLAY FREEMIUM &copy; 2026 - Experiencia Inmersiva
     </footer>
 
-    <!-- Interactive Content Modal -->
-    <div id="content-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
-        <div class="glass-modal w-full max-w-lg rounded-3xl p-6 relative flex flex-col max-h-[85vh] shadow-2xl border-red-600/40">
-            <!-- Close Button -->
-            <button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-zinc-800 text-zinc-300 hover:text-white hover:bg-red-600 flex items-center justify-center transition">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
-            <!-- Modal Header -->
-            <div class="flex items-center gap-3 mb-4">
-                <i class="fa-solid fa-circle-play text-red-500 text-2xl"></i>
-                <h2 id="modal-title" class="text-xl font-black text-white uppercase tracking-wider">Categoría</h2>
+    <!-- Video Modal / Live Stream Player Simulator -->
+    <div id="video-modal" class="fixed inset-0 bg-slate-950/95 z-50 hidden flex flex-col items-center justify-center p-4 backdrop-blur-md">
+        <div class="w-full max-w-md bg-slate-900 rounded-2xl overflow-hidden border border-cyan-500/50 shadow-[0_0_60px_rgba(0,212,255,0.35)] relative transform transition-all">
+            <div class="bg-slate-950 p-4 flex justify-between items-center border-b border-cyan-950">
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
+                    <h3 id="modal-title" class="font-bold text-cyan-300 tracking-wide text-xs sm:text-sm uppercase">CONECTANDO SEÑAL...</h3>
+                </div>
+                <button onclick="closePlayer()" class="text-cyan-300 hover:text-white font-bold text-xl px-2.5 py-0.5 bg-slate-800/50 hover:bg-slate-800 rounded-lg transition">✕</button>
             </div>
-
-            <!-- Modal Body / Content List -->
-            <div id="modal-content" class="overflow-y-auto space-y-3 pr-1 my-2 max-h-[60vh]">
-                <!-- Dynamic Content Loaded via JS -->
+            <div class="relative aspect-video bg-slate-950 flex items-center justify-center overflow-hidden">
+                <div id="loading-spinner" class="absolute inset-0 flex flex-col items-center justify-center bg-slate-950/90 z-20 transition-opacity">
+                    <div class="w-12 h-12 border-4 border-cyan-400 border-t-transparent rounded-full animate-spin mb-3 shadow-[0_0_20px_rgba(0,212,255,0.8)]"></div>
+                    <span class="text-xs text-cyan-200 tracking-widest font-semibold animate-pulse">CARGANDO RECURSOS 4K...</span>
+                </div>
+                <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-950/40 via-slate-950 to-slate-950 opacity-90"></div>
+                <div class="text-center p-6 z-10">
+                    <div class="text-6xl mb-3 animate-pulse">📡</div>
+                    <p id="playing-text" class="text-base font-bold text-white tracking-wide">Reproduciendo Contenido...</p>
+                    <p class="text-xs text-cyan-300 mt-1.5 font-medium bg-cyan-950/60 py-1 px-3.5 rounded-full inline-block border border-cyan-500/30">Señal Optimizada • 60 FPS</p>
+                </div>
             </div>
-
-            <div class="pt-4 border-t border-zinc-800 text-center text-xs text-zinc-500">
-                Pulse <span class="text-red-400 font-bold">ESC</span> o haga clic afuera para volver
+            <div class="p-4 bg-slate-900 flex justify-between items-center border-t border-cyan-950">
+                <span class="text-xs text-cyan-300/70 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> Servidor Estable</span>
+                <button onclick="closePlayer()" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-white text-xs px-5 py-2.5 rounded-xl font-bold shadow-lg shadow-cyan-500/30 transition transform active:scale-95">Cerrar Reproductor</button>
             </div>
         </div>
     </div>
 
-    <!-- JavaScript Logic -->
+    <!-- JavaScript Application Logic -->
     <script>
-        let currentIndex = 0;
-        const buttons = document.querySelectorAll('.zeus-btn');
-        const modal = document.getElementById('content-modal');
-        let allChannels = []; // Aquí se guardará la lista real de la app
+        const state = {
+            currentView: 'home', 
+            selectedCategory: '',
+            selectedServer: '',
+            searchQuery: ''
+        };
 
-        // 🟢 1. LE PIDE LA LISTA DE CANALES A LA APP AL CARGAR
-        function requestChannelsFromApp() {
-            if (window.Android) {
-                window.Android.sendChannelsToWeb();
-            } else {
-                setTimeout(() => { 
-                    document.getElementById('channelList').innerHTML = '<div class="loading-text">Abre esta web desde la App RAYKO PLAY</div>';
-                }, 1000);
-            }
-        }
+        const categories = [
+            { id: 'tv', title: 'TV EN VIVO', icon: '📺', action: 'goToServers', desc: 'Canales en alta definición 24/7' },
+            { id: 'estreno', title: 'PELÍCULAS ESTRENO', icon: '🎬', action: 'goToContent', type: 'Estreno', desc: 'Lo más reciente del cine mundial' },
+            { id: 'plus', title: 'PELÍCULAS PLUS', icon: '🎥', action: 'goToContent', type: 'Plus', desc: 'Taquilleras y aclamadas por la crítica' },
+            { id: 'coleccion', title: 'PELÍCULAS COLECCIÓN', icon: '🎞️', action: 'goToContent', type: 'Colección', desc: 'Sagas completas y universos épicos' },
+            { id: 'series', title: 'SERIES', icon: '🎭', action: 'goToContent', type: 'Series', desc: 'Temporadas completas en HD' }
+        ];
 
-        // 🟢 2. RECIBE LA LISTA EN FORMATO JSON DESDE LA APP
-        function receiveChannelsFromApp(jsonData) {
-            try {
-                allChannels = JSON.parse(jsonData);
-                console.log("Canales cargados desde la app: " + allChannels.length);
-            } catch (e) {
-                console.error("Error al recibir los canales", e);
-            }
-        }
+        const servers = [
+            { id: 1, name: 'TV FREEMIUM 1', icon: '⚡', ping: '10ms' },
+            { id: 2, name: 'TV FREEMIUM 2', icon: '🚀', ping: '15ms' },
+            { id: 3, name: 'TV FREEMIUM 3', icon: '🔥', ping: '22ms' }
+        ];
 
-        // Update focus state visually
-        function updateFocus(index) {
-            buttons.forEach((btn, i) => {
-                if (i === index) {
-                    btn.classList.add('focused');
-                    btn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                } else {
-                    btn.classList.remove('focused');
-                }
-            });
-            currentIndex = index;
-        }
+        const channelsList = [
+            { name: 'AMC', logo: 'AMC', category: 'Series y Películas' },
+            { name: 'ANIMAL PLANET', logo: 'ANIMAL PLANET', category: 'Documentales' },
+            { name: 'AXN', logo: 'AXN', category: 'Acción y Series' },
+            { name: 'ADN 40', logo: 'ADN 40', category: 'Noticias' },
+            { name: 'AZ CORAZÓN', logo: 'AZ CORAZÓN', category: 'Novelas' },
+            { name: 'AZ CINEMA', logo: 'AZ CINEMA', category: 'Cine Latino' },
+            { name: 'AZ MUNDO', logo: 'AZ MUNDO', category: 'Internacional' },
+            { name: 'CANAL 7', logo: 'CANAL 7', category: 'Abierta' },
+            { name: 'ESPN HD', logo: 'ESPN', category: 'Deportes' },
+            { name: 'FOX SPORTS', logo: 'FOX SPORTS', category: 'Deportes' },
+            { name: 'DISCOVERY', logo: 'DISCOVERY', category: 'Documentales' },
+            { name: 'CARTOON NETWORK', logo: 'CARTOON', category: 'Infantil' },
+            { name: 'TNT SPORTS', logo: 'TNT SPORTS', category: 'Deportes' },
+            { name: 'HBO HD', logo: 'HBO', category: 'Películas' },
+            { name: 'WARNER TV', logo: 'WARNER', category: 'Series' },
+            { name: 'UNIVERSAL TV', logo: 'UNIVERSAL', category: 'Series' }
+        ];
 
-        // Mouse hover support
-        buttons.forEach((btn, index) => {
-            btn.addEventListener('mouseenter', () => {
-                updateFocus(index);
-            });
-        });
+        const moviesList = {
+            'Estreno': ['Avatar: El Camino del Agua', 'Deadpool & Wolverine', 'Gladiador II', 'Sonic 3: La Película', 'Mickey 17', 'Kraven el Cazador'],
+            'Plus': ['Interstellar', 'El Padrino', 'Inception', 'Pulp Fiction', 'Matrix', 'El Señor de los Anillos'],
+            'Colección': ['Colección Star Wars', 'Trilogía Batman Dark Knight', 'Saga Harry Potter', 'Universo Marvel Fase 4', 'Colección Rápido y Furioso'],
+            'Series': ['Breaking Bad', 'Game of Thrones', 'Stranger Things', 'The Last of Us', 'Chernobyl', 'Peaky Blinders']
+        };
 
-        // Remote Control Keyboard Navigation
-        document.addEventListener('keydown', (e) => {
-            if (modal.classList.contains('hidden') === false) {
-                if (e.key === 'Escape' || e.key === 'BackSpace') {
-                    closeModal();
-                }
-                return;
-            }
-
-            if (e.key === 'ArrowDown') {
-                e.preventDefault();
-                const nextIndex = (currentIndex + 1) % buttons.length;
-                updateFocus(nextIndex);
-            } else if (e.key === 'ArrowUp') {
-                e.preventDefault();
-                const prevIndex = (currentIndex - 1 + buttons.length) % buttons.length;
-                updateFocus(prevIndex);
-            } else if (e.key === 'Enter') {
-                e.preventDefault();
-                buttons[currentIndex].click();
-            }
-        });
-
-        // 🟢 3. NUEVA FUNCIÓN PARA ABRIR EL MENÚ CON FILTRO DINÁMICO
-        function openSection(title, categoryFilter) {
-            document.getElementById('modal-title').innerText = title;
-            const container = document.getElementById('modal-content');
+        function render() {
+            const container = document.getElementById('app-container');
             container.innerHTML = '';
 
-            // Si no hay canales en la app, mostramos un mensaje
-            if (allChannels.length === 0) {
-                container.innerHTML = `<div class="text-zinc-400 text-center py-4">Esperando canales de la app...</div>`;
-                modal.classList.remove('hidden');
-                return;
-            }
-
-            // Filtrar la lista de canales según la categoría
-            let filteredItems = [];
-            if (categoryFilter === 'TODOS') {
-                filteredItems = allChannels; // Muestra todos si es TODOS
-            } else {
-                filteredItems = allChannels.filter(c => c.category === categoryFilter);
-            }
-
-            if (filteredItems.length === 0) {
-                container.innerHTML = `<div class="text-zinc-400 text-center py-4">No hay canales en la categoría: ${categoryFilter}</div>`;
-                modal.classList.remove('hidden');
-                return;
-            }
-            
-            // Renderizar la lista generada dinámicamente
-            filteredItems.forEach(item => {
-                const el = document.createElement('div');
-                el.className = "flex items-center justify-between p-3.5 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-red-500 hover:bg-zinc-800 transition cursor-pointer group";
-                
-                // 🟢 AL HACER CLIC, LLAMA AL PUENTE DE LA APP CON EL NOMBRE DEL CANAL
-                el.onclick = () => {
-                    if (window.Android) {
-                        window.Android.playChannelFromWeb(item.name);
-                    } else {
-                        alert(`Simulación: Iniciando reproducción de: ${item.name}`);
-                    }
-                };
-
-                el.innerHTML = `
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-red-950/60 border border-red-600/30 flex items-center justify-center text-red-500 group-hover:bg-red-600 group-hover:text-white transition">
-                            <i class="fa-solid fa-play text-sm"></i>
+            if (state.currentView === 'home') {
+                let html = '<div class="space-y-4">';
+                categories.forEach(cat => {
+                    html += `
+                        <div onclick="${cat.action}('${cat.type || cat.id}')" class="neon-box rounded-2xl p-4.5 flex items-center justify-between cursor-pointer group">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/30 via-blue-600/20 to-indigo-600/20 flex items-center justify-center text-2xl border border-cyan-400/40 group-hover:scale-110 transition duration-300 shadow-inner">
+                                    ${cat.icon}
+                                </div>
+                                <div>
+                                    <h3 class="font-bold tracking-wide text-sm sm:text-base text-white group-hover:text-cyan-300 transition">${cat.title}</h3>
+                                    <p class="text-[11px] text-cyan-200/60 font-medium">${cat.desc}</p>
+                                </div>
+                            </div>
+                            <span class="text-cyan-400/60 group-hover:text-cyan-300 group-hover:translate-x-1 transition font-black text-lg">›</span>
                         </div>
+                    `;
+                });
+                html += '</div>';
+                container.innerHTML = html;
+            } 
+            else if (state.currentView === 'servers') {
+                let html = `
+                    <div class="mb-5 flex items-center justify-between">
                         <div>
-                            <h4 class="font-bold text-sm text-white">${item.name}</h4>
-                            ${item.category ? `<p class="text-xs text-zinc-400">${item.category}</p>` : ''}
+                            <h2 class="text-base font-black tracking-wider text-white">SELECCIONAR SERVIDOR</h2>
+                            <p class="text-xs text-cyan-300 font-semibold">Líneas de transmisión optimizadas</p>
+                        </div>
+                        <button onclick="goHome()" class="text-xs bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-3.5 py-2 rounded-xl text-cyan-200 font-bold transition flex items-center gap-1.5 shadow-md">← Menú</button>
+                    </div>
+                    <div class="space-y-3.5">
+                `;
+                servers.forEach(srv => {
+                    html += `
+                        <div onclick="selectServer('${srv.name}')" class="neon-box rounded-2xl p-4 flex items-center justify-between cursor-pointer border-l-4 border-l-cyan-400 group">
+                            <div class="flex items-center gap-4">
+                                <span class="text-2xl">${srv.icon}</span>
+                                <div>
+                                    <h3 class="font-bold tracking-wide text-sm sm:text-base text-white group-hover:text-cyan-300 transition">${srv.name}</h3>
+                                    <span class="text-[10px] bg-emerald-500/15 text-emerald-300 px-2 py-0.5 rounded-md font-semibold">Latencia: ${srv.ping}</span>
+                                </div>
+                            </div>
+                            <span class="text-xs bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-3.5 py-2 rounded-xl shadow-md group-hover:scale-105 transition">Conectar</span>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+                container.innerHTML = html;
+            }
+            else if (state.currentView === 'channels') {
+                let filteredChannels = channelsList.filter(ch => 
+                    ch.name.toLowerCase().includes(state.searchQuery.toLowerCase()) || 
+                    ch.category.toLowerCase().includes(state.searchQuery.toLowerCase())
+                );
+
+                let html = `
+                    <div class="mb-3 flex items-center justify-between">
+                        <div>
+                            <h2 class="text-base font-black tracking-wider text-white">TV EN VIVO</h2>
+                            <p class="text-[11px] text-cyan-300 font-semibold">${state.selectedServer}</p>
+                        </div>
+                        <button onclick="goToServers()" class="text-xs bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-3.5 py-2 rounded-xl text-cyan-200 font-bold transition shadow-md">← Servidores</button>
+                    </div>
+
+                    <!-- Buscador en tiempo real -->
+                    <div class="mb-4 relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-cyan-400">🔍</span>
+                        <input type="text" id="channel-search" value="${state.searchQuery}" oninput="handleSearch(event)" placeholder="Buscar canal o categoría..." class="w-full bg-slate-900 border border-cyan-900/60 focus:border-cyan-400 rounded-xl pl-11 pr-4 py-3 text-xs sm:text-sm text-white placeholder-cyan-500/50 focus:outline-none transition shadow-inner">
+                        ${state.searchQuery ? `<button onclick="clearSearch()" class="absolute inset-y-0 right-0 flex items-center pr-4 text-cyan-300 hover:text-white text-xs font-bold">✕</button>` : ''}
+                    </div>
+
+                    <!-- Contenedor con scroll vertical fluido -->
+                    <div class="scrollable-channels">
+                        <div class="grid grid-cols-2 gap-3 pb-2">
+                `;
+
+                if (filteredChannels.length === 0) {
+                    html += `
+                        <div class="col-span-2 text-center py-12 bg-slate-900/50 rounded-2xl border border-cyan-950">
+                            <span class="text-3xl mb-2 block">📡</span>
+                            <p class="text-xs text-cyan-300/70 font-semibold">No se encontraron canales con "${state.searchQuery}"</p>
+                        </div>
+                    `;
+                } else {
+                    filteredChannels.forEach(ch => {
+                        html += `
+                            <div class="channel-card p-3 flex flex-col justify-between items-center text-center">
+                                <div class="w-full">
+                                    <span class="text-[9px] uppercase font-bold tracking-widest text-slate-700 bg-cyan-100 px-2.5 py-0.5 rounded-full mb-2 inline-block">${ch.category}</span>
+                                </div>
+                                <div class="h-16 w-full bg-slate-950 rounded-xl flex items-center justify-center p-2 my-2 border border-cyan-500/30 shadow-inner">
+                                    <span class="text-cyan-300 font-black text-xs sm:text-sm tracking-tighter">${ch.logo}</span>
+                                </div>
+                                <button onclick="openPlayer('${ch.name}')" class="w-full bg-gradient-to-r from-slate-900 to-blue-950 hover:from-cyan-500 hover:to-blue-600 text-white font-bold text-xs py-2 rounded-lg tracking-wider transition shadow-md active:scale-95">VER CANAL</button>
+                            </div>
+                        `;
+                    });
+                }
+                html += `
                         </div>
                     </div>
-                    <span class="text-[10px] font-extrabold px-2.5 py-1 rounded-full bg-zinc-800 border border-zinc-700 text-amber-400 group-hover:border-red-500/60">
-                        ${item.category || 'LIVE'}
-                    </span>
                 `;
-                container.appendChild(el);
-            });
+                container.innerHTML = html;
+                
+                setTimeout(() => {
+                    const input = document.getElementById('channel-search');
+                    if (input && state.searchQuery) {
+                        input.focus();
+                        input.setSelectionRange(input.value.length, input.value.length);
+                    }
+                }, 10);
+            }
+            else if (state.currentView === 'movies') {
+                let items = moviesList[state.selectedCategory] || [];
+                let filteredMovies = items.filter(m => m.toLowerCase().includes(state.searchQuery.toLowerCase()));
 
+                let html = `
+                    <div class="mb-4 flex items-center justify-between">
+                        <div>
+                            <h2 class="text-base font-black tracking-wider text-white uppercase">${state.selectedCategory}</h2>
+                            <p class="text-[11px] text-cyan-300 font-semibold">Selección Exclusiva</p>
+                        </div>
+                        <button onclick="goHome()" class="text-xs bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-3.5 py-2 rounded-xl text-cyan-200 font-bold transition shadow-md">← Menú</button>
+                    </div>
+
+                    <div class="mb-5 relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-cyan-400">🔍</span>
+                        <input type="text" id="movie-search" value="${state.searchQuery}" oninput="handleSearch(event)" placeholder="Buscar título..." class="w-full bg-slate-900 border border-cyan-900/60 focus:border-cyan-400 rounded-xl pl-11 pr-4 py-3 text-xs sm:text-sm text-white placeholder-cyan-500/50 focus:outline-none transition shadow-inner">
+                        ${state.searchQuery ? `<button onclick="clearSearch()" class="absolute inset-y-0 right-0 flex items-center pr-4 text-cyan-300 hover:text-white text-xs font-bold">✕</button>` : ''}
+                    </div>
+
+                    <div class="space-y-3">
+                `;
+
+                if (filteredMovies.length === 0) {
+                    html += `
+                        <div class="text-center py-12 bg-slate-900/50 rounded-2xl border border-cyan-950">
+                            <span class="text-3xl mb-2 block">🎬</span>
+                            <p class="text-xs text-cyan-300/70 font-semibold">No se encontraron títulos</p>
+                        </div>
+                    `;
+                } else {
+                    filteredMovies.forEach(item => {
+                        html += `
+                            <div class="neon-box rounded-2xl p-4 flex items-center justify-between cursor-pointer group" onclick="openPlayer('${item}')">
+                                <div class="flex items-center gap-3.5">
+                                    <div class="w-10 h-10 rounded-xl bg-cyan-500/15 flex items-center justify-center text-lg border border-cyan-400/40 group-hover:scale-110 transition">
+                                        🎬
+                                    </div>
+                                    <span class="font-bold text-xs sm:text-sm text-white group-hover:text-cyan-300 transition">${item}</span>
+                                </div>
+                                <span class="text-[11px] bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-3.5 py-1.5 rounded-xl font-bold shadow-md group-hover:scale-105 transition">Reproducir</span>
+                            </div>
+                        `;
+                    });
+                }
+                html += '</div>';
+                container.innerHTML = html;
+
+                setTimeout(() => {
+                    const input = document.getElementById('movie-search');
+                    if (input && state.searchQuery) {
+                        input.focus();
+                        input.setSelectionRange(input.value.length, input.value.length);
+                    }
+                }, 10);
+            }
+        }
+
+        // Navigation Actions
+        function goHome() {
+            state.searchQuery = '';
+            state.currentView = 'home';
+            render();
+        }
+
+        function goToServers() {
+            state.searchQuery = '';
+            state.currentView = 'servers';
+            render();
+        }
+
+        function selectServer(serverName) {
+            state.selectedServer = serverName;
+            state.searchQuery = '';
+            state.currentView = 'channels';
+            render();
+        }
+
+        function goToContent(type) {
+            state.selectedCategory = type;
+            state.searchQuery = '';
+            state.currentView = 'movies';
+            render();
+        }
+
+        function handleSearch(e) {
+            state.searchQuery = e.target.value;
+            render();
+        }
+
+        function clearSearch() {
+            state.searchQuery = '';
+            render();
+        }
+
+        // Player Modal Handlers
+        function openPlayer(title) {
+            const modal = document.getElementById('video-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const playingText = document.getElementById('playing-text');
+            const spinner = document.getElementById('loading-spinner');
+
+            modalTitle.innerText = `TRANSMISIÓN ACTIVA: ${title.toUpperCase()}`;
+            playingText.innerText = `Reproduciendo: ${title}`;
             modal.classList.remove('hidden');
+
+            spinner.style.opacity = '1';
+            setTimeout(() => {
+                spinner.style.opacity = '0';
+                setTimeout(() => { spinner.style.display = 'none'; }, 300);
+            }, 1000);
         }
 
-        function closeModal() {
+        function closePlayer() {
+            const modal = document.getElementById('video-modal');
             modal.classList.add('hidden');
+            document.getElementById('loading-spinner').style.display = 'flex';
         }
 
-        // Close on clicking backdrop
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeModal();
-        });
-
-        // Realtime Clock
-        function updateClock() {
-            const now = new Date();
-            const h = String(now.getHours()).padStart(2, '0');
-            const m = String(now.getMinutes()).padStart(2, '0');
-            document.getElementById('clock').innerText = `${h}:${m}`;
-        }
-        setInterval(updateClock, 1000);
-        updateClock();
-
-        // Inicializar pidiendo los canales a la app
-        window.onload = function() {
-            requestChannelsFromApp();
+        // Initial Render
+        window.onload = () => {
+            render();
         };
     </script>
 </body>
