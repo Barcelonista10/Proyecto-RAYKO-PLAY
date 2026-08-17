@@ -1,222 +1,403 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>RAYKO PLAY - Entretenimiento Freemium</title>
+    <title>RAYKO PLAY - Neo Cyber Entertainment</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        'dark-bg': '#000000',
-                        'card-bg': '#141414',
-                        'neon-red': '#ff002b',
+                        'cyber-dark': '#06070a',
+                        'cyber-card': '#0d1117',
+                        'cyber-accent': '#ff0044',
+                        'cyber-cyan': '#00f0ff',
+                        'cyber-purple': '#7000ff',
                     },
                     boxShadow: {
-                        'neon': '0 0 15px rgba(255, 0, 43, 0.6), 0 0 30px rgba(255, 0, 43, 0.3)',
-                        'neon-glow': '0 0 20px rgba(255, 0, 50, 0.75)',
+                        'neon-red': '0 0 20px rgba(255, 0, 68, 0.4), 0 0 40px rgba(255, 0, 68, 0.1)',
+                        'neon-cyan': '0 0 20px rgba(0, 240, 255, 0.4), 0 0 40px rgba(0, 240, 255, 0.1)',
+                        'card-glow': '0 8px 32px 0 rgba(0, 0, 0, 0.7)',
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                     }
                 }
             }
         }
     </script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&display=swap');
+
         body {
-            background-color: #000000;
+            background-color: #030305;
             color: #ffffff;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Rajdhani', sans-serif;
             user-select: none;
             -webkit-tap-highlight-color: transparent;
+            overflow: hidden;
         }
 
-        .app-card {
-            background: #121212;
-            border-radius: 24px;
-            border: 1.5px solid #2a2a2a;
+        .font-cyber {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        /* Background grid effect */
+        .bg-grid {
+            background-size: 30px 30px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+
+        /* Glassmorphism Cards */
+        .cyber-card {
+            background: linear-gradient(135deg, rgba(20, 24, 33, 0.85) 0%, rgba(10, 12, 18, 0.95) 100%);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             position: relative;
             overflow: hidden;
-            transition: all 0.25s ease;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
-        .app-card::before {
+        .cyber-card::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            border-radius: 24px;
-            padding: 2px;
-            background: linear-gradient(135deg, rgba(255, 0, 43, 0.8) 0%, transparent 50%, rgba(255, 0, 43, 0.4) 100%);
-            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            -webkit-mask-composite: xor;
-            mask-composite: exclude;
-            pointer-events: none;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+            transition: 0.5s;
         }
 
+        .cyber-card:hover::before, .cyber-card:active::before {
+            left: 100%;
+        }
+
+        .cyber-card:active {
+            transform: scale(0.98);
+        }
+
+        /* Border Glow Effect */
+        .cyber-border-red {
+            border-left: 3px solid #ff0044;
+        }
+        .cyber-border-cyan {
+            border-left: 3px solid #00f0ff;
+        }
+
+        /* Screen Transitions */
         .screen {
             display: none;
             opacity: 0;
-            transition: opacity 0.3s ease-in-out;
+            transform: translateY(10px);
+            transition: opacity 0.35s ease, transform 0.35s ease;
         }
 
         .screen.active {
             display: flex;
             opacity: 1;
+            transform: translateY(0);
         }
 
-        @keyframes pulseGlow {
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.2);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ff0044;
+            border-radius: 10px;
+        }
+
+        /* Pulse Animations */
+        @keyframes cyberPulse {
             0%, 100% {
-                box-shadow: 0 0 10px rgba(255,0,43,0.5), 0 0 20px rgba(255,0,43,0.3);
+                box-shadow: 0 0 15px rgba(255,0,68,0.4), inset 0 0 15px rgba(255,0,68,0.2);
+                border-color: rgba(255,0,68,0.6);
             }
             50% {
-                box-shadow: 0 0 18px rgba(255,0,43,0.8), 0 0 30px rgba(255,0,43,0.5);
+                box-shadow: 0 0 25px rgba(255,0,68,0.7), inset 0 0 20px rgba(255,0,68,0.4);
+                border-color: rgba(255,0,68,1);
             }
         }
 
-        .pulse-glow {
-            animation: pulseGlow 2.5s infinite;
+        .pulse-neon {
+            animation: cyberPulse 2.5s infinite ease-in-out;
+        }
+
+        /* Animated Scanline */
+        .scanline {
+            width: 100%;
+            height: 2px;
+            background: rgba(0, 240, 255, 0.3);
+            position: absolute;
+            top: 0; left: 0;
+            animation: scan 8s linear infinite;
+            pointer-events: none;
+            z-index: 60;
+            opacity: 0.6;
+        }
+
+        @keyframes scan {
+            0% { top: 0%; }
+            100% { top: 100%; }
         }
     </style>
 </head>
 <body class="flex justify-center items-center min-h-screen p-0 sm:p-4 bg-black">
 
-    <!-- Mockup de Contenedor Móvil/TV para la APK -->
-    <div class="w-full max-w-md h-[100vh] sm:h-[880px] bg-black sm:rounded-[40px] border-0 sm:border-[6px] border-[#222] shadow-2xl flex flex-col justify-between relative overflow-hidden">
+    <!-- Mockup de Contenedor Móvil/TV -->
+    <div class="w-full max-w-md h-[100vh] sm:h-[880px] bg-cyber-dark sm:rounded-[44px] border-0 sm:border-[5px] border-zinc-800/80 shadow-card-glow flex flex-col justify-between relative overflow-hidden bg-grid">
         
-        <!-- Barra superior simulada -->
-        <div class="w-full pt-3 px-6 flex justify-between items-center text-xs text-gray-400 z-50">
-            <span id="clock">12:00</span>
-            <div class="flex items-center space-x-2">
-                <i class="fas fa-wifi"></i>
-                <i class="fas fa-battery-full"></i>
+        <!-- Línea de escaneo futurista -->
+        <div class="scanline"></div>
+
+        <!-- Ambient Glow FX Background -->
+        <div class="absolute -top-24 -left-24 w-60 h-60 bg-cyber-accent/20 rounded-full blur-[80px] pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-60 h-60 bg-cyber-cyan/15 rounded-full blur-[80px] pointer-events-none"></div>
+
+        <!-- Barra Superior Simulada -->
+        <div class="w-full pt-3.5 px-6 flex justify-between items-center text-xs text-zinc-400 z-50 font-cyber">
+            <div class="flex items-center space-x-1.5">
+                <span class="w-2 h-2 rounded-full bg-cyber-accent animate-ping"></span>
+                <span id="clock" class="font-bold tracking-widest text-white">12:00</span>
+            </div>
+            <div class="flex items-center space-x-3 text-zinc-400">
+                <i class="fas fa-wifi text-xs text-cyber-cyan"></i>
+                <i class="fas fa-[#ff0044] fa-bolt text-[10px] text-cyber-accent"></i>
+                <i class="fas fa-battery-three-quarters text-xs text-white"></i>
             </div>
         </div>
 
-        <!-- Botón Volver -->
-        <div id="nav-header" class="hidden px-5 pt-2 pb-1 flex items-center justify-between z-40">
-            <button onclick="goBack()" class="flex items-center space-x-2 text-white bg-zinc-900/80 px-3 py-1.5 rounded-full border border-zinc-700 active:scale-95 transition">
-                <i class="fas fa-arrow-left text-sm text-red-500"></i>
-                <span class="text-xs font-semibold">Atrás</span>
+        <!-- Header Navegación / Botón Atrás -->
+        <div id="nav-header" class="hidden px-5 pt-3 pb-1 flex items-center justify-between z-50">
+            <button onclick="goBack()" class="flex items-center space-x-2 text-white bg-zinc-900/90 hover:bg-zinc-800 px-3.5 py-1.5 rounded-xl border border-zinc-700/60 active:scale-95 transition shadow-lg backdrop-blur-md">
+                <i class="fas fa-chevron-left text-xs text-cyber-accent"></i>
+                <span class="text-xs font-bold tracking-wider uppercase font-cyber">Atrás</span>
             </button>
-            <span id="current-screen-title" class="text-xs tracking-wider text-gray-400 uppercase font-mono"></span>
+            <div class="flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyber-cyan"></span>
+                <span id="current-screen-title" class="text-[11px] tracking-widest text-zinc-400 uppercase font-cyber font-semibold"></span>
+            </div>
         </div>
 
         <!-- VISTA 1: MENÚ PRINCIPAL -->
-        <div id="screen-home" class="screen active flex-col flex-1 px-5 py-4 justify-between overflow-y-auto">
-            <div class="text-center my-4">
-                <h1 class="text-4xl font-extrabold tracking-wide text-white inline-flex items-center gap-2">
-                    RAYKO <span class="text-red-600 drop-shadow-[0_0_12px_rgba(255,0,43,0.9)]">PLAY</span>
-                </h1>
-                <p class="text-xs text-gray-400 font-mono tracking-[0.25em] mt-2 uppercase">ENTRETENIMIENTO FREEMIUM</p>
+        <div id="screen-home" class="screen active flex-col flex-1 px-5 py-4 justify-between overflow-y-auto z-10">
+            
+            <!-- Branding Logo -->
+            <div class="text-center my-4 relative">
+                <div class="inline-block relative">
+                    <h1 class="text-4xl font-black tracking-wider text-white font-cyber italic">
+                        RAYKO <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-accent to-cyber-cyan drop-shadow-[0_0_15px_rgba(255,0,68,0.8)]">PLAY</span>
+                    </h1>
+                </div>
+                <div class="flex items-center justify-center space-x-2 mt-1">
+                    <span class="h-[1px] w-6 bg-gradient-to-r from-transparent to-cyber-accent"></span>
+                    <p class="text-[10px] text-zinc-400 font-cyber tracking-[0.3em] uppercase font-bold">FREEMIUM ENTERTAINMENT</p>
+                    <span class="h-[1px] w-6 bg-gradient-to-l from-transparent to-cyber-accent"></span>
+                </div>
             </div>
 
-            <div class="space-y-4 my-auto">
-                <button onclick="navigateTo('screen-servers')" class="w-full app-card pulse-glow p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
-                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl text-cyan-400 shadow-inner">📺</div>
-                    <span class="text-lg font-bold text-white tracking-wide uppercase">TV EN VIVO</span>
+            <!-- Menú Principal de Opciones -->
+            <div class="space-y-3.5 my-auto">
+                <button onclick="navigateTo('screen-servers')" class="w-full cyber-card pulse-neon p-4 rounded-2xl flex items-center justify-between hover:border-cyber-accent/80 transition group">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyber-accent/20 to-black border border-cyber-accent/40 flex items-center justify-center text-xl text-cyber-accent shadow-inner group-hover:scale-105 transition">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-base font-extrabold text-white tracking-wider font-cyber">TV EN VIVO</span>
+                            <span class="text-[11px] text-zinc-400">Señales HD y Canales Digitales</span>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-xs text-cyber-accent opacity-70 group-hover:translate-x-1 transition"></i>
                 </button>
-                <button onclick="showToast('Sección de Películas Estreno')" class="w-full app-card p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
-                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">🎬</div>
-                    <span class="text-lg font-bold text-white tracking-wide uppercase">PELÍCULAS ESTRENO</span>
+
+                <button onclick="showToast('Sección de Películas Estreno')" class="w-full cyber-card cyber-border-cyan p-4 rounded-2xl flex items-center justify-between hover:bg-zinc-900/60 transition group">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-zinc-900/90 border border-zinc-700/60 flex items-center justify-center text-xl text-cyber-cyan group-hover:scale-105 transition">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-base font-bold text-white tracking-wider font-cyber">PELÍCULAS ESTRENO</span>
+                            <span class="text-[11px] text-zinc-400">Novedades del cine</span>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-xs text-zinc-600 group-hover:translate-x-1 transition"></i>
                 </button>
-                <button onclick="showToast('Sección de Películas Plus')" class="w-full app-card p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
-                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">🎥</div>
-                    <span class="text-lg font-bold text-white tracking-wide uppercase">PELÍCULAS PLUS</span>
+
+                <button onclick="showToast('Sección de Películas Plus')" class="w-full cyber-card p-4 rounded-2xl flex items-center justify-between hover:bg-zinc-900/60 transition group">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-zinc-900/90 border border-zinc-700/60 flex items-center justify-center text-xl text-purple-400 group-hover:scale-105 transition">
+                            <i class="fas fa-photo-video"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-base font-bold text-white tracking-wider font-cyber">PELÍCULAS PLUS</span>
+                            <span class="text-[11px] text-zinc-400">Catálogo Premium</span>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-xs text-zinc-600 group-hover:translate-x-1 transition"></i>
                 </button>
-                <button onclick="showToast('Sección de Películas Colección')" class="w-full app-card p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
-                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">🎞️</div>
-                    <span class="text-lg font-bold text-white tracking-wide uppercase">PELÍCULAS COLECCIÓN</span>
+
+                <button onclick="showToast('Sección de Películas Colección')" class="w-full cyber-card p-4 rounded-2xl flex items-center justify-between hover:bg-zinc-900/60 transition group">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-zinc-900/90 border border-zinc-700/60 flex items-center justify-center text-xl text-amber-400 group-hover:scale-105 transition">
+                            <i class="fas fa-compact-disc"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-base font-bold text-white tracking-wider font-cyber">COLECCIÓN</span>
+                            <span class="text-[11px] text-zinc-400">Sagas y Clásicos</span>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-xs text-zinc-600 group-hover:translate-x-1 transition"></i>
                 </button>
-                <button onclick="showToast('Sección de Series')" class="w-full app-card p-4 flex items-center justify-start space-x-6 hover:bg-zinc-900 transition">
-                    <div class="w-12 h-12 rounded-xl bg-zinc-900/80 border border-zinc-700/50 flex items-center justify-center text-2xl">🎭</div>
-                    <span class="text-lg font-bold text-white tracking-wide uppercase">SERIES</span>
+
+                <button onclick="showToast('Sección de Series')" class="w-full cyber-card p-4 rounded-2xl flex items-center justify-between hover:bg-zinc-900/60 transition group">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-zinc-900/90 border border-zinc-700/60 flex items-center justify-center text-xl text-emerald-400 group-hover:scale-105 transition">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-base font-bold text-white tracking-wider font-cyber">SERIES TV</span>
+                            <span class="text-[11px] text-zinc-400">Temporadas completas</span>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-xs text-zinc-600 group-hover:translate-x-1 transition"></i>
                 </button>
             </div>
 
-            <div class="text-center py-2">
-                <span class="text-[10px] text-zinc-600 font-mono tracking-widest uppercase">RAYKO PLAY FREEMIUM © 2026</span>
+            <!-- Footer -->
+            <div class="text-center py-2 flex flex-col items-center justify-center space-y-1">
+                <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-zinc-800 to-transparent mb-1"></div>
+                <span class="text-[10px] text-zinc-500 font-cyber tracking-widest uppercase">RAYKO PLAY FREEMIUM v2.5</span>
             </div>
         </div>
 
         <!-- VISTA 2: SERVIDORES TV -->
-        <div id="screen-servers" class="screen flex-col flex-1 px-5 py-4 justify-between overflow-y-auto">
-            <div class="text-center my-6">
-                <h1 class="text-3xl font-black tracking-wider text-white">SERVIDORES<span class="text-red-600 drop-shadow-[0_0_12px_rgba(255,0,43,0.9)]">TV</span></h1>
-                <p class="text-xs text-gray-400 font-mono tracking-[0.3em] mt-2 uppercase">RAYKO PLAY FREEMIUM</p>
+        <div id="screen-servers" class="screen flex-col flex-1 px-5 py-4 justify-between overflow-y-auto z-10">
+            <div class="text-center my-4">
+                <h1 class="text-2xl font-black tracking-wider text-white font-cyber uppercase">
+                    SERVIDORES <span class="text-cyber-accent drop-shadow-[0_0_10px_rgba(255,0,68,0.8)]">TV</span>
+                </h1>
+                <p class="text-[10px] text-cyber-cyan font-cyber tracking-[0.25em] mt-1 uppercase">Selecciona un nodo de transmisión</p>
             </div>
 
-            <div class="space-y-5 my-auto">
-                <button onclick="loadServerChannels()" class="w-full app-card pulse-glow p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
-                    <span class="text-2xl">📺</span>
-                    <span class="text-lg font-extrabold text-white tracking-wider uppercase">TV FREEMIUM 1</span>
+            <div class="space-y-4 my-auto">
+                <button onclick="loadServerChannels()" class="w-full cyber-card pulse-neon p-5 rounded-2xl flex items-center justify-between hover:bg-zinc-900 transition group">
+                    <div class="flex items-center space-x-4">
+                        <div class="relative">
+                            <div class="w-12 h-12 rounded-xl bg-cyber-accent/20 border border-cyber-accent flex items-center justify-center text-cyber-accent text-xl">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <span class="absolute -top-1 -right-1 flex h-3 w-3">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                            </span>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-base font-extrabold text-white tracking-wider font-cyber">TV FREEMIUM 1</span>
+                            <span class="text-[11px] text-emerald-400 font-mono">● ONLINE (Principal)</span>
+                        </div>
+                    </div>
+                    <i class="fas fa-play text-xs text-cyber-accent group-hover:translate-x-1 transition"></i>
                 </button>
-                <button onclick="showToast('Servidor 2 en mantenimiento')" class="w-full app-card p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
-                    <span class="text-2xl">📺</span>
-                    <span class="text-lg font-extrabold text-white tracking-wider uppercase">TV FREEMIUM 2</span>
+
+                <button onclick="showToast('Servidor 2 en mantenimiento')" class="w-full cyber-card p-5 rounded-2xl flex items-center justify-between opacity-70 hover:opacity-100 transition group">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-zinc-500 text-xl">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-base font-bold text-zinc-300 tracking-wider font-cyber">TV FREEMIUM 2</span>
+                            <span class="text-[11px] text-amber-500/90 font-mono">▲ MANTENIMIENTO</span>
+                        </div>
+                    </div>
+                    <i class="fas fa-lock text-xs text-zinc-600"></i>
                 </button>
-                <button onclick="showToast('Servidor 3 en mantenimiento')" class="w-full app-card p-4 flex items-center justify-center space-x-4 hover:bg-zinc-900 transition">
-                    <span class="text-2xl">📺</span>
-                    <span class="text-lg font-extrabold text-white tracking-wider uppercase">TV FREEMIUM 3</span>
+
+                <button onclick="showToast('Servidor 3 en mantenimiento')" class="w-full cyber-card p-5 rounded-2xl flex items-center justify-between opacity-70 hover:opacity-100 transition group">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-zinc-500 text-xl">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-base font-bold text-zinc-300 tracking-wider font-cyber">TV FREEMIUM 3</span>
+                            <span class="text-[11px] text-amber-500/90 font-mono">▲ MANTENIMIENTO</span>
+                        </div>
+                    </div>
+                    <i class="fas fa-lock text-xs text-zinc-600"></i>
                 </button>
             </div>
 
-            <div class="text-center py-4">
-                <span class="text-xs text-zinc-500 font-mono tracking-widest uppercase">RAYKO PLAY © 2026</span>
+            <div class="text-center py-3">
+                <span class="text-[10px] text-zinc-600 font-cyber tracking-widest uppercase">ESTADO DE RED: OPTIMIZADO</span>
             </div>
         </div>
 
         <!-- VISTA 3: PARRILLA DE CANALES -->
-        <div id="screen-channels" class="screen flex-col flex-1 px-4 py-3 overflow-y-auto">
+        <div id="screen-channels" class="screen flex-col flex-1 px-4 py-3 overflow-y-auto z-10">
             
             <div class="text-center mb-3">
-                <h2 class="text-xl font-bold text-white tracking-wide">CANALES DISPONIBLES</h2>
-                <p class="text-[11px] text-red-500 font-semibold uppercase tracking-wider">Servidor Freemium Activo</p>
+                <h2 class="text-lg font-black text-white font-cyber tracking-wider">CANALES DISPONIBLES</h2>
+                <div class="flex items-center justify-center space-x-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                    <p class="text-[10px] text-cyber-cyan font-mono uppercase tracking-wider">Servidor Freemium 1 Activo</p>
+                </div>
             </div>
 
             <!-- BUSCADOR DE CANALES -->
             <div class="relative mb-4">
-                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
-                    <i class="fas fa-search text-sm"></i>
+                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-zinc-500">
+                    <i class="fas fa-search text-xs"></i>
                 </div>
                 <input 
                     type="text" 
                     id="channel-search" 
                     oninput="filterChannels()" 
-                    placeholder="Buscar canal..." 
-                    class="w-full bg-zinc-900 border border-zinc-700 text-white placeholder-gray-500 text-sm rounded-full pl-9 pr-8 py-2.5 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition"
+                    placeholder="Buscar canal en vivo..." 
+                    class="w-full bg-zinc-900/90 border border-zinc-700/80 text-white placeholder-zinc-500 text-xs rounded-xl pl-9 pr-8 py-2.5 focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition backdrop-blur-md"
                 >
-                <button id="clear-search" onclick="clearSearch()" class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-white">
+                <button id="clear-search" onclick="clearSearch()" class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-zinc-400 hover:text-white">
                     <i class="fas fa-times text-xs"></i>
                 </button>
             </div>
 
             <!-- Grid de Canales -->
-            <div id="channels-grid" class="grid grid-cols-2 gap-4 pb-6">
-                <!-- Los canales se cargarán aquí -->
+            <div id="channels-grid" class="grid grid-cols-2 gap-3 pb-6">
+                <!-- Se cargan los canales dinámicamente -->
             </div>
 
-            <!-- Mensaje cuando no se encuentran resultados -->
-            <div id="no-results" class="hidden text-center py-10">
-                <i class="fas fa-search-minus text-4xl text-gray-600 mb-3"></i>
-                <p class="text-gray-400 text-sm">No se encontraron canales</p>
+            <!-- Estado sin resultados -->
+            <div id="no-results" class="hidden text-center py-12">
+                <div class="w-16 h-16 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center mx-auto mb-3 text-zinc-600 text-2xl">
+                    <i class="fas fa-search-minus"></i>
+                </div>
+                <p class="text-zinc-400 text-xs font-cyber">No se encontraron coincidencias</p>
             </div>
         </div>
 
-        <!-- TOAST / NOTIFICACIÓN -->
-        <div id="toast" class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-zinc-800 border border-red-500/50 text-white px-4 py-2.5 rounded-full text-xs font-semibold shadow-2xl opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center space-x-2">
-            <i class="fas fa-info-circle text-red-500"></i>
-            <span id="toast-message">Mensaje</span>
+        <!-- TOAST / NOTIFICACIÓN FLOATING -->
+        <div id="toast" class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-zinc-900/95 border border-cyber-accent/60 text-white px-5 py-2.5 rounded-2xl text-xs font-semibold shadow-2xl opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center space-x-2.5 backdrop-blur-md">
+            <i class="fas fa-info-circle text-cyber-accent text-sm"></i>
+            <span id="toast-message" class="tracking-wide">Mensaje</span>
         </div>
 
     </div>
 
-    <!-- Scripts -->
+    <!-- LÓGICA JAVASCRIPT INTACTA -->
     <script>
         let allChannels = [];
 
+        // Inyección desde la app Android
         function receiveChannelsFromApp(jsonData) {
             try {
                 allChannels = JSON.parse(jsonData);
@@ -246,9 +427,9 @@
 
             if (allChannels.length === 0) {
                 grid.innerHTML = `
-                    <div class="col-span-2 text-center py-10 text-gray-500 text-sm">
-                        <i class="fas fa-satellite-dish text-3xl mb-3 block"></i>
-                        No hay canales disponibles en este servidor.
+                    <div class="col-span-2 text-center py-12 text-zinc-500 text-xs font-cyber">
+                        <i class="fas fa-satellite-dish text-3xl mb-3 block text-zinc-600"></i>
+                        No hay canales disponibles en este momento.
                     </div>
                 `;
                 return;
@@ -256,31 +437,34 @@
 
             allChannels.forEach(ch => {
                 const card = document.createElement('div');
-                // 🔥 CAMBIO AQUÍ (Línea 285): El borde blanco se cambió a gris oscuro (#2a2a2a)
-                card.className = "channel-card bg-white rounded-3xl p-3 flex flex-col items-center justify-between shadow-lg border-2 border-[#2a2a2a]";
+                // Tarjeta estilizada con estética Cyber
+                card.className = "channel-card cyber-card rounded-2xl p-2.5 flex flex-col justify-between border border-zinc-800/80 hover:border-cyber-accent/50 transition";
                 card.setAttribute('data-name', ch.name.toLowerCase());
 
-                // 🔥 CAMBIO AQUÍ: Lógica para pintar el logo de RAYKO PLAY cuando llega "default_icon"
                 let logoHtml = '';
                 if (ch.logoUrl && ch.logoUrl.trim() !== '' && ch.logoUrl !== 'default_icon') {
-                    logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="w-full h-full object-contain transition-transform duration-200 hover:scale-105" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\\'bg-black text-white font-bold text-center tracking-wider\\'>${ch.name}</div>'"/>`;
+                    logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="max-h-16 max-w-full object-contain transition-transform duration-300 hover:scale-105" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\\'text-white font-bold text-center tracking-wider text-xs font-cyber\\'>${ch.name}</div>'"/>`;
                 } else {
-                    // Aquí dibujamos el logo de la App estilizado con CSS
+                    // Logo vectorial predeterminado estilizado para RAYKO PLAY
                     logoHtml = `
-                        <div class="flex flex-col items-center justify-center w-full h-full bg-black rounded-xl">
-                            <span class="text-red-500 text-2xl font-black tracking-tighter drop-shadow-[0_0_8px_rgba(255,0,43,0.9)]">RAYKO</span>
-                            <span class="text-white text-[10px] font-bold tracking-[0.2em] mt-0.5">PLAY</span>
+                        <div class="flex flex-col items-center justify-center w-full h-full bg-zinc-950/80 rounded-xl p-1 border border-zinc-800/50">
+                            <span class="text-cyber-accent text-xl font-black font-cyber tracking-tight drop-shadow-[0_0_8px_rgba(255,0,68,0.8)]">RAYKO</span>
+                            <span class="text-white text-[9px] font-bold tracking-[0.2em] -mt-1 font-cyber">PLAY</span>
                         </div>
                     `;
                 }
 
                 card.innerHTML = `
-                    <div class="w-full h-24 flex items-center justify-center p-2 rounded-2xl bg-zinc-900 overflow-hidden relative">
+                    <div class="w-full h-20 flex items-center justify-center p-2 rounded-xl bg-zinc-950/60 overflow-hidden relative border border-zinc-800/40">
                         ${logoHtml}
                     </div>
-                    <button onclick="playChannel('${ch.name}')" class="w-full mt-2 bg-black hover:bg-zinc-800 text-white font-bold py-2 px-3 rounded-xl text-xs uppercase tracking-wider transition active:scale-95 shadow">
-                        VER CANAL
-                    </button>
+                    <div class="mt-2 text-center">
+                        <p class="text-[11px] font-bold text-zinc-200 truncate font-cyber mb-1.5 px-1">${ch.name}</p>
+                        <button onclick="playChannel('${ch.name}')" class="w-full bg-gradient-to-r from-cyber-accent to-red-600 hover:from-red-600 hover:to-cyber-accent text-white font-extrabold py-1.5 px-2 rounded-lg text-[10px] font-cyber uppercase tracking-wider transition active:scale-95 shadow-md flex items-center justify-center space-x-1">
+                            <i class="fas fa-play text-[9px]"></i>
+                            <span>VER CANAL</span>
+                        </button>
+                    </div>
                 `;
 
                 grid.appendChild(card);
