@@ -52,7 +52,6 @@
             transform: translateY(-3px) scale(1.02);
             box-shadow: 0 8px 25px rgba(0, 212, 255, 0.5);
         }
-        /* Ajuste del área de scroll para que ocupe todo el espacio */
         .scrollable-channels {
             flex-grow: 1;
             overflow-y: auto;
@@ -72,7 +71,6 @@
             background: linear-gradient(to bottom, #00d4ff, #0072ff);
             border-radius: 3px;
         }
-        /* Ajustes para el contenedor principal */
         #app-container {
             flex-grow: 1;
             display: flex;
@@ -152,16 +150,19 @@
         const state = {
             currentView: 'home', 
             selectedCategory: '',
-            selectedServer: '',
+            selectedServer: 'TV FREEMIUM',
             searchQuery: ''
         };
+
+        // Variable para forzar la recarga de la lista al cerrar el player
+        let stayInList = false;
 
         function receiveChannelsFromApp(jsonData) {
             try {
                 allChannels = JSON.parse(jsonData);
                 
+                // Definimos las categorías (ELIMINADO "TODOS LOS CANALES")
                 const categories = [
-                    { id: 'tv', title: '📺 TODOS LOS CANALES', action: 'goToServers', desc: 'Navega por todos los canales' },
                     { id: 'Deportes', title: '⚽ DEPORTES', action: 'goToContent', type: 'Deportes', desc: 'Todo el deporte en vivo' },
                     { id: 'Cine y Series', title: '🎬 CINE Y SERIES', action: 'goToContent', type: 'Cine y Series', desc: 'Lo más reciente del cine' },
                     { id: 'Eventos', title: '🔥 EVENTOS', action: 'goToContent', type: 'Eventos', desc: 'Sagas y eventos destacados' },
@@ -175,12 +176,10 @@
             }
         }
 
-        const servers = [
-            { id: 1, name: 'TV FREEMIUM', icon: '⚡', ping: '10ms' }
-        ];
-
         function playFromApp(name) {
             if (window.Android) {
+                // Al hacer clic en reproducir, marcamos que queremos quedarnos en la lista
+                stayInList = true;
                 window.Android.playChannelFromWeb(name);
             } else {
                 openPlayer(name);
@@ -194,13 +193,10 @@
             const channelsArray = allChannels && allChannels.length > 0 ? allChannels : [];
 
             if (state.currentView === 'home') {
-                // Mostrar el encabezado
                 document.getElementById('app-header').classList.remove('header-hidden');
                 
                 let html = '<div class="content-area space-y-3 w-full">';
-                const cats = window.categories || [
-                    { id: 'tv', title: '📺 TODOS LOS CANALES', action: 'goToServers', desc: 'Ver todos los canales' }
-                ];
+                const cats = window.categories || [];
                 
                 cats.forEach(cat => {
                     html += `
@@ -217,15 +213,10 @@
                 container.innerHTML = html;
             } 
             else {
-                // Ocultar el encabezado en cualquier otra vista
                 document.getElementById('app-header').classList.add('header-hidden');
             }
 
-            if (state.currentView === 'servers') {
-                state.currentView = 'channels';
-                render();
-            }
-            else if (state.currentView === 'channels') {
+            if (state.currentView === 'channels') {
                 let filteredChannels = channelsArray.filter(ch => 
                     ch.name.toLowerCase().includes(state.searchQuery.toLowerCase()) || 
                     ch.category.toLowerCase().includes(state.searchQuery.toLowerCase())
@@ -234,8 +225,8 @@
                 let html = `
                     <div class="flex-shrink-0 mb-3 flex items-center justify-between">
                         <div>
-                            <h2 class="text-lg font-black tracking-wider text-white">📺 CANALES EN VIVO</h2>
-                            <p class="text-sm text-cyan-300 font-semibold">${state.selectedServer || 'Todos los canales'}</p>
+                            <h2 class="text-lg font-black tracking-wider text-white">📺 CANALES</h2>
+                            <p class="text-sm text-cyan-300 font-semibold">${state.selectedServer}</p>
                         </div>
                         <button onclick="goHome()" class="text-sm bg-slate-900 hover:bg-slate-800 border border-cyan-900/50 px-4 py-2 rounded-xl text-cyan-200 font-bold transition shadow-md">← Menú</button>
                     </div>
@@ -259,13 +250,10 @@
                     `;
                 } else {
                     filteredChannels.forEach(ch => {
-                        // 🟢 CORREGIDO: Detectar si la URL del logo es válida
                         let logoHtml = '';
                         if (ch.logoUrl && ch.logoUrl.trim() !== '') {
-                            // Si existe URL de logo, usamos la imagen
                             logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="max-h-14 max-w-full object-contain filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
                         } else {
-                            // Si no hay URL de logo, mostramos el nombre en su lugar (o un placeholder)
                             logoHtml = `<span class="text-cyan-300 font-black text-lg">${ch.name}</span>`;
                         }
 
@@ -297,6 +285,7 @@
                 }, 10);
             }
             else if (state.currentView === 'movies') {
+                // Vista de categoría específica
                 let filteredChannels = channelsArray.filter(ch => 
                     ch.category === state.selectedCategory && 
                     ch.name.toLowerCase().includes(state.searchQuery.toLowerCase())
@@ -362,15 +351,22 @@
             }
         }
 
+        // 🟢 NUEVO: Función mejorada para cerrar el reproductor y volver a la lista
+        function closePlayer() {
+            const modal = document.getElementById('video-modal');
+            modal.classList.add('hidden');
+            document.getElementById('loading-spinner').style.display = 'flex';
+
+            if (stayInList) {
+                stayInList = false;
+                // Volvemos a renderizar la lista en lugar de ir al home
+                render(); 
+            }
+        }
+
         function goHome() {
             state.searchQuery = '';
             state.currentView = 'home';
-            render();
-        }
-
-        function goToServers() {
-            state.searchQuery = '';
-            state.currentView = 'channels';
             render();
         }
 
@@ -408,12 +404,6 @@
             }, 1000);
         }
 
-        function closePlayer() {
-            const modal = document.getElementById('video-modal');
-            modal.classList.add('hidden');
-            document.getElementById('loading-spinner').style.display = 'flex';
-        }
-
         // Reloj en tiempo real
         setInterval(() => {
             const now = new Date();
@@ -427,9 +417,8 @@
                 window.Android.sendChannelsToWeb();
             } else {
                 receiveChannelsFromApp(JSON.stringify([
-                    { name: "GOLDEN EDGE | AR", category: "Cine y Series", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/AMC_Logo_%282020%29.svg/320px-AMC_Logo_%282020%29.svg.png" },
-                    { name: "GOLDEN PREMIER", category: "Cine y Series", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/AXN_logo_2017.svg/320px-AXN_logo_2017.svg.png" },
-                    { name: "Real Madrid vs Barcelona", category: "Eventos", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/ESPN_logo.svg/320px-ESPN_logo.svg.png" }
+                    { name: "A&E OP1", category: "Cine y Series", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/AMC_Logo_%282020%29.svg/320px-AMC_Logo_%282020%29.svg.png" },
+                    { name: "A&E OP2 | AR", category: "Cine y Series", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/AXN_logo_2017.svg/320px-AXN_logo_2017.svg.png" }
                 ]));
             }
         };
