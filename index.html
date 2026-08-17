@@ -246,7 +246,8 @@
                     filteredChannels.forEach(ch => {
                         let logoHtml = '';
                         if (ch.logoUrl && ch.logoUrl.trim() !== '') {
-                            logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="max-h-14 max-w-full object-contain filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
+                            // 🟢 CAMBIO VISUAL: object-cover y background oscuro para igualar tamaños
+                            logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="w-full h-full object-cover bg-slate-950 filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
                         } else {
                             logoHtml = `<span class="text-cyan-300 font-black text-lg">${ch.name}</span>`;
                         }
@@ -256,7 +257,7 @@
                                 <div class="flex items-center justify-between">
                                     <span class="text-sm uppercase font-bold tracking-widest text-slate-700 bg-cyan-100 px-3 py-1 rounded-full">${ch.category || 'GENERAL'}</span>
                                 </div>
-                                <div class="h-20 w-full bg-slate-950 rounded-xl flex items-center justify-center p-3 border border-cyan-500/30 shadow-inner overflow-hidden">
+                                <div class="h-20 w-full bg-slate-950 rounded-xl flex items-center justify-center p-0 overflow-hidden border border-cyan-500/30 shadow-inner">
                                     ${logoHtml}
                                 </div>
                                 <button onclick="playFromApp('${ch.name}')" class="w-full bg-gradient-to-r from-slate-900 to-blue-950 hover:from-cyan-500 hover:to-blue-600 text-white font-bold text-base py-3 rounded-xl tracking-wider transition shadow active:scale-95">▶ REPRODUCIR</button>
@@ -313,7 +314,7 @@
                     filteredChannels.forEach(ch => {
                         let logoHtml = '';
                         if (ch.logoUrl && ch.logoUrl.trim() !== '') {
-                            logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="max-h-10 max-w-full object-contain filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
+                            logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="w-full h-full object-cover bg-slate-950 filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
                         } else {
                             logoHtml = `<span class="text-cyan-300 font-black text-lg">${ch.name}</span>`;
                         }
@@ -321,7 +322,7 @@
                         html += `
                             <div class="neon-box rounded-2xl p-4 flex items-center justify-between cursor-pointer group" onclick="playFromApp('${ch.name}')">
                                 <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-xl bg-cyan-500/15 flex items-center justify-center text-2xl border border-cyan-400/40 group-hover:scale-110 transition">
+                                    <div class="w-12 h-12 rounded-xl bg-cyan-500/15 flex items-center justify-center text-2xl border border-cyan-400/40 group-hover:scale-110 transition overflow-hidden">
                                         ${logoHtml}
                                     </div>
                                     <span class="font-bold text-lg text-white group-hover:text-cyan-300 transition">${ch.name}</span>
@@ -384,14 +385,10 @@
             }, 1000);
         }
 
-        // 🟢 CORRECCIÓN: Al cerrar el player, NO recargamos la página, solo la lista
         function closePlayer() {
             const modal = document.getElementById('video-modal');
             modal.classList.add('hidden');
             document.getElementById('loading-spinner').style.display = 'flex';
-
-            // Simplemente volvemos a renderizar la lista (esto mantiene la categoría)
-            render(); 
         }
 
         // Reloj en tiempo real
