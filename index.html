@@ -3,267 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>RAYKO PLAY - IPTV</title>
-    <!-- Iconos de FontAwesome para los iconos de la interfaz -->
+    <title>RAYKO PLAY IPTV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* --- ESTILOS GENERALES --- */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #0F1621; color: #FFFFFF; height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
         
-        body {
-            background-color: #0F1621; /* Fondo azul oscuro estilo IPTV */
-            color: #FFFFFF;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden; /* Evita scroll en el body completo */
-        }
-
-        /* --- ZONA DE VIDEO EN FONDO --- */
         .background-video-container {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 35%;
+            position: absolute; top: 0; left: 0; width: 100%; height: 32%;
             z-index: 0;
             background: url('https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg') center/cover no-repeat;
-            /* Opcional: Si quieres poner un video real, descomenta esto: */
-            /* background: none; */
         }
-        /* Overlay oscuro para que se lean bien los textos sobre el video */
         .background-video-container::after {
-            content: '';
-            position: absolute;
-            bottom: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to top, #0F1621 10%, transparent 100%);
+            content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to top, #0F1621 15%, transparent 100%);
         }
 
-        /* --- BARRA DE BÚSQUEDA --- */
         .search-bar {
-            position: absolute;
-            top: 20px; right: 20px;
-            z-index: 10;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 30px;
-            padding: 10px 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            position: absolute; top: 20px; right: 20px; z-index: 10;
+            background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px);
+            border-radius: 30px; padding: 10px 15px; display: flex; align-items: center; gap: 10px;
         }
         .search-bar i { color: #FFF; font-size: 18px; }
         .search-bar input {
-            background: transparent;
-            border: none;
-            color: #FFF;
-            outline: none;
-            width: 100px;
-            font-size: 14px;
+            background: transparent; border: none; color: #FFF; outline: none; width: 100px; font-size: 14px;
         }
         .search-bar input::placeholder { color: #AAA; }
 
-        /* --- TABS SUPERIORES --- */
         .tabs-top {
-            position: relative;
-            z-index: 10;
-            margin-top: 38vh; /* Debajo del video */
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 15px 0;
+            position: relative; z-index: 10; margin-top: 34vh;
+            display: flex; justify-content: center; gap: 30px; padding: 15px 0;
             border-bottom: 1px solid #253040;
         }
         .tab-btn {
-            background: transparent;
-            border: none;
-            color: #8899AA;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            padding-bottom: 10px;
-            position: relative;
+            background: transparent; border: none; color: #8899AA; font-size: 16px; font-weight: 600; cursor: pointer;
+            padding-bottom: 10px; position: relative;
         }
-        .tab-btn.active {
-            color: #3B82F6; /* Azul brillante */
-        }
+        .tab-btn.active { color: #3B82F6; }
         .tab-btn.active::after {
-            content: '';
-            position: absolute;
-            bottom: -1px; left: 0; width: 100%; height: 3px;
-            background: #3B82F6;
-            border-radius: 10px;
+            content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; height: 3px;
+            background: #3B82F6; border-radius: 10px;
         }
 
-        /* --- SUB-FILTROS (Botones redondeados) --- */
-        .filter-scroll {
-            z-index: 10;
-            padding: 15px 20px;
-            overflow-x: auto;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-        }
+        .filter-scroll { z-index: 10; padding: 15px 20px; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
         .filter-scroll::-webkit-scrollbar { display: none; }
-        
         .filter-chip {
-            display: inline-block;
-            background: #1E293B;
-            color: #CBD5E1;
-            padding: 8px 18px;
-            border-radius: 20px;
-            margin-right: 10px;
-            font-size: 13px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s;
+            display: inline-block; background: #1E293B; color: #CBD5E1; padding: 8px 18px;
+            border-radius: 20px; margin-right: 10px; font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.3s;
         }
-        .filter-chip.active {
-            background: #3B82F6;
-            color: #FFF;
-            box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
-        }
+        .filter-chip.active { background: #3B82F6; color: #FFF; box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4); }
 
-        /* --- LISTA DE CANALES --- */
-        .channel-list-container {
-            flex: 1; /* Ocupa el resto del espacio */
-            overflow-y: auto;
-            z-index: 10;
-            padding-bottom: 80px; /* Espacio para el menú inferior */
-        }
+        .channel-list-container { flex: 1; overflow-y: auto; z-index: 10; padding-bottom: 80px; }
         .channel-list-container::-webkit-scrollbar { width: 4px; }
         .channel-list-container::-webkit-scrollbar-thumb { background: #3B82F6; border-radius: 10px; }
 
         .channel-item {
-            display: flex;
-            align-items: center;
-            padding: 15px 20px;
-            border-bottom: 1px solid #1A2332;
-            cursor: pointer;
-            transition: background 0.2s;
+            display: flex; align-items: center; padding: 15px 20px; border-bottom: 1px solid #1A2332;
+            cursor: pointer; transition: background 0.2s;
         }
         .channel-item:active { background: #1A2332; }
-        
-        .channel-logo {
-            width: 40px; height: 40px;
-            object-fit: contain;
-            margin-right: 15px;
-            background: #0F1621;
-            border-radius: 5px;
-            padding: 5px;
-        }
-        .channel-number {
-            font-size: 16px;
-            font-weight: bold;
-            color: #8899AA;
-            width: 40px;
-            text-align: center;
-            margin-right: 15px;
-        }
-        .channel-info {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .channel-name {
-            font-size: 15px;
-            font-weight: 600;
-            color: #FFF;
-        }
-        .channel-epg {
-            font-size: 12px;
-            color: #8899AA;
-            margin-top: 3px;
-        }
-        .channel-arrow {
-            color: #8899AA;
-            font-size: 18px;
-            background: rgba(255,255,255,0.05);
-            width: 30px; height: 30px;
-            display: flex; justify-content: center; align-items: center;
-            border-radius: 50%;
-            border: 1px solid #2D3A4D;
-        }
+        .channel-logo { width: 40px; height: 40px; object-fit: contain; margin-right: 15px; background: #0F1621; border-radius: 5px; padding: 5px; }
+        .channel-number { font-size: 16px; font-weight: bold; color: #8899AA; width: 40px; text-align: center; margin-right: 15px; }
+        .channel-info { flex: 1; display: flex; flex-direction: column; }
+        .channel-name { font-size: 15px; font-weight: 600; color: #FFF; }
+        .channel-epg { font-size: 12px; color: #8899AA; margin-top: 3px; }
+        .channel-arrow { color: #8899AA; font-size: 18px; background: rgba(255,255,255,0.05); width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; border-radius: 50%; border: 1px solid #2D3A4D; }
 
-        /* --- MENÚ INFERIOR --- */
         .bottom-nav {
-            position: absolute;
-            bottom: 0; width: 100%;
-            background: #0F1621;
-            border-top: 1px solid #1A2332;
-            display: flex;
-            justify-content: space-around;
-            padding: 10px 0 20px 0;
-            z-index: 20;
+            position: absolute; bottom: 0; width: 100%; background: #0F1621; border-top: 1px solid #1A2332;
+            display: flex; justify-content: space-around; padding: 10px 0 20px 0; z-index: 20;
         }
-        .nav-item {
-            text-align: center;
-            color: #8899AA;
-            font-size: 12px;
-            cursor: pointer;
-            transition: color 0.2s;
-        }
-        .nav-item i {
-            display: block;
-            font-size: 24px;
-            margin-bottom: 5px;
-        }
+        .nav-item { text-align: center; color: #8899AA; font-size: 12px; cursor: pointer; transition: color 0.2s; }
+        .nav-item i { display: block; font-size: 24px; margin-bottom: 5px; }
         .nav-item.active { color: #3B82F6; }
-
-        /* --- RESPONSIVE --- */
-        @media (max-width: 480px) {
-            .tabs-top { gap: 15px; font-size: 14px; }
-            .channel-number { width: 30px; font-size: 14px; }
-            .channel-logo { width: 30px; height: 30px; }
-            .background-video-container { height: 30%; }
-            .tabs-top { margin-top: 32vh; }
-        }
     </style>
 </head>
 <body>
 
-    <!-- Fondo de Video (Cine) -->
     <div class="background-video-container"></div>
 
-    <!-- Lupa de búsqueda -->
     <div class="search-bar">
         <i class="fas fa-search"></i>
         <input type="text" placeholder="Buscar..." id="searchInput" onkeyup="filtrarCanales()">
     </div>
 
-    <!-- Tabs superiores -->
     <div class="tabs-top">
         <button class="tab-btn active" onclick="cambiarTab(this, 'categoria')">Categoría</button>
         <button class="tab-btn" onclick="cambiarTab(this, 'favoritos')">Favoritos</button>
     </div>
 
-    <!-- Filtros redondeados -->
-    <div class="filter-scroll" id="filtrosContainer">
-        <!-- Los filtros se generan con JS -->
-    </div>
+    <div class="filter-scroll" id="filtrosContainer"></div>
+    <div class="channel-list-container" id="channelList"></div>
 
-    <!-- Lista de Canales -->
-    <div class="channel-list-container" id="channelList">
-        <!-- Los canales se generan con JS -->
-    </div>
-
-    <!-- Menú Inferior -->
     <div class="bottom-nav">
         <div class="nav-item" onclick="cambiarNav(this)">
-            <i class="fas fa-home"></i>
-            <span>Inicio</span>
+            <i class="fas fa-home"></i><span>Inicio</span>
         </div>
         <div class="nav-item active" onclick="cambiarNav(this)">
-            <i class="fas fa-tv"></i>
-            <span>Canales</span>
+            <i class="fas fa-tv"></i><span>Canales</span>
         </div>
         <div class="nav-item" onclick="cambiarNav(this)">
-            <i class="fas fa-user"></i>
-            <span>Perfil</span>
+            <i class="fas fa-user"></i><span>Perfil</span>
         </div>
     </div>
 
     <script>
-        // ==========================================
-        // 1. CONFIGURACIÓN Y DATOS (SIMULADOS AQUÍ)
-        // ==========================================
-        // NOTA: En un futuro, esto se puede cargar desde un JSON externo
+        // 1. LISTA DE CANALES (Debes cambiar los nombres aquí por los de tu JSON)
         const allChannels = [
             { id: "015", name: "AXN WHITE HD", epg: "", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/AXN_White_Logo.svg/1200px-AXN_White_Logo.svg.png", category: "Cine y Series" },
             { id: "016", name: "AXN ESPAÑA HD", epg: "", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/AXN_Spain_Logo.svg/1200px-AXN_Spain_Logo.svg.png", category: "Cine y Series" },
@@ -272,25 +117,16 @@
             { id: "019", name: "ATV", epg: "Día D", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/ATV_Logo_2010.svg/1200px-ATV_Logo_2010.svg.png", category: "General" },
             { id: "020", name: "ATV Plus HD", epg: "Nutrissa", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/ATV_Logo_2010.svg/1200px-ATV_Logo_2010.svg.png", category: "General" },
             { id: "021", name: "ALQUILER Cinema", epg: "Dreamworks", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/DreamWorks_Animation_Logo_2022.svg/1200px-DreamWorks_Animation_Logo_2022.svg.png", category: "Cine y Series" },
-            { id: "022", name: "Discovery", epg: "Mitos del Mundo", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Discovery_Channel_Logo_2025.svg/1200px-Discovery_Channel_Logo_2025.svg.png", category: "Documentales" },
         ];
 
-        // Función para obtener las categorías únicas
         function getCategories() {
             let cats = ["Todos"];
-            allChannels.forEach(c => {
-                if (!cats.includes(c.category)) cats.push(c.category);
-            });
+            allChannels.forEach(c => { if (!cats.includes(c.category)) cats.push(c.category); });
             return cats;
         }
 
         let currentCategory = "Todos";
 
-        // ==========================================
-        // 2. FUNCIONES DE RENDERIZADO
-        // ==========================================
-
-        // Generar botones de filtro
         function renderFilters() {
             const container = document.getElementById('filtrosContainer');
             container.innerHTML = '';
@@ -299,31 +135,19 @@
                 const btn = document.createElement('div');
                 btn.className = 'filter-chip' + (cat === currentCategory ? ' active' : '');
                 btn.innerText = cat;
-                btn.onclick = () => {
-                    currentCategory = cat;
-                    renderFilters();
-                    renderChannels();
-                };
+                btn.onclick = () => { currentCategory = cat; renderFilters(); renderChannels(); };
                 container.appendChild(btn);
             });
         }
 
-        // Generar la lista de canales
         function renderChannels() {
             const container = document.getElementById('channelList');
             container.innerHTML = '';
-            
-            // Filtrar canales
             let filtered = allChannels;
-            if (currentCategory !== "Todos") {
-                filtered = allChannels.filter(c => c.category === currentCategory);
-            }
+            if (currentCategory !== "Todos") filtered = allChannels.filter(c => c.category === currentCategory);
 
-            // Aplicar búsqueda
             const query = document.getElementById('searchInput').value.toLowerCase();
-            if (query) {
-                filtered = filtered.filter(c => c.name.toLowerCase().includes(query));
-            }
+            if (query) filtered = filtered.filter(c => c.name.toLowerCase().includes(query));
 
             if (filtered.length === 0) {
                 container.innerHTML = `<div style="padding:30px; text-align:center; color:#8899AA;">No hay canales disponibles</div>`;
@@ -333,37 +157,29 @@
             filtered.forEach(c => {
                 const item = document.createElement('div');
                 item.className = 'channel-item';
+                // 🟢 CONEXIÓN CON LA APP: Aquí se pasa el NOMBRE del canal
                 item.onclick = () => {
-                    // 🟢 AQUÍ SE CONECTA CON LA APP ANDROID
                     if (window.Android) {
                         window.Android.playChannelFromWeb(c.name);
                     } else {
-                        alert("Simulación: Reproduciendo " + c.name);
+                        // Si abres la web en el navegador normal, abre el link real
+                        window.location.href = "https://raw.githubusercontent.com/Barcelonista10/Proyecto-RAYKO-PLAY/main/lista%20Premium.m3u";
                     }
                 };
 
                 item.innerHTML = `
-                    <img class="channel-logo" src="${c.logo}" alt="${c.name}" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/RAYKO_LOGO.svg/1200px-RAYKO_LOGO.svg.png'">
+                    <img class="channel-logo" src="${c.logo}" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/RAYKO_LOGO.svg/1200px-RAYKO_LOGO.svg.png'">
                     <div class="channel-number">${c.id}</div>
-                    <div class="channel-info">
-                        <div class="channel-name">${c.name}</div>
-                        <div class="channel-epg">${c.epg || 'En vivo'}</div>
-                    </div>
+                    <div class="channel-info"><div class="channel-name">${c.name}</div><div class="channel-epg">${c.epg || 'En vivo'}</div></div>
                     <div class="channel-arrow"><i class="fas fa-arrow-right"></i></div>
                 `;
                 container.appendChild(item);
             });
         }
 
-        // ==========================================
-        // 3. FUNCIONES DE INTERACCIÓN (UI)
-        // ==========================================
-
         function cambiarTab(btn, tabName) {
             document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            // Aquí podrías añadir lógica para cambiar entre "Categoría" y "Favoritos"
-            // Si es Favoritos, filtrar por c.favorito = true;
         }
 
         function cambiarNav(item) {
@@ -371,16 +187,10 @@
             item.classList.add('active');
         }
 
-        function filtrarCanales() {
-            renderChannels();
-        }
+        function filtrarCanales() { renderChannels(); }
 
-        // ==========================================
-        // 4. INICIALIZACIÓN
-        // ==========================================
         renderFilters();
         renderChannels();
-
     </script>
 </body>
 </html>
