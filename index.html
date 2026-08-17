@@ -59,7 +59,7 @@
             padding-right: 6px;
             scrollbar-width: thin;
             scrollbar-color: #00d4ff #0b1526;
-            max-height: none; /* Quitamos el límite fijo */
+            max-height: none;
         }
         ::-webkit-scrollbar {
             width: 6px;
@@ -86,7 +86,6 @@
             flex-direction: column;
             overflow: hidden;
         }
-        /* Clase para ocultar el encabezado cuando estamos dentro de los canales */
         .header-hidden {
             display: none !important;
         }
@@ -94,7 +93,7 @@
 </head>
 <body>
 
-    <!-- ✅ ENCABEZADO (Visible solo en el Menú Principal) -->
+    <!-- ENCABEZADO (Visible solo en el Menú Principal) -->
     <header id="app-header" class="w-full flex-shrink-0 mb-2">
         <div class="w-full max-w-2xl mx-auto flex justify-between items-center px-1 mb-1">
             <span id="live-clock" class="text-xs font-bold text-cyan-300 tracking-wider">00:00</span>
@@ -112,12 +111,12 @@
         </div>
     </header>
 
-    <!-- Main Container (Ocupa todo el espacio) -->
+    <!-- Main Container -->
     <main id="app-container" class="w-full max-w-2xl mx-auto flex flex-col h-full overflow-hidden">
         <!-- Dynamic Views Rendered Here -->
     </main>
 
-    <!-- Video Modal / Live Stream Player Simulator -->
+    <!-- Video Modal -->
     <div id="video-modal" class="fixed inset-0 bg-slate-950/95 z-50 hidden flex flex-col items-center justify-center p-4 backdrop-blur-md">
         <div class="w-full max-w-md bg-slate-900 rounded-2xl overflow-hidden border border-cyan-500/50 shadow-[0_0_50px_rgba(0,212,255,0.35)] relative transform transition-all">
             <div class="bg-slate-950 p-4 flex justify-between items-center border-b border-cyan-950">
@@ -195,7 +194,7 @@
             const channelsArray = allChannels && allChannels.length > 0 ? allChannels : [];
 
             if (state.currentView === 'home') {
-                // 🟢 MOSTRAMOS EL ENCABEZADO EN LA VISTA PRINCIPAL
+                // Mostrar el encabezado
                 document.getElementById('app-header').classList.remove('header-hidden');
                 
                 let html = '<div class="content-area space-y-3 w-full">';
@@ -218,12 +217,11 @@
                 container.innerHTML = html;
             } 
             else {
-                // 🟢 OCULTAMOS EL ENCABEZADO EN CUALQUIER OTRA VISTA (Canales o Películas)
+                // Ocultar el encabezado en cualquier otra vista
                 document.getElementById('app-header').classList.add('header-hidden');
             }
 
             if (state.currentView === 'servers') {
-                // Saltamos directamente a los canales para que sea más rápido
                 state.currentView = 'channels';
                 render();
             }
@@ -261,13 +259,23 @@
                     `;
                 } else {
                     filteredChannels.forEach(ch => {
+                        // 🟢 CORREGIDO: Detectar si la URL del logo es válida
+                        let logoHtml = '';
+                        if (ch.logoUrl && ch.logoUrl.trim() !== '') {
+                            // Si existe URL de logo, usamos la imagen
+                            logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="max-h-14 max-w-full object-contain filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
+                        } else {
+                            // Si no hay URL de logo, mostramos el nombre en su lugar (o un placeholder)
+                            logoHtml = `<span class="text-cyan-300 font-black text-lg">${ch.name}</span>`;
+                        }
+
                         html += `
                             <div class="channel-card p-4 flex flex-col gap-3">
                                 <div class="flex items-center justify-between">
                                     <span class="text-sm uppercase font-bold tracking-widest text-slate-700 bg-cyan-100 px-3 py-1 rounded-full">${ch.category || 'GENERAL'}</span>
                                 </div>
                                 <div class="h-20 w-full bg-slate-950 rounded-xl flex items-center justify-center p-3 border border-cyan-500/30 shadow-inner overflow-hidden">
-                                    <img src="${ch.logoUrl}" alt="${ch.name}" class="max-h-14 max-w-full object-contain filter brightness-110" onerror="this.onerror=null; this.src=''; this.parentNode.innerHTML='<span class=\'text-cyan-300 font-black text-lg\'>${ch.name}</span>'">
+                                    ${logoHtml}
                                 </div>
                                 <button onclick="playFromApp('${ch.name}')" class="w-full bg-gradient-to-r from-slate-900 to-blue-950 hover:from-cyan-500 hover:to-blue-600 text-white font-bold text-base py-3 rounded-xl tracking-wider transition shadow active:scale-95">▶ REPRODUCIR</button>
                             </div>
@@ -289,7 +297,6 @@
                 }, 10);
             }
             else if (state.currentView === 'movies') {
-                // Vistas de categorías específicas (Deportes, Eventos, etc.)
                 let filteredChannels = channelsArray.filter(ch => 
                     ch.category === state.selectedCategory && 
                     ch.name.toLowerCase().includes(state.searchQuery.toLowerCase())
@@ -322,11 +329,18 @@
                     `;
                 } else {
                     filteredChannels.forEach(ch => {
+                        let logoHtml = '';
+                        if (ch.logoUrl && ch.logoUrl.trim() !== '') {
+                            logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="max-h-10 max-w-full object-contain filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
+                        } else {
+                            logoHtml = `<span class="text-cyan-300 font-black text-lg">${ch.name}</span>`;
+                        }
+
                         html += `
                             <div class="neon-box rounded-2xl p-4 flex items-center justify-between cursor-pointer group" onclick="playFromApp('${ch.name}')">
                                 <div class="flex items-center gap-4">
                                     <div class="w-12 h-12 rounded-xl bg-cyan-500/15 flex items-center justify-center text-2xl border border-cyan-400/40 group-hover:scale-110 transition">
-                                        🎬
+                                        ${logoHtml}
                                     </div>
                                     <span class="font-bold text-lg text-white group-hover:text-cyan-300 transition">${ch.name}</span>
                                 </div>
@@ -355,7 +369,6 @@
         }
 
         function goToServers() {
-            // Saltamos directamente a los canales para simplificar
             state.searchQuery = '';
             state.currentView = 'channels';
             render();
