@@ -154,14 +154,12 @@
             searchQuery: ''
         };
 
-        // Variable para forzar la recarga de la lista al cerrar el player
         let stayInList = false;
 
         function receiveChannelsFromApp(jsonData) {
             try {
                 allChannels = JSON.parse(jsonData);
                 
-                // Definimos las categorías (ELIMINADO "TODOS LOS CANALES")
                 const categories = [
                     { id: 'Deportes', title: '⚽ DEPORTES', action: 'goToContent', type: 'Deportes', desc: 'Todo el deporte en vivo' },
                     { id: 'Cine y Series', title: '🎬 CINE Y SERIES', action: 'goToContent', type: 'Cine y Series', desc: 'Lo más reciente del cine' },
@@ -178,7 +176,6 @@
 
         function playFromApp(name) {
             if (window.Android) {
-                // Al hacer clic en reproducir, marcamos que queremos quedarnos en la lista
                 stayInList = true;
                 window.Android.playChannelFromWeb(name);
             } else {
@@ -285,7 +282,6 @@
                 }, 10);
             }
             else if (state.currentView === 'movies') {
-                // Vista de categoría específica
                 let filteredChannels = channelsArray.filter(ch => 
                     ch.category === state.selectedCategory && 
                     ch.name.toLowerCase().includes(state.searchQuery.toLowerCase())
@@ -320,20 +316,20 @@
                     filteredChannels.forEach(ch => {
                         let logoHtml = '';
                         if (ch.logoUrl && ch.logoUrl.trim() !== '') {
-                            logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="max-h-10 max-w-full object-contain filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
+                            logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="max-h-12 max-w-full object-contain filter brightness-110" onerror="this.onerror=null; this.parentNode.innerHTML='<span class=\\'text-cyan-300 font-black text-lg\\'>${ch.name}</span>'">`;
                         } else {
                             logoHtml = `<span class="text-cyan-300 font-black text-lg">${ch.name}</span>`;
                         }
 
                         html += `
                             <div class="neon-box rounded-2xl p-4 flex items-center justify-between cursor-pointer group" onclick="playFromApp('${ch.name}')">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-xl bg-cyan-500/15 flex items-center justify-center text-2xl border border-cyan-400/40 group-hover:scale-110 transition">
+                                <div class="flex items-center gap-4 overflow-hidden">
+                                    <div class="w-16 h-12 rounded-xl bg-slate-950 flex items-center justify-center p-2 border border-cyan-400/40 group-hover:scale-105 transition flex-shrink-0">
                                         ${logoHtml}
                                     </div>
-                                    <span class="font-bold text-lg text-white group-hover:text-cyan-300 transition">${ch.name}</span>
+                                    <span class="font-bold text-base text-white group-hover:text-cyan-300 transition truncate">${ch.name}</span>
                                 </div>
-                                <span class="text-sm bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-xl font-bold shadow transition">Reproducir</span>
+                                <span class="text-sm bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-xl font-bold shadow transition flex-shrink-0 ml-2">Reproducir</span>
                             </div>
                         `;
                     });
@@ -351,7 +347,6 @@
             }
         }
 
-        // 🟢 NUEVO: Función mejorada para cerrar el reproductor y volver a la lista
         function closePlayer() {
             const modal = document.getElementById('video-modal');
             modal.classList.add('hidden');
@@ -359,7 +354,6 @@
 
             if (stayInList) {
                 stayInList = false;
-                // Volvemos a renderizar la lista en lugar de ir al home
                 render(); 
             }
         }
@@ -404,7 +398,6 @@
             }, 1000);
         }
 
-        // Reloj en tiempo real
         setInterval(() => {
             const now = new Date();
             const hours = String(now.getHours()).padStart(2, '0');
@@ -418,7 +411,8 @@
             } else {
                 receiveChannelsFromApp(JSON.stringify([
                     { name: "A&E OP1", category: "Cine y Series", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/AMC_Logo_%282020%29.svg/320px-AMC_Logo_%282020%29.svg.png" },
-                    { name: "A&E OP2 | AR", category: "Cine y Series", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/AXN_logo_2017.svg/320px-AXN_logo_2017.svg.png" }
+                    { name: "AXN HD", category: "Cine y Series", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/AXN_logo_2017.svg/320px-AXN_logo_2017.svg.png" },
+                    { name: "ESPN 1", category: "Deportes", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/ESPN_logo.svg/320px-ESPN_logo.svg.png" }
                 ]));
             }
         };
