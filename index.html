@@ -237,7 +237,7 @@
                     <i class="fas fa-chevron-right text-xs text-zinc-600 group-hover:translate-x-1 transition"></i>
                 </button>
 
-                <button onclick="loadCategoryChannels('Películas Plus', 'PELÍCULAS PLUS')" class="w-full cyber-card pulse-purple p-4 rounded-2xl flex items-center justify-between hover:bg-zinc-900/60 transition group">
+                <button onclick="openPeliculasPlus()" class="w-full cyber-card pulse-purple p-4 rounded-2xl flex items-center justify-between hover:bg-zinc-900/60 transition group">
                     <div class="flex items-center space-x-4">
                         <div class="w-12 h-12 rounded-xl bg-zinc-900/90 border border-zinc-700/60 flex items-center justify-center text-xl text-purple-400 group-hover:scale-105 transition">
                             <i class="fas fa-photo-video"></i>
@@ -412,7 +412,7 @@
     <script>
         let allChannels = [];
         let currentServer = 1;
-        let currentCategoryFilter = null; // 🆕 filtro exclusivo por categoría (ej. "Películas Plus")
+        let currentCategoryFilter = null; // filtro exclusivo por categoría (no usado por Películas Plus)
 
         // Llamada desde la app Android para cargar la lista global de canales
         function receiveChannelsFromApp(jsonData) {
@@ -435,8 +435,6 @@
         };
 
         function getChannelsForServer(serverNum) {
-            // Si hay un filtro de categoría activo (ej. Películas Plus), tiene prioridad
-            // y excluye cualquier otra categoría, incluida la de los servidores TV.
             if (currentCategoryFilter) {
                 return allChannels.filter(ch => ch.category === currentCategoryFilter);
             }
@@ -447,7 +445,7 @@
 
         // Carga el servidor seleccionado (1, 2 o 3 para Eventos)
         function loadServerChannels(serverNum = 1) {
-            currentCategoryFilter = null; // 🆕 limpia cualquier filtro de categoría al usar TV EN VIVO
+            currentCategoryFilter = null; // limpia cualquier filtro de categoría al usar TV EN VIVO
             currentServer = serverNum;
 
             if (allChannels.length === 0) {
@@ -468,9 +466,7 @@
             renderChannels();
         }
 
-        // 🆕 Carga canales filtrados por una categoría exacta (ej: "Películas Plus")
-        // Independiente de los servidores de TV (1,2,3) — no se mezcla con Premium,
-        // Cine y Series ni Eventos.
+        // Carga canales filtrados por una categoría exacta (disponible para futuras secciones)
         function loadCategoryChannels(category, screenTitle) {
             currentCategoryFilter = category;
             currentServer = null;
@@ -491,6 +487,17 @@
             navigateTo('screen-channels');
             updateCategoryBadge(screenTitle);
             renderChannels();
+        }
+
+        // PELÍCULAS PLUS: abre la web (stream4fun.net) directamente en el WebView de la app,
+        // en lugar de filtrar canales. No usa allChannels ni la parrilla.
+        function openPeliculasPlus() {
+            if (window.Android) {
+                window.Android.openPeliculasPlus();
+            } else {
+                // Modo navegador (fuera de la app): abre en una pestaña nueva
+                window.open('https://stream4fun.net/', '_blank');
+            }
         }
 
         function updateServerBadge(serverNum) {
@@ -516,7 +523,7 @@
             }
         }
 
-        // 🆕 Badge/título para vistas filtradas por categoría (ej. Películas Plus)
+        // Badge/título para vistas filtradas por categoría (disponible para futuras secciones)
         function updateCategoryBadge(screenTitle) {
             const badge = document.getElementById('active-server-badge');
             const dot = document.getElementById('server-status-dot');
