@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>RAYKO PLAY - Neo Cyber Entertainment</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -16,7 +14,6 @@
                 extend: {
                     colors: {
                         'cyber-dark': '#06070a',
-                        'cyber-card': '#0d1117',
                         'cyber-accent': '#ff0044',
                         'cyber-cyan': '#00f0ff',
                         'cyber-purple': '#7000ff',
@@ -26,9 +23,6 @@
                         'neon-red': '0 0 20px rgba(255, 0, 68, 0.4), 0 0 40px rgba(255, 0, 68, 0.1)',
                         'neon-cyan': '0 0 20px rgba(0, 240, 255, 0.4), 0 0 40px rgba(0, 240, 255, 0.1)',
                         'card-glow': '0 8px 32px 0 rgba(0, 0, 0, 0.7)',
-                    },
-                    backgroundImage: {
-                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                     }
                 }
             }
@@ -50,15 +44,13 @@
             font-family: 'Orbitron', sans-serif;
         }
 
-        /* Fondo de cuadrícula estilo Cyber */
         .bg-grid {
             background-size: 30px 30px;
-            background-image: 
+            background-image:
                 linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
         }
 
-        /* Tarjetas estilo Glassmorphism */
         .cyber-card {
             background: linear-gradient(135deg, rgba(20, 24, 33, 0.85) 0%, rgba(10, 12, 18, 0.95) 100%);
             backdrop-filter: blur(12px);
@@ -85,7 +77,6 @@
             transform: scale(0.98);
         }
 
-        /* Bordes resaltados */
         .cyber-border-red {
             border-left: 3px solid #ff0044;
         }
@@ -96,7 +87,6 @@
             border-left: 3px solid #ffb700;
         }
 
-        /* Transiciones de pantallas */
         .screen {
             display: none;
             opacity: 0;
@@ -110,7 +100,6 @@
             transform: translateY(0);
         }
 
-        /* Personalización de la barra de desplazamiento */
         ::-webkit-scrollbar {
             width: 4px;
         }
@@ -122,7 +111,6 @@
             border-radius: 10px;
         }
 
-        /* Animaciones Neón */
         @keyframes cyberPulse {
             0%, 100% {
                 box-shadow: 0 0 15px rgba(255,0,68,0.4), inset 0 0 15px rgba(255,0,68,0.2);
@@ -146,14 +134,13 @@
         }
 
         .pulse-neon {
-            animation: cyberPulse 2.5s infinite ease-in-out;
+            animation: cyberPulse 2.5s ease-in-out infinite;
         }
 
         .pulse-gold {
-            animation: goldPulse 2.5s infinite ease-in-out;
+            animation: goldPulse 2.5s ease-in-out infinite;
         }
 
-        /* Línea de escaneo futurista */
         .scanline {
             width: 100%;
             height: 2px;
@@ -174,17 +161,13 @@
 </head>
 <body class="flex justify-center items-center min-h-screen p-0 sm:p-4 bg-black">
 
-    <!-- Contenedor Móvil / TV -->
     <div class="w-full max-w-md h-[100vh] sm:h-[880px] bg-cyber-dark sm:rounded-[44px] border-0 sm:border-[5px] border-zinc-800/80 shadow-card-glow flex flex-col justify-between relative overflow-hidden bg-grid">
-        
-        <!-- Línea de escaneo futurista -->
+
         <div class="scanline"></div>
 
-        <!-- Efectos de luz ambient de fondo -->
         <div class="absolute -top-24 -left-24 w-60 h-60 bg-cyber-accent/20 rounded-full blur-[80px] pointer-events-none"></div>
         <div class="absolute -bottom-24 -right-24 w-60 h-60 bg-cyber-cyan/15 rounded-full blur-[80px] pointer-events-none"></div>
 
-        <!-- Header de Navegación / Botón Atrás -->
         <div id="nav-header" class="hidden px-5 pt-4 pb-2 flex items-center justify-between z-50">
             <button onclick="goBack()" class="flex items-center space-x-2 text-white bg-zinc-900/90 hover:bg-zinc-800 px-3.5 py-1.5 rounded-xl border border-zinc-700/60 active:scale-95 transition shadow-lg backdrop-blur-md">
                 <i class="fas fa-chevron-left text-xs text-cyber-accent"></i>
@@ -198,8 +181,7 @@
 
         <!-- VISTA 1: MENÚ PRINCIPAL -->
         <div id="screen-home" class="screen active flex-col flex-1 px-5 py-6 justify-between overflow-y-auto z-10">
-            
-            <!-- Logo de la Marca -->
+
             <div class="text-center my-4 relative">
                 <div class="inline-block relative">
                     <h1 class="text-4xl font-black tracking-wider text-white font-cyber italic">
@@ -208,12 +190,11 @@
                 </div>
                 <div class="flex items-center justify-center space-x-2 mt-1">
                     <span class="h-[1px] w-6 bg-gradient-to-r from-transparent to-cyber-accent"></span>
-                    <p class="text-[10px] text-zinc-400 font-cyber tracking-[0.3em] uppercase font-bold">FREEMIUM ENTERTAINMENT</p>
+                    <p class="text-[10px] text-zinc-400 font-cyber tracking-[0.3em] uppercase font-bold">ENTRETENIMIENTO GRATUITO</p>
                     <span class="h-[1px] w-6 bg-gradient-to-l from-transparent to-cyber-accent"></span>
                 </div>
             </div>
 
-            <!-- Opciones del Menú Principal -->
             <div class="space-y-3.5 my-auto">
                 <button onclick="navigateTo('screen-servers')" class="w-full cyber-card pulse-neon p-4 rounded-2xl flex items-center justify-between hover:border-cyber-accent/80 transition group">
                     <div class="flex items-center space-x-4">
@@ -273,7 +254,7 @@
                             <i class="fas fa-layer-group"></i>
                         </div>
                         <div class="text-left">
-                            <span class="block text-base font-bold text-white tracking-wider font-cyber">SERIES TV</span>
+                            <span class="block text-base font-bold text-white tracking-wider font-cyber">SERIES DE TV</span>
                             <span class="text-[11px] text-zinc-400">Temporadas completas</span>
                         </div>
                     </div>
@@ -281,14 +262,13 @@
                 </button>
             </div>
 
-            <!-- Pie de página -->
             <div class="text-center py-2 flex flex-col items-center justify-center space-y-1">
                 <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-zinc-800 to-transparent mb-1"></div>
                 <span class="text-[10px] text-zinc-500 font-cyber tracking-widest uppercase">RAYKO PLAY FREEMIUM © 2026</span>
             </div>
         </div>
 
-        <!-- VISTA 2: SERVIDORES TV (Servidor 1, 2 y Eventos) -->
+        <!-- VISTA 2: SERVIDORES TV -->
         <div id="screen-servers" class="screen flex-col flex-1 px-5 py-4 justify-between overflow-y-auto z-10">
             <div class="text-center my-4">
                 <h1 class="text-2xl font-black tracking-wider text-white font-cyber uppercase">
@@ -298,7 +278,7 @@
             </div>
 
             <div class="space-y-4 my-auto">
-                <!-- SERVIDOR 1 -->
+                <!-- SERVIDOR 1: FREEMIUM 1 (incluye Premium) -->
                 <button onclick="loadServerChannels(1)" class="w-full cyber-card pulse-neon p-5 rounded-2xl flex items-center justify-between hover:bg-zinc-900 transition group">
                     <div class="flex items-center space-x-4">
                         <div class="relative">
@@ -312,13 +292,13 @@
                         </div>
                         <div class="text-left">
                             <span class="block text-base font-extrabold text-white tracking-wider font-cyber">TV FREEMIUM 1</span>
-                            <span class="text-[11px] text-emerald-400 font-mono">● ONLINE (Principal)</span>
+                            <span class="text-[11px] text-emerald-400 font-mono">● EN LÍNEA (Principal)</span>
                         </div>
                     </div>
                     <i class="fas fa-play text-xs text-cyber-accent group-hover:translate-x-1 transition"></i>
                 </button>
 
-                <!-- SERVIDOR 2 (SISTEMA HABILITADO) -->
+                <!-- SERVIDOR 2: FREEMIUM 2 (Cine y Series / respaldos) -->
                 <button onclick="loadServerChannels(2)" class="w-full cyber-card cyber-border-cyan p-5 rounded-2xl flex items-center justify-between hover:bg-zinc-900 transition group">
                     <div class="flex items-center space-x-4">
                         <div class="relative">
@@ -338,7 +318,7 @@
                     <i class="fas fa-play text-xs text-cyber-cyan group-hover:translate-x-1 transition"></i>
                 </button>
 
-                <!-- EVENTOS (ANTES SERVIDOR 3) -->
+                <!-- SERVIDOR 3: EVENTOS -->
                 <button onclick="loadServerChannels(3)" class="w-full cyber-card pulse-gold p-5 rounded-2xl flex items-center justify-between hover:bg-zinc-900 transition group">
                     <div class="flex items-center space-x-4">
                         <div class="relative">
@@ -364,10 +344,9 @@
             </div>
         </div>
 
-        <!-- VISTA 3: PARRILLA DE CANALES (Cabecera fija, scroll solo en los canales) -->
+        <!-- VISTA 3: PARRILLA DE CANALES -->
         <div id="screen-channels" class="screen flex-col flex-1 h-full overflow-hidden z-10">
-            
-            <!-- CABECERA FIJA DE LA SECCIÓN DE CANALES -->
+
             <div class="px-4 pt-2 pb-2 flex-none bg-cyber-dark/80 backdrop-blur-md">
                 <div class="text-center mb-3">
                     <h2 class="text-lg font-black text-white font-cyber tracking-wider" id="server-channels-title">CANALES DISPONIBLES</h2>
@@ -377,16 +356,15 @@
                     </div>
                 </div>
 
-                <!-- BUSCADOR FIJO -->
                 <div class="relative">
                     <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-zinc-500">
                         <i class="fas fa-search text-xs"></i>
                     </div>
-                    <input 
-                        type="text" 
-                        id="channel-search" 
-                        oninput="filterChannels()" 
-                        placeholder="Buscar canal o evento..." 
+                    <input
+                        type="text"
+                        id="channel-search"
+                        oninput="filterChannels()"
+                        placeholder="Buscar canal o evento..."
                         class="w-full bg-zinc-900/90 border border-zinc-700/80 text-white placeholder-zinc-500 text-xs rounded-xl pl-9 pr-8 py-2.5 focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition backdrop-blur-md"
                     >
                     <button id="clear-search" onclick="clearSearch()" class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-zinc-400 hover:text-white">
@@ -395,14 +373,10 @@
                 </div>
             </div>
 
-            <!-- CONTENEDOR CON SCROLL SÓLO PARA LA LISTA DE CANALES -->
             <div class="flex-1 overflow-y-auto px-4 py-2">
-                <!-- Grid de Canales -->
                 <div id="channels-grid" class="grid grid-cols-2 gap-3 pb-6">
-                    <!-- Se cargan dinámicamente los canales aquí -->
                 </div>
 
-                <!-- Mensaje cuando no hay resultados de búsqueda -->
                 <div id="no-results" class="hidden text-center py-12">
                     <div class="w-16 h-16 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center mx-auto mb-3 text-zinc-600 text-2xl">
                         <i class="fas fa-search-minus"></i>
@@ -413,7 +387,6 @@
 
         </div>
 
-        <!-- NOTIFICACIÓN TIPO TOAST -->
         <div id="toast" class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-zinc-900/95 border border-cyber-accent/60 text-white px-5 py-2.5 rounded-2xl text-xs font-semibold shadow-2xl opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center space-x-2.5 backdrop-blur-md">
             <i class="fas fa-info-circle text-cyber-accent text-sm"></i>
             <span id="toast-message" class="tracking-wide">Mensaje</span>
@@ -421,19 +394,34 @@
 
     </div>
 
-    <!-- CÓDIGO JAVASCRIPT NATIVO -->
     <script>
         let allChannels = [];
         let currentServer = 1;
 
-        // Función llamada desde la app Android para cargar la lista global de canales
+        // Llamada desde la app Android para cargar la lista global de canales
         function receiveChannelsFromApp(jsonData) {
             try {
                 allChannels = JSON.parse(jsonData);
                 console.log("Canales cargados desde la App: " + allChannels.length);
+                if (document.getElementById('screen-channels').classList.contains('active')) {
+                    renderChannels();
+                }
             } catch (e) {
-                console.error("Error al parsear los canales", e);
+                console.error("Error al analizar los canales", e);
             }
+        }
+
+        // Cada botón de servidor muestra solo su categoría de canal
+        const SERVER_CATEGORY_MAP = {
+            1: "Premium",       // Freemium 1 -> canales Premium
+            2: "Cine y Series", // Freemium 2 -> respaldos
+            3: "Eventos"        // Eventos
+        };
+
+        function getChannelsForServer(serverNum) {
+            const category = SERVER_CATEGORY_MAP[serverNum];
+            if (!category) return allChannels;
+            return allChannels.filter(ch => ch.category === category);
         }
 
         // Carga el servidor seleccionado (1, 2 o 3 para Eventos)
@@ -443,14 +431,8 @@
             if (allChannels.length === 0) {
                 showToast("Esperando datos de la App...");
                 if (window.Android) {
-                    // Se le pasa opcionalmente el ID del servidor a la app Android si lo soporta
-                    if (window.Android.sendChannelsToWebWithServer) {
-                        window.Android.sendChannelsToWebWithServer(serverNum);
-                    } else {
-                        window.Android.sendChannelsToWeb();
-                    }
+                    window.Android.sendChannelsToWeb();
                 }
-                // Si se prueba en navegador sin Android, permite avanzar
                 if (!window.Android) {
                     navigateTo('screen-channels');
                     updateServerBadge(serverNum);
@@ -493,7 +475,9 @@
             const noResults = document.getElementById('no-results');
             noResults.classList.add('hidden');
 
-            if (allChannels.length === 0) {
+            const channels = getChannelsForServer(currentServer);
+
+            if (channels.length === 0) {
                 grid.innerHTML = `
                     <div class="col-span-2 text-center py-12 text-zinc-500 text-xs font-cyber">
                         <i class="fas fa-satellite-dish text-3xl mb-3 block text-zinc-600"></i>
@@ -503,7 +487,7 @@
                 return;
             }
 
-            allChannels.forEach(ch => {
+            channels.forEach(ch => {
                 const card = document.createElement('div');
                 card.className = "channel-card cyber-card rounded-2xl p-2.5 flex flex-col justify-between border border-zinc-800/80 hover:border-cyber-accent/50 transition";
                 card.setAttribute('data-name', ch.name.toLowerCase());
@@ -526,7 +510,7 @@
                     </div>
                     <div class="mt-2 text-center">
                         <p class="text-[11px] font-bold text-zinc-200 truncate font-cyber mb-1.5 px-1">${ch.name}</p>
-                        <button onclick="playChannel('${ch.name}')" class="w-full bg-gradient-to-r from-cyber-accent to-red-600 hover:from-red-600 hover:to-cyber-accent text-white font-extrabold py-1.5 px-2 rounded-lg text-[10px] font-cyber uppercase tracking-wider transition active:scale-95 shadow-md flex items-center justify-center space-x-1">
+                        <button onclick="playChannel('${ch.name.replace(/'/g, "\\'")}')" class="w-full bg-gradient-to-r from-cyber-accent to-red-600 hover:from-red-600 hover:to-cyber-accent text-white font-extrabold py-1.5 px-2 rounded-lg text-[10px] font-cyber uppercase tracking-wider transition active:scale-95 shadow-md flex items-center justify-center space-x-1">
                             <i class="fas fa-play text-[9px]"></i>
                             <span>VER CANAL</span>
                         </button>
@@ -553,7 +537,7 @@
             if (currentScreen === screenId) return;
 
             document.getElementById(currentScreen).classList.remove('active');
-            
+
             navigationHistory.push(screenId);
             const nextScreen = document.getElementById(screenId);
             nextScreen.classList.add('active');
@@ -628,7 +612,7 @@
             const toast = document.getElementById('toast');
             const toastMessage = document.getElementById('toast-message');
             toastMessage.textContent = message;
-            
+
             toast.classList.remove('opacity-0', 'pointer-events-none');
             toast.classList.add('opacity-100');
 
