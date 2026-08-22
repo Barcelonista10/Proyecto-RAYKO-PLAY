@@ -1,253 +1,1305 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="AEANDHC" tvg-name="A&E OP1" tvg-logo="https://i.ibb.co/kKgT2Fy/A-E.png" group-title="✮CINE PREMIUM✮",A&E OP1
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46085.ts
-#EXTINF:-1 tvg-id="AandE HD" tvg-name="A&E OP2 | AR" tvg-logo="https://i.ibb.co/kKgT2Fy/A-E.png" group-title="✮CINE PREMIUM✮",A&E OP2 | AR
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46086.ts
-#EXTINF:-1 tvg-id="AandE.co" tvg-name="A&E OP3" tvg-logo="https://i.ibb.co/kKgT2Fy/A-E.png" group-title="✮CINE PREMIUM✮",A&E OP3
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46087.ts
-#EXTINF:-1 tvg-id="AMCLatinAmerica.us" tvg-name="AMC | AR FHD" tvg-logo="https://i.ibb.co/3Fy00fn/amc.png" group-title="✮CINE PREMIUM✮",AMC | AR FHD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46089.ts
-#EXTINF:-1 tvg-id="AMCLatinAmerica.us" tvg-name="AMC HD (DTV)" tvg-logo="https://i.ibb.co/3Fy00fn/amc.png" group-title="✮CINE PREMIUM✮",AMC HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46090.ts
-#EXTINF:-1 tvg-id="AMCLatinAmerica.us" tvg-name="AMC HD MX (DTV)" tvg-logo="https://i.ibb.co/3Fy00fn/amc.png" group-title="✮CINE PREMIUM✮",AMC HD MX (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46092.ts
-#EXTINF:-1 tvg-id="AXN" tvg-name="AXN FHD" tvg-logo="https://i.ibb.co/Hxt8qXB/axn.png" group-title="✮CINE PREMIUM✮",AXN FHD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46093.ts
-#EXTINF:-1 tvg-id="AXN" tvg-name="AXN HD MX (DTV)" tvg-logo="https://i.ibb.co/Hxt8qXB/axn.png" group-title="✮CINE PREMIUM✮",AXN HD MX (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46094.ts
-#EXTINF:-1 tvg-id="AXNANHD" tvg-name="AXN HD (DTV)" tvg-logo="https://i.ibb.co/Hxt8qXB/axn.png" group-title="✮CINE PREMIUM✮",AXN HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46095.ts
-#EXTINF:-1 tvg-id="Atrescine.es" tvg-name="A3SERIES" tvg-logo="https://i.postimg.cc/g2bcCZnW/1024px-Atreseries-2020-logo-svg.png" group-title="✮CINE PREMIUM✮",A3SERIES
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46097.ts
-#EXTINF:-1 tvg-id="" tvg-name="ATRESERIES HD (DTV)" tvg-logo="https://i.postimg.cc/g2bcCZnW/1024px-Atreseries-2020-logo-svg.png" group-title="✮CINE PREMIUM✮",ATRESERIES HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46098.ts
-#EXTINF:-1 tvg-id="Atreseries" tvg-name="ATRESERIES HD (P)" tvg-logo="https://i.ibb.co/qYs2x7w/Atreseries.png" group-title="✮CINE PREMIUM✮",ATRESERIES HD (P)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46100.ts
-#EXTINF:-1 tvg-id="AzCinema.mx" tvg-name="CINEMA HD" tvg-logo="https://i.ibb.co/L0KQK4J/ciensa.png" group-title="✮CINE PREMIUM✮",CINEMA HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46101.ts
-#EXTINF:-1 tvg-id="AzCinema.mx" tvg-name="CINEMA" tvg-logo="https://i.ibb.co/L0KQK4J/ciensa.png" group-title="✮CINE PREMIUM✮",CINEMA
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46102.ts
-#EXTINF:-1 tvg-id="CINE LATINO" tvg-name="CINE LATINO HD (DTV)" tvg-logo="https://i.ibb.co/GPFShhQ/Cine-Latino-logo-svg.png" group-title="✮CINE PREMIUM✮",CINE LATINO HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46103.ts
-#EXTINF:-1 tvg-id="CINE LATINO" tvg-name="CINE LATINO" tvg-logo="https://i.ibb.co/GPFShhQ/Cine-Latino-logo-svg.png" group-title="✮CINE PREMIUM✮",CINE LATINO
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46104.ts
-#EXTINF:-1 tvg-id="CINE LATINO" tvg-name="CINE LATINO FHD" tvg-logo="https://i.ibb.co/GPFShhQ/Cine-Latino-logo-svg.png" group-title="✮CINE PREMIUM✮",CINE LATINO FHD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46106.ts
-#EXTINF:-1 tvg-id="CinecanalEast.us" tvg-name="CINECANAL ARG (DTV)" tvg-logo="https://i.ibb.co/7b8zcvc/cincemas.png" group-title="✮CINE PREMIUM✮",CINECANAL ARG (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46107.ts
-#EXTINF:-1 tvg-id="CINECANAL HD.co" tvg-name="CINECANAL | AR HD" tvg-logo="https://i.ibb.co/7b8zcvc/cincemas.png" group-title="✮CINE PREMIUM✮",CINECANAL | AR HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46108.ts
-#EXTINF:-1 tvg-id="CINECANAL" tvg-name="CineCanal HD CH (DTV)" tvg-logo="https://i.ibb.co/7b8zcvc/cincemas.png" group-title="✮CINE PREMIUM✮",CineCanal HD CH (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46109.ts
-#EXTINF:-1 tvg-id="CINECANAL HD.co" tvg-name="CineCanal HD MX (DTV)" tvg-logo="https://i.ibb.co/7b8zcvc/cincemas.png" group-title="✮CINE PREMIUM✮",CineCanal HD MX (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46110.ts
-#EXTINF:-1 tvg-id="CINEMAX HD.co" tvg-name="CINEMAX OP1" tvg-logo="https://i.ibb.co/QjX0fqW/cienmax1.png" group-title="✮CINE PREMIUM✮",CINEMAX OP1
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46111.ts
-#EXTINF:-1 tvg-id="Cinemax.ar" tvg-name="CINEMAX OP2" tvg-logo="https://i.ibb.co/zSbPFXZ/cienmax2.png" group-title="✮CINE PREMIUM✮",CINEMAX OP2
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46112.ts
-#EXTINF:-1 tvg-id="Cinemax.co" tvg-name="CINEMAX OP3" tvg-logo="https://i.ibb.co/G3DXZ9d/cienmax3.png" group-title="✮CINE PREMIUM✮",CINEMAX OP3
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46114.ts
-#EXTINF:-1 tvg-id="DEPELPL" tvg-name="DE PELICULA PLUS HD" tvg-logo="https://i.ibb.co/Zx31D3Y/de-pelioiasd.png" group-title="✮CINE PREMIUM✮",DE PELICULA PLUS HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46118.ts
-#EXTINF:-1 tvg-id="DEPELPL" tvg-name="DE PELICULA PLUS" tvg-logo="https://i.ibb.co/Zx31D3Y/de-pelioiasd.png" group-title="✮CINE PREMIUM✮",DE PELICULA PLUS
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46119.ts
-#EXTINF:-1 tvg-id="DE PELICULA" tvg-name="DE PELICULA HD" tvg-logo="https://seeklogo.com/images/D/de-pelicula-logo-F97A15125D-seeklogo.com.png" group-title="✮CINE PREMIUM✮",DE PELICULA HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46120.ts
-#EXTINF:-1 tvg-id="DEPELC" tvg-name="DE PELICULA CLASICO" tvg-logo="https://i.ibb.co/RQnQqNg/depelicula.png" group-title="✮CINE PREMIUM✮",DE PELICULA CLASICO
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46121.ts
-#EXTINF:-1 tvg-id="DHE.us" tvg-name="DHE FHD" tvg-logo="https://i.ibb.co/MBvTm7y/dhe.png" group-title="✮CINE PREMIUM✮",DHE FHD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46122.ts
-#EXTINF:-1 tvg-id="DHE.us" tvg-name="DHE" tvg-logo="https://i.ibb.co/m9TtGfd/dhe2.png" group-title="✮CINE PREMIUM✮",DHE
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46123.ts
-#EXTINF:-1 tvg-id="DHE.us" tvg-name="DHE HD" tvg-logo="https://i.ibb.co/MBvTm7y/dhe.png" group-title="✮CINE PREMIUM✮",DHE HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46124.ts
-#EXTINF:-1 tvg-id="EuropaEuropa.ar" tvg-name="EUROPA EUROPA" tvg-logo="https://i.ibb.co/SKbQ4mG/euroapa.png" group-title="✮CINE PREMIUM✮",EUROPA EUROPA
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46125.ts
-#EXTINF:-1 tvg-id="EUROPA EUROPA.co" tvg-name="EUROPA EUROPA HD (DTV)" tvg-logo="https://i.ibb.co/Nt50S6w/europa-euor.png" group-title="✮CINE PREMIUM✮",EUROPA EUROPA HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46127.ts
-#EXTINF:-1 tvg-id="" tvg-name="FX HD (DTV)" tvg-logo="https://i.ibb.co/z2PqF2T/FX1.png" group-title="✮CINE PREMIUM✮",FX HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46130.ts
-#EXTINF:-1 tvg-id="FX HD.co" tvg-name="FX | AR HD" tvg-logo="https://i.ibb.co/hDvN9HZ/FX2.png" group-title="✮CINE PREMIUM✮",FX | AR HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46132.ts
-#EXTINF:-1 tvg-id="FX" tvg-name="FX HD MX (DTV)" tvg-logo="https://i.ibb.co/grpxgB4/FX3.png" group-title="✮CINE PREMIUM✮",FX HD MX (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46133.ts
-#EXTINF:-1 tvg-id="GOLDEN HD.co" tvg-name="GOLDEN PLUS | AR" tvg-logo="https://i.ibb.co/wQBkWCT/GOLDENPLUS.png" group-title="✮CINE PREMIUM✮",GOLDEN PLUS | AR
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46138.ts
-#EXTINF:-1 tvg-id="GOLDEN EDGE" tvg-name="GOLDEN EDGE | AR" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/bf/Goldenedge.jpg/revision/latest?cb=20120110075418" group-title="✮CINE PREMIUM✮",GOLDEN EDGE | AR
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46139.ts
-#EXTINF:-1 tvg-id="GOLDEN PREMIER" tvg-name="GOLDEN PREMIER" tvg-logo="https://i.ibb.co/6b9LCMq/GOLDENPRIMNIERS.png" group-title="✮CINE PREMIUM✮",GOLDEN PREMIER
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46140.ts
-#EXTINF:-1 tvg-id="GOLDEN PREMIER" tvg-name="GOLDEN PREMIER HD" tvg-logo="https://i.ibb.co/6b9LCMq/GOLDENPRIMNIERS.png" group-title="✮CINE PREMIUM✮",GOLDEN PREMIER HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46141.ts
-#EXTINF:-1 tvg-id="GoldenPanregional.mx" tvg-name="GOLDEN | AR" tvg-logo="https://i.ibb.co/x8x7LYX/GILDEN.png" group-title="✮CINE PREMIUM✮",GOLDEN | AR
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46142.ts
-#EXTINF:-1 tvg-id="GoldenPanregional.mx" tvg-name="GOLDEN HD" tvg-logo="https://i.ibb.co/x8x7LYX/GILDEN.png" group-title="✮CINE PREMIUM✮",GOLDEN HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46143.ts
-#EXTINF:-1 tvg-id="HBO.ar" tvg-name="HBO HD" tvg-logo="https://i.ibb.co/58VvdgP/hbo1.png" group-title="✮CINE PREMIUM✮",HBO HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46144.ts
-#EXTINF:-1 tvg-id="" tvg-name="HBO" tvg-logo="https://i.ibb.co/NSG7tNS/hbo3.png" group-title="✮CINE PREMIUM✮",HBO
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46145.ts
-#EXTINF:-1 tvg-id="" tvg-name="HBO HD (DTV)" tvg-logo="https://i.ibb.co/Syv8Wd6/HBO.png" group-title="✮CINE PREMIUM✮",HBO HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46146.ts
-#EXTINF:-1 tvg-id="HBO HD" tvg-name="HBO | MX" tvg-logo="https://i.ibb.co/3Y1tZwW/HBO33.png" group-title="✮CINE PREMIUM✮",HBO | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46147.ts
-#EXTINF:-1 tvg-id="" tvg-name="HBO 2 HD | MX" tvg-logo="https://i.ibb.co/K0x3Lm1/hbo22.png" group-title="✮CINE PREMIUM✮",HBO 2 HD | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46148.ts
-#EXTINF:-1 tvg-id="" tvg-name="HBO 2 HD (DTV)" tvg-logo="https://i.ibb.co/KV2tjc7/hbo2.png" group-title="✮CINE PREMIUM✮",HBO 2 HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46149.ts
-#EXTINF:-1 tvg-id="HBO2LatinAmerica.us" tvg-name="HBO 2 HD" tvg-logo="https://i.ibb.co/KV2tjc7/hbo2.png" group-title="✮CINE PREMIUM✮",HBO 2 HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46150.ts
-#EXTINF:-1 tvg-id="HBO2LatinAmerica.us" tvg-name="HBO 2 HD" tvg-logo="https://i.ibb.co/K0x3Lm1/hbo22.png" group-title="✮CINE PREMIUM✮",HBO 2 HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46151.ts
-#EXTINF:-1 tvg-id="HBOFamilyLatinAmerica.us" tvg-name="HBO FAMILY" tvg-logo="https://i.ibb.co/xLxZy4s/hbfa3.png" group-title="✮CINE PREMIUM✮",HBO FAMILY
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46152.ts
-#EXTINF:-1 tvg-id="HBO Family.co" tvg-name="HBO FAMILY" tvg-logo="https://i.ibb.co/xLxZy4s/hbfa3.png" group-title="✮CINE PREMIUM✮",HBO FAMILY
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46153.ts
-#EXTINF:-1 tvg-id="2M Maroc" tvg-name="HBO FAMILY HD (DTV)" tvg-logo="https://i.ibb.co/LRWCv9G/hbofam1.png" group-title="✮CINE PREMIUM✮",HBO FAMILY HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46154.ts
-#EXTINF:-1 tvg-id="526dtv.cl" tvg-name="HBO PLUS  HD (DTV)" tvg-logo="https://i.ibb.co/HVFhb7C/hbo-3.png" group-title="✮CINE PREMIUM✮",HBO PLUS  HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46156.ts
-#EXTINF:-1 tvg-id="HBO PLUS" tvg-name="HBO PLUS | MX" tvg-logo="https://i.ibb.co/WHn2z6Z/hbp-a1.png" group-title="✮CINE PREMIUM✮",HBO PLUS | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46157.ts
-#EXTINF:-1 tvg-id="" tvg-name="HBO PLUS HD (DTV)" tvg-logo="https://i.ibb.co/HVFhb7C/hbo-3.png" group-title="✮CINE PREMIUM✮",HBO PLUS HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46158.ts
-#EXTINF:-1 tvg-id="HBO PLUS" tvg-name="HBO PLUS HD" tvg-logo="https://i.ibb.co/WHn2z6Z/hbp-a1.png" group-title="✮CINE PREMIUM✮",HBO PLUS HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46159.ts
-#EXTINF:-1 tvg-id="" tvg-name="HBO SIGNATURE HD (DTV)" tvg-logo="https://i.ibb.co/BwRLTk1/hbosig1.png" group-title="✮CINE PREMIUM✮",HBO SIGNATURE HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46162.ts
-#EXTINF:-1 tvg-id="HBOSignatureLatinAmerica.us" tvg-name="HBO SIGNATURE HD" tvg-logo="https://i.ibb.co/BfvZWCJ/hb0sig3.png" group-title="✮CINE PREMIUM✮",HBO SIGNATURE HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46163.ts
-#EXTINF:-1 tvg-id="MULTIPREMIER" tvg-name="MULTIPREMIER HD" tvg-logo="https://i.ibb.co/qWxHGjC/MULTIPRE2.png" group-title="✮CINE PREMIUM✮",MULTIPREMIER HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46168.ts
-#EXTINF:-1 tvg-id="MULTIPREMIER" tvg-name="MULTIPREMIER" tvg-logo="https://i.ibb.co/R45HbrJ/MULPREM1.png" group-title="✮CINE PREMIUM✮",MULTIPREMIER
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46169.ts
-#EXTINF:-1 tvg-id="Paramount Channel.co" tvg-name="PARAMOUNT CHANNEL FHD" tvg-logo="https://i.ibb.co/wr5LRY4/PARAMOUNT.png" group-title="✮CINE PREMIUM✮",PARAMOUNT CHANNEL FHD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46170.ts
-#EXTINF:-1 tvg-id="Paramount Channel" tvg-name="PARAMOUNT CHANNEL" tvg-logo="https://i.ibb.co/tDgxkRL/PARAMU2.png" group-title="✮CINE PREMIUM✮",PARAMOUNT CHANNEL
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46171.ts
-#EXTINF:-1 tvg-id="1+1 Internacional" tvg-name="PARAMOUNT CHANNEL HD" tvg-logo="https://i.ibb.co/wr5LRY4/PARAMOUNT.png" group-title="✮CINE PREMIUM✮",PARAMOUNT CHANNEL HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46172.ts
-#EXTINF:-1 tvg-id="SONY MOVIES" tvg-name="SONY MOVIES HD | AR" tvg-logo="https://i.ibb.co/rFMxhPH/SONY2.png" group-title="✮CINE PREMIUM✮",SONY MOVIES HD | AR
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46175.ts
-#EXTINF:-1 tvg-id="SONYCH" tvg-name="SONY CHANNEL HD | AR" tvg-logo="https://i.ibb.co/M7nmfDY/SONY1.png" group-title="✮CINE PREMIUM✮",SONY CHANNEL HD | AR
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46176.ts
-#EXTINF:-1 tvg-id="SONY HD" tvg-name="SONY CHANNEL | MX" tvg-logo="https://i.ibb.co/M7nmfDY/SONY1.png" group-title="✮CINE PREMIUM✮",SONY CHANNEL | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46177.ts
-#EXTINF:-1 tvg-id="SPACE" tvg-name="SPACE HD | MX" tvg-logo="https://i.ibb.co/K0JqT9S/space2.png" group-title="✮CINE PREMIUM✮",SPACE HD | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46178.ts
-#EXTINF:-1 tvg-id="Space.co" tvg-name="SPACE HD | MX" tvg-logo="https://i.ibb.co/qjqScj2/space1.png" group-title="✮CINE PREMIUM✮",SPACE HD | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46179.ts
-#EXTINF:-1 tvg-id="SpacePanregional.us" tvg-name="SPACE FHD" tvg-logo="https://i.ibb.co/K0JqT9S/space2.png" group-title="✮CINE PREMIUM✮",SPACE FHD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46180.ts
-#EXTINF:-1 tvg-id="STAR CHANNEL HD.co" tvg-name="STAR CHANNEL HD (DTV)" tvg-logo="https://i.ibb.co/fSbvx7T/STAR22.png" group-title="✮CINE PREMIUM✮",STAR CHANNEL HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46186.ts
-#EXTINF:-1 tvg-id="" tvg-name="STAR CHANNEL HD | ARG" tvg-logo="https://i.ibb.co/vHVVM6K/STARCHA1.png" group-title="✮CINE PREMIUM✮",STAR CHANNEL HD | ARG
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46188.ts
-#EXTINF:-1 tvg-id="" tvg-name="STAR CHANNEL HD MX (DTV)" tvg-logo="https://i.ibb.co/vHVVM6K/STARCHA1.png" group-title="✮CINE PREMIUM✮",STAR CHANNEL HD MX (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46189.ts
-#EXTINF:-1 tvg-id="StarClassics.us" tvg-name="STAR CHANNEL HD" tvg-logo="https://i.ibb.co/ZmBxYZz/STARCL.png" group-title="✮CINE PREMIUM✮",STAR CHANNEL HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46195.ts
-#EXTINF:-1 tvg-id="Studio Universal.co" tvg-name="STUDIO UNIVERSAL HD | MX" tvg-logo="https://i.ibb.co/kmQCLLM/STUDI2.png" group-title="✮CINE PREMIUM✮",STUDIO UNIVERSAL HD | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46217.ts
-#EXTINF:-1 tvg-id="STUDIO UNIVERSAL" tvg-name="STUDIO UNIVERSAL HD | AR" tvg-logo="https://i.ibb.co/jL5S1mw/STUDIO.png" group-title="✮CINE PREMIUM✮",STUDIO UNIVERSAL HD | AR
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46218.ts
-#EXTINF:-1 tvg-id="StudioUniversalSouth.us" tvg-name="STUDIO UNIVERSAL" tvg-logo="https://i.ibb.co/jL5S1mw/STUDIO.png" group-title="✮CINE PREMIUM✮",STUDIO UNIVERSAL
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46219.ts
-#EXTINF:-1 tvg-id="Studio Universal.co" tvg-name="STUDIO UNIVERSAL" tvg-logo="https://i.ibb.co/4Nh3KcF/STUD1.png" group-title="✮CINE PREMIUM✮",STUDIO UNIVERSAL
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46220.ts
-#EXTINF:-1 tvg-id="" tvg-name="USA HD | AR" tvg-logo="https://seeklogo.com/images/U/usa-network-logo-9971D1071C-seeklogo.com.png" group-title="✮CINE PREMIUM✮",USA HD | AR
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46222.ts
-#EXTINF:-1 tvg-id="SYFY" tvg-name="USA FHD" tvg-logo="https://seeklogo.com/images/U/usa-network-logo-9971D1071C-seeklogo.com.png" group-title="✮CINE PREMIUM✮",USA FHD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46223.ts
-#EXTINF:-1 tvg-id="USA Network HDTV (East)" tvg-name="USA" tvg-logo="https://seeklogo.com/images/U/usa-network-logo-9971D1071C-seeklogo.com.png" group-title="✮CINE PREMIUM✮",USA
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46224.ts
-#EXTINF:-1 tvg-id="" tvg-name="TNT NOVELAS FHD | MX" tvg-logo="https://i.postimg.cc/43pfGW7C/Fo4or-BXs-AAs-JIL.png" group-title="✮CINE PREMIUM✮",TNT NOVELAS FHD | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46226.ts
-#EXTINF:-1 tvg-id="864mvstr.co" tvg-name="TNT NOVELAS HD (DTV)" tvg-logo="https://i.postimg.cc/43pfGW7C/Fo4or-BXs-AAs-JIL.png" group-title="✮CINE PREMIUM✮",TNT NOVELAS HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46227.ts
-#EXTINF:-1 tvg-id="TNT Novelas.co" tvg-name="TNT NOVELAS HD" tvg-logo="https://i.postimg.cc/43pfGW7C/Fo4or-BXs-AAs-JIL.png" group-title="✮CINE PREMIUM✮",TNT NOVELAS HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46228.ts
-#EXTINF:-1 tvg-id="TCMSouth.us" tvg-name="TCM" tvg-logo="https://i.ibb.co/340KS9Y/tcm2.png" group-title="✮CINE PREMIUM✮",TCM
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46230.ts
-#EXTINF:-1 tvg-id="TCMSouth.us" tvg-name="TCM HD" tvg-logo="https://i.ibb.co/myRdt2X/TCM.png" group-title="✮CINE PREMIUM✮",TCM HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46231.ts
-#EXTINF:-1 tvg-id="TCMSouth.us" tvg-name="TCM FHD | MX" tvg-logo="https://i.ibb.co/340KS9Y/tcm2.png" group-title="✮CINE PREMIUM✮",TCM FHD | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46232.ts
-#EXTINF:-1 tvg-id="502dtv.co" tvg-name="TNT HD | AR" tvg-logo="https://i.ibb.co/DwLT1NH/TNT2.png" group-title="✮CINE PREMIUM✮",TNT HD | AR
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46236.ts
-#EXTINF:-1 tvg-id="TNT HD.co" tvg-name="TNT FHD" tvg-logo="https://i.ibb.co/Fhsz28h/TNT1.png" group-title="✮CINE PREMIUM✮",TNT FHD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46237.ts
-#EXTINF:-1 tvg-id="TNTSouth.us" tvg-name="TNT FHD" tvg-logo="https://i.ibb.co/Fhsz28h/TNT1.png" group-title="✮CINE PREMIUM✮",TNT FHD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46238.ts
-#EXTINF:-1 tvg-id="TNTSouth.us" tvg-name="TNT HD" tvg-logo="https://i.ibb.co/DwLT1NH/TNT2.png" group-title="✮CINE PREMIUM✮",TNT HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46239.ts
-#EXTINF:-1 tvg-id="" tvg-name="TNT SERIES HD (DTV)" tvg-logo="https://i.ibb.co/0q8QzgN/tntseries.png" group-title="✮CINE PREMIUM✮",TNT SERIES HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46240.ts
-#EXTINF:-1 tvg-id="TNT SERIES" tvg-name="TNT SERIES HD" tvg-logo="https://i.ibb.co/gzS5WjX/tntser2.png" group-title="✮CINE PREMIUM✮",TNT SERIES HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46241.ts
-#EXTINF:-1 tvg-id="TNT Series.co" tvg-name="TNT SERIES" tvg-logo="https://i.ibb.co/0q8QzgN/tntseries.png" group-title="✮CINE PREMIUM✮",TNT SERIES
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46242.ts
-#EXTINF:-1 tvg-id="TNTSeriesSouth.us" tvg-name="TNT SERIES HD | MX" tvg-logo="https://i.ibb.co/gzS5WjX/tntser2.png" group-title="✮CINE PREMIUM✮",TNT SERIES HD | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46243.ts
-#EXTINF:-1 tvg-id="UNIVERSAL CHANNEL" tvg-name="UNIVERSAL HD (DTV)" tvg-logo="https://i.ibb.co/4YqhnVc/universa2.png" group-title="✮CINE PREMIUM✮",UNIVERSAL HD (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46244.ts
-#EXTINF:-1 tvg-id="" tvg-name="UNIVERSAL  ᴴᴰ |MX" tvg-logo="https://i.ibb.co/Mpx2y51/UNIVERSAL1.png" group-title="✮CINE PREMIUM✮",UNIVERSAL  ᴴᴰ |MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46245.ts
-#EXTINF:-1 tvg-id="UniversalTVSouth.us" tvg-name="UNIVERSAL HD | AR" tvg-logo="https://i.ibb.co/4YqhnVc/universa2.png" group-title="✮CINE PREMIUM✮",UNIVERSAL HD | AR
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46246.ts
-#EXTINF:-1 tvg-id="Universal TV.co" tvg-name="UNIVERSAL HD" tvg-logo="https://i.ibb.co/Mpx2y51/UNIVERSAL1.png" group-title="✮CINE PREMIUM✮",UNIVERSAL HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46247.ts
-#EXTINF:-1 tvg-id="" tvg-name="WARNER TV HD MX" tvg-logo="https://i.ibb.co/TRgfNRw/WARNERTV2.png" group-title="✮CINE PREMIUM✮",WARNER TV HD MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46248.ts
-#EXTINF:-1 tvg-id="1206dtv.cl" tvg-name="WARNER TV HD AR (DTV)" tvg-logo="https://i.ibb.co/jHC94Xm/WARTNER3.png" group-title="✮CINE PREMIUM✮",WARNER TV HD AR (DTV)
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46249.ts
-#EXTINF:-1 tvg-id="WARNER" tvg-name="WARNER HD | MX" tvg-logo="https://i.ibb.co/jHC94Xm/WARTNER3.png" group-title="✮CINE PREMIUM✮",WARNER HD | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46250.ts
-#EXTINF:-1 tvg-id="WARNER CHANNEL HD.co" tvg-name="WARNER FHD" tvg-logo="https://i.ibb.co/q5TYp7p/WARNER1.png" group-title="✮CINE PREMIUM✮",WARNER FHD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46251.ts
-#EXTINF:-1 tvg-id="UNIVERSAL REALITY" tvg-name="UNIVERSAL REALITY" tvg-logo="https://i.ibb.co/dcZ8bsY/UNIVESALREA.png" group-title="✮CINE PREMIUM✮",UNIVERSAL REALITY
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/90077.ts
-#EXTINF:-1 tvg-id="UNIVERSAL CINEMA" tvg-name="UNIVERSAL CINEMA" tvg-logo="https://i.ibb.co/NrFxsBV/UNIVERSALCIEN.png" group-title="✮CINE PREMIUM✮",UNIVERSAL CINEMA
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/90078.ts
-#EXTINF:-1 tvg-id="UNIVERSAL CRIME" tvg-name="UNIVERSAL CRIME |MX" tvg-logo="https://i.ibb.co/Rj4HpMq/UNIVESALCRIME.png" group-title="✮CINE PREMIUM✮",UNIVERSAL CRIME |MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/90079.ts
-#EXTINF:-1 tvg-id="UniversalComedy.ar" tvg-name="UNIVERSAL COMEDY HD | MX" tvg-logo="https://i.ibb.co/TBLRttd/UNIVESALCOMEDY.png" group-title="✮CINE PREMIUM✮",UNIVERSAL COMEDY HD | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/90081.ts
-#EXTINF:-1 tvg-id="UNIVERSAL PREMIERE" tvg-name="UNIVERSAL PREMIERE HD" tvg-logo="https://i.ibb.co/NCKFnDN/UNIVERSALPRE.png" group-title="✮CINE PREMIUM✮",UNIVERSAL PREMIERE HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/90082.ts
-#EXTINF:-1 tvg-id="" tvg-name="UNIVERSAL PREMIERE HD | MX" tvg-logo="https://i.ibb.co/NCKFnDN/UNIVERSALPRE.png" group-title="✮CINE PREMIUM✮",UNIVERSAL PREMIERE HD | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/90083.ts
-#EXTINF:-1 tvg-id="HBOPopLatinAmerica.us" tvg-name="HBO POP FHD" tvg-logo="https://i.ibb.co/vxK0tVp/hbopop3.png" group-title="✮CINE PREMIUM✮",HBO POP FHD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/96201.ts
-#EXTINF:-1 tvg-id="541dtv.cl" tvg-name="HBO POP HD" tvg-logo="https://i.ibb.co/nmPF9J3/hbopop2.png" group-title="✮CINE PREMIUM✮",HBO POP HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/96202.ts
-#EXTINF:-1 tvg-id="HBOPopLatinAmerica.us" tvg-name="HBO POP" tvg-logo="https://i.ibb.co/tMJw0Cs/hbopop1.png" group-title="✮CINE PREMIUM✮",HBO POP
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/96203.ts
-#EXTINF:-1 tvg-id="HBOMundiLatinAmerica.us" tvg-name="HBO MUNDI FHD | MX" tvg-logo="https://i.ibb.co/GHngdzz/hbomun3.png" group-title="✮CINE PREMIUM✮",HBO MUNDI FHD | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/96204.ts
-#EXTINF:-1 tvg-id="HBOMundiLatinAmerica.us" tvg-name="HBO MUNDI HD" tvg-logo="https://i.ibb.co/7Qr4FNj/hbomu1.png" group-title="✮CINE PREMIUM✮",HBO MUNDI HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/96205.ts
-#EXTINF:-1 tvg-id="HBOMundiLatinAmerica.us" tvg-name="HBO MUNDI" tvg-logo="https://i.ibb.co/rH1sYsg/hbomu2.png" group-title="✮CINE PREMIUM✮",HBO MUNDI
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/96206.ts
-#EXTINF:-1 tvg-id="HBOXtremeLatinAmerica.us" tvg-name="HBO XTREME HD" tvg-logo="https://i.ibb.co/bPRQG6P/hboext1.png" group-title="✮CINE PREMIUM✮",HBO XTREME HD
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/96207.ts
-#EXTINF:-1 tvg-id="HBOXtremeLatinAmerica.us" tvg-name="HBO XTREME" tvg-logo="https://i.ibb.co/CtGbJqx/hboextr3.png" group-title="✮CINE PREMIUM✮",HBO XTREME
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/96208.ts
-#EXTINF:-1 tvg-id="HBO XTREME.co" tvg-name="HBO XTREME HD | MX" tvg-logo="https://i.ibb.co/K7bvj7t/hboext2.png" group-title="✮CINE PREMIUM✮",HBO XTREME HD | MX
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/96209.ts
-#EXTINF:-1 tvg-id="MCINLA" tvg-name="Multicinema" tvg-logo="https://i.ibb.co/921VFpp/multicinema.png" group-title="✮CINE PREMIUM✮",Multicinema
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/140365.ts
-#EXTINF:-1 tvg-id="CINESTE" tvg-name="CINE ESTELAR" tvg-logo="https://i.ibb.co/gMMxZ5h/cineestelar.png" group-title="✮CINE PREMIUM✮",CINE ESTELAR
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/148901.ts
-#EXTINF:-1 tvg-id="" tvg-name="AMC SERIES | AR" tvg-logo="https://i.postimg.cc/J4bc389s/images-9-removebg-preview.png" group-title="✮CINE PREMIUM✮",AMC SERIES | AR
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/79064.ts
-#EXTINF:-1 tvg-id="0" tvg-name="CINE MEXICANO" tvg-logo="https://i.ibb.co/fHqVpbr/cinemersadsa.png" group-title="✮CINE PREMIUM✮",CINE MEXICANO
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/205870.ts
-#EXTINF:-1 tvg-id="Canal 13 de Panamá (Telemetro).pa" tvg-name="DREAMWORKS" tvg-logo="https://i.ibb.co/1sd9JXk/Dreamworks.png" group-title="✮CINE PREMIUM✮",DREAMWORKS
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/206517.ts
-#EXTINF:-1 tvg-id="CDINA" tvg-name="CINEMA DINAMITA" tvg-logo="https://i.ibb.co/bbDPNVG/CINEDINAMITA.png" group-title="✮CINE PREMIUM✮",CINEMA DINAMITA
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/46116.ts
-#EXTINF:-1 tvg-id="" tvg-name="CINE PREMIUM | AR" tvg-logo="https://timnetworks.tv/wp-content/uploads/2022/10/CINE-PREMIUM.png" group-title="✮CINE PREMIUM✮",CINE PREMIUM | AR
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/772965.ts
-#EXTINF:-1 tvg-id="" tvg-name="CINE FAMILIAR | AR" tvg-logo="https://timnetworks.tv/wp-content/uploads/2022/10/CINE-FAMILIAR.png" group-title="✮CINE PREMIUM✮",CINE FAMILIAR | AR
-http://cloudtvserviceplatinum.site/live/NDCF2kbNhE/3uXf66mNFc/772966.ts
+#EXTINF:-1 tvg-id="" tvg-name="MX | CANAL CATORCE" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_Canal_14_M%C3%A9xico.svg/1200px-Logo_Canal_14_M%C3%A9xico.svg.png?20230129011844" group-title="MEXICO",MX | CANAL CATORCE
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1486377
+#EXTINF:-1 tvg-id="" tvg-name="MX | CNN International" tvg-logo="https://2.bp.blogspot.com/-Vn-O2-bzceM/VmIo6c_FfdI/AAAAAAAAAPQ/qE9NO00SsUs/s200/gallery_1163_7_110684.png" group-title="MEXICO 2",MX | CNN International
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457761
+#EXTINF:-1 tvg-id="" tvg-name="MX | Golden Edge" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/Golden_Edge_Logo_2020.png?20210427002447" group-title="MEXICO 2",MX | Golden Edge
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457793
+#EXTINF:-1 tvg-id="" tvg-name="MX | Nick Jr." tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/05/Nick_Jr.logo.png" group-title="MEXICO 2",MX | Nick Jr.
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457809
+#EXTINF:-1 tvg-id="" tvg-name="MX | MTV HD" tvg-logo="https://www.pngmart.com/files/22/MTV-Logo-PNG-HD-Isolated.png" group-title="MEXICO 2",MX | MTV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457804
+#EXTINF:-1 tvg-id="" tvg-name="MX | Multimedios HD" tvg-logo="https://cdn.freebiesupply.com/logos/large/2x/multimedios-television-logo-png-transparent.png" group-title="MEXICO 2",MX | Multimedios HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457807
+#EXTINF:-1 tvg-id="" tvg-name="MX | Fox Sports 2" tvg-logo="https://www.pnguniverse.com/wp-content/uploads/2022/03/Fox-sports-2-0acdf380.png" group-title="MEXICO 2",MX | Fox Sports 2
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457785
+#EXTINF:-1 tvg-id="" tvg-name="MX | Tooncast" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tooncast_logo.svg/1280px-Tooncast_logo.svg.png" group-title="MEXICO 2",MX | Tooncast
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457822
+#EXTINF:-1 tvg-id="" tvg-name="MX | Disney Jr." tvg-logo="https://1000logos.net/wp-content/uploads/2022/01/Disney-Junior-Logo.png" group-title="MEXICO 2",MX | Disney Jr.
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457772
+#EXTINF:-1 tvg-id="" tvg-name="MX | Discovery World HD" tvg-logo="https://th.bing.com/th/id/R.3dcd85e2ea6194cb817d0ec487e7df65?rik=z9W5svq41Qgu6w&riu=http%3a%2f%2fimg4.wikia.nocookie.net%2f__cb20091111164548%2flogopedia%2fimages%2f8%2f8b%2fDiscovery_World.png&ehk=G2PzBLpnxXlXaXF3YR87Z6AaWyfO9xVBchKm%2bia4294%3d&risl=&pid=ImgRaw&r=0" group-title="MEXICO 2",MX | Discovery World HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457770
+#EXTINF:-1 tvg-id="" tvg-name="MX Bloomberg B1 HD" tvg-logo="https://www.monpetitforfait.com/comparateur-box-internet/wp-content/uploads/2020/04/logo-bloomberg-tv.png" group-title="MEXICO 2",MX Bloomberg B1 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457753
+#EXTINF:-1 tvg-id="" tvg-name="MX | Space HD" tvg-logo="https://logos-world.net/wp-content/uploads/2023/03/Space-Symbol.png" group-title="MEXICO 2",MX | Space HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457814
+#EXTINF:-1 tvg-id="" tvg-name="MX | Fox News HD" tvg-logo="https://www.pngmart.com/files/23/Fox-News-Logo-PNG-Pic.png" group-title="MEXICO 2",MX | Fox News HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457782
+#EXTINF:-1 tvg-id="" tvg-name="MX |  National Geographic Channel" tvg-logo="https://brandslogos.com/wp-content/uploads/images/large/national-geographic-channel-logo.png" group-title="MEXICO 2",MX |  National Geographic Channel
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457808
+#EXTINF:-1 tvg-id="" tvg-name="MX | TP CANAL Once" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/ea/Antiguo_logo_de_Canal_Once_%28Once_TV%29.png" group-title="MEXICO 2",MX | TP CANAL Once
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457824
+#EXTINF:-1 tvg-id="" tvg-name="MX | Canal Once" tvg-logo="https://i.pinimg.com/736x/43/ed/c5/43edc5275afa8153fb53c7e0ebd3ef98.jpg" group-title="MEXICO 2",MX | Canal Once
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457756
+#EXTINF:-1 tvg-id="" tvg-name="MX AXN HD" tvg-logo="" group-title="MEXICO 2",MX AXN HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457747
+#EXTINF:-1 tvg-id="" tvg-name="MX ESPN" tvg-logo="https://logos.xbots.com.mx/168.png" group-title="MEXICO 2",MX ESPN
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457777
+#EXTINF:-1 tvg-id="" tvg-name="MX | Discovery Channel HD" tvg-logo="https://logos-world.net/wp-content/uploads/2022/01/Discovery-Channel-Logo-1995.png" group-title="MEXICO 2",MX | Discovery Channel HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457764
+#EXTINF:-1 tvg-id="" tvg-name="MX AYM Sports" tvg-logo="" group-title="MEXICO 2",MX AYM Sports
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457748
+#EXTINF:-1 tvg-id="" tvg-name="MX | DW" tvg-logo="https://www.pinclipart.com/picdir/middle/579-5795842_dw-logo-deutsche-welle-deutsche-welle-logo-png.png" group-title="MEXICO 2",MX | DW
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457774
+#EXTINF:-1 tvg-id="" tvg-name="MX Golf HD" tvg-logo="https://th.bing.com/th/id/OIP.DUtInylw3kAqIU75G-02ZQHaCO?rs=1&pid=ImgDetMain" group-title="MEXICO 2",MX Golf HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457795
+#EXTINF:-1 tvg-id="" tvg-name="MX Bloomberg HD" tvg-logo="" group-title="MEXICO 2",MX Bloomberg HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457754
+#EXTINF:-1 tvg-id="" tvg-name="MX TUDN" tvg-logo="" group-title="MEXICO 2",MX TUDN
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457826
+#EXTINF:-1 tvg-id="" tvg-name="MX Investigation Discovery HD" tvg-logo="https://logos.xbots.com.mx/2199.png" group-title="MEXICO 2",MX Investigation Discovery HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457799
+#EXTINF:-1 tvg-id="" tvg-name="MX Animal Planet HD" tvg-logo="" group-title="MEXICO 2",MX Animal Planet HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457745
+#EXTINF:-1 tvg-id="" tvg-name="MX NTN24" tvg-logo="https://i.postimg.cc/CMf8xMW6/COL-NTN24.png" group-title="MEXICO 2",MX NTN24
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457811
+#EXTINF:-1 tvg-id="" tvg-name="MX De Pelicula Plus" tvg-logo="https://logos-world.net/wp-content/uploads/2023/04/De-Pelicula-Plus-Logo.png" group-title="MEXICO 2",MX De Pelicula Plus
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457763
+#EXTINF:-1 tvg-id="" tvg-name="MX Baby TV HD" tvg-logo="" group-title="MEXICO 2",MX Baby TV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457750
+#EXTINF:-1 tvg-id="" tvg-name="MX Discovery Theater HD" tvg-logo="" group-title="MEXICO 2",MX Discovery Theater HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457768
+#EXTINF:-1 tvg-id="" tvg-name="MX Foro TV HD" tvg-logo="" group-title="MEXICO 2",MX Foro TV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457781
+#EXTINF:-1 tvg-id="" tvg-name="MX Europa Europa" tvg-logo="" group-title="MEXICO 2",MX Europa Europa
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457779
+#EXTINF:-1 tvg-id="" tvg-name="MX | Golden" tvg-logo="" group-title="MEXICO 2",MX | Golden
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457792
+#EXTINF:-1 tvg-id="" tvg-name="MX (HD) TP PX Sports" tvg-logo="" group-title="MEXICO 2",MX (HD) TP PX Sports
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457738
+#EXTINF:-1 tvg-id="" tvg-name="MX Studio Universal HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Logo_Studio_Universal.svg/1200px-Logo_Studio_Universal.svg.png" group-title="MEXICO 2",MX Studio Universal HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457816
+#EXTINF:-1 tvg-id="" tvg-name="MX Hola TV HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/ce/%C2%A1HOLA%21TVlogo.jpg" group-title="MEXICO 2",MX Hola TV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457798
+#EXTINF:-1 tvg-id="" tvg-name="MX Discovery Home & Health" tvg-logo="" group-title="MEXICO 2",MX Discovery Home & Health
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457765
+#EXTINF:-1 tvg-id="" tvg-name="MX FX" tvg-logo="http://xplatinmedia.com:8080/images/167534a2eb0447bc65ef87de0d4fd428.png" group-title="MEXICO 2",MX FX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457788
+#EXTINF:-1 tvg-id="" tvg-name="MX Cinemax HD" tvg-logo="" group-title="MEXICO 2",MX Cinemax HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457759
+#EXTINF:-1 tvg-id="" tvg-name="MX Telehit Plus HD" tvg-logo="" group-title="MEXICO 2",MX Telehit Plus HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457818
+#EXTINF:-1 tvg-id="" tvg-name="MX Azteca 7 HD" tvg-logo="" group-title="MEXICO 2",MX Azteca 7 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457749
+#EXTINF:-1 tvg-id="" tvg-name="MX ADN40 Querétaro" tvg-logo="" group-title="MEXICO 2",MX ADN40 Querétaro
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457741
+#EXTINF:-1 tvg-id="" tvg-name="MX Fox Sports 3" tvg-logo="" group-title="MEXICO 2",MX Fox Sports 3
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457786
+#EXTINF:-1 tvg-id="" tvg-name="MX Food Network HD" tvg-logo="" group-title="MEXICO 2",MX Food Network HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457780
+#EXTINF:-1 tvg-id="" tvg-name="MX Sony Movies" tvg-logo="" group-title="MEXICO 2",MX Sony Movies
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457813
+#EXTINF:-1 tvg-id="" tvg-name="MX Antena 3" tvg-logo="" group-title="MEXICO 2",MX Antena 3
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457746
+#EXTINF:-1 tvg-id="" tvg-name="MX Al Jazeera HD" tvg-logo="" group-title="MEXICO 2",MX Al Jazeera HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457742
+#EXTINF:-1 tvg-id="" tvg-name="MX Fox Sports 1" tvg-logo="" group-title="MEXICO 2",MX Fox Sports 1
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457784
+#EXTINF:-1 tvg-id="" tvg-name="MX History HD" tvg-logo="" group-title="MEXICO 2",MX History HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457796
+#EXTINF:-1 tvg-id="" tvg-name="MX Distrito Comedia" tvg-logo="" group-title="MEXICO 2",MX Distrito Comedia
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457773
+#EXTINF:-1 tvg-id="" tvg-name="MX FX HD" tvg-logo="" group-title="MEXICO 2",MX FX HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457789
+#EXTINF:-1 tvg-id="" tvg-name="MX ADN 40 Nacional" tvg-logo="" group-title="MEXICO 2",MX ADN 40 Nacional
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457740
+#EXTINF:-1 tvg-id="" tvg-name="MX El Gourmet HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/36/Elgourmetlogo2015.png" group-title="MEXICO 2",MX El Gourmet HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457776
+#EXTINF:-1 tvg-id="" tvg-name="MX Garage TV" tvg-logo="" group-title="MEXICO 2",MX Garage TV
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457790
+#EXTINF:-1 tvg-id="" tvg-name="MX VH1" tvg-logo="https://0nline.tv/wp-content/uploads/2020/03/vh1-classic-1-1024x622.png" group-title="MEXICO 2",MX VH1
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457828
+#EXTINF:-1 tvg-id="" tvg-name="MX HLN HD" tvg-logo="https://www.hln.be/static/images/hln_logo_696-b42708d2d0.png" group-title="MEXICO 2",MX HLN HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457797
+#EXTINF:-1 tvg-id="" tvg-name="MX Mas Chic HD" tvg-logo="https://i.ibb.co/LgzPBtf/mas-chic.png" group-title="MEXICO 2",MX Mas Chic HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457802
+#EXTINF:-1 tvg-id="" tvg-name="MX Cartoon Network HD" tvg-logo="" group-title="MEXICO 2",MX Cartoon Network HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457757
+#EXTINF:-1 tvg-id="" tvg-name="MX Nickelodeon HD" tvg-logo="" group-title="MEXICO 2",MX Nickelodeon HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457810
+#EXTINF:-1 tvg-id="" tvg-name="MX | TRU TV HD" tvg-logo="http://xplatinmedia.com:8080/images/92e11dd52bb77b5c975a060ef5b6ee66.png" group-title="MEXICO 2",MX | TRU TV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457825
+#EXTINF:-1 tvg-id="" tvg-name="MX Discovery Turbo" tvg-logo="" group-title="MEXICO 2",MX Discovery Turbo
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457769
+#EXTINF:-1 tvg-id="" tvg-name="MX | TLC HD" tvg-logo="https://www.pngitem.com/pimgs/m/1-13607_tlc-hd-channel-logo-hd-png-download.png" group-title="MEXICO 2",MX | TLC HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457819
+#EXTINF:-1 tvg-id="" tvg-name="MX VH1 Classic" tvg-logo="https://0nline.tv/wp-content/uploads/2020/03/vh1-classic-1-1024x622.png" group-title="MEXICO 2",MX VH1 Classic
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457829
+#EXTINF:-1 tvg-id="" tvg-name="MX Discovery Science" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Discovery_Science_2017_Logo.svg/1200px-Discovery_Science_2017_Logo.svg.png" group-title="MEXICO 2",MX Discovery Science
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457767
+#EXTINF:-1 tvg-id="" tvg-name="MX Star TVE" tvg-logo="" group-title="MEXICO 2",MX Star TVE
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457815
+#EXTINF:-1 tvg-id="" tvg-name="MX CNN" tvg-logo="" group-title="MEXICO 2",MX CNN
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457760
+#EXTINF:-1 tvg-id="" tvg-name="MX Unicable" tvg-logo="https://image.mypanel.cc/?img=http://dnslivetv.online:80/images/HM3xx55KZnCUdlPuNC1k2CQmSialG6ZFMmnpVE7A3yqFGLWNs-rv_wriLnstpD2tNsOEvSxSr8NSEqDltoVumg.png" group-title="MEXICO 2",MX Unicable
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457827
+#EXTINF:-1 tvg-id="" tvg-name="MX E! Entertainment HD" tvg-logo="" group-title="MEXICO 2",MX E! Entertainment HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457775
+#EXTINF:-1 tvg-id="" tvg-name="MX A3Cine" tvg-logo="" group-title="MEXICO 2",MX A3Cine
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457739
+#EXTINF:-1 tvg-id="" tvg-name="MX Lifetime HD" tvg-logo="" group-title="MEXICO 2",MX Lifetime HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457801
+#EXTINF:-1 tvg-id="" tvg-name="MX Milenio TV HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d4/Milenio_Television.png" group-title="MEXICO 2",MX Milenio TV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457803
+#EXTINF:-1 tvg-id="" tvg-name="MX AMC" tvg-logo="" group-title="MEXICO 2",MX AMC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457743
+#EXTINF:-1 tvg-id="" tvg-name="MX Animal Planet" tvg-logo="" group-title="MEXICO 2",MX Animal Planet
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457744
+#EXTINF:-1 tvg-id="" tvg-name="MX Discovery Kids" tvg-logo="" group-title="MEXICO 2",MX Discovery Kids
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457766
+#EXTINF:-1 tvg-id="" tvg-name="MX De Pelicula" tvg-logo="https://logos.xbots.com.mx/3922.png" group-title="MEXICO 2",MX De Pelicula
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457762
+#EXTINF:-1 tvg-id="" tvg-name="MX Cinecanal HD" tvg-logo="" group-title="MEXICO 2",MX Cinecanal HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457758
+#EXTINF:-1 tvg-id="" tvg-name="MX Fox Sports 1" tvg-logo="https://www.lyngsat.com/logo/tv/ff/fox_sports_lam_hd.png" group-title="MEXICO 2",MX Fox Sports 1
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457783
+#EXTINF:-1 tvg-id="" tvg-name="MX Espn 2 HD" tvg-logo="" group-title="MEXICO 2",MX Espn 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457778
+#EXTINF:-1 tvg-id="" tvg-name="MX MTV Hits" tvg-logo="https://w7.pngwing.com/pngs/182/465/png-transparent-mtv-logo-tv-television-music-video-others-miscellaneous-television-text-thumbnail.png" group-title="MEXICO 2",MX MTV Hits
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457805
+#EXTINF:-1 tvg-id="" tvg-name="MX LAS ESTRELLAS" tvg-logo="https://i.ibb.co/9GNLNXv/las-estrellas.png" group-title="MEXICO 2",MX LAS ESTRELLAS
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457800
+#EXTINF:-1 tvg-id="" tvg-name="MX TP AZTECA UNO" tvg-logo="" group-title="MEXICO 2",MX TP AZTECA UNO
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457823
+#EXTINF:-1 tvg-id="" tvg-name="MX TNT HD" tvg-logo="" group-title="MEXICO 2",MX TNT HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457820
+#EXTINF:-1 tvg-id="" tvg-name="MX Golden Plus HD" tvg-logo="https://logos.xbots.com.mx/307512.png" group-title="MEXICO 2",MX Golden Plus HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457794
+#EXTINF:-1 tvg-id="" tvg-name="MX Disney Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/2014_Disney_Channel_logo.svg/1280px-2014_Disney_Channel_logo.svg.png" group-title="MEXICO 2",MX Disney Channel
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457771
+#EXTINF:-1 tvg-id="" tvg-name="MX | Glitz" tvg-logo="http://redworld.pro:8880/images/3cc08b1c9d27766ef4324e457791f37b.png" group-title="MEXICO 2",MX | Glitz
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457791
+#EXTINF:-1 tvg-id="" tvg-name="MX BBC World News" tvg-logo="" group-title="MEXICO 2",MX BBC World News
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457752
+#EXTINF:-1 tvg-id="" tvg-name="MX TNT Series HD" tvg-logo="" group-title="MEXICO 2",MX TNT Series HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457821
+#EXTINF:-1 tvg-id="" tvg-name="MX MTV Live HD" tvg-logo="https://image.mobazzz.com/?img=http://flextv.link:2052/images/B0b_mf_PU2km1-FVp6pySpVBWipDdIVIJg_j2yZxQEhrj1PKYI9YzAXzALCJIQ5rvbGIcxUzIK5_D1ApaKkwQg.png" group-title="MEXICO 2",MX MTV Live HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457806
+#EXTINF:-1 tvg-id="" tvg-name="MX Bandamax" tvg-logo="" group-title="MEXICO 2",MX Bandamax
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457751
+#EXTINF:-1 tvg-id="" tvg-name="MX Canal 5 HD" tvg-logo="" group-title="MEXICO 2",MX Canal 5 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1457755
+#EXTINF:-1 tvg-id="" tvg-name="MX | A+" tvg-logo="https://directostv.teleame.com/wp-content/uploads/2018/02/A-Amas-TV-en-vivo-Online-1.png" group-title="MEXICO",MX | A+
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/778646
+#EXTINF:-1 tvg-id="" tvg-name="MX | TELEVISA MONTERREY HD" tvg-logo="https://cdn6.aptoide.com/imgs/e/5/a/e5ad5b0f01f7c3040b3fc58982e332cc_fgraphic.png" group-title="MEXICO",MX | TELEVISA MONTERREY HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/830305
+#EXTINF:-1 tvg-id="" tvg-name="MX | TELENOVELAS" tvg-logo="https://i.ibb.co/Smm5vsp/TLENOVELAS.jpg" group-title="MEXICO",MX | TELENOVELAS
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/803159
+#EXTINF:-1 tvg-id="" tvg-name="MX | MULTIMEDIOS PLUS" tvg-logo="https://archive.org/download/642px-multimedios-canal-seis-logo.svg/642px-Multimedios_Canal_Seis_Logo.svg.png" group-title="MEXICO",MX | MULTIMEDIOS PLUS
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/791367
+#EXTINF:-1 tvg-id="" tvg-name="MX | NATGEO WILD" tvg-logo="https://www.imagensempng.com.br/wp-content/uploads/2023/04/Logo-Nat-Geo-Wild-Png.png" group-title="MEXICO",MX | NATGEO WILD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/773331
+#EXTINF:-1 tvg-id="" tvg-name="MX | TELEMAX" tvg-logo="https://telemax.com.mx/wp//wp-content/uploads/2022/08/telemax-logo-white.png" group-title="MEXICO",MX | TELEMAX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/828758
+#EXTINF:-1 tvg-id="" tvg-name="MX | FORO TV HD" tvg-logo="https://th.bing.com/th/id/R.0d353eb3f3dbf1566a997f2c29331b31?rik=K4ZhCJ%2fZwVPRXg&riu=http%3a%2f%2fwww.genomicamedica.com%2fwp-content%2fuploads%2f2018%2f12%2fForo_TV_nota.png&ehk=co3OxZCRFak0pO8GGVe6LKxE2WhxcpR8g7WC8kqhcpg%3d&risl=&pid=ImgRaw&r=0" group-title="MEXICO",MX | FORO TV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388741
+#EXTINF:-1 tvg-id="" tvg-name="MX |* TVC DEPORTES FHD" tvg-logo="https://th.bing.com/th/id/OIP.mmHJr15rRlw7CMYmvhplSAAAAA?rs=1&pid=ImgDetMain" group-title="MEXICO",MX |* TVC DEPORTES FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388746
+#EXTINF:-1 tvg-id="" tvg-name="MX |* HBO POP HD" tvg-logo="https://www.vhv.rs/dpng/d/438-4382659_hbo-pop-png-transparent-png.png" group-title="MEXICO",MX |* HBO POP HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388762
+#EXTINF:-1 tvg-id="" tvg-name="MX |* ANTENA SERIES HD" tvg-logo="https://www.logotypes101.com/logos/557/C3A77CFF6F67EA8734389C179121E569/antena_3.png" group-title="MEXICO",MX |* ANTENA SERIES HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388774
+#EXTINF:-1 tvg-id="" tvg-name="MX | SYFY HD" tvg-logo="http://miarea.vip:8080/images/61d7e5ff7c5d6f56f35e606148c25412.png" group-title="MEXICO",MX | SYFY HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388703
+#EXTINF:-1 tvg-id="" tvg-name="MX | FOX SPORTS 2 HD" tvg-logo="https://www.pngfind.com/pngs/m/500-5005891_fox-sports-2-fox-sports-hd-png-download.png" group-title="MEXICO",MX | FOX SPORTS 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388691
+#EXTINF:-1 tvg-id="" tvg-name="MX | ESPN 1 HD" tvg-logo="https://1000logos.net/wp-content/uploads/2021/05/ESPN-logo.png" group-title="MEXICO",MX | ESPN 1 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388734
+#EXTINF:-1 tvg-id="" tvg-name="MX | ESPN 3 HD" tvg-logo="http://upload.wikimedia.org/wikipedia/commons/6/6c/Espn3.png" group-title="MEXICO",MX | ESPN 3 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388688
+#EXTINF:-1 tvg-id="" tvg-name="MX | ADN 40 HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/a/ae/ADN_40_logo.png" group-title="MEXICO",MX | ADN 40 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388709
+#EXTINF:-1 tvg-id="" tvg-name="MX | TELEFORMULA" tvg-logo="https://static.epg.best/mx/TeleFormula.mx.png" group-title="MEXICO",MX | TELEFORMULA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/766109
+#EXTINF:-1 tvg-id="" tvg-name="MX |* MAS CHIC FHD" tvg-logo="http://iptvglobal.site:25461/images/ca800876e017cfb4a37803ba535dba2c.png" group-title="MEXICO",MX |* MAS CHIC FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388749
+#EXTINF:-1 tvg-id="" tvg-name="MX |* FOX SPORTS 2 HD" tvg-logo="https://www.pnguniverse.com/wp-content/uploads/2022/03/Fox-sports-2-0acdf380.png" group-title="MEXICO",MX |* FOX SPORTS 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388731
+#EXTINF:-1 tvg-id="" tvg-name="MX |* TNT SERIES HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/86/TNT_Series.png" group-title="MEXICO",MX |* TNT SERIES HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388754
+#EXTINF:-1 tvg-id="" tvg-name="MX | ESPN  XTRA HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/ESPN_Xtra_logo.svg/1280px-ESPN_Xtra_logo.svg.png" group-title="MEXICO",MX | ESPN  XTRA HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388735
+#EXTINF:-1 tvg-id="" tvg-name="MX | GOURMET HD" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/609/CH_LOGO/160/160/0/0/4921275007100602.png" group-title="MEXICO",MX | GOURMET HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388775
+#EXTINF:-1 tvg-id="" tvg-name="MX | HBO 2 HD" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/1/1f/HBO2_HD_logo.png/revision/latest/scale-to-width-down/639?cb=20120615194124" group-title="MEXICO",MX | HBO 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388728
+#EXTINF:-1 tvg-id="" tvg-name="MX | IMAGEN TV HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d7/Logo-Imagen-TV-MX.png" group-title="MEXICO",MX | IMAGEN TV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388696
+#EXTINF:-1 tvg-id="" tvg-name="MX | DISCOVERY CIVILIZATION HD" tvg-logo="https://i.picasion.com/pic92/1613747113fa1d90554fc13786f0e8e3.gif" group-title="MEXICO",MX | DISCOVERY CIVILIZATION HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388712
+#EXTINF:-1 tvg-id="" tvg-name="MX | AZTECA CORAZON" tvg-logo="https://www.pngfind.com/pngs/m/53-538837_azteca-corazon-logo-4-by-susan-az-clic.png" group-title="MEXICO",MX | AZTECA CORAZON
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388679
+#EXTINF:-1 tvg-id="" tvg-name="MX | FOX SPORTS 3 HD" tvg-logo="https://th.bing.com/th/id/OIP.vr2iUx9MioXW2FM6xDV8eQHaFP?rs=1&pid=ImgDetMain" group-title="MEXICO",MX | FOX SPORTS 3 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388713
+#EXTINF:-1 tvg-id="" tvg-name="MX | BITME FHD" tvg-logo="https://www.intelyx.mx/wp-content/uploads/2024/07/bitme.png" group-title="MEXICO",MX | BITME FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388752
+#EXTINF:-1 tvg-id="" tvg-name="MX |* FOX SPORTS 3 HD" tvg-logo="https://i.picasion.com/pic92/750f7e24fe0d3482e6c5b32048f66d6b.gif" group-title="MEXICO",MX |* FOX SPORTS 3 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388730
+#EXTINF:-1 tvg-id="" tvg-name="MX | TNT HD" tvg-logo="https://th.bing.com/th/id/R.0766814c24a1c22214b97099787eea41?rik=91a3vXusTE39SQ&riu=http%3a%2f%2fvignette2.wikia.nocookie.net%2flogosfake%2fimages%2f3%2f3b%2fTNT_HD.png%2frevision%2flatest%3fcb%3d20140407183245&ehk=kRCumucsnnVNNVMFpuvoQd5FvZt6c0E8jdkz4kwEuvg%3d&risl=&pid=ImgRaw&r=0" group-title="MEXICO",MX | TNT HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388711
+#EXTINF:-1 tvg-id="" tvg-name="MX | TNT SERIES HD" tvg-logo="https://i.picasion.com/pic92/c4b662c0b6f09e50fecd8392bd6f3721.gif" group-title="MEXICO",MX | TNT SERIES HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388705
+#EXTINF:-1 tvg-id="" tvg-name="MX |* DISCOVERY SCIENCE HD" tvg-logo="https://i.picasion.com/pic92/f5abb98f8a86fefdf93a33eb1324f360.gif" group-title="MEXICO",MX |* DISCOVERY SCIENCE HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388738
+#EXTINF:-1 tvg-id="" tvg-name="MX |* CARTOON NETWORK HD" tvg-logo="https://i.picasion.com/pic92/b1f38c6755faad12fdf555290c877050.gif" group-title="MEXICO",MX |* CARTOON NETWORK HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388766
+#EXTINF:-1 tvg-id="" tvg-name="MX | WARNER FHD" tvg-logo="https://www.clipartmax.com/png/middle/141-1418660_warner-channel-hd-logo.png" group-title="MEXICO",MX | WARNER FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388783
+#EXTINF:-1 tvg-id="" tvg-name="MX | ESPN HD" tvg-logo="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/640px-ESPN_wordmark.svg.png" group-title="MEXICO",MX | ESPN HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388686
+#EXTINF:-1 tvg-id="" tvg-name="MX | UNIVERSAL CHANNEL HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Universal_Channel_Logo_2013.svg/1200px-Universal_Channel_Logo_2013.svg.png" group-title="MEXICO",MX | UNIVERSAL CHANNEL HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388708
+#EXTINF:-1 tvg-id="" tvg-name="MX | AZTECA 7 HD" tvg-logo="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISERESEhUSERIREhgVGBoSEREPEBERGBQZGRkUFhYcIS4mHB4rIRkWJjgnKy8xNUM1HCU7Tjs0Py40NTEBDAwMEA8QHxISHjErIys0NTQxPjQ0NjQ0NDQ0ND00NDQ0NDQ0NDE0MTE0NDQxNDQ0NDQ0ND0xNDQ0NDQ0PzE0Mf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgECAwUHBAj/xABIEAACAQMBBAQJCAgCCwAAAAAAAQIDBBESBQYhMRNBUXEHFCIyYXOBkbIWM0JSU5Kx0SM0NVRyk6HBFdIXJTZDYmOClKOz4v/EABoBAQADAQEBAAAAAAAAAAAAAAABAgUDBAb/xAAvEQEAAQMBBgQEBwEAAAAAAAAAAQIDETEEEhMhUYEFMkFxImGhsRQzQlKRwdHw/9oADAMBAAIRAxEAPwDswAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGk2hvNa0W46+kkuap+VjvfImImdBuwRP5b0vsqnviU+XFL7Kp74F+DX0MJaCJfLil9lU98Cny5pfZVffAcKvoYS4ER+XVL7Kp74lPl1R+yqe+I4NzoYS8EP+XlH7Kp74l0N+6DflU6kV2+SxwbnQwlwNbs3bNvc/NVIykllx82a74vibIpMTHKQABAAAAAAAAAAAAAAAAAAAAUKmq3ku+htas08PTpXfLgTEZnAim9e8UpzlRoycYQ4SlF4c5daT7CKajFrKazRpoimMQthm1FHMxORa5o6RTM+gzORbqMTn6SmsndnoMzkWuZgc12hzXaTuz0GVzLXMxOZa5EYlLPCtKElKMnGUXlOLcZJ9qZ0rc7eXxmLo1eFaCyn9rFc5d66zljmerZO0JULilVi+MZr7r4Ne5s53bW/T80TDugLISTSa5NJ+xl5mKgAAAAAAAAAAAAAAAAAAEa39eLKX8cfxJKRfwg/qMv44/iXt+ePchzHWUczDrKOZqLtvsOUXXipYaakuKTWccCVeLQ+pD7sTn0arTTTw1xWODTN1b70VYpKcYTx18YSffjh/QxvEvD7t+uLlrpiYzj1nn09fXGn8evZ71NFO7Uk/i0PqQ+5Ep4rD6kPuR/I0cN7YfSpSXdJP+x6ae89s/O1w745/AyKvDtrp1ontiftMvVG0Wp9YbLxaH1Ifcj+Q8Wh9SH3I/kY7fa1vUkowmnKXJYab9h79B5K7Vy3OK4mPfMOtNdM6YeN21P6kPuR/IiW8lrClVioLSpw1YXKLzjh6CbySSbfBJZfcjm22L/pq85/Rzpj6IR4L+79preCUXJvzVEzuxHPpz0/uezzbXVTuRHr/ANlgcyyU+DMMqq7UYp3EcPifU4Zz6MsPmaXq4fCj0HmsPmaXq4fCj0mIooVIRt+tXq1qtzbynp2VpkoQb03M+daEl14p5S9LJVJU7qguMnTrwTTjOVOTjJZTUotNPuYHr1IZRBdtbCoRnC1tpXLua3HLvLqcbekvOqyi54fYk+bZvq+7dCVKlTnK4l0FPRGSuq9OcuHGU3GS1NvtA3mUMohm5Gx6dS3o3U5XE6qqVeMrq4cHorThHMNWl8Euo11t4nO52h47cThOF3KNNeOV6CVLo6b4RjNLGpyA6KmUyiLqvbWVlcXNpKVeOVjXcVbiLqZUYxUpyeFmS5FaG6kKkFO6q3Fa5ktUpxuK1FQk+OKcISUYpclwfLrAlJQ8Oz7eVvR01Ks62hSeurpU9Cy0pNc8LrIrsy+rQr0b2rKfRbRqdFok/IoR49BJLqcuT9MkBOQAAAAAivhF/UJ+sh+JKiJ+Eh/6vn6yH4nS1+ZT7jk2sprMGstczWwuzuZRyMHSFrmSlndQo5mByN1uxsZ3dZJ/NU2pTf1l1QXfj3FbldNuma6tIIiZnEJHufsdxj4xUXlTWIJ9UPre0k8sJZfAVKsYJRilwWElwSSPHObk8t/kj4nbNqm7cmurX6RHpHZq2bWIxDTb4bW6Og4Q4Tq+Su1R+kznMpG03iv+nuJSXmQ8iH8MXxl7Xn+hqWfU+G7PNjZ4irzTznv6dtGffriuuZjRSRgq8n3GaRhq8n3HucJfTezvmaPqofCizadedOjUnTg6lSMXpjHnKfKK7s4L9nfM0fVQ+FHl3g2l4ra17jTqdOGUuSlJtKKfoy0YsRmcQrHNpdnbnunSjF3d7CUszqKnUpKDqz4zaTg+GW+sv2RTuLK3uaHRVLhWzbt8adVanLjGDfBZT4PhyIbsqjtjaEJ3FO40qMmknVdNal1RjFPC7yXbmLaSlVhfcYQwoufGpKfW1JcHHB3rtbsT8Ucl5ox6vPsK7q0IynWs72pdV3rrTjShpcuqEE58IRXBL0ZJZb1nUpKThOm5RzpqJKcfRJJviQC62rcrb8aCq1FR6WC0avIw6Kk1jv4l/hK2pc0a9tGhVqUlODyoS0pvUkmxFiZqppzrGTcnMR1Sjcy0qUbKnTqRdOaqVm4y5pSrzlF+1NP2mp2dKdtXv+ks7isq13KpCVOnTnFwdOEecpLrizSR2Ft5pPxl4az+sP8AI3FpsvasbC4pzquVzOonTl02XGGmKa1Y4cVIibVMfqg3Y6w29akr+1uKDo1rRSSSdSEIPV5ylFJvOGkYaG2rilCNKvaXE60FjVbxjOjVaWFKMnJac9j5HP8AbdTa9kqbuLipFVXJR0VtfGKTecL0m62Ls7bU529WdaUqMpQlLNxlum2m8xx2dRednxG9vQnh8s5hI9sU7u5tadvKm6MrqpoqyhPX4vapuUm2/pyilHHFZkY77c1VKMqfjd61p8lTqUnCMo8YNpQTwmovg+ojm/W07uG0IULetUpqpGnGMYz0w1zeMv8AoXf4Bt795f8A3H/yRFn4YmaojKNzlnKfbFrVZ29J14uFZRSmn9dcHJeh8/abA0+7Vvc07aMLqWusm8vVrys8OJuDhMYnCkgAIAiPhM/Z0/WQ/ElxDfClPTs2b54qQ/E6WvzKfcccyVPPC5g+vHfwMvSR7V7zYiYXXlTF0se3PcUdUZHpt6Mqk4wgsym8JHTtmW8bajGlT4dc5fSnN833Ef3S2T0cOnmv0lReTnnGm/7skp8n4v4jN2vg25+GnX5z/kffM6YaezWIiN+rWQ0+81/0NvJJ4nU8hY5rtfuNwc63o2j01xJJ5hS8hdjf0n7/AMDyeFbLx9ojPlp5z20jvP0y6bTc3Lfznk1Ba2Gy1s+2ZC2TMNR8H3F8mYKz4PuKqy+n9nfM0fVQ+FFm1LKncUKlGp5lSLjLDw115T7U8P2F+zvmKPqofCjzbdsqlxb1KNOo6MpxwpR4vHWvQnyyuPEx6dY54I1c6lujtSzlKdpVVSD4/oqmicl6YS4N9zZutyd7LivcStLqP6SMZNS06JKUGlKE49vHn6DVUbPb9qujpp1aa4RaqUqsUvRqakvabfcvdW4o16l5dtKtNSxFSU5Zm05Sm1wz6Ee25NM0TvzTM+mNXWrGOcx8mlvP9pY+uh/6EZPCxnxi0xz0Sx361g2Fxu/dS23G7VPNuqkJa9dPzVR0t6c6ufDkXeEPYF1d1reVtT6RU4NN66cNMtSa86SFNdPEo5/pTExvU+zwQ2ZvBhYq8MLH6eny6uonW7tO4ja0o3T1XC1a3qUs+XJx4rn5OCCqjvGkkk+H/Mtv8xK9z1tBU6v+IJqetaMypy8jSs+a3155nO9nd5zT21Uq09OyOeF/zLP+Or8MSbbB/VLb1MPhRGfCPsS5u42ytqfSOnKbl5cIYUopLzms8mSrZFGULejCaxKFOMZLKeJKKysopXMTZpjPVE+SHL/CFGb2rTVN4qOFJQecYqOXkvPVxwe//DN4vtf/AD0/yMu+u719Wv43FtT1RhCnplrpRxODb5SkvQYtG8fZL+Zbf5j0RVminE06erpnlGMd3Q9nRmqNJVXmoqcVN5zmelauPXxyes027MbtW0fHM9PqlnLhLyc8OMXg3J4aoxMw4zqAAhAQrws/sup6yH4k1IV4Wf2XU9ZD4i9vzwS4OjJCRiCZpIeqMiSbp7Idep0s1+ipvL7Jz6or8WaLZNlO4qwpQ5y4t9UYrnJnWLG0hRpwpwWIwWPS31t+lmX4rt/At8Oifiq+kdfedI7y9uyWOJVvTpH3ZyoB8i1mq3h2h4vbzmvPl5Ee3U1z9nM5pk3m9+0ulrunHzKOY988+U/7Efcj7PwnZuBs8TPmq5z/AFH8feWRtV3fuYjSOS9yLHItciyUzTy8uSUj0bHsZXNzRoQWZVKkV/05zJ+7J4nLikstt4SWW23ySXWzsngz3Lna5u7lYrzjiEGuNGEuLcv+N8vQjhduRRTlV0OlBRjGK5RSXsSwZADNSAAAAAAAAAAAAAAAAAAAQrws/sup6yHxE1IV4Wf2XU9ZD4i9vzwS4MIxcmoxTcpNJJc5SbwkvSDqPgo3T1Px+4h5MXihGSxmS51cPq6l7We+uuKIzKG93P3G8Wt4yqS03FWKdTlLR2U0+xfiSL5PL679yN8DGu7Nau1zXXGZn3d6dou0Ru0zy7ND8nl9d/dRjq7u5i1Go4ycWk9KemTXB49BIgc/wOz/ALfv/q34u9+77OXvwTRbbd1Nt8W3TjlvtH+iWP71P+XE6gDR49zq87lz8EcP3qf8uJWl4IqWfLuajXZGEF/U6gCOPc6iN7A3MsbJqdKmpVV/vKj11F/DnhH2EkAOczM85AAEAAAAAAAAAAAAAAAAAAABqt49jwvbWrbTbiqi4SSy4yXFSx3m1BMTjnA5JszwSyVVO5rRlRjLLjTTUqi7G35qZ1ajSjCMYRSjGKSSSwoxSwkjKC1ddVeoAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/9k=" group-title="MEXICO",MX | AZTECA 7 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388743
+#EXTINF:-1 tvg-id="" tvg-name="MX | HBO XTREME HD" tvg-logo="https://www.montecable.com/img/senales/112-extremenew.png" group-title="MEXICO",MX | HBO XTREME HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388726
+#EXTINF:-1 tvg-id="" tvg-name="MX | HBO MUNDI HD" tvg-logo="https://149685581.v2.pressablecdn.com/wp-content/uploads/2021/12/5-HBO-Mundi.png" group-title="MEXICO",MX | HBO MUNDI HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388786
+#EXTINF:-1 tvg-id="" tvg-name="MX |* ADRENALINA FHD" tvg-logo="https://th.bing.com/th/id/OIP.HieO2g-dgqdid3vWjEddWQHaEK?rs=1&pid=ImgDetMain" group-title="MEXICO",MX |* ADRENALINA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388721
+#EXTINF:-1 tvg-id="" tvg-name="MX |* D PELICULA HD" tvg-logo="https://logos-world.net/wp-content/uploads/2023/04/De-Pelicula-HD-Logo-2012.png" group-title="MEXICO",MX |* D PELICULA HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388778
+#EXTINF:-1 tvg-id="" tvg-name="MX |* iSAT HD" tvg-logo="https://static.wikia.nocookie.net/tvweb/images/e/e3/Logo-Isat_1.png/revision/latest/scale-to-width-down/190?cb=20120207205500&path-prefix=es" group-title="MEXICO",MX |* iSAT HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388760
+#EXTINF:-1 tvg-id="" tvg-name="MX |* CINEMAX FHD" tvg-logo="http://iptvglobal.site:25461/images/a812e3e495a235836a3c84569a6c340c.png" group-title="MEXICO",MX |* CINEMAX FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388780
+#EXTINF:-1 tvg-id="" tvg-name="E! ENTERTAINMENT" tvg-logo="http://51.222.43.170:36995/images/a01945d4b5c867d4b22c1ee08a7bc492.png" group-title="MEXICO",E! ENTERTAINMENT
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388685
+#EXTINF:-1 tvg-id="" tvg-name="BOOMERANG" tvg-logo="https://i.ibb.co/gDvrq4x/bom.png" group-title="MEXICO",BOOMERANG
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388680
+#EXTINF:-1 tvg-id="" tvg-name="UNICABLE HD" tvg-logo="https://i.picasion.com/pic92/bf8c44e7f3ea273cb0dea516674d5989.gif" group-title="MEXICO",UNICABLE HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388707
+#EXTINF:-1 tvg-id="" tvg-name="MX |* AXN SERIES HD" tvg-logo="http://iptvglobal.site:25461/images/24200e5458115164277932bc29676978.png" group-title="MEXICO",MX |* AXN SERIES HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388782
+#EXTINF:-1 tvg-id="" tvg-name="MX | LIFETIME HD" tvg-logo="http://iptvglobal.site:25461/images/98a2245eb8327ea202772dee3062f094.png" group-title="MEXICO",MX | LIFETIME HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388698
+#EXTINF:-1 tvg-id="" tvg-name="MX | GOLDEN EDGE HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/Golden_Edge_Logo_2020.png?20210427002447" group-title="MEXICO",MX | GOLDEN EDGE HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388694
+#EXTINF:-1 tvg-id="" tvg-name="MX |* A&E FHD" tvg-logo="http://iptvglobal.site:25461/images/d0c418b44f402f5c32ac988aa5c1d51b.png" group-title="MEXICO",MX |* A&E FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388789
+#EXTINF:-1 tvg-id="" tvg-name="MX | HBO PLUS HD" tvg-logo="https://i.picasion.com/pic92/1436d7cdb3ddce083d72548e774c2c32.gif" group-title="MEXICO",MX | HBO PLUS HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388717
+#EXTINF:-1 tvg-id="" tvg-name="MX |* SPACE HD" tvg-logo="https://i.picasion.com/pic92/aadf9024bd5c5072014c38c6bef2ae71.gif" group-title="MEXICO",MX |* SPACE HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388724
+#EXTINF:-1 tvg-id="" tvg-name="MX | CANAL DE LAS ESTRELLAS -2HRS HD" tvg-logo="https://i.ibb.co/4ZJyHjZ/Las-Estrellas-1-1.jpg" group-title="MEXICO",MX | CANAL DE LAS ESTRELLAS -2HRS HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388697
+#EXTINF:-1 tvg-id="" tvg-name="MX | TRUTV HD" tvg-logo="https://th.bing.com/th/id/R.c9fcf892f3eccb9c29465b0c9929d3cc?rik=cpjP2EvBqQLHng&riu=http%3a%2f%2ftelevision.com.ar%2fwp-content%2fuploads%2f2016%2f05%2ftrutv-730x300.jpg&ehk=XKjTBcJppB2XHmCy9wb5hAFN4c%2bapjA%2b53KnTUOoTOE%3d&risl=&pid=ImgRaw&r=0" group-title="MEXICO",MX | TRUTV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388706
+#EXTINF:-1 tvg-id="" tvg-name="MX | FX HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/FX-logo.svg/1200px-FX-logo.svg.png" group-title="MEXICO",MX | FX HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388692
+#EXTINF:-1 tvg-id="" tvg-name="MX |* UNIVERSAL CHANNEL HD" tvg-logo="http://iptvglobal.site:25461/images/24d2f10239dd67666baa2992ebc431d2.png" group-title="MEXICO",MX |* UNIVERSAL CHANNEL HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388788
+#EXTINF:-1 tvg-id="" tvg-name="MX |* ESTUDIO UNIVERSAL HD" tvg-logo="https://i.picasion.com/pic92/c95b572dc3ef1b0e464273ec25bd7523.gif" group-title="MEXICO",MX |* ESTUDIO UNIVERSAL HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388765
+#EXTINF:-1 tvg-id="" tvg-name="MX | HISTORY CHANNEL" tvg-logo="http://iptvglobal.site:25461/images/487fd6056faadb1d0eb127a0ed49d482.png" group-title="MEXICO",MX | HISTORY CHANNEL
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388695
+#EXTINF:-1 tvg-id="" tvg-name="MX |* CNN MEXICO" tvg-logo="http://iptvglobal.site:25461/images/7f074648c94db878c71f60fd2fb910a7.png" group-title="MEXICO",MX |* CNN MEXICO
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388772
+#EXTINF:-1 tvg-id="" tvg-name="HBO 2 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1471" group-title="⭐ CINE Y SERIES HD",HBO 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345637
+#EXTINF:-1 tvg-id="" tvg-name="MX | AZTECA UNO HD" tvg-logo="https://www.prensario.tv/images/galleries/141/71f97661d0a0ed09472d6264434e8617_750x400.jpg" group-title="MEXICO",MX | AZTECA UNO HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/332483
+#EXTINF:-1 tvg-id="" tvg-name="MX | BITME" tvg-logo="https://www.intelyx.mx/wp-content/uploads/2024/07/bitme.png" group-title="MEXICO",MX | BITME
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/327316
+#EXTINF:-1 tvg-id="" tvg-name="MX | TELEVISA PUEBLA" tvg-logo="https://archive.org/download/unnamed_20221014_2228/unnamed.png" group-title="MEXICO",MX | TELEVISA PUEBLA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/332531
+#EXTINF:-1 tvg-id="" tvg-name="MX | DISTRITO COMEDIA HD" tvg-logo="http://upload.wikimedia.org/wikipedia/commons/6/6b/DistritoComediaLOGO2018.png" group-title="MEXICO",MX | DISTRITO COMEDIA HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/332503
+#EXTINF:-1 tvg-id="" tvg-name="MX | Estrella TV" tvg-logo="https://archive.org/download/unnamed_20221014_2228/unnamed.png" group-title="MEXICO",MX | Estrella TV
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/332532
+#EXTINF:-1 tvg-id="" tvg-name="MX |* DISCOVERY H&H  HD" tvg-logo="https://i.picasion.com/pic92/faf10db51834b400896db671f832e689.gif" group-title="MEXICO",MX |* DISCOVERY H&H  HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388720
+#EXTINF:-1 tvg-id="" tvg-name="MX |* TUDN HD" tvg-logo="https://images.seeklogo.com/logo-png/36/2/tudn-logo-png_seeklogo-368749.png" group-title="MEXICO",MX |* TUDN HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388757
+#EXTINF:-1 tvg-id="" tvg-name="MX |* DISCOVERY THEATHER HD" tvg-logo="https://i.picasion.com/pic92/75e37e438d6803fe9b58acec81ba18ce.gif" group-title="MEXICO",MX |* DISCOVERY THEATHER HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388739
+#EXTINF:-1 tvg-id="" tvg-name="MX | CINEMAX" tvg-logo="https://i.picasion.com/pic92/11f3ea49958c10318513030f69fa2bee.gif" group-title="MEXICO",MX | CINEMAX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388683
+#EXTINF:-1 tvg-id="" tvg-name="MX |* TLC FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TLC_Logo.svg/1024px-TLC_Logo.svg.png" group-title="MEXICO",MX |* TLC FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388722
+#EXTINF:-1 tvg-id="" tvg-name="MX | ESPN 2 HD" tvg-logo="http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/640px-ESPN2_logo.svg.png" group-title="MEXICO",MX | ESPN 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388687
+#EXTINF:-1 tvg-id="" tvg-name="MX |* ESPN 2  HD" tvg-logo="http://iptvglobal.site:25461/images/a21cb6bf54b6fad9d29ee4ac6a91f508.png" group-title="MEXICO",MX |* ESPN 2  HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388777
+#EXTINF:-1 tvg-id="" tvg-name="MX |* TCM HD" tvg-logo="http://iptvglobal.site:25461/images/35ea90f53b9ab170a70143cd66830ac8.png" group-title="MEXICO",MX |* TCM HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388771
+#EXTINF:-1 tvg-id="" tvg-name="MX |* HBO SIGNATURE HD" tvg-logo="https://i.picasion.com/pic92/6c519615d610fb60cabc7b69db5cf0ae.gif" group-title="MEXICO",MX |* HBO SIGNATURE HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388761
+#EXTINF:-1 tvg-id="" tvg-name="MX | FOX SPORTS HD" tvg-logo="http://i.ibb.co/grbk6p1/FOX-Sports.png" group-title="MEXICO",MX | FOX SPORTS HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388690
+#EXTINF:-1 tvg-id="" tvg-name="MX |* UNICABLE FHD" tvg-logo="http://miarea.vip:8080/images/b5cdf0105b2a4721257e6b1011f4ce06.png" group-title="MEXICO",MX |* UNICABLE FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388753
+#EXTINF:-1 tvg-id="" tvg-name="MX | CANAL 5" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Canal_5_Mexico_logo_2014.svg/1200px-Canal_5_Mexico_logo_2014.svg.png" group-title="MEXICO",MX | CANAL 5
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388681
+#EXTINF:-1 tvg-id="" tvg-name="MX |* DISCOVERY TURBO HD" tvg-logo="http://iptvglobal.site:25461/images/9b6403d83a5ede6615d4f08bb03e3939.png" group-title="MEXICO",MX |* DISCOVERY TURBO HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388779
+#EXTINF:-1 tvg-id="" tvg-name="MX |* E ENTERTAINMENT HD" tvg-logo="http://iptvglobal.site:25461/images/1925294ef4492da4b990901ebab5396e.png" group-title="MEXICO",MX |* E ENTERTAINMENT HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388736
+#EXTINF:-1 tvg-id="" tvg-name="SONY HD" tvg-logo="http://iptvglobal.site:25461/images/9ae2767f15b15da469c307585dd350c0.png" group-title="MEXICO",SONY HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388701
+#EXTINF:-1 tvg-id="" tvg-name="HD | ESPN 1 COL" tvg-logo="https://go4.pw/AMERICA/USA/ESPN.png" group-title="⚽ DEPORTES ʜᴅ",HD | ESPN 1 COL
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/74
+#EXTINF:-1 tvg-id="" tvg-name="SPACE HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/SpaceLogo.svg/1024px-SpaceLogo.svg.png" group-title="MEXICO",SPACE HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388702
+#EXTINF:-1 tvg-id="" tvg-name="MX |* BANDAMAX FHD" tvg-logo="http://iptvglobal.site:25461/images/a2d4b314096c4986c95cab9bafbcafc6.png" group-title="MEXICO",MX |* BANDAMAX FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388781
+#EXTINF:-1 tvg-id="" tvg-name="MX | Las Estrellas" tvg-logo="https://i.ibb.co/4ZJyHjZ/Las-Estrellas-1-1.jpg" group-title="MEXICO",MX | Las Estrellas
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/332679
+#EXTINF:-1 tvg-id="" tvg-name="Dep | EUROSPORT 2 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1756" group-title="⚽ DEPORTES +3Mbps",Dep | EUROSPORT 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345266
+#EXTINF:-1 tvg-id="" tvg-name="MX |* FOX SPORTS  1 HD" tvg-logo="http://iptvglobal.site:25461/images/500cf40a8e8c37cbcc81a66265dc06d0.png" group-title="MEXICO",MX |* FOX SPORTS  1 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388732
+#EXTINF:-1 tvg-id="" tvg-name="MX |* TRUTV HD" tvg-logo="http://iptvglobal.site:25461/images/580af8efe7a11b4eadef44837260a3c6.png" group-title="MEXICO",MX |* TRUTV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388784
+#EXTINF:-1 tvg-id="" tvg-name="MX |* HBO PLUS HD" tvg-logo="https://i.picasion.com/pic92/1436d7cdb3ddce083d72548e774c2c32.gif" group-title="MEXICO",MX |* HBO PLUS HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388763
+#EXTINF:-1 tvg-id="" tvg-name="MX |* ESPN 3 HD" tvg-logo="http://iptvglobal.site:25461/images/6db6ffc04eb02e7cfdf49291aced4303.png" group-title="MEXICO",MX |* ESPN 3 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388776
+#EXTINF:-1 tvg-id="" tvg-name="MX |* GOLDEN EDGE FHD" tvg-logo="http://iptvglobal.site:25461/images/0a9b25d270cabbe211b365d409ca0b22.png" group-title="MEXICO",MX |* GOLDEN EDGE FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388787
+#EXTINF:-1 tvg-id="" tvg-name="MX | * H2 MEXICO" tvg-logo="https://i.picasion.com/pic92/922153f65537df6fe62f9e56fb591f4b.gif" group-title="MEXICO",MX | * H2 MEXICO
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388725
+#EXTINF:-1 tvg-id="" tvg-name="MX | NICKTOONS HD" tvg-logo="https://i.picasion.com/pic92/e97183af8daaa012b02156e14d1ddecf.gif" group-title="MEXICO",MX | NICKTOONS HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388759
+#EXTINF:-1 tvg-id="" tvg-name="MX |* TNT HD" tvg-logo="https://i.picasion.com/pic92/5c05d3754f57cf1b6a92ec6af44d4685.gif" group-title="MEXICO",MX |* TNT HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388755
+#EXTINF:-1 tvg-id="" tvg-name="MX |* DISCOVERY TLC FHD" tvg-logo="http://iptvglobal.site:25461/images/7d951053ef3ae3ccb9a8efd2f12e1394.png" group-title="MEXICO",MX |* DISCOVERY TLC FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388756
+#EXTINF:-1 tvg-id="" tvg-name="MX |* SONY FHD" tvg-logo="http://iptvglobal.site:25461/images/3a09d1427a58ffd09192b85a563d91c9.png" group-title="MEXICO",MX |* SONY FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/388785
+#EXTINF:-1 tvg-id="" tvg-name="MX | ZONA TUDN" tvg-logo="https://sc.dish.com/shared/images/station-logos/ZONAT.png" group-title="MEXICO",MX | ZONA TUDN
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1366501
+#EXTINF:-1 tvg-id="" tvg-name="MX | TELERITMO" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/07/Teleritmo2021.jpg/revision/latest?cb=20220412191241" group-title="MEXICO",MX | TELERITMO
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/855261
+#EXTINF:-1 tvg-id="" tvg-name="MX | AZTECA UNO OP2" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/8e/Azteca_Uno_%282020%29.svg/revision/latest/scale-to-width-down/300?cb=20210425072901" group-title="MEXICO",MX | AZTECA UNO OP2
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/855263
+#EXTINF:-1 tvg-id="" tvg-name="MX | CANAL 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/34/XHGTV.png" group-title="MEXICO",MX | CANAL 4
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1357676
+#EXTINF:-1 tvg-id="" tvg-name="MX | AZTECA INTERNACIONAL" tvg-logo="https://digitalcontent.prensariozone.com/wp-content/uploads/2021/10/Azteca_logo_trans_516x287.png" group-title="MEXICO",MX | AZTECA INTERNACIONAL
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/846076
+#EXTINF:-1 tvg-id="" tvg-name="MX | MULTIMEDIOS CANAL 6 GUADALAJARA" tvg-logo="https://archive.org/download/642px-multimedios-canal-seis-logo.svg/642px-Multimedios_Canal_Seis_Logo.svg.png" group-title="MEXICO",MX | MULTIMEDIOS CANAL 6 GUADALAJARA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/855260
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | AMC FHD" tvg-logo="https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/CO/210.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | AMC FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/126
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | AXN FHD" tvg-logo="https://go4.pw/LATINO/AXNTV.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | AXN FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/778651
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | AZ-CINEMA FHD" tvg-logo="https://asatlinkpr.compradish.com/sites/compradish.com/pages/images/logo-ch-azteca-cinema.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | AZ-CINEMA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/331594
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | CINECANAL FHD" tvg-logo="https://go4.pw/LATINO/MEXICO/cienecanal.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | CINECANAL FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/772989
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | CINE DINAMITA FHD" tvg-logo="https://www.newslinereport.com/online/nota_cinema-dinamita-llega-a-la-plataforma-xfinity-tv-de-comcast.jpg" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | CINE DINAMITA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/511176
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | CINE LATINO FHD" tvg-logo="https://go4.pw/LATINO/cine latino.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | CINE LATINO FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/331591
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | CINEMA +" tvg-logo="https://images.seeklogo.com/logo-png/49/2/canal-cinema-logo-png_seeklogo-491970.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES | CINEMA +
+http://190.232.196.93:8000/play/a05w/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | CINE MARVEL FHD" tvg-logo="https://www.freepnglogos.com/uploads/marvel-logo-png/image-marvel-studios-logo-disney-wiki-18.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | CINE MARVEL FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/332123
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | CINEMAX FHD" tvg-logo="https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/CO/509.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | CINEMAX FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/129
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | CINE MEXICANO FHD" tvg-logo="https://assets.cdn.olympusat.com/wp-content/uploads/2017/02/CineMexicano_Logo.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | CINE MEXICANO FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/780792
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | FREE TV SUREÑO FHD" tvg-logo="https://redge.media/uploads/gradient_on_light_ec3a48812f.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | FREE TV SUREÑO FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/342884
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | CLARO CINEMA FHD" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/885/CH_LOGO/160/160/0/0/213917850797501.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | CLARO CINEMA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422378
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES |  DE PELICULA FHD" tvg-logo="https://go4.pw/LATINO/MEXICO/DPel%20cula_Plus.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES |  DE PELICULA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/327374
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | DE PELICULA PLUS FHD" tvg-logo="https://1000marcas.net/wp-content/uploads/2022/01/De-Pelicula-Plus-Logo-2017.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | DE PELICULA PLUS FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/327376
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | DHE FHD" tvg-logo="https://www.prensario.net/Multimedios/imgs/38037_750.PNG" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | DHE FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/131
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | EUROCHANNEL FHD" tvg-logo="https://th.bing.com/th/id/OIP.9vQJCRgOi1HryrV6iQ-giwHaCN?pid=ImgDet&rs=1" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | EUROCHANNEL FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/838250
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | EUROPA EUROPA FHD" tvg-logo="https://th.bing.com/th/id/R.53c404d9ff6d9b48461191d966fb8afe?rik=9Q8bSbidk7BJkg&riu=http%3a%2f%2ftelevision.com.ar%2fwp-content%2fuploads%2f2016%2f06%2feuropalogo.jpg&ehk=9NXX4ygZodGw8Ox3awTqiJMwB8fQMUVSQYjF4z4ok5I%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | EUROPA EUROPA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/838249
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | FX FHD" tvg-logo="https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/CO/217.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | FX FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/124
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | GOLDEN EDGE FHD" tvg-logo="https://go4.pw/Mexico/edge.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | GOLDEN EDGE FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/134
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | GOLDEN FHD" tvg-logo="https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/CO/503.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | GOLDEN FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/133
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | GOLDEN PLUS FHD" tvg-logo="https://go4.pw/LATINO/MEXICO/GOLDEN.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | GOLDEN PLUS FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/135
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | GOLDEN PREMIER 2 FHD" tvg-logo="https://go4.pw/LATINO/MEXICO/GOLDEN.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | GOLDEN PREMIER 2 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1399235
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | GOLDEN PREMIER FHD" tvg-logo="https://cdn.storage.foromedios.com/monthly_2022_11/large.large.1689826971_GoldenPremier2020.png.55867f88ed97ec1141ed81ba0f75a494.png.926c708c6f8ba665429c99b39b760a32.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | GOLDEN PREMIER FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/137
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES |  HBO 2 FHD" tvg-logo="https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/CO/1525.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES |  HBO 2 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/87726
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | HBO 2 WEST FHD" tvg-logo="https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/CO/1525.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | HBO 2 WEST FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/140
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | HBO EXTREME FHD" tvg-logo="https://www.codice.tv/wp-content/uploads/2022/04/hbo-xtreme1.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | HBO EXTREME FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/349873
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | HBO FAMILY FHD" tvg-logo="https://go4.pw/usa/HBO_Family_East_HD.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | HBO FAMILY FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/349869
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | HBO FHD" tvg-logo="https://1000marcas.net/wp-content/uploads/2020/01/HBO-logo-1.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | HBO FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/138
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | HBO MUNDI FHD" tvg-logo="https://archive.org/download/logo.brootv_hbo/HBO_MUNDI.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | HBO MUNDI FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/349870
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | HBO PLUS FHD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/f9/Logohboplus2019.svg/revision/latest/scale-to-width-down/1000?cb=20200122002249&path-prefix=es" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | HBO PLUS FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/349871
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | HBO POP FHD" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhux9A5Ndss9srav2M7LBo0str36oCSzlmPELBmQ0_HT9-zl-D_XGWHVkSKOumpMnE5x5Gb5dijT2afmSO77CAiYjDIbCrYrTOVfBCV-2BU1gXnfoypkNm1qQLmHBMltwl-PnmfC-K5UVoxDJUAGSxVvU1PBEbaf9XDHv2Aro6HbjA3ZDU4j_8rQQ2/s1600/hbo-pop.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | HBO POP FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/349868
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | HBO SIGNATURE FHD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/9/9f/HBO_Signature_2012.png/revision/latest?cb=20151009181232&path-prefix=es" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | HBO SIGNATURE FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/349872
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | A3 SERIES" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/742/CH_LOGO/160/160/0/0/663841360790898.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | A3 SERIES
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422385
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | AMC" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/561/CH_LOGO/160/160/0/0/672311760790653.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | AMC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422386
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | AXN" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/813/CH_LOGO/160/160/0/0/561493290772534.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | AXN
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422387
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | AZ CINEMA" tvg-logo="https://americancable.ec/wp-content/uploads/2021/09/40-logo-azcinema.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | AZ CINEMA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422388
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | CINECANAL" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/564/CH_LOGO/160/160/0/0/510548440716435.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | CINECANAL
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422389
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | CINE FAMILIAR" tvg-logo="https://i.vimeocdn.com/video/1805384875-cf73b73bd6792b04d49146e0901764d40baee49d8be688930d94fedc58ef5445-d_640?f=webp" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | CINE FAMILIAR
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422430
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | CINE HISPANO" tvg-logo="https://i.vimeocdn.com/video/1805386680-16b76e008e4748c644da30c0d8d4a2bf69a759c89c3fdde4d733953429dcd92e-d_640?f=webp" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | CINE HISPANO
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422431
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | CINE LATINO" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/209/CH_LOGO/160/160/0/0/481702750715296.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | CINE LATINO
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422391
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | CINEMAX" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/565/CH_LOGO/160/160/0/0/834008940716794.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | CINEMAX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422392
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | CINE PREMIUM" tvg-logo="https://mediaplan.com.gt/wp-content/uploads/2021/02/cinepremium.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | CINE PREMIUM
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/780569
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | DHE" tvg-logo="https://go4.pw/LATINO/DHE.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | DHE
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422395
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | EUROPA" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/610/CH_LOGO/160/160/0/0/139444140727741.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | EUROPA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422397
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | FX" tvg-logo="https://go4.pw/LATINO/MEXICO/FX.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | FX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422402
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | HBO" tvg-logo="https://go4.pw/LATINO/HBOTV.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | HBO
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422403
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | HBO 2" tvg-logo="https://logodix.com/logo/1265680.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | HBO 2
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422404
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | HBO FAMILY" tvg-logo="https://go4.pw/usa/HBO_Family_East_HD.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | HBO FAMILY
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422405
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | HBO MUNDI" tvg-logo="https://archive.org/download/logo.brootv_hbo/HBO_MUNDI.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | HBO MUNDI
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422406
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | HBO PLUS" tvg-logo="https://cdn.storage.foromedios.com/monthly_2022_12/large.small.1604084289_HBO.png.58efe620b615781b29d0423ed9536326.png.98032fd4b7f214c9b6e1ce668515bcaa.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | HBO PLUS
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422407
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | HBO POP" tvg-logo="https://i.ytimg.com/vi/vOjlNHFQgTc/maxresdefault.jpg" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | HBO POP
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422408
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | HBO SIGNATURE" tvg-logo="https://www.tvchinese.net/uploads/tv/hbosignature.jpg" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | HBO SIGNATURE
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422409
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | HBO XTREME" tvg-logo="https://iili.io/HvUnRDJ.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | HBO XTREME
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422410
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | MULTIPREMIER" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/216/CH_LOGO/160/160/0/0/164308500718169.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | MULTIPREMIER
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422411
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | PARAMOUNT" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/543/CH_LOGO/160/160/0/0/784444190791029.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | PARAMOUNT
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422413
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | SONY" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/613/CH_LOGO/160/160/0/0/598750610719385.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | SONY
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422414
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | SPACE" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/602/CH_LOGO/160/160/0/0/490552050760801.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | SPACE
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422415
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | STAR CHANNEL" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/604/CH_LOGO/160/160/0/0/555712060715688.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | STAR CHANNEL
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422416
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | STUDIO UNIVERSAL" tvg-logo="https://go4.pw/LATINO/Studio-Universal.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | STUDIO UNIVERSAL
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422418
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | TNT" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/601/CH_LOGO/160/160/0/0/239979240719384.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | TNT
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422419
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | TNT NOVELAS" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/606/CH_LOGO/160/160/0/0/1348700007140026.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | TNT NOVELAS
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422420
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | TNT SERIES" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/603/CH_LOGO/160/160/0/0/7961086907107366.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | TNT SERIES
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422421
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | ULTRA CINE" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdK4atig_Rq5lhmp6gWB08NAaTGC0oeUGbWw&s" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | ULTRA CINE
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422946
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | ULTRA CLASICO" tvg-logo="https://assets.cdn.blog.olympusat.com/wp-content/uploads/2020/09/Ultra_clasico_Logo.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | ULTRA CLASICO
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422945
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | ULTRA DOCU" tvg-logo="https://assets.cdn.blog.olympusat.com/wp-content/uploads/2020/09/Ultra_Docu_Logo.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | ULTRA DOCU
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422944
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | ULTRA FAMILIA" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmAG3SgcM3sp8oEiBRUIy2HmPhesIEHeY9pQ&s" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | ULTRA FAMILIA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422943
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | ULTRA KIDS" tvg-logo="https://assets.cdn.olympusat.com/wp-content/uploads/UltraKidz_NLogo.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | ULTRA KIDS
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422942
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | ULTRA MACHO" tvg-logo="https://assets.cdn.blog.olympusat.com/wp-content/uploads/2020/04/Logo-Ultra-Macho.jpg" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | ULTRA MACHO
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422940
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | ULTRA MEX" tvg-logo="https://assets.cdn.blog.olympusat.com/wp-content/uploads/2020/11/Ultra-Mex-Logo.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | ULTRA MEX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422941
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | UNIVERSAL CINEMA" tvg-logo="https://cdn.storage.foromedios.com/monthly_2022_03/small.1414587199_UniversalCinema-Claro.png.a88ebacac50bab493289c33a1afef121.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | UNIVERSAL CINEMA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422422
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | UNIVERSAL COMEDY" tvg-logo="https://cdn.storage.foromedios.com/monthly_2022_03/small.1490211344_UniversalComedy-Claro.png.403056024faa978a626240351fc1686e.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | UNIVERSAL COMEDY
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422423
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | UNIVERSAL CRIME" tvg-logo="https://cdn.storage.foromedios.com/monthly_2022_03/large.701883225_UniversalCrime-Claro.png.4aae93a0b99c367cbf5a8009be92aa7d.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | UNIVERSAL CRIME
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422424
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | UNIVERSAL PREMIERE" tvg-logo="https://cdn.storage.foromedios.com/monthly_2022_03/large.1316118004_UniversalPremiere-Claro.png.dd093e77a73e1cc71ccb2e3b7983d187.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | UNIVERSAL PREMIERE
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422425
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | UNIVERSAL REALITY" tvg-logo="https://cdn.storage.foromedios.com/monthly_2022_03/large.1365450986_UniversalReality-Claro.png.4b8fc78cff89969ea5a888a779654e44.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | UNIVERSAL REALITY
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422426
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | UNIVERSAL TV" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/612/CH_LOGO/160/160/0/0/607883050716799.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | UNIVERSAL TV
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422427
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES HD | WARNER" tvg-logo="https://edge.prod.ovp.ses.com:9002/images/622/CH_LOGO/160/160/0/0/610861530716213.png" group-title="⭐ CINE Y SERIES HD",CINE Y SERIES HD | WARNER
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1422428
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | MOVISTAR ACCION FHD" tvg-logo="https://go4.pw/SPAIN/AC.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | MOVISTAR ACCION FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/491901
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | MOVISTAR COMEDIA FHD" tvg-logo="https://go4.pw/SPAIN/CO.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | MOVISTAR COMEDIA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/478804
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | MOVISTAR DRAMA FHD" tvg-logo="https://go4.pw/EUROPE/SPAIN/M.DRAMA.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | MOVISTAR DRAMA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/478803
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | MULTIPREMIER FHD" tvg-logo="https://th.bing.com/th/id/R.6f0172ed5e1f71a90df9480089306348?rik=WjPZ9PJLc23zaQ&pid=ImgRaw&r=0" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | MULTIPREMIER FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/838251
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | PARAMOUNT FHD" tvg-logo="https://go4.pw/USA/SD/11.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | PARAMOUNT FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/349866
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | SONY MOVIES FHD" tvg-logo="https://go4.pw/AMERICA/USA/SONYMOVIESHD.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | SONY MOVIES FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/150
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | SPACE EAST FHD" tvg-logo="https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/CO/518.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | SPACE EAST FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/152
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | SPACE FHD" tvg-logo="https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/CO/1518.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | SPACE FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/61858
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | STAR CHANNEL FHD" tvg-logo="https://elcomercio.pe/resizer/3aspnZC__0mIEzEVI7-AwYPTXro=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/KMAWWZJ7NBF2DNBSD5XW6X2BFU.jpg" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | STAR CHANNEL FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/153
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | STARZ ENCORE CINEMA FHD" tvg-logo="https://images.seeklogo.com/logo-png/45/1/starz-cinema-logo-png_seeklogo-452970.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | STARZ ENCORE CINEMA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/160
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | STARZ ENCORE CLASSIC FHD" tvg-logo="https://go4.pw/AMERICA/USA/STARZ.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | STARZ ENCORE CLASSIC FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/161
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | STARZ ENCORE FAMILY & KIDS FHD" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/starz-encore-family.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | STARZ ENCORE FAMILY & KIDS FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/164
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | STARZ ENCORE WESTERN FHD" tvg-logo="https://go4.pw/AMERICA/USA/STARZ.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | STARZ ENCORE WESTERN FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/165
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | STARZ FHD" tvg-logo="https://go4.pw/AMERICA/USA/STARZ.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | STARZ FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/163
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | STARZ WEST FHD" tvg-logo="https://go4.pw/AMERICA/USA/STARZ.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | STARZ WEST FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/516035
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | STUDIO UNIVERSAL FHD" tvg-logo="https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/CO/508.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | STUDIO UNIVERSAL FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/167
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | SYFY FHD" tvg-logo="https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/CO/219.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | SYFY FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/331592
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | TBS FHD" tvg-logo="https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/CO/216.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | TBS FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/331614
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | TCM FHD" tvg-logo="https://go4.pw/LATINO/TCM.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | TCM FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/168
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | TNT FHD" tvg-logo="https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/CO/1502.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | TNT FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/169
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | TNT SERIES FHD" tvg-logo="https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/CO/213.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | TNT SERIES FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/170
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | UNIVERSAL CINEMA FHD" tvg-logo="https://www.universalplus.com/files/channels/731381553.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | UNIVERSAL CINEMA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/351494
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | UNIVERSAL COMEDY FHD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/eb/Universal_Comedy_2021.png/revision/latest?cb=20220102015318&path-prefix=es" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | UNIVERSAL COMEDY FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/351490
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | UNIVERSAL CRIME ESTE FHD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/03/Universal_Crime_2021.png/revision/latest?cb=20220102014712&path-prefix=es" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | UNIVERSAL CRIME ESTE FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/351491
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | UNIVERSAL PREMIER FHD" tvg-logo="https://go4.pw/LATINO/MEXICO/UNIVERSAL.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | UNIVERSAL PREMIER FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/349882
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | UNIVERSAL REALITY FHD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/f9/Universal_Reality_2021.png/revision/latest?cb=20220102015650&path-prefix=es" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | UNIVERSAL REALITY FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/351493
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | UNIVERSAL TV FHD" tvg-logo="https://logos.xbots.com.mx/57.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | UNIVERSAL TV FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/171
+#EXTINF:-1 tvg-id="" tvg-name="CINE Y SERIES | WARNER CHANNEL FHD" tvg-logo="https://cdn.mitvstatic.com/channels/mx_warner-hd_m.png" group-title="⭐ CINE Y SERIES FHD",CINE Y SERIES | WARNER CHANNEL FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/349867
+#EXTINF:-1 tvg-id="" tvg-name="CULTURA | A&E HD" tvg-logo="https://1000marcas.net/wp-content/uploads/2021/04/AE-logo-2-1-500x250.png" group-title="⭐ CINE Y SERIES HD",CULTURA | A&E HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/214
+#EXTINF:-1 tvg-id="" tvg-name="DHD | BEIN SPORTS  EXTRA USA" tvg-logo="https://ia800809.us.archive.org/25/items/BeinSportsUsaHd/bein%20sports%20usa%20hd.png" group-title="⚽ DEPORTES ʜᴅ",DHD | BEIN SPORTS  EXTRA USA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/64
+#EXTINF:-1 tvg-id="" tvg-name="DHD | BEIN SPORTS Ñ" tvg-logo="http://easytv.mx/wp-content/uploads/tv-logos/DEPORTES/beinsportn.png" group-title="⚽ DEPORTES ʜᴅ",DHD | BEIN SPORTS Ñ
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/61847
+#EXTINF:-1 tvg-id="" tvg-name="DHD | BEIN SPORTS XTRA" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/b5/XTRA_2.png/revision/latest?cb=20201108180658" group-title="⚽ DEPORTES ʜᴅ",DHD | BEIN SPORTS XTRA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/65
+#EXTINF:-1 tvg-id="" tvg-name="DHD | CBS SPORTS GOLAZO" tvg-logo="https://go4.pw/usa/Cbs_Sports_Golazo_Network_Hd.png" group-title="⚽ DEPORTES ʜᴅ",DHD | CBS SPORTS GOLAZO
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1446705
+#EXTINF:-1 tvg-id="" tvg-name="DHD | CBS SPORTS NETWORK" tvg-logo="https://i.imgur.com/tDJ93be.png" group-title="⚽ DEPORTES ʜᴅ",DHD | CBS SPORTS NETWORK
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/875899
+#EXTINF:-1 tvg-id="" tvg-name="DHD | CLARO SPORTS 1" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/claro_sports-mediano.png" group-title="⚽ DEPORTES ʜᴅ",DHD | CLARO SPORTS 1
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/66
+#EXTINF:-1 tvg-id="" tvg-name="DHD | D@ZN_ITALIAT_1" tvg-logo="https://i.ibb.co/fGMFyCtB/Whats-App-Image-2026-02-20-at-01-26-25.jpg" group-title="⚽ DEPORTES ʜᴅ",DHD | D@ZN_ITALIAT_1
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/507089
+#EXTINF:-1 tvg-id="" tvg-name="ARG | Directv Sports 1 HD" tvg-logo="https://go4.pw/LATINO/DIRECTTVSPORTS.png" group-title="⚽ DEPORTES ʜᴅ",ARG | Directv Sports 1 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/625589
+#EXTINF:-1 tvg-id="" tvg-name="DHD | DIRECTV SPORTS +" tvg-logo="https://go4.pw/LATINO/DIRECTTVSPORTS.png" group-title="⚽ DEPORTES ʜᴅ",DHD | DIRECTV SPORTS +
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/69
+#EXTINF:-1 tvg-id="" tvg-name="DHD | DIRECTV SPORTS 2" tvg-logo="https://go4.pw/LATINO/DIRECTTVSPORTS.png" group-title="⚽ DEPORTES ʜᴅ",DHD | DIRECTV SPORTS 2
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/72
+#EXTINF:-1 tvg-id="" tvg-name="DHD | EL CANAL DEL FUTBOL" tvg-logo="https://go4.pw/LATINO/futbol.png" group-title="⚽ DEPORTES ʜᴅ",DHD | EL CANAL DEL FUTBOL
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/478703
+#EXTINF:-1 tvg-id="" tvg-name="DHD | D@ZN_PT_1" tvg-logo="https://i.ibb.co/fGMFyCtB/Whats-App-Image-2026-02-20-at-01-26-25.jpg" group-title="⚽ DEPORTES ʜᴅ",DHD | D@ZN_PT_1
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/491393
+#EXTINF:-1 tvg-id="" tvg-name="DHD | D@ZN_PT_2" tvg-logo="https://i.ibb.co/0wDpYWC/Whats-App-Image-2026-02-20-at-01-29-12.jpg" group-title="⚽ DEPORTES ʜᴅ",DHD | D@ZN_PT_2
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/491394
+#EXTINF:-1 tvg-id="" tvg-name="DHD | D@ZN_PT_3" tvg-logo="https://i.ibb.co/wNx0H5Vn/Whats-App-Image-2026-02-20-at-01-28-51.jpg" group-title="⚽ DEPORTES ʜᴅ",DHD | D@ZN_PT_3
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/491395
+#EXTINF:-1 tvg-id="" tvg-name="DHD | D@ZN_PT_4" tvg-logo="https://i.ibb.co/RryBDdX/Whats-App-Image-2026-02-20-at-01-28-31.jpg" group-title="⚽ DEPORTES ʜᴅ",DHD | D@ZN_PT_4
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/634170
+#EXTINF:-1 tvg-id="" tvg-name="DHD | D@ZN_PT_5" tvg-logo="https://i.ibb.co/B28QpjDk/Whats-App-Image-2026-02-20-at-01-29-45.jpg" group-title="⚽ DEPORTES ʜᴅ",DHD | D@ZN_PT_5
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/491397
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 1 ARG" tvg-logo="https://go4.pw/AMERICA/USA/ESPN.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 1 ARG
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/73
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 1 BR" tvg-logo="https://go4.pw/AMERICA/USA/ESPN.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 1 BR
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1395516
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 1 CHI" tvg-logo="https://go4.pw/AMERICA/USA/ESPN.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 1 CHI
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/496558
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 1 MX" tvg-logo="https://go4.pw/AMERICA/USA/ESPN.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 1 MX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/75
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 1 USA" tvg-logo="https://go4.pw/AMERICA/USA/ESPN.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 1 USA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/55628
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 2 ARG" tvg-logo="https://go4.pw/LATINO/ESPN2.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 2 ARG
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/61875
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 2 BRA" tvg-logo="https://go4.pw/AMERICA/BRASIL/ESPN-1.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 2 BRA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/496559
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 2 COL" tvg-logo="https://go4.pw/LATINO/ESPN2.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 2 COL
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/78
+#EXTINF:-1 tvg-id="" tvg-name="DHD |  ESPN 2 MX" tvg-logo="https://go4.pw/Mexico/espn2.png" group-title="⚽ DEPORTES ʜᴅ",DHD |  ESPN 2 MX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/61876
+#EXTINF:-1 tvg-id="" tvg-name="DHD |  ESPN 2 USA" tvg-logo="https://go4.pw/AMERICA/USA/ESPN.png" group-title="⚽ DEPORTES ʜᴅ",DHD |  ESPN 2 USA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/61885
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 3 ARG" tvg-logo="https://go4.pw/LATINO/ESPN3.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 3 ARG
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/61880
+#EXTINF:-1 tvg-id="" tvg-name="DHD |  ESPN 3 COL" tvg-logo="https://go4.pw/LATINO/MEXICO/ESPN3.png" group-title="⚽ DEPORTES ʜᴅ",DHD |  ESPN 3 COL
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/80
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 3 MX" tvg-logo="https://go4.pw/LATINO/MEXICO/ESPN3.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 3 MX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/81
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 4 ARG" tvg-logo="https://go4.pw/EUROPE/GERMANY/ESPN_4_.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 4 ARG
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/61884
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 4 MX" tvg-logo="https://go4.pw/EUROPE/GERMANY/ESPN_4_.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 4 MX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/83
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 5 ARG" tvg-logo="https://go4.pw/AMERICA/USA/ESPN.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 5 ARG
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/61883
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 5 BRA" tvg-logo="https://go4.pw/AMERICA/BRASIL/ESPN-1.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 5 BRA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/500830
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 6" tvg-logo="https://go4.pw/AUSTRALIA/espn.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 6
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/98
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 6 BRA" tvg-logo="https://go4.pw/AMERICA/BRASIL/ESPN-1.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 6 BRA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/496561
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN 7" tvg-logo="https://go4.pw/AUSTRALIA/espn.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN 7
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/94
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN DEPORTES USA" tvg-logo="https://a.espncdn.com/i/espn/networks_shows/radio/crops/500/espn_deportes_red.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN DEPORTES USA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/453
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN NEWS USA" tvg-logo="https://go4.pw/AMERICA/USA/ESPN.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN NEWS USA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/496563
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN PREMIUM ARG" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/5/5b/ESPN_Premium_%282022%29.svg/revision/latest/scale-to-width-down/200?cb=20220505041004" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN PREMIUM ARG
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/118058
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ESPN PREMIUM CH" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/5/5b/ESPN_Premium_%282022%29.svg/revision/latest/scale-to-width-down/200?cb=20220505041004" group-title="⚽ DEPORTES ʜᴅ",DHD | ESPN PREMIUM CH
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/89
+#EXTINF:-1 tvg-id="" tvg-name="DHD |  ESPN U USA" tvg-logo="https://espnpressroom.com/us/files/2020/07/ESPNU-1.png" group-title="⚽ DEPORTES ʜᴅ",DHD |  ESPN U USA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/353437
+#EXTINF:-1 tvg-id="" tvg-name="DHD | EUROSPORT 2" tvg-logo="https://go4.pw/EUROPE/FRANCE/EUROSPORT2HD.png" group-title="⚽ DEPORTES ʜᴅ",DHD | EUROSPORT 2
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/538498
+#EXTINF:-1 tvg-id="" tvg-name="DHD | EUROSPORTS 1" tvg-logo="https://go4.pw/EUROPE/FRANCE/EUROSPORT1HD.png" group-title="⚽ DEPORTES ʜᴅ",DHD | EUROSPORTS 1
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/85
+#EXTINF:-1 tvg-id="" tvg-name="DHD | FIGHT NETWORK" tvg-logo="https://go4.pw/EUROPE/EXYU/EXYO/FIGHTNETWORK-1.png" group-title="⚽ DEPORTES ʜᴅ",DHD | FIGHT NETWORK
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/86
+#EXTINF:-1 tvg-id="" tvg-name="DHD |  FOX DEPORTES USA" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/fox_deportes-mediano.png" group-title="⚽ DEPORTES ʜᴅ",DHD |  FOX DEPORTES USA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/332125
+#EXTINF:-1 tvg-id="" tvg-name="DHD |  FOX SOCCER PLUS USA" tvg-logo="http://xplatinmedia.com:8080/images/0e8cc25a24963c882eff468246000bf7.png" group-title="⚽ DEPORTES ʜᴅ",DHD |  FOX SOCCER PLUS USA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/332126
+#EXTINF:-1 tvg-id="" tvg-name="DHD | FOX SPORTS 1 ARG" tvg-logo="https://go4.pw/LATINO/MEXICO/foxsport1.png" group-title="⚽ DEPORTES ʜᴅ",DHD | FOX SPORTS 1 ARG
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/88
+#EXTINF:-1 tvg-id="" tvg-name="DHD | FOX SPORTS 1 MX" tvg-logo="https://go4.pw/LATINO/MEXICO/foxsport1.png" group-title="⚽ DEPORTES ʜᴅ",DHD | FOX SPORTS 1 MX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/91
+#EXTINF:-1 tvg-id="" tvg-name="DHD |  FOX SPORTS 1 USA" tvg-logo="https://go4.pw/EUROPE/GERMANY/FOX_Sports.png" group-title="⚽ DEPORTES ʜᴅ",DHD |  FOX SPORTS 1 USA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/332128
+#EXTINF:-1 tvg-id="" tvg-name="DHD | FOX SPORTS 2 ARG" tvg-logo="https://go4.pw/Mexico/fox2.png" group-title="⚽ DEPORTES ʜᴅ",DHD | FOX SPORTS 2 ARG
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/92
+#EXTINF:-1 tvg-id="" tvg-name="DHD |  FOX SPORTS 2 MX" tvg-logo="https://go4.pw/Mexico/fox2.png" group-title="⚽ DEPORTES ʜᴅ",DHD |  FOX SPORTS 2 MX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/95
+#EXTINF:-1 tvg-id="" tvg-name="DHD |  FOX SPORTS 2 USA" tvg-logo="https://go4.pw/LATINO/MEXICO/FOXSPORT2.png" group-title="⚽ DEPORTES ʜᴅ",DHD |  FOX SPORTS 2 USA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/332120
+#EXTINF:-1 tvg-id="" tvg-name="DHD | FOX SPORTS 3 ARG" tvg-logo="https://go4.pw/Mexico/fox3.png" group-title="⚽ DEPORTES ʜᴅ",DHD | FOX SPORTS 3 ARG
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/96
+#EXTINF:-1 tvg-id="" tvg-name="DHD |  FOX SPORTS 3 MX" tvg-logo="https://go4.pw/Mexico/fox3.png" group-title="⚽ DEPORTES ʜᴅ",DHD |  FOX SPORTS 3 MX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/99
+#EXTINF:-1 tvg-id="" tvg-name="DHD | FOX SPORTS PREMIUM MX" tvg-logo="https://go4.pw/Mexico/foxpremium.png" group-title="⚽ DEPORTES ʜᴅ",DHD | FOX SPORTS PREMIUM MX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/330826
+#EXTINF:-1 tvg-id="" tvg-name="DHD | GOLF CHANNEL LATAM" tvg-logo="https://go4.pw/AMERICA/USA/NBCGOLFCHANNEL.png" group-title="⚽ DEPORTES ʜᴅ",DHD | GOLF CHANNEL LATAM
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/68
+#EXTINF:-1 tvg-id="" tvg-name="DHD |  GOLF CHANNEL USA" tvg-logo="https://go4.pw/AMERICA/USA/NBCGOLFCHANNEL.png" group-title="⚽ DEPORTES ʜᴅ",DHD |  GOLF CHANNEL USA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/103
+#EXTINF:-1 tvg-id="" tvg-name="DHD | LA SEXTA" tvg-logo="https://go4.pw/EUROPE/SPAIN/LASEXTAHD.png" group-title="⚽ DEPORTES ʜᴅ",DHD | LA SEXTA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/538500
+#EXTINF:-1 tvg-id="" tvg-name="DHD | LONGHORN NETWORKT USA" tvg-logo="https://static.diceplatform.com/prod/original/dce.longhorns/section/home/LHN_Secondary.yPLbt.It3OS.png" group-title="⚽ DEPORTES ʜᴅ",DHD | LONGHORN NETWORKT USA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/560299
+#EXTINF:-1 tvg-id="" tvg-name="DHD | MARQUEE SPORTS NETWORK" tvg-logo="https://go4.pw/USA/marq.png" group-title="⚽ DEPORTES ʜᴅ",DHD | MARQUEE SPORTS NETWORK
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/348167
+#EXTINF:-1 tvg-id="" tvg-name="DHD | MEGA (CHIRINGUITO DE JUGONES)" tvg-logo="https://go4.pw/EUROPE/SPAIN/MEGAHD.png" group-title="⚽ DEPORTES ʜᴅ",DHD | MEGA (CHIRINGUITO DE JUGONES)
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/71429
+#EXTINF:-1 tvg-id="" tvg-name="DHD | MLB NETWORK" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=179" group-title="⚽ DEPORTES ʜᴅ",DHD | MLB NETWORK
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/55624
+#EXTINF:-1 tvg-id="" tvg-name="DHD | MOTORSPORT" tvg-logo="https://go4.pw/AUSTRALIA/Motorsport.png" group-title="⚽ DEPORTES ʜᴅ",DHD | MOTORSPORT
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/463635
+#EXTINF:-1 tvg-id="" tvg-name="DHD | MOVISTAR DEPORTES" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/9/99/Deportes_por_Movistar_Plus%2B.svg/revision/latest/scale-to-width-down/309?cb=20220123153347&path-prefix=es" group-title="⚽ DEPORTES ʜᴅ",DHD | MOVISTAR DEPORTES
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/104
+#EXTINF:-1 tvg-id="" tvg-name="DHD | MOVISTAR LIGA DE CAMPEONES" tvg-logo="https://go4.pw/SPAIN/LCAMPEON.png" group-title="⚽ DEPORTES ʜᴅ",DHD | MOVISTAR LIGA DE CAMPEONES
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/121
+#EXTINF:-1 tvg-id="" tvg-name="DHD | MOVISTAR + VAMOS" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/8e/Vamos_por_Movistar_Plus%2B.svg/revision/latest/scale-to-width-down/315?cb=20220123151045&path-prefix=es" group-title="⚽ DEPORTES ʜᴅ",DHD | MOVISTAR + VAMOS
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/501555
+#EXTINF:-1 tvg-id="" tvg-name="DHD | NBA TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPk8ohoa908QfwU1xhmVkJ7NlHzlumzXkFNXpKMmR3BJ_uou68MYOceejmur7EjwDHaw&usqp=CAU" group-title="⚽ DEPORTES ʜᴅ",DHD | NBA TV
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1371564
+#EXTINF:-1 tvg-id="" tvg-name="DHD | NBC UNIVERSO" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/universo-mediano.png" group-title="⚽ DEPORTES ʜᴅ",DHD | NBC UNIVERSO
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/26605
+#EXTINF:-1 tvg-id="" tvg-name="DHD | NFL NETWORK" tvg-logo="https://go4.pw/AMERICA/USA/NFLNETWORK.png" group-title="⚽ DEPORTES ʜᴅ",DHD | NFL NETWORK
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/55626
+#EXTINF:-1 tvg-id="" tvg-name="DHD | NHL Network" tvg-logo="https://go4.pw/CANADA/NHL_Network_HD.png" group-title="⚽ DEPORTES ʜᴅ",DHD | NHL Network
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/332677
+#EXTINF:-1 tvg-id="" tvg-name="DHD | REAL MADRID TV" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/real_madrid_tv-mediano.png" group-title="⚽ DEPORTES ʜᴅ",DHD | REAL MADRID TV
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/451
+#EXTINF:-1 tvg-id="" tvg-name="DHD | REDBULL TV USA" tvg-logo="https://go4.pw/germany/REDBULL.png" group-title="⚽ DEPORTES ʜᴅ",DHD | REDBULL TV USA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/560297
+#EXTINF:-1 tvg-id="" tvg-name="DHD | SKY SPORTS BUNDESLIGA" tvg-logo="https://i.imgur.com/KKTEot6.png" group-title="⚽ DEPORTES ʜᴅ",DHD | SKY SPORTS BUNDESLIGA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/497772
+#EXTINF:-1 tvg-id="" tvg-name="DHD | SKY SPORTS GOLF HD" tvg-logo="https://i.imgur.com/vHZZqLo.png" group-title="⚽ DEPORTES ʜᴅ",DHD | SKY SPORTS GOLF HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/856423
+#EXTINF:-1 tvg-id="" tvg-name="DHD | SKY SPORTS LIGA ESPAÑA" tvg-logo="https://i.imgur.com/KKTEot6.png" group-title="⚽ DEPORTES ʜᴅ",DHD | SKY SPORTS LIGA ESPAÑA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/109
+#EXTINF:-1 tvg-id="" tvg-name="DHD | SKY SPORTS PREMIER LEAGUE" tvg-logo="https://i.imgur.com/KKTEot6.png" group-title="⚽ DEPORTES ʜᴅ",DHD | SKY SPORTS PREMIER LEAGUE
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/24183
+#EXTINF:-1 tvg-id="" tvg-name="DHD | SPACE CITY HOME NETWORK" tvg-logo="https://go4.pw/USA/Space_City_Home_Network.png" group-title="⚽ DEPORTES ʜᴅ",DHD | SPACE CITY HOME NETWORK
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1379566
+#EXTINF:-1 tvg-id="" tvg-name="DHD | SPORTSNETS ONTARIO CAN" tvg-logo="https://go4.pw/CANADA/SPORTSNET.png" group-title="⚽ DEPORTES ʜᴅ",DHD | SPORTSNETS ONTARIO CAN
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/348164
+#EXTINF:-1 tvg-id="" tvg-name="DHD | SPORTSNET WORLD" tvg-logo="https://go4.pw/CANADA/SPORTSNET.png" group-title="⚽ DEPORTES ʜᴅ",DHD | SPORTSNET WORLD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/348166
+#EXTINF:-1 tvg-id="" tvg-name="DHD | SPORTV 1 BR" tvg-logo="https://go4.pw/BRAZIL/SP.png" group-title="⚽ DEPORTES ʜᴅ",DHD | SPORTV 1 BR
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/348157
+#EXTINF:-1 tvg-id="" tvg-name="DHD | S.P.O.R.T.V 1 POR" tvg-logo="https://ia802308.us.archive.org/15/items/sport-tv-logo/SportTV-logo.png" group-title="⚽ DEPORTES ʜᴅ",DHD | S.P.O.R.T.V 1 POR
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/555425
+#EXTINF:-1 tvg-id="" tvg-name="DHD | SPORTV 2 BR" tvg-logo="https://go4.pw/BRAZIL/SP2.png" group-title="⚽ DEPORTES ʜᴅ",DHD | SPORTV 2 BR
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/348154
+#EXTINF:-1 tvg-id="" tvg-name="DHD | S.P.O.R.T.V 2 POR" tvg-logo="https://ia802308.us.archive.org/15/items/sport-tv-logo/SportTV-logo.png" group-title="⚽ DEPORTES ʜᴅ",DHD | S.P.O.R.T.V 2 POR
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/555426
+#EXTINF:-1 tvg-id="" tvg-name="DHD | SPORTV 3 BR" tvg-logo="https://go4.pw/BRAZIL/SP3.png" group-title="⚽ DEPORTES ʜᴅ",DHD | SPORTV 3 BR
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/348151
+#EXTINF:-1 tvg-id="" tvg-name="DHD | S.P.O.R.T.V 3 POR" tvg-logo="https://ia802308.us.archive.org/15/items/sport-tv-logo/SportTV-logo.png" group-title="⚽ DEPORTES ʜᴅ",DHD | S.P.O.R.T.V 3 POR
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1420917
+#EXTINF:-1 tvg-id="" tvg-name="DHD | S.P.O.R.T.V 4 POR" tvg-logo="https://ia802308.us.archive.org/15/items/sport-tv-logo/SportTV-logo.png" group-title="⚽ DEPORTES ʜᴅ",DHD | S.P.O.R.T.V 4 POR
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1420918
+#EXTINF:-1 tvg-id="" tvg-name="DHD | S.P.O.R.T.V PLUS POR" tvg-logo="https://ia802308.us.archive.org/15/items/sport-tv-logo/SportTV-logo.png" group-title="⚽ DEPORTES ʜᴅ",DHD | S.P.O.R.T.V PLUS POR
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/555424
+#EXTINF:-1 tvg-id="" tvg-name="DHD | PREMIER SPORTS 1 UK" tvg-logo="https://img-cdn.curl.pk/channels_icon_api/8ebfe32e4672616f4d2a2db040b43b32.png" group-title="⚽ DEPORTES ʜᴅ",DHD | PREMIER SPORTS 1 UK
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/353429
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TENNIS CHANNEL T2 US" tvg-logo="https://go4.pw/USA/teni.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TENNIS CHANNEL T2 US
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/791707
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TENNIS CHANNEL US" tvg-logo="https://go4.pw/USA/teni.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TENNIS CHANNEL US
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/774321
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TNT Sports 1 UK" tvg-logo="https://go4.pw/UK/bt-1.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TNT Sports 1 UK
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/791878
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TNT Sports 2 UK" tvg-logo="https://go4.pw/UK/bt-2.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TNT Sports 2 UK
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/791879
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TNT SPORTS 3 CH" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/tnt_sports_3_chile-mediano.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TNT SPORTS 3 CH
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/331617
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TNT Sports 3 UK" tvg-logo="https://go4.pw/UK/bt-3.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TNT Sports 3 UK
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/791880
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TNT Sports 4 UK" tvg-logo="https://go4.pw/AMERICA/USA/BTSPORT_4.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TNT Sports 4 UK
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/791881
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TNT SPORTS ARG" tvg-logo="https://go4.pw/LATINO/tnt-sports.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TNT SPORTS ARG
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/115
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TNT SPORTS CH" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/tnt_sports-mediano.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TNT SPORTS CH
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/331615
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TNT SPORTS PREMIUM CH" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/tnt_sports_2_chile-mediano.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TNT SPORTS PREMIUM CH
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/331616
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TOROS ES" tvg-logo="https://go4.pw/EUROPE/SPAIN/TOROSHD.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TOROS ES
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/348153
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TSN 1 CAN" tvg-logo="https://go4.pw/CANADA/TSN1.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TSN 1 CAN
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/348162
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TSN 2 CAN" tvg-logo="https://go4.pw/CANADA/TSN2.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TSN 2 CAN
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/349155
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TSN 3 CAN" tvg-logo="https://go4.pw/CANADA/TSN3.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TSN 3 CAN
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/349156
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TSN 4 CAN" tvg-logo="https://go4.pw/CANADA/TSN4.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TSN 4 CAN
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/349157
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TSN 5 CAN" tvg-logo="https://go4.pw/CANADA/TSN5.png" group-title="⚽ DEPORTES ʜᴅ",DHD | TSN 5 CAN
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/349158
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TUDN MX" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/62/TUDN.png/revision/latest/scale-to-width-down/350?cb=20190827032433&path-prefix=es" group-title="⚽ DEPORTES ʜᴅ",DHD | TUDN MX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/118
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TUDN USA" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/62/TUDN.png/revision/latest/scale-to-width-down/350?cb=20190827032433&path-prefix=es" group-title="⚽ DEPORTES ʜᴅ",DHD | TUDN USA
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/7516
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TYC INTERNACIONAL" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/61/TyC_Sports.png/revision/latest/scale-to-width-down/320?cb=20190620182054&path-prefix=es" group-title="⚽ DEPORTES ʜᴅ",DHD | TYC INTERNACIONAL
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/55625
+#EXTINF:-1 tvg-id="" tvg-name="DHD | TyC  SPORTS" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/61/TyC_Sports.png/revision/latest/scale-to-width-down/320?cb=20190620182054&path-prefix=es" group-title="⚽ DEPORTES ʜᴅ",DHD | TyC  SPORTS
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/503108
+#EXTINF:-1 tvg-id="" tvg-name="DHD | USA: THE COWBOY CHANNEL" tvg-logo="https://go4.pw/USA/cowboy1.png" group-title="⚽ DEPORTES ʜᴅ",DHD | USA: THE COWBOY CHANNEL
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/560294
+#EXTINF:-1 tvg-id="" tvg-name="DHD | USA: WWE NETWORK" tvg-logo="https://go4.pw/USA/SD2/15.png" group-title="⚽ DEPORTES ʜᴅ",DHD | USA: WWE NETWORK
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/560295
+#EXTINF:-1 tvg-id="" tvg-name="DHD | V.I.X.+ L.A L.I.G.A" tvg-logo="https://go4.pw/LATINO/VIX.png" group-title="⚽ DEPORTES ʜᴅ",DHD | V.I.X.+ L.A L.I.G.A
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/111
+#EXTINF:-1 tvg-id="" tvg-name="DHD | WIN SPORTS" tvg-logo="https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/CO/633.png" group-title="⚽ DEPORTES ʜᴅ",DHD | WIN SPORTS
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/116020
+#EXTINF:-1 tvg-id="" tvg-name="DHD | WIN SPORTS +" tvg-logo="https://go4.pw/LATINO/WINSPORT.png" group-title="⚽ DEPORTES ʜᴅ",DHD | WIN SPORTS +
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/340508
+#EXTINF:-1 tvg-id="" tvg-name="DHD | YES NETWORK" tvg-logo="https://go4.pw/AMERICA/USA/YESNETWORK.png" group-title="⚽ DEPORTES ʜᴅ",DHD | YES NETWORK
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/329047
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ZONA FUTBOL" tvg-logo="http://51.222.152.107:81/content/images/ics/1648287039445.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ZONA FUTBOL
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/327377
+#EXTINF:-1 tvg-id="" tvg-name="DHD | ZONA TUDN MX" tvg-logo="https://iili.io/J2wureR.md.png" group-title="⚽ DEPORTES ʜᴅ",DHD | ZONA TUDN MX
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1399343
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ADRENALINA SPORTS HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1466" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ADRENALINA SPORTS HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345269
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | BEIN SPORTS USA  HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=642" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | BEIN SPORTS USA  HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345285
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | CLARO SPORTS HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1762" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | CLARO SPORTS HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345271
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | DAZN 1 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1819" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | DAZN 1 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345248
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | DAZN 2 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1819" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | DAZN 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345247
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | DAZN 3 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1819" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | DAZN 3 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345246
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | DAZN 4 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1819" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | DAZN 4 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345245
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | DIRECTV SPORTS 1" tvg-logo="https://i.imgur.com/jtYG9k8.jpg" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | DIRECTV SPORTS 1
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345291
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | DIRECTV SPORTS 2 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1824" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | DIRECTV SPORTS 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345264
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | DIRECTV SPORTS + HD" tvg-logo="https://i.imgur.com/TE1hgew.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | DIRECTV SPORTS + HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345293
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN 1 ARG" tvg-logo="https://i.imgur.com/GL8U2qC.jpg" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN 1 ARG
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345292
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN 1 MX HD" tvg-logo="https://i.imgur.com/GL8U2qC.jpg" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN 1 MX HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345283
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN 1 USA HD" tvg-logo="https://i.imgur.com/GL8U2qC.jpg" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN 1 USA HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345282
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN 2 MX HD" tvg-logo="https://i.imgur.com/zQoasWk.jpg" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN 2 MX HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345281
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN 2 USA HD" tvg-logo="https://i.imgur.com/zQoasWk.jpg" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN 2 USA HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345272
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN 3 HD" tvg-logo="https://i.imgur.com/wjBRbMW.jpg" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN 3 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345265
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN 4 HD" tvg-logo="https://i.imgur.com/AMGIfMt.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN 4 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345268
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | ESPN DEPORTES SD" tvg-logo="https://i.imgur.com/7P5pVlG.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | ESPN DEPORTES SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345284
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | EUROSPORT 1 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1756" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | EUROSPORT 1 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345267
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FIGHT NETWORK HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1758" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FIGHT NETWORK HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345260
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FISH NETWORK HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=979" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FISH NETWORK HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345259
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FORMULA 1 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1584" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FORMULA 1 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345289
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FOX DEPORTES HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=188" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FOX DEPORTES HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345263
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FOX SOCCER" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=202" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FOX SOCCER
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345276
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FOX SPORTS 1 MX HD" tvg-logo="https://i.imgur.com/u6dJgey.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FOX SPORTS 1 MX HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345280
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FOX SPORTS 2 MX HD" tvg-logo="https://i.imgur.com/GdkLKEd.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FOX SPORTS 2 MX HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345279
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FOX SPORTS 3 MX HD" tvg-logo="https://i.imgur.com/BeIDgpM.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FOX SPORTS 3 MX HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345278
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FOX SPORTS PREMIUM HD" tvg-logo="https://i.imgur.com/dRRAFca.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FOX SPORTS PREMIUM HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345277
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | FOX SPORTS US HD" tvg-logo="https://i.imgur.com/BEFaYzg.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | FOX SPORTS US HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345275
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | MLB NETWORK HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=179" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | MLB NETWORK HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345258
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | MOTOR TREND HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1644" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | MOTOR TREND HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345252
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | Movistar Liga De Campeones HD" tvg-logo="https://i.imgur.com/2aZfEzy.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | Movistar Liga De Campeones HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345295
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | NBA TV HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1343" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | NBA TV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345243
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | NFL NETWORK HD" tvg-logo="http://51.222.43.170:8001/images/45c466aa2042c9fbcc75d02e6b7b2f6a.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | NFL NETWORK HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345273
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | SKY SPORTS 16 HD" tvg-logo="https://i.imgur.com/KKTEot6.png" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | SKY SPORTS 16 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345242
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | TSN 1 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1787" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | TSN 1 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345254
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | TSN 2 HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1787" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | TSN 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345253
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | TUDN MX  HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1450" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | TUDN MX  HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345286
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | TUDN USA SD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1450" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | TUDN USA SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345274
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | TYC SPORTS HD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/61/TyC_Sports.png/revision/latest/scale-to-width-down/320?cb=20190620182054&path-prefix=es" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | TYC SPORTS HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345262
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | TYC SPORTS INTERNACIONAL HD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/61/TyC_Sports.png/revision/latest/scale-to-width-down/320?cb=20190620182054&path-prefix=es" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | TYC SPORTS INTERNACIONAL HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345294
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | UFC NETWORK HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=17" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | UFC NETWORK HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345261
+#EXTINF:-1 tvg-id="" tvg-name="Dep. +3Mbps | WWE NETWORK HD" tvg-logo="http://api.rockettv.me/img/thumbnail.php?w=240&t=channel&id=1300" group-title="⚽ DEPORTES +3Mbps",Dep. +3Mbps | WWE NETWORK HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/345290
+#EXTINF:-1 tvg-id="" tvg-name="MX | MEXICANAL" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/ca/Mexicanal_2023.png" group-title="MEXICO",MX | MEXICANAL
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1591272
+#EXTINF:-1 tvg-id="" tvg-name="Multimedios Laguna" tvg-logo="https://i.imgur.com/4IGzNdq.png" group-title="MEXICO",Multimedios Laguna
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1608124
+#EXTINF:-1 tvg-id="" tvg-name="ES| BETIS FHD" tvg-logo="https://lo1.in/sp/BETIS%20FHD.png" group-title="SPAIN DEPORTES",ES| BETIS FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621103
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 01" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 01
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621086
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 02" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 02
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621114
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 03" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 03
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621102
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 04" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 04
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621112
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 05" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 05
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621109
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 06" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 06
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621093
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 07" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 07
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621107
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 08" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 08
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621095
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 09" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN 09
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621104
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 1 ESPAÑA FHD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN 1 ESPAÑA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621099
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 1 ESPAÑA HEVC" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN 1 ESPAÑA HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621085
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 1 ESPAÑA SD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN 1 ESPAÑA SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621106
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 1 ESPAÑA HD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN 1 ESPAÑA HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621108
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 2 ESPAÑA FHD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN 2 ESPAÑA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621087
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 2 ESPAÑA HD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN 2 ESPAÑA HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621097
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 2 ESPAÑA HEVC" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN 2 ESPAÑA HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621094
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 2 ESPAÑA SD" tvg-logo="https://lo1.in/sp/DAZN%202%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 2 ESPAÑA SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621088
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 3 ESPAÑA FHD" tvg-logo="https://lo1.in/sp/DAZN%203%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 3 ESPAÑA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621113
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 3 ESPAÑA HD" tvg-logo="https://lo1.in/sp/DAZN%203%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 3 ESPAÑA HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621092
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 3 ESPAÑA HEVC" tvg-logo="https://lo1.in/sp/DAZN%203%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 3 ESPAÑA HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621111
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 3 ESPAÑA SD" tvg-logo="https://lo1.in/sp/DAZN%203%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 3 ESPAÑA SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621110
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 4 ESPAÑA FHD" tvg-logo="https://lo1.in/sp/DAZN%204%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 4 ESPAÑA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621091
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 4 ESPAÑA HD" tvg-logo="https://lo1.in/sp/DAZN%204%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 4 ESPAÑA HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621089
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 4 ESPAÑA HEVC" tvg-logo="https://lo1.in/sp/DAZN%204%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 4 ESPAÑA HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621101
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN 4 ESPAÑA SD" tvg-logo="https://lo1.in/sp/DAZN%204%20ESPA%C3%91A.png" group-title="SPAIN DEPORTES",ES| DAZN 4 ESPAÑA SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621098
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN ACB 1" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN ACB 1
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621090
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN ACB 2" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN ACB 2
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621105
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN ACB 3" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN ACB 3
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621100
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN ACB 4" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN ACB 4
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621096
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN ACB 5" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN ACB 5
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621067
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN Baloncesto 1 FHD" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN Baloncesto 1 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621053
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN Baloncesto 2 FHD" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN Baloncesto 2 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621041
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN Baloncesto 3 FHD" tvg-logo="https://lo1.in/ca/dzncaleo.png" group-title="SPAIN DEPORTES",ES| DAZN Baloncesto 3 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621074
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN F1 ESPAÑA FHD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN F1 ESPAÑA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621039
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN F1 ESPAÑA HD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN F1 ESPAÑA HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621036
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN F1 ESPAÑA HEVC" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN F1 ESPAÑA HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621058
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN F1 ESPAÑA SD" tvg-logo="https://lo1.in/sp/dazn1.png" group-title="SPAIN DEPORTES",ES| DAZN F1 ESPAÑA SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621082
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 1 FHD" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 1 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621083
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 1 HD" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 1 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621043
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 1 HEVC" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 1 HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621081
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 1 SD" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 1 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621071
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 2 FHD" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 2 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621061
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 2 HD" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621072
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 2 HEVC" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 2 HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621038
+#EXTINF:-1 tvg-id="" tvg-name="ES| DAZN LA LIGA 2 SD" tvg-logo="https://lo1.in/it/dzn.png" group-title="SPAIN DEPORTES",ES| DAZN LA LIGA 2 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621073
+#EXTINF:-1 tvg-id="" tvg-name="ES| DBIKE FHD" tvg-logo="https://lo1.in/sp/DBIKE%20FHD.png" group-title="SPAIN DEPORTES",ES| DBIKE FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621059
+#EXTINF:-1 tvg-id="" tvg-name="ES| DBIKE HD" tvg-logo="https://lo1.in/sp/DBIKE%20FHD.png" group-title="SPAIN DEPORTES",ES| DBIKE HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621077
+#EXTINF:-1 tvg-id="" tvg-name="ES| DBIKE SD" tvg-logo="https://lo1.in/sp/DBIKE%20FHD.png" group-title="SPAIN DEPORTES",ES| DBIKE SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621064
+#EXTINF:-1 tvg-id="" tvg-name="ES| EL TORO TV FHD" tvg-logo="https://lo1.in/sp/viajarhd.png" group-title="SPAIN DEPORTES",ES| EL TORO TV FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621044
+#EXTINF:-1 tvg-id="" tvg-name="ES| EL TORO TV HD" tvg-logo="https://lo1.in/sp/viajarhd.png" group-title="SPAIN DEPORTES",ES| EL TORO TV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621066
+#EXTINF:-1 tvg-id="" tvg-name="ES| Esport3 HD" tvg-logo="https://lo1.in/sp/Esport3%20SD.png" group-title="SPAIN DEPORTES",ES| Esport3 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621054
+#EXTINF:-1 tvg-id="" tvg-name="ES| EUROSPORT 1 FHD" tvg-logo="https://lo1.in/sp/EUROSPORT%201.png" group-title="SPAIN DEPORTES",ES| EUROSPORT 1 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621049
+#EXTINF:-1 tvg-id="" tvg-name="ES| EUROSPORT 1 HD" tvg-logo="https://lo1.in/sp/EUROSPORT%201.png" group-title="SPAIN DEPORTES",ES| EUROSPORT 1 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621078
+#EXTINF:-1 tvg-id="" tvg-name="ES| EUROSPORT 1 SD" tvg-logo="https://lo1.in/sp/EUROSPORT%201.png" group-title="SPAIN DEPORTES",ES| EUROSPORT 1 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621055
+#EXTINF:-1 tvg-id="" tvg-name="ES| EUROSPORT 2 FHD" tvg-logo="https://lo1.in/sp/erosp2.png" group-title="SPAIN DEPORTES",ES| EUROSPORT 2 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621046
+#EXTINF:-1 tvg-id="" tvg-name="ES| EUROSPORT 2 HD" tvg-logo="https://lo1.in/sp/erosp2.png" group-title="SPAIN DEPORTES",ES| EUROSPORT 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621084
+#EXTINF:-1 tvg-id="" tvg-name="ES| EUROSPORT 2 SD" tvg-logo="https://lo1.in/sp/erosp2.png" group-title="SPAIN DEPORTES",ES| EUROSPORT 2 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621057
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEDERACION FHD (LaLiga+)" tvg-logo="https://lo1.in/sp/sp.png" group-title="SPAIN DEPORTES",ES| FEDERACION FHD (LaLiga+)
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621045
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEDERACION FHD (Movistar+)" tvg-logo="https://lo1.in/sp/sp.png" group-title="SPAIN DEPORTES",ES| FEDERACION FHD (Movistar+)
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621068
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEDERACION HD" tvg-logo="https://lo1.in/sp/sp.png" group-title="SPAIN DEPORTES",ES| FEDERACION HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621037
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEDERACION SD" tvg-logo="https://lo1.in/sp/sp.png" group-title="SPAIN DEPORTES",ES| FEDERACION SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621080
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEF TV  20 FHD (Solo Eventos)" tvg-logo="https://lo1.in/sp/FEF%20TV%2020.png" group-title="SPAIN DEPORTES",ES| FEF TV  20 FHD (Solo Eventos)
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621048
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEF TV 1 FHD (Solo Eventos)" tvg-logo="https://lo1.in/sp/FEF%20TV%2020.png" group-title="SPAIN DEPORTES",ES| FEF TV 1 FHD (Solo Eventos)
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621050
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEF TV 2 FHD (Solo Eventos)" tvg-logo="https://lo1.in/sp/FEF%20TV%2020.png" group-title="SPAIN DEPORTES",ES| FEF TV 2 FHD (Solo Eventos)
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621063
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEF TV 3 FHD (Solo Eventos)" tvg-logo="https://lo1.in/sp/FEF%20TV%2020.png" group-title="SPAIN DEPORTES",ES| FEF TV 3 FHD (Solo Eventos)
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621035
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEF TV 4 FHD (Solo Eventos)" tvg-logo="https://lo1.in/sp/FEF%20TV%2020.png" group-title="SPAIN DEPORTES",ES| FEF TV 4 FHD (Solo Eventos)
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621065
+#EXTINF:-1 tvg-id="" tvg-name="ES| FEF TV 5 FHD (Solo Eventos)" tvg-logo="https://lo1.in/sp/FEF%20TV%2020.png" group-title="SPAIN DEPORTES",ES| FEF TV 5 FHD (Solo Eventos)
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621052
+#EXTINF:-1 tvg-id="" tvg-name="ES| FUEL TV FHD" tvg-logo="https://lo1.in/por/fuelhd.png" group-title="SPAIN DEPORTES",ES| FUEL TV FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621056
+#EXTINF:-1 tvg-id="" tvg-name="ES| GOL FHD" tvg-logo="https://lo1.in/sp/gol.png" group-title="SPAIN DEPORTES",ES| GOL FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621079
+#EXTINF:-1 tvg-id="" tvg-name="ES| GOL HD" tvg-logo="https://lo1.in/sp/gol.png" group-title="SPAIN DEPORTES",ES| GOL HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621051
+#EXTINF:-1 tvg-id="" tvg-name="ES| GOL SD" tvg-logo="https://lo1.in/sp/gol.png" group-title="SPAIN DEPORTES",ES| GOL SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621069
+#EXTINF:-1 tvg-id="" tvg-name="ES| LA 1 FHD [BK]" tvg-logo="https://lo1.in/sp/LA%201%20FHD.png" group-title="SPAIN DEPORTES",ES| LA 1 FHD [BK]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621075
+#EXTINF:-1 tvg-id="" tvg-name="ES| LA 1 HD [BK]" tvg-logo="https://lo1.in/sp/LA%201%20FHD.png" group-title="SPAIN DEPORTES",ES| LA 1 HD [BK]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621047
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 01 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 01 [EVENT ONLY]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621060
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 02 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 02 [EVENT ONLY]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621042
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 03 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 03 [EVENT ONLY]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621040
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 04 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 04 [EVENT ONLY]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621070
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 05 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 05 [EVENT ONLY]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621062
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 06 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 06 [EVENT ONLY]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621076
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 07 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 07 [EVENT ONLY]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621018
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 08 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 08 [EVENT ONLY]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621027
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 09 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 09 [EVENT ONLY]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621017
+#EXTINF:-1 tvg-id="" tvg-name="ES| LALIGA+ 10 [EVENT ONLY]" tvg-logo="https://lo1.in/sp/lliga.png" group-title="SPAIN DEPORTES",ES| LALIGA+ 10 [EVENT ONLY]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621025
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ 2 PLUS HD [BK]" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ 2 PLUS HD [BK]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621033
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ COPA AMERICA 1 FHD" tvg-logo="https://lo1.in/sp/m+.png" group-title="SPAIN DEPORTES",ES| M+ COPA AMERICA 1 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621023
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ COPA AMERICA 2 FHD" tvg-logo="https://lo1.in/sp/m+.png" group-title="SPAIN DEPORTES",ES| M+ COPA AMERICA 2 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621032
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ COPA DEL REY FHD" tvg-logo="https://lo1.in/sp/sp.png" group-title="SPAIN DEPORTES",ES| M+ COPA DEL REY FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621029
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ COPA DEL REY HD" tvg-logo="https://lo1.in/sp/sp.png" group-title="SPAIN DEPORTES",ES| M+ COPA DEL REY HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621026
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 1 FHD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 1 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621020
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 1 HD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 1 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621030
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 1 HEVC" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 1 HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621028
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 1 SD" tvg-logo="https://lo1.in/sp/M+%20DEPORTES%201.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 1 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621024
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 2 FHD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 2 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621019
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 2 HD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621031
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 2 HEVC" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 2 HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621022
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 2 SD" tvg-logo="https://lo1.in/sp/deprts2.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 2 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621034
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 3 FHD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 3 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621021
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 3 HD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 3 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621016
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 3 HEVC" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 3 HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621015
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 3 SD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 3 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621014
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 4 FHD" tvg-logo="https://lo1.in/sp/teledepo.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 4 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621013
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 4 HD" tvg-logo="https://lo1.in/sp/teledepo.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 4 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621012
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 4 SD" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 4 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621011
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 5 FHD" tvg-logo="https://lo1.in/sp/mvstlg8.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 5 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621010
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 5 HD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 5 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621009
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 5 SD" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 5 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621008
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 6 FHD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 6 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621007
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 6 HD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 6 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621006
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 6 SD" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 6 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621005
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 7 FHD" tvg-logo="https://lo1.in/sp/mdepor1hd.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 7 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621004
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 7 HD" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 7 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621003
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 7 SD" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 7 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621002
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ DEPORTES 8 SD" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ DEPORTES 8 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621001
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ ELLAS HD" tvg-logo="https://lo1.in/sp/M+%20ELLAS%20FHD.png" group-title="SPAIN DEPORTES",ES| M+ ELLAS HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1621000
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ ELLAS HEVC" tvg-logo="https://lo1.in/sp/M+%20ELLAS%20FHD.png" group-title="SPAIN DEPORTES",ES| M+ ELLAS HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620999
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ ELLAS SD" tvg-logo="https://lo1.in/sp/M+%20ELLAS%20FHD.png" group-title="SPAIN DEPORTES",ES| M+ ELLAS SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620998
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ GOLF 2 FHD" tvg-logo="https://lo1.in/sp/mvstgolf.png" group-title="SPAIN DEPORTES",ES| M+ GOLF 2 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620997
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ GOLF 2 HD" tvg-logo="https://lo1.in/sp/mvstgolf.png" group-title="SPAIN DEPORTES",ES| M+ GOLF 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620996
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ GOLF 2 SD" tvg-logo="https://lo1.in/sp/mvstgolf.png" group-title="SPAIN DEPORTES",ES| M+ GOLF 2 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620995
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ GOLF FHD" tvg-logo="https://lo1.in/sp/mvstgolf.png" group-title="SPAIN DEPORTES",ES| M+ GOLF FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620994
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ GOLF HD" tvg-logo="https://lo1.in/sp/mvstgolf.png" group-title="SPAIN DEPORTES",ES| M+ GOLF HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620993
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ GOLF HEVC" tvg-logo="https://lo1.in/sp/mvstgolf.png" group-title="SPAIN DEPORTES",ES| M+ GOLF HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620992
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ GOLF SD" tvg-logo="https://lo1.in/sp/mvstgolf.png" group-title="SPAIN DEPORTES",ES| M+ GOLF SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620991
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 2 FHD" tvg-logo="https://lo1.in/sp/mvstlg2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 2 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620990
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 2 HD" tvg-logo="https://lo1.in/sp/mvstlg2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620989
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 2 SD" tvg-logo="https://lo1.in/sp/mvstlg2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 2 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620988
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 3 FHD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%203.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 3 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620987
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 3 HD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%203.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 3 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620986
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 4 FHD" tvg-logo="https://lo1.in/sp/mvstlg4.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 4 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620985
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 4 HD" tvg-logo="https://lo1.in/sp/mvstlg4.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 4 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620984
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 5 FHD" tvg-logo="https://lo1.in/sp/mvstlg5.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 5 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620983
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA 5 HD" tvg-logo="https://lo1.in/sp/mvstlg6.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA 5 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620982
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA FHD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%203.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620981
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA HD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%203.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620980
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA HEVC" tvg-logo="https://lo1.in/sp/M+%20LALIGA%203.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620979
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA SD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%203.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620978
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION FHD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%20TV.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620974
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION HD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%20TV.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620973
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION M2 FHD" tvg-logo="https://lo1.in/sp/M+%20LALIGA%20TV.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION M2 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620972
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION M2 HD" tvg-logo="https://lo1.in/sp/ligasmbam2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION M2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620971
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION M2 SD" tvg-logo="https://lo1.in/sp/ligasmbam2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION M2 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620970
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION M3 FHD" tvg-logo="https://lo1.in/sp/ligasmbam2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION M3 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620969
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION M3 HD" tvg-logo="https://lo1.in/sp/ligasmbam2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION M3 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620968
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION M3 SD" tvg-logo="https://lo1.in/sp/ligasmbam2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION M3 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620967
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGA TV HYPERMOTION SD" tvg-logo="https://lo1.in/sp/ligasmbam2.png" group-title="SPAIN DEPORTES",ES| M+ LALIGA TV HYPERMOTION SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620966
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGATV BAR FHD" tvg-logo="https://lo1.in/sp/M+%20LALIGATV%20BAR.png" group-title="SPAIN DEPORTES",ES| M+ LALIGATV BAR FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620977
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGATV BAR HD" tvg-logo="https://lo1.in/sp/M+%20LALIGATV%20BAR.png" group-title="SPAIN DEPORTES",ES| M+ LALIGATV BAR HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620976
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LALIGATV BAR HEVC" tvg-logo="https://lo1.in/sp/M+%20LALIGA%203.png" group-title="SPAIN DEPORTES",ES| M+ LALIGATV BAR HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620975
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LCAMPEONS 4K" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LCAMPEONS 4K
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620965
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 1 FHD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 1 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620964
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 1 FHD [BK]" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 1 FHD [BK]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620963
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 1 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 1 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620962
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 1 HD [BK]" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 1 HD [BK]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620961
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 1 HEVC" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 1 HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620960
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 1 SD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 1 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620959
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 2 FHD" tvg-logo="https://lo1.in/sp/M+%20LIGA%20DE%20CAMPEONES%204.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 2 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620958
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 2 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 2 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620957
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 2 HEVC" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 2 HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620956
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 2 SD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 2 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620955
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 3 FHD" tvg-logo="https://lo1.in/sp/mvstlg10.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 3 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620954
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 3 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 3 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620953
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 3 HEVC" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 3 HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620952
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 3 SD" tvg-logo="https://lo1.in/sp/sender.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 3 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620951
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 4 FHD" tvg-logo="https://lo1.in/sp/mvstlg9.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 4 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620950
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 4 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 4 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620949
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 4 HEVC" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 4 HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620948
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 4 SD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 4 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620947
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 5 FHD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 5 FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620946
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 5 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 5 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620945
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 5 SD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 5 SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620944
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 6 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 6 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620943
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 7 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 7 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620942
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 8 HD" tvg-logo="https://lo1.in/sp/mvstcamp.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 8 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620941
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ LIGA DE CAMPEONES 9 HD" tvg-logo="https://lo1.in/sp/M+%20LALIGATV%20BAR.png" group-title="SPAIN DEPORTES",ES| M+ LIGA DE CAMPEONES 9 HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620940
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ PLUS HD  [BK]" tvg-logo="https://lo1.in/sp/mp.png" group-title="SPAIN DEPORTES",ES| M+ PLUS HD  [BK]
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620939
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ PRIMERA FEDERACION FHD" tvg-logo="https://lo1.in/sp/m+.png" group-title="SPAIN DEPORTES",ES| M+ PRIMERA FEDERACION FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620938
+#EXTINF:-1 tvg-id="" tvg-name="ES| M+ PRIMERA FEDERACION HD" tvg-logo="https://lo1.in/sp/m+.png" group-title="SPAIN DEPORTES",ES| M+ PRIMERA FEDERACION HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620937
+#EXTINF:-1 tvg-id="" tvg-name="ES| MUNDOTORO TV HD" tvg-logo="https://lo1.in/sp/MUNDOTORO%20TV.png" group-title="SPAIN DEPORTES",ES| MUNDOTORO TV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620936
+#EXTINF:-1 tvg-id="" tvg-name="ES| ONE TORO TV FHD" tvg-logo="https://lo1.in/sp/ONE%20TORO%20TV.png" group-title="SPAIN DEPORTES",ES| ONE TORO TV FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620935
+#EXTINF:-1 tvg-id="" tvg-name="ES| ONE TORO TV HEVC" tvg-logo="https://lo1.in/sp/ONE%20TORO%20TV.png" group-title="SPAIN DEPORTES",ES| ONE TORO TV HEVC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620933
+#EXTINF:-1 tvg-id="" tvg-name="ES| ONE TORO TV SD" tvg-logo="https://lo1.in/sp/ONE%20TORO%20TV.png" group-title="SPAIN DEPORTES",ES| ONE TORO TV SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620932
+#EXTINF:-1 tvg-id="" tvg-name="ES| RALLY TV (EVENT ONLY)" tvg-logo="https://lo1.in/sp/RALLY%20TV.png" group-title="SPAIN DEPORTES",ES| RALLY TV (EVENT ONLY)
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620931
+#EXTINF:-1 tvg-id="" tvg-name="ES| REAL MADRID TV FHD" tvg-logo="https://lo1.in/sp/REAL%20MADRID%20TV.png" group-title="SPAIN DEPORTES",ES| REAL MADRID TV FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620930
+#EXTINF:-1 tvg-id="" tvg-name="ES| REAL MADRID TV HD" tvg-logo="https://lo1.in/sp/REAL%20MADRID%20TV.png" group-title="SPAIN DEPORTES",ES| REAL MADRID TV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620929
+#EXTINF:-1 tvg-id="" tvg-name="ES| REAL MADRID TV SD" tvg-logo="https://lo1.in/sp/rmatv.png" group-title="SPAIN DEPORTES",ES| REAL MADRID TV SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620928
+#EXTINF:-1 tvg-id="" tvg-name="ES| SEVILLA FC" tvg-logo="https://lo1.in/sp/sevillatv.png" group-title="SPAIN DEPORTES",ES| SEVILLA FC
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620926
+#EXTINF:-1 tvg-id="" tvg-name="ES| TELEDEPORTE FHD" tvg-logo="https://lo1.in/sp/teledepo.png" group-title="SPAIN DEPORTES",ES| TELEDEPORTE FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620925
+#EXTINF:-1 tvg-id="" tvg-name="ES| TELEDEPORTE HD" tvg-logo="https://lo1.in/sp/teledepo.png" group-title="SPAIN DEPORTES",ES| TELEDEPORTE HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620924
+#EXTINF:-1 tvg-id="" tvg-name="ES| TELEDEPORTE SD" tvg-logo="https://lo1.in/sp/teledepo.png" group-title="SPAIN DEPORTES",ES| TELEDEPORTE SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620923
+#EXTINF:-1 tvg-id="" tvg-name="ES| ToroleTV FHD" tvg-logo="https://lo1.in/sp/ToroleTV.png" group-title="SPAIN DEPORTES",ES| ToroleTV FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620922
+#EXTINF:-1 tvg-id="" tvg-name="ES| ToroleTV HD" tvg-logo="https://lo1.in/sp/ToroleTV.png" group-title="SPAIN DEPORTES",ES| ToroleTV HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620921
+#EXTINF:-1 tvg-id="" tvg-name="ES| ToroleTV SD" tvg-logo="https://lo1.in/sp/ToroleTV.png" group-title="SPAIN DEPORTES",ES| ToroleTV SD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620920
+#EXTINF:-1 tvg-id="" tvg-name="ES| TOROS HD" tvg-logo="https://lo1.in/sp/ToroleTV.png" group-title="SPAIN DEPORTES",ES| TOROS HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620919
+#EXTINF:-1 tvg-id="" tvg-name="ES| UBEAT FHD" tvg-logo="https://lo1.in/sp/erosp2.png" group-title="SPAIN DEPORTES",ES| UBEAT FHD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620918
+#EXTINF:-1 tvg-id="" tvg-name="ES| UBEAT HD" tvg-logo="https://lo1.in/sp/erosp2.png" group-title="SPAIN DEPORTES",ES| UBEAT HD
+http://liontv.es:8080/RobertoArce/pZbSDnRqam/1620917
