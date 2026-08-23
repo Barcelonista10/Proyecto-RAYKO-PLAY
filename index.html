@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>RAYKO PLAY - Servidores M3U</title>
-    <!-- FontAwesome Icons -->
+    <title>RAYKO PLAY - Servidores M3U & Eventos</title>
+    <!-- FontAwesome Icons (Free 6.4.0) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
@@ -97,7 +98,7 @@
             gap: 22px;
         }
 
-        /* Estilo base de los botones */
+        /* Estilo base de las tarjetas con efectos mejorados */
         .btn-card {
             width: 100%;
             height: 82px;
@@ -109,20 +110,44 @@
             gap: 22px;
             cursor: pointer;
             position: relative;
-            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
+            overflow: hidden;
+            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                        box-shadow 0.2s ease, 
+                        border-color 0.2s ease, 
+                        filter 0.2s ease;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
             border: none;
         }
 
+        /* Destello luminoso que recorre la tarjeta al hacer hover/click */
+        .btn-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+            transform: skewX(-25deg);
+            transition: left 0.6s ease;
+            pointer-events: none;
+        }
+
+        .btn-card:hover::after, .btn-card:active::after {
+            left: 140%;
+        }
+
         .btn-card:hover {
-            transform: translateY(-2px) scale(1.01);
+            transform: translateY(-3px) scale(1.02);
+            filter: brightness(1.1);
         }
 
         .btn-card:active {
-            transform: scale(0.97);
+            transform: scale(0.95);
+            filter: brightness(1.2);
         }
 
-        /* Bordes Neón Rojo (Servidor 1, Películas Plus, Series) */
+        /* Bordes Neón Rojo (Servidor 1, Eventos en Vivo, Series) */
         .btn-card.border-red {
             border-top: 2px solid #ff0022;
             border-bottom: 2px solid #ff0022;
@@ -138,6 +163,14 @@
             height: 2px;
             background: #ff4d6d;
             box-shadow: 0 0 10px #ff0022;
+        }
+
+        .btn-card.border-red:hover {
+            box-shadow: 0 0 25px rgba(255, 0, 34, 0.65), 0 12px 25px rgba(0, 0, 0, 0.8);
+        }
+
+        .btn-card.border-red:active {
+            box-shadow: 0 0 35px rgba(255, 0, 34, 0.9), 0 4px 10px rgba(0, 0, 0, 0.9);
         }
 
         /* Bordes Blanco / Plateado (Servidor 2, Películas Colección) */
@@ -158,6 +191,14 @@
             box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
         }
 
+        .btn-card.border-silver:hover {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 12px 25px rgba(0, 0, 0, 0.8);
+        }
+
+        .btn-card.border-silver:active {
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.7), 0 4px 10px rgba(0, 0, 0, 0.9);
+        }
+
         /* Iconos de los botones */
         .btn-icon {
             width: 44px;
@@ -168,6 +209,11 @@
             flex-shrink: 0;
             font-size: 32px;
             filter: drop-shadow(0 3px 5px rgba(0,0,0,0.5));
+            transition: transform 0.2s ease;
+        }
+
+        .btn-card:hover .btn-icon {
+            transform: scale(1.12);
         }
 
         /* Texto dentro de los botones */
@@ -290,7 +336,7 @@
             100% { transform: rotate(360deg); }
         }
 
-        /* Lista de Canales */
+        /* Lista de Canales / Eventos */
         .channel-list {
             display: flex;
             flex-direction: column;
@@ -317,7 +363,8 @@
         .channel-item:hover, .channel-item:active {
             background: #1c1c28;
             border-color: #ff0022;
-            transform: translateX(4px);
+            transform: translateX(4px) scale(1.01);
+            box-shadow: 0 4px 15px rgba(255,0,34,0.2);
         }
 
         .channel-logo {
@@ -442,28 +489,6 @@
             font-weight: 700;
             width: fit-content;
         }
-
-        /* Notificación Toast */
-        .toast {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%) translateY(100px);
-            background: #ff0022;
-            color: #ffffff;
-            padding: 10px 22px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 700;
-            box-shadow: 0 6px 20px rgba(255, 0, 34, 0.5);
-            z-index: 300;
-            transition: transform 0.3s ease;
-            white-space: nowrap;
-        }
-
-        .toast.show {
-            transform: translateX(-50%) translateY(0);
-        }
     </style>
 </head>
 <body>
@@ -482,7 +507,7 @@
         <!-- Lista de Secciones principales -->
         <main class="menu-list">
 
-            <!-- 1. SERVIDOR 1 (Icono de TV) -->
+            <!-- 1. SERVIDOR 1 (Televisor) -->
             <div class="btn-card border-red" onmouseenter="playHoverSound()" onclick="loadM3uServer(1)">
                 <div class="btn-icon" style="color: #60a5fa;">
                     <i class="fa-solid fa-tv"></i>
@@ -490,7 +515,7 @@
                 <div class="btn-text">SERVIDOR 1</div>
             </div>
 
-            <!-- 2. SERVIDOR 2 (Icono de Transmisión/Antena de Servidor) -->
+            <!-- 2. SERVIDOR 2 (Antena / Señal) -->
             <div class="btn-card border-silver" onmouseenter="playHoverSound()" onclick="loadM3uServer(2)">
                 <div class="btn-icon" style="color: #38bdf8;">
                     <i class="fa-solid fa-tower-broadcast"></i>
@@ -498,24 +523,24 @@
                 <div class="btn-text">SERVIDOR 2</div>
             </div>
 
-            <!-- 3. PELÍCULAS PLUS -->
-            <div class="btn-card border-red" onmouseenter="playHoverSound()" onclick="openDummySection('PELÍCULAS PLUS')">
-                <div class="btn-icon" style="color: #9ca3af;">
-                    <i class="fa-solid fa-video"></i>
+            <!-- 3. EVENTOS EN VIVO (Carga JSON de Eventos) -->
+            <div class="btn-card border-red" onmouseenter="playHoverSound()" onclick="loadEventosJson()">
+                <div class="btn-icon" style="color: #ff0022;">
+                    <i class="fa-solid fa-calendar-days"></i>
                 </div>
-                <div class="btn-text">PELÍCULAS PLUS</div>
+                <div class="btn-text">EVENTOS EN VIVO</div>
             </div>
 
-            <!-- 4. PELÍCULAS COLECCIÓN -->
-            <div class="btn-card border-silver" onmouseenter="playHoverSound()" onclick="openDummySection('PELÍCULAS COLECCIÓN')">
+            <!-- 4. PELÍCULAS COLECCIÓN (Cinta de Película) -->
+            <div class="btn-card border-silver" onmouseenter="playHoverSound()" onclick="handleCategoryClick('PELÍCULAS COLECCIÓN')">
                 <div class="btn-icon" style="color: #d1d5db;">
                     <i class="fa-solid fa-film"></i>
                 </div>
                 <div class="btn-text">PELÍCULAS COLECCIÓN</div>
             </div>
 
-            <!-- 5. SERIES -->
-            <div class="btn-card border-red" onmouseenter="playHoverSound()" onclick="openDummySection('SERIES')">
+            <!-- 5. SERIES (Máscaras de Teatro) -->
+            <div class="btn-card border-red" onmouseenter="playHoverSound()" onclick="handleCategoryClick('SERIES')">
                 <div class="btn-icon" style="color: #38bdf8;">
                     <i class="fa-solid fa-masks-theater"></i>
                 </div>
@@ -524,7 +549,7 @@
 
         </main>
 
-        <!-- Modal de Canales -->
+        <!-- Modal de Canales / Eventos -->
         <div class="content-modal" id="contentModal">
             <div class="modal-header">
                 <div class="modal-title" id="modalTitle">
@@ -533,16 +558,16 @@
                 <button class="btn-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
             </div>
 
-            <!-- Buscador de canales -->
+            <!-- Buscador -->
             <div class="search-box">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input type="text" class="search-input" id="searchInput" placeholder="Buscar por canal o categoría..." oninput="filterChannels()">
+                <input type="text" class="search-input" id="searchInput" placeholder="Buscar por canal o evento..." oninput="filterChannels()">
             </div>
 
             <!-- Loader / Lista de canales -->
             <div id="loader" class="loader-box">
                 <div class="spinner"></div>
-                <span>Cargando lista M3U...</span>
+                <span>Cargando contenidos...</span>
             </div>
 
             <div class="channel-list" id="channelList" style="display: none;"></div>
@@ -559,30 +584,26 @@
                     <i class="fa-solid fa-signal"></i> TRANSMISIÓN EN VIVO
                 </div>
                 <div class="playing-title" id="playingTitle">Canal</div>
-                <p id="playingGroup" style="font-size: 13px; color: #888;">Servidor M3U</p>
+                <p id="playingGroup" style="font-size: 13px; color: #888;">RAYKO PLAY Eventos</p>
             </div>
         </div>
 
-        <!-- Toast Message -->
-        <div class="toast" id="toastMessage">Obteniendo canales...</div>
-
     </div>
 
-    <!-- Script de Integración M3U, Sonidos & Player -->
+    <!-- Script de Integración M3U, JSON & Player -->
     <script>
-        // URLs de los servidores M3U (Modificables manualmente)
+        // URLs M3U & JSON Eventos
         const M3U_URL_SERVER1 = "https://raw.githubusercontent.com/Barcelonista10/Proyecto-RAYKO-PLAY/refs/heads/main/Lista%20Premium1.m3u";
         const M3U_URL_SERVER2 = "https://raw.githubusercontent.com/Barcelonista10/Proyecto-RAYKO-PLAY/refs/heads/main/Lista%20Premium1.m3u";
+        const JSON_URL_EVENTOS = "https://raw.githubusercontent.com/Barcelonista10/Proyecto-RAYKO-PLAY/refs/heads/main/eventos%20raiko%20play.json";
 
-        let serverCache = {
-            1: [],
-            2: []
-        };
+        let serverCache = { 1: [], 2: [] };
+        let eventosCache = [];
         let currentServer = 1;
         let activeChannels = [];
         let hlsInstance = null;
 
-        // Contexto de Audio Web Sintetizado para efectos sonoros
+        // Contexto de Audio Web Sintetizado
         let audioCtx = null;
 
         function getAudioContext() {
@@ -595,85 +616,152 @@
             return audioCtx;
         }
 
-        // Sonido de pasar sobre la tarjeta (Hover / Navigation)
         function playHoverSound() {
             try {
                 const ctx = getAudioContext();
                 const osc = ctx.createOscillator();
                 const gain = ctx.createGain();
-                
                 osc.type = 'sine';
                 osc.frequency.setValueAtTime(450, ctx.currentTime);
-                osc.frequency.exponentialRampToValueAtTime(700, ctx.currentTime + 0.04);
-                
+                osc.frequency.exponentialRampToValueAtTime(750, ctx.currentTime + 0.04);
                 gain.gain.setValueAtTime(0.08, ctx.currentTime);
                 gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.04);
-                
                 osc.connect(gain);
                 gain.connect(ctx.destination);
-                
                 osc.start();
                 osc.stop(ctx.currentTime + 0.04);
             } catch (e) {}
         }
 
-        // Sonido al presionar / seleccionar tarjeta (Click / Select)
         function playSelectSound() {
             try {
                 const ctx = getAudioContext();
                 const osc = ctx.createOscillator();
                 const gain = ctx.createGain();
-                
                 osc.type = 'triangle';
-                osc.frequency.setValueAtTime(600, ctx.currentTime);
-                osc.frequency.exponentialRampToValueAtTime(300, ctx.currentTime + 0.08);
-                
+                osc.frequency.setValueAtTime(650, ctx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(320, ctx.currentTime + 0.08);
                 gain.gain.setValueAtTime(0.18, ctx.currentTime);
                 gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.08);
-                
                 osc.connect(gain);
                 gain.connect(ctx.destination);
-                
                 osc.start();
                 osc.stop(ctx.currentTime + 0.08);
             } catch (e) {}
         }
 
-        // Función para obtener el icono FontAwesome exacto según el nombre del canal o la categoría
+        // Cargar Eventos desde el archivo JSON exclusivo de RAYKO PLAY
+        async function loadEventosJson() {
+            playSelectSound();
+            const modal = document.getElementById('contentModal');
+            const loader = document.getElementById('loader');
+            const channelList = document.getElementById('channelList');
+            const searchInput = document.getElementById('searchInput');
+
+            document.getElementById('modalTitle').innerHTML = `<i class="fa-solid fa-calendar-days"></i> EVENTOS EN VIVO`;
+            modal.classList.add('active');
+            searchInput.value = '';
+
+            if (eventosCache.length > 0) {
+                activeChannels = eventosCache;
+                loader.style.display = 'none';
+                channelList.style.display = 'flex';
+                renderChannels(activeChannels);
+                return;
+            }
+
+            loader.style.display = 'flex';
+            channelList.style.display = 'none';
+
+            try {
+                const response = await fetch(JSON_URL_EVENTOS);
+                if (!response.ok) throw new Error("Error al descargar el JSON de eventos");
+                const data = await response.json();
+
+                // Normalizar datos del JSON de eventos
+                eventosCache = parseEventosJSON(data);
+
+                if (eventosCache.length === 0) {
+                    // Fallback a filtrado de servidor 1 si el json estuviera vacío
+                    loadM3uServerWithFilter(1, 'event', 'EVENTOS EN VIVO');
+                    return;
+                }
+
+                activeChannels = eventosCache;
+                loader.style.display = 'none';
+                channelList.style.display = 'flex';
+                renderChannels(activeChannels);
+
+            } catch (error) {
+                console.error("Error leyendo JSON de eventos:", error);
+                // Si ocurre error descargando el JSON, hace un fallback inteligente al servidor M3U
+                loadM3uServerWithFilter(1, 'event', 'EVENTOS EN VIVO');
+            }
+        }
+
+        // Parseador flexible de esquemas JSON
+        function parseEventosJSON(data) {
+            let list = [];
+            // Si el objeto principal contiene un array en 'channels', 'items', 'eventos', etc.
+            if (Array.isArray(data)) {
+                list = data;
+            } else if (data && typeof data === 'object') {
+                list = data.eventos || data.channels || data.items || data.data || [];
+            }
+
+            return list.map(item => {
+                const title = item.name || item.title || item.name_event || item.event_name || item.nombre || "Evento en Vivo";
+                const group = item.group || item.category || item.time || item.hora || "Eventos Especiales";
+                const logo = item.logo || item.image || item.img || item.icon || "";
+                const url = item.url || item.stream || item.link || item.m3u8 || "";
+
+                return { title, group, logo, url };
+            }).filter(item => item.url.length > 0 || item.title.length > 0);
+        }
+
+        // Manejador de clics para Colección y Series
+        function handleCategoryClick(categoryName) {
+            playSelectSound();
+            loadM3uServerWithFilter(1, categoryName, categoryName);
+        }
+
+        // Obtener icono FontAwesome
         function getCategoryIcon(groupName, titleName = '') {
             const text = (groupName + ' ' + titleName).toLowerCase();
             
+            if (text.includes('event') || text.includes('ppv') || text.includes('vivo') || text.includes('especial')) {
+                return 'calendar-days';
+            }
             if (text.includes('deport') || text.includes('sport') || text.includes('espn') || text.includes('fox') || text.includes('liga') || text.includes('win') || text.includes('gol')) {
-                return 'fa-trophy'; // Trofeo para Deportes
+                return 'trophy';
             }
             if (text.includes('noticia') || text.includes('news') || text.includes('info') || text.includes('24') || text.includes('cnn')) {
-                return 'fa-newspaper'; // Periódico para Noticias
+                return 'newspaper';
             }
             if (text.includes('music') || text.includes('música') || text.includes('hit') || text.includes('mtv') || text.includes('radio')) {
-                return 'fa-music'; // Nota Musical para Música
+                return 'music';
             }
             if (text.includes('docu') || text.includes('cultur') || text.includes('geo') || text.includes('discovery') || text.includes('history') || text.includes('planet')) {
-                return 'fa-globe'; // Globo terráqueo para Documentales/Cultura
+                return 'globe';
             }
             if (text.includes('serie') || text.includes('novel') || text.includes('dram')) {
-                return 'fa-masks-theater'; // Máscaras para Series
+                return 'masks-theater';
             }
-            if (text.includes('cine') || text.includes('pelicula') || text.includes('movie') || text.includes('hbo') || text.includes('star') || text.includes('estreno')) {
-                return 'fa-clapperboard'; // Claqueta para Cine/Películas
+            if (text.includes('cine') || text.includes('pelicula') || text.includes('movie') || text.includes('hbo') || text.includes('star') || text.includes('estreno') || text.includes('plus')) {
+                return 'clapperboard';
             }
             if (text.includes('infantil') || text.includes('kid') || text.includes('anim') || text.includes('disney') || text.includes('cartoon') || text.includes('nick')) {
-                return 'fa-child'; // Niños/Infantil
+                return 'child';
             }
             if (text.includes('adult') || text.includes('18') || text.includes('xxx')) {
-                return 'fa-lock';
+                return 'lock';
             }
             
-            return 'fa-tv'; // Televisor por defecto para General/Entretenimiento
+            return 'tv';
         }
 
-        // Cargar Lista M3U para Servidores
-        async function loadM3uServer(serverNum) {
-            playSelectSound();
+        // Cargar Lista M3U para Servidores con filtro opcional
+        async function loadM3uServerWithFilter(serverNum, initialFilter = '', displayTitle = '') {
             currentServer = serverNum;
             const modal = document.getElementById('contentModal');
             const loader = document.getElementById('loader');
@@ -681,15 +769,22 @@
             const searchInput = document.getElementById('searchInput');
             const targetUrl = serverNum === 1 ? M3U_URL_SERVER1 : M3U_URL_SERVER2;
 
-            document.getElementById('modalTitle').innerHTML = `<i class="fa-solid fa-${serverNum === 1 ? 'tv' : 'tower-broadcast'}"></i> SERVIDOR ${serverNum}`;
+            const titleText = displayTitle || (initialFilter ? initialFilter.toUpperCase() : `SERVIDOR ${serverNum}`);
+            const iconClass = getCategoryIcon(initialFilter || titleText);
+
+            document.getElementById('modalTitle').innerHTML = `<i class="fa-solid fa-${iconClass}"></i> ${titleText}`;
             modal.classList.add('active');
-            searchInput.value = '';
+            searchInput.value = initialFilter;
 
             if (serverCache[serverNum].length > 0) {
                 activeChannels = serverCache[serverNum];
                 loader.style.display = 'none';
                 channelList.style.display = 'flex';
-                renderChannels(activeChannels);
+                if (initialFilter) {
+                    filterChannels();
+                } else {
+                    renderChannels(activeChannels);
+                }
                 return;
             }
 
@@ -706,15 +801,24 @@
                 
                 loader.style.display = 'none';
                 channelList.style.display = 'flex';
-                renderChannels(activeChannels);
-                showToast(`Servidor ${serverNum}: ${activeChannels.length} canales cargados`);
+                
+                if (initialFilter) {
+                    filterChannels();
+                } else {
+                    renderChannels(activeChannels);
+                }
             } catch (error) {
                 console.error(error);
-                loader.innerHTML = `<i class="fa-solid fa-triangle-exclamation" style="font-size:32px; color:#ff0022;"></i><span>Error al cargar Servidor ${serverNum}</span>`;
+                loader.innerHTML = `<i class="fa-solid fa-triangle-exclamation" style="font-size:32px; color:#ff0022;"></i><span>Error al cargar contenidos</span>`;
             }
         }
 
-        // Parseador de formato M3U
+        function loadM3uServer(serverNum) {
+            playSelectSound();
+            loadM3uServerWithFilter(serverNum, '');
+        }
+
+        // Parseador M3U
         function parseM3U(m3uText) {
             const lines = m3uText.split('\n');
             const channels = [];
@@ -726,13 +830,11 @@
                 if (line.startsWith('#EXTINF:')) {
                     currentChannel = {};
 
-                    // Extraer logo si existe tvg-logo="..."
                     const logoMatch = line.match(/tvg-logo="([^"]*)"/);
                     if (logoMatch && logoMatch[1]) {
                         currentChannel.logo = logoMatch[1];
                     }
 
-                    // Extraer grupo si existe group-title="..."
                     const groupMatch = line.match(/group-title="([^"]*)"/);
                     if (groupMatch && groupMatch[1]) {
                         currentChannel.group = groupMatch[1];
@@ -740,7 +842,6 @@
                         currentChannel.group = "General";
                     }
 
-                    // Extraer Nombre del Canal (después de la coma)
                     const commaIndex = line.lastIndexOf(',');
                     if (commaIndex !== -1) {
                         currentChannel.title = line.substring(commaIndex + 1).trim();
@@ -758,13 +859,13 @@
             return channels;
         }
 
-        // Renderizar canales en la interfaz con sonido de hover/select
+        // Renderizar canales
         function renderChannels(channels) {
             const channelList = document.getElementById('channelList');
             channelList.innerHTML = '';
 
             if (channels.length === 0) {
-                channelList.innerHTML = `<div style="text-align:center; color:#777; padding:20px;">No se encontraron canales</div>`;
+                channelList.innerHTML = `<div style="text-align:center; color:#777; padding:20px;">No se encontraron elementos</div>`;
                 return;
             }
 
@@ -780,8 +881,8 @@
                 const iconClass = getCategoryIcon(ch.group, ch.title);
 
                 const logoHtml = ch.logo ? 
-                    `<img class="channel-logo" src="${ch.logo}" alt="Logo" onerror="this.onerror=null; this.outerHTML='<div class=\\'channel-category-icon\\'><i class=\\'fa-solid ${iconClass}\\'></i></div>';">` :
-                    `<div class="channel-category-icon"><i class="fa-solid ${iconClass}"></i></div>`;
+                    `<img class="channel-logo" src="${ch.logo}" alt="Logo" onerror="this.onerror=null; this.outerHTML='<div class=\\'channel-category-icon\\'><i class=\\'fa-solid fa-${iconClass}\\'></i></div>';">` :
+                    `<div class="channel-category-icon"><i class="fa-solid fa-${iconClass}"></i></div>`;
 
                 item.innerHTML = `
                     ${logoHtml}
@@ -794,7 +895,7 @@
             });
         }
 
-        // Filtrar canales por término de búsqueda
+        // Filtrar canales
         function filterChannels() {
             const query = document.getElementById('searchInput').value.toLowerCase();
             const filtered = activeChannels.filter(ch => 
@@ -804,12 +905,12 @@
             renderChannels(filtered);
         }
 
-        // Reproducir señal de video HLS
+        // Reproducir HLS
         function playStream(channel) {
             const playerView = document.getElementById('playerView');
             const video = document.getElementById('videoPlayer');
             document.getElementById('playingTitle').innerText = channel.title;
-            document.getElementById('playingGroup').innerText = `${channel.group} - Servidor ${currentServer}`;
+            document.getElementById('playingGroup').innerText = `${channel.group} - RAYKO PLAY`;
 
             playerView.classList.add('active');
 
@@ -827,13 +928,10 @@
                     video.play().catch(e => console.log("Autoplay interceptado:", e));
                 });
             } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                // Para iOS Safari
                 video.src = channel.url;
                 video.addEventListener('loadedmetadata', function() {
                     video.play();
                 });
-            } else {
-                showToast("Tu navegador no soporta reproducción HLS");
             }
         }
 
@@ -851,22 +949,6 @@
         function closeModal() {
             playSelectSound();
             document.getElementById('contentModal').classList.remove('active');
-        }
-
-        function openDummySection(title) {
-            playSelectSound();
-            showToast(`Sección ${title} próximamente disponible`);
-        }
-
-        let toastTimeout;
-        function showToast(msg) {
-            const toast = document.getElementById('toastMessage');
-            toast.innerText = msg;
-            toast.classList.add('show');
-            clearTimeout(toastTimeout);
-            toastTimeout = setTimeout(() => {
-                toast.classList.remove('show');
-            }, 2500);
         }
     </script>
 </body>
