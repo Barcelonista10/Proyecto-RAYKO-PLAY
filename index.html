@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>RAYKO PLAY - Servidores M3U & Eventos</title>
+    <title>RAYKO PLAY - Detección Automática de Películas por Año</title>
     <!-- FontAwesome Icons (Free 6.4.0) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
@@ -252,7 +253,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
             padding-bottom: 10px;
             border-bottom: 1px solid rgba(255, 0, 34, 0.3);
         }
@@ -283,7 +284,7 @@
         /* Buscador */
         .search-box {
             position: relative;
-            margin-bottom: 14px;
+            margin-bottom: 10px;
         }
 
         .search-input {
@@ -311,6 +312,40 @@
             font-size: 14px;
         }
 
+        /* Barra de Filtro por Años (Chips horizontales) */
+        .year-filter-bar {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            padding-bottom: 12px;
+            margin-bottom: 8px;
+            scrollbar-width: none;
+        }
+
+        .year-filter-bar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .year-chip {
+            background: #181824;
+            border: 1px solid #2a2a3c;
+            color: #aaaaaa;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 20px;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .year-chip.active {
+            background: #ff0022;
+            border-color: #ff3355;
+            color: #ffffff;
+            box-shadow: 0 0 10px rgba(255, 0, 34, 0.5);
+        }
+
         /* Indicador de Carga */
         .loader-box {
             display: flex;
@@ -336,7 +371,7 @@
             100% { transform: rotate(360deg); }
         }
 
-        /* Lista de Canales / Eventos */
+        /* Lista de Canales / Películas */
         .channel-list {
             display: flex;
             flex-direction: column;
@@ -358,6 +393,7 @@
             gap: 16px;
             cursor: pointer;
             transition: all 0.2s ease;
+            position: relative;
         }
 
         .channel-item:hover, .channel-item:active {
@@ -397,6 +433,14 @@
             display: flex;
             flex-direction: column;
             overflow: hidden;
+            flex: 1;
+        }
+
+        .channel-title-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
         }
 
         .channel-title {
@@ -408,10 +452,30 @@
             text-overflow: ellipsis;
         }
 
+        /* Insignia de Año */
+        .year-badge {
+            background: rgba(255, 0, 34, 0.18);
+            border: 1px solid rgba(255, 0, 34, 0.4);
+            color: #ff3355;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 2px 8px;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
         .channel-group {
             font-size: 12px;
-            color: #888899;
+            color: #99a0b0;
             margin-top: 2px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .group-year-tag {
+            color: #ff0022;
+            font-weight: 700;
         }
 
         /* Reproductor Modal */
@@ -531,8 +595,8 @@
                 <div class="btn-text">EVENTOS EN VIVO</div>
             </div>
 
-            <!-- 4. PELÍCULAS COLECCIÓN (Cinta de Película) -->
-            <div class="btn-card border-silver" onmouseenter="playHoverSound()" onclick="handleCategoryClick('PELÍCULAS COLECCIÓN')">
+            <!-- 4. PELÍCULAS COLECCIÓN (Detección Automática por Año) -->
+            <div class="btn-card border-silver" onmouseenter="playHoverSound()" onclick="loadPeliculasM3u()">
                 <div class="btn-icon" style="color: #d1d5db;">
                     <i class="fa-solid fa-film"></i>
                 </div>
@@ -549,7 +613,7 @@
 
         </main>
 
-        <!-- Modal de Canales / Eventos -->
+        <!-- Modal de Canales / Películas -->
         <div class="content-modal" id="contentModal">
             <div class="modal-header">
                 <div class="modal-title" id="modalTitle">
@@ -561,7 +625,13 @@
             <!-- Buscador -->
             <div class="search-box">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input type="text" class="search-input" id="searchInput" placeholder="Buscar por canal o evento..." oninput="filterChannels()">
+                <input type="text" class="search-input" id="searchInput" placeholder="Buscar por título, año o género..." oninput="filterChannels()">
+            </div>
+
+            <!-- Barra de Filtro Automático por Años de Estreno -->
+            <div class="year-filter-bar" id="yearFilterBar" style="display: none;">
+                <div class="year-chip active" onclick="setYearFilter('todos', this)">TODOS</div>
+                <!-- Chips de Años generados dinámicamente -->
             </div>
 
             <!-- Loader / Lista de canales -->
@@ -581,26 +651,29 @@
             </div>
             <div class="player-info">
                 <div class="playing-badge">
-                    <i class="fa-solid fa-signal"></i> TRANSMISIÓN EN VIVO
+                    <i class="fa-solid fa-play"></i> REPRODUCIENDO CONTENIDO
                 </div>
-                <div class="playing-title" id="playingTitle">Canal</div>
-                <p id="playingGroup" style="font-size: 13px; color: #888;">RAYKO PLAY Eventos</p>
+                <div class="playing-title" id="playingTitle">Título</div>
+                <p id="playingGroup" style="font-size: 13px; color: #888;">RAYKO PLAY Películas</p>
             </div>
         </div>
 
     </div>
 
-    <!-- Script de Integración M3U, JSON & Player -->
+    <!-- Script de Integración M3U, Detección por Año & Player -->
     <script>
-        // URLs M3U & JSON Eventos
+        // Enlaces de listas M3U y JSON
         const M3U_URL_SERVER1 = "https://raw.githubusercontent.com/Barcelonista10/Proyecto-RAYKO-PLAY/refs/heads/main/Lista%20Premium1.m3u";
         const M3U_URL_SERVER2 = "https://raw.githubusercontent.com/Barcelonista10/Proyecto-RAYKO-PLAY/refs/heads/main/Lista%20Premium1.m3u";
+        const M3U_URL_PELICULAS = "https://raw.githubusercontent.com/Barcelonista10/Proyecto-RAYKO-PLAY/refs/heads/main/Peliculas.m3u";
         const JSON_URL_EVENTOS = "https://raw.githubusercontent.com/Barcelonista10/Proyecto-RAYKO-PLAY/refs/heads/main/eventos%20raiko%20play.json";
 
         let serverCache = { 1: [], 2: [] };
+        let peliculasCache = [];
         let eventosCache = [];
         let currentServer = 1;
         let activeChannels = [];
+        let selectedYearFilter = 'todos';
         let hlsInstance = null;
 
         // Contexto de Audio Web Sintetizado
@@ -650,17 +723,112 @@
             } catch (e) {}
         }
 
-        // Cargar Eventos desde el archivo JSON exclusivo de RAYKO PLAY
+        // Función para extraer el Año de Estreno del Título o Grupo mediante Expresiones Regulares
+        function extractReleaseYear(title, group = '') {
+            const fullText = title + ' ' + group;
+            // Busca patrones de años como (2026), [2025], 2024, etc. entre 1900 y 2099
+            const match = fullText.match(/\b(19\d\d|20\d\d)\b/);
+            return match ? match[1] : null;
+        }
+
+        // Cargar Lista M3U exclusiva de Películas Colección con Detección por Año
+        async function loadPeliculasM3u() {
+            playSelectSound();
+            const modal = document.getElementById('contentModal');
+            const loader = document.getElementById('loader');
+            const channelList = document.getElementById('channelList');
+            const searchInput = document.getElementById('searchInput');
+            const yearFilterBar = document.getElementById('yearFilterBar');
+
+            document.getElementById('modalTitle').innerHTML = `<i class="fa-solid fa-film"></i> PELÍCULAS COLECCIÓN`;
+            modal.classList.add('active');
+            searchInput.value = '';
+            selectedYearFilter = 'todos';
+
+            if (peliculasCache.length > 0) {
+                activeChannels = peliculasCache;
+                loader.style.display = 'none';
+                channelList.style.display = 'flex';
+                buildYearChips(activeChannels);
+                renderChannels(activeChannels);
+                return;
+            }
+
+            loader.style.display = 'flex';
+            channelList.style.display = 'none';
+            yearFilterBar.style.display = 'none';
+
+            try {
+                const response = await fetch(M3U_URL_PELICULAS);
+                if (!response.ok) throw new Error("Error al descargar lista M3U de películas");
+                const text = await response.text();
+
+                peliculasCache = parseM3U(text);
+                activeChannels = peliculasCache;
+
+                loader.style.display = 'none';
+                channelList.style.display = 'flex';
+                buildYearChips(activeChannels);
+                renderChannels(activeChannels);
+
+            } catch (error) {
+                console.error("Error leyendo M3U de películas:", error);
+                loader.innerHTML = `<i class="fa-solid fa-triangle-exclamation" style="font-size:32px; color:#ff0022;"></i><span>Error al cargar Películas</span>`;
+            }
+        }
+
+        // Genera botones/chips de filtro automático por años detectados
+        function buildYearChips(items) {
+            const yearFilterBar = document.getElementById('yearFilterBar');
+            yearFilterBar.innerHTML = '<div class="year-chip active" onclick="setYearFilter(\'todos\', this)">TODOS</div>';
+
+            const yearsMap = {};
+            items.forEach(item => {
+                if (item.year) {
+                    yearsMap[item.year] = (yearsMap[item.year] || 0) + 1;
+                }
+            });
+
+            const sortedYears = Object.keys(yearsMap).sort((a, b) => b - a);
+
+            if (sortedYears.length > 0) {
+                sortedYears.forEach(yr => {
+                    const chip = document.createElement('div');
+                    chip.className = 'year-chip';
+                    chip.innerText = `${yr} (${yearsMap[yr]})`;
+                    chip.onclick = () => setYearFilter(yr, chip);
+                    yearFilterBar.appendChild(chip);
+                });
+                yearFilterBar.style.display = 'flex';
+            } else {
+                yearFilterBar.style.display = 'none';
+            }
+        }
+
+        // Establecer filtro por año seleccionado
+        function setYearFilter(year, element) {
+            playSelectSound();
+            selectedYearFilter = year;
+            
+            document.querySelectorAll('.year-chip').forEach(chip => chip.classList.remove('active'));
+            element.classList.add('active');
+
+            filterChannels();
+        }
+
+        // Cargar Eventos desde el archivo JSON
         async function loadEventosJson() {
             playSelectSound();
             const modal = document.getElementById('contentModal');
             const loader = document.getElementById('loader');
             const channelList = document.getElementById('channelList');
             const searchInput = document.getElementById('searchInput');
+            const yearFilterBar = document.getElementById('yearFilterBar');
 
             document.getElementById('modalTitle').innerHTML = `<i class="fa-solid fa-calendar-days"></i> EVENTOS EN VIVO`;
             modal.classList.add('active');
             searchInput.value = '';
+            yearFilterBar.style.display = 'none';
 
             if (eventosCache.length > 0) {
                 activeChannels = eventosCache;
@@ -678,11 +846,9 @@
                 if (!response.ok) throw new Error("Error al descargar el JSON de eventos");
                 const data = await response.json();
 
-                // Normalizar datos del JSON de eventos
                 eventosCache = parseEventosJSON(data);
 
                 if (eventosCache.length === 0) {
-                    // Fallback a filtrado de servidor 1 si el json estuviera vacío
                     loadM3uServerWithFilter(1, 'event', 'EVENTOS EN VIVO');
                     return;
                 }
@@ -694,7 +860,6 @@
 
             } catch (error) {
                 console.error("Error leyendo JSON de eventos:", error);
-                // Si ocurre error descargando el JSON, hace un fallback inteligente al servidor M3U
                 loadM3uServerWithFilter(1, 'event', 'EVENTOS EN VIVO');
             }
         }
@@ -702,7 +867,6 @@
         // Parseador flexible de esquemas JSON
         function parseEventosJSON(data) {
             let list = [];
-            // Si el objeto principal contiene un array en 'channels', 'items', 'eventos', etc.
             if (Array.isArray(data)) {
                 list = data;
             } else if (data && typeof data === 'object') {
@@ -714,14 +878,16 @@
                 const group = item.group || item.category || item.time || item.hora || "Eventos Especiales";
                 const logo = item.logo || item.image || item.img || item.icon || "";
                 const url = item.url || item.stream || item.link || item.m3u8 || "";
+                const year = extractReleaseYear(title, group);
 
-                return { title, group, logo, url };
+                return { title, group, logo, url, year };
             }).filter(item => item.url.length > 0 || item.title.length > 0);
         }
 
-        // Manejador de clics para Colección y Series
+        // Manejador de clics para Series
         function handleCategoryClick(categoryName) {
             playSelectSound();
+            document.getElementById('yearFilterBar').style.display = 'none';
             loadM3uServerWithFilter(1, categoryName, categoryName);
         }
 
@@ -757,7 +923,7 @@
                 return 'lock';
             }
             
-            return 'tv';
+            return 'film';
         }
 
         // Cargar Lista M3U para Servidores con filtro opcional
@@ -767,6 +933,7 @@
             const loader = document.getElementById('loader');
             const channelList = document.getElementById('channelList');
             const searchInput = document.getElementById('searchInput');
+            const yearFilterBar = document.getElementById('yearFilterBar');
             const targetUrl = serverNum === 1 ? M3U_URL_SERVER1 : M3U_URL_SERVER2;
 
             const titleText = displayTitle || (initialFilter ? initialFilter.toUpperCase() : `SERVIDOR ${serverNum}`);
@@ -775,6 +942,7 @@
             document.getElementById('modalTitle').innerHTML = `<i class="fa-solid fa-${iconClass}"></i> ${titleText}`;
             modal.classList.add('active');
             searchInput.value = initialFilter;
+            yearFilterBar.style.display = 'none';
 
             if (serverCache[serverNum].length > 0) {
                 activeChannels = serverCache[serverNum];
@@ -815,10 +983,11 @@
 
         function loadM3uServer(serverNum) {
             playSelectSound();
+            document.getElementById('yearFilterBar').style.display = 'none';
             loadM3uServerWithFilter(serverNum, '');
         }
 
-        // Parseador M3U
+        // Parseador M3U con detección integrada de año
         function parseM3U(m3uText) {
             const lines = m3uText.split('\n');
             const channels = [];
@@ -839,15 +1008,19 @@
                     if (groupMatch && groupMatch[1]) {
                         currentChannel.group = groupMatch[1];
                     } else {
-                        currentChannel.group = "General";
+                        currentChannel.group = "Películas";
                     }
 
                     const commaIndex = line.lastIndexOf(',');
                     if (commaIndex !== -1) {
                         currentChannel.title = line.substring(commaIndex + 1).trim();
                     } else {
-                        currentChannel.title = "Canal Sin Nombre";
+                        currentChannel.title = "Título no disponible";
                     }
+
+                    // Extrae automáticamente el año de lanzamiento
+                    currentChannel.year = extractReleaseYear(currentChannel.title, currentChannel.group);
+
                 } else if (line.length > 0 && !line.startsWith('#')) {
                     if (currentChannel) {
                         currentChannel.url = line;
@@ -859,13 +1032,13 @@
             return channels;
         }
 
-        // Renderizar canales
+        // Renderizar elementos en pantalla con año en el subtítulo y en el badge
         function renderChannels(channels) {
             const channelList = document.getElementById('channelList');
             channelList.innerHTML = '';
 
             if (channels.length === 0) {
-                channelList.innerHTML = `<div style="text-align:center; color:#777; padding:20px;">No se encontraron elementos</div>`;
+                channelList.innerHTML = `<div style="text-align:center; color:#777; padding:20px;">No se encontraron elementos en esta categoría/año</div>`;
                 return;
             }
 
@@ -881,36 +1054,52 @@
                 const iconClass = getCategoryIcon(ch.group, ch.title);
 
                 const logoHtml = ch.logo ? 
-                    `<img class="channel-logo" src="${ch.logo}" alt="Logo" onerror="this.onerror=null; this.outerHTML='<div class=\\'channel-category-icon\\'><i class=\\'fa-solid fa-${iconClass}\\'></i></div>';">` :
+                    `<img class="channel-logo" src="${ch.logo}" alt="Poster" onerror="this.onerror=null; this.outerHTML='<div class=\\'channel-category-icon\\'><i class=\\'fa-solid fa-${iconClass}\\'></i></div>';">` :
                     `<div class="channel-category-icon"><i class="fa-solid fa-${iconClass}"></i></div>`;
+
+                const yearBadgeHtml = ch.year ? `<span class="year-badge">${ch.year}</span>` : '';
+                
+                // Formato del subtítulo con el año integrado
+                const groupSubtitle = ch.year 
+                    ? `<i class="fa-solid fa-folder" style="font-size:10px; margin-right:4px;"></i>${ch.group} <span class="group-year-tag">• ${ch.year}</span>` 
+                    : `<i class="fa-solid fa-folder" style="font-size:10px; margin-right:4px;"></i>${ch.group}`;
 
                 item.innerHTML = `
                     ${logoHtml}
                     <div class="channel-details">
-                        <div class="channel-title">${ch.title}</div>
-                        <div class="channel-group"><i class="fa-solid fa-folder" style="font-size:10px; margin-right:4px;"></i>${ch.group}</div>
+                        <div class="channel-title-row">
+                            <div class="channel-title">${ch.title}</div>
+                            ${yearBadgeHtml}
+                        </div>
+                        <div class="channel-group">${groupSubtitle}</div>
                     </div>
                 `;
                 channelList.appendChild(item);
             });
         }
 
-        // Filtrar canales
+        // Filtrar canales o películas por texto y por año seleccionado
         function filterChannels() {
             const query = document.getElementById('searchInput').value.toLowerCase();
-            const filtered = activeChannels.filter(ch => 
-                ch.title.toLowerCase().includes(query) || 
-                ch.group.toLowerCase().includes(query)
-            );
+            const filtered = activeChannels.filter(ch => {
+                const matchesText = ch.title.toLowerCase().includes(query) || 
+                                    ch.group.toLowerCase().includes(query) ||
+                                    (ch.year && ch.year.includes(query));
+                
+                const matchesYear = (selectedYearFilter === 'todos') || (ch.year === selectedYearFilter);
+
+                return matchesText && matchesYear;
+            });
+
             renderChannels(filtered);
         }
 
-        // Reproducir HLS
+        // Reproducir HLS o transmisión de video
         function playStream(channel) {
             const playerView = document.getElementById('playerView');
             const video = document.getElementById('videoPlayer');
-            document.getElementById('playingTitle').innerText = channel.title;
-            document.getElementById('playingGroup').innerText = `${channel.group} - RAYKO PLAY`;
+            document.getElementById('playingTitle').innerText = channel.title + (channel.year ? ` (${channel.year})` : '');
+            document.getElementById('playingGroup').innerText = `${channel.group} ${channel.year ? '• ' + channel.year : ''} - RAYKO PLAY`;
 
             playerView.classList.add('active');
 
@@ -932,6 +1121,9 @@
                 video.addEventListener('loadedmetadata', function() {
                     video.play();
                 });
+            } else {
+                video.src = channel.url;
+                video.play().catch(e => console.log("Error al reproducir fuente:", e));
             }
         }
 
