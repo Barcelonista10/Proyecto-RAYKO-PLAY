@@ -620,8 +620,8 @@
         function parseEventosJSON(data) {
             let list = Array.isArray(data) ? data : (data.eventos || data.channels || data.items || data.data || []);
             return list.map(item => {
-                const title = item.name || item.title || item.name_event || item.event_name || item.nombre || "Evento";
-                const group = item.group || item.category || item.time || item.hora || "Partidos de Hoy";
+                const title = item.partido || item.name || item.title || item.name_event || item.event_name || item.nombre || "Evento";
+                const group = item.liga || item.group || item.category || item.time || item.hora || "Partidos de Hoy";
                 const logo = item.logo || item.image || item.img || item.icon || "";
                 const url = item.url || item.stream || item.link || item.m3u8 || "";
                 return { title, group, logo, url };
