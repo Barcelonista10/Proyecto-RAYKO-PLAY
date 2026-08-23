@@ -1,702 +1,876 @@
+```html
 <!DOCTYPE html>
-<html lang="es" class="dark">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>RAYKO PLAY - Neo Cyber Entertainment</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>RAYKO PLAY - Servidores M3U</title>
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        'cyber-dark': '#06070a',
-                        'cyber-accent': '#ff0044',
-                        'cyber-cyan': '#00f0ff',
-                        'cyber-purple': '#7000ff',
-                        'cyber-gold': '#ffb700',
-                    },
-                    boxShadow: {
-                        'neon-red': '0 0 20px rgba(255, 0, 68, 0.4), 0 0 40px rgba(255, 0, 68, 0.1)',
-                        'neon-cyan': '0 0 20px rgba(0, 240, 255, 0.4), 0 0 40px rgba(0, 240, 255, 0.1)',
-                        'card-glow': '0 8px 32px 0 rgba(0, 0, 0, 0.7)',
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <!-- HLS.js para reproducción de video streaming en directo -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&display=swap');
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
 
         body {
-            background-color: #030305;
+            background-color: #08080a;
             color: #ffffff;
-            font-family: 'Rajdhani', sans-serif;
-            user-select: none;
-            -webkit-tap-highlight-color: transparent;
+            font-family: 'Montserrat', sans-serif;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             overflow: hidden;
         }
 
-        .font-cyber {
-            font-family: 'Orbitron', sans-serif;
-        }
-
-        .bg-grid {
-            background-size: 30px 30px;
-            background-image:
-                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-        }
-
-        .cyber-card {
-            background: linear-gradient(135deg, rgba(20, 24, 33, 0.85) 0%, rgba(10, 12, 18, 0.95) 100%);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+        /* Contenedor principal estilo pantalla móvil */
+        .app-container {
+            width: 100%;
+            height: 100%;
+            max-width: 440px;
+            max-height: 900px;
+            background: radial-gradient(circle at 50% 20%, #1a080a 0%, #0c0507 50%, #050304 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 22px 24px 22px;
             position: relative;
-            overflow: hidden;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow-y: auto;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.95);
+            scrollbar-width: none;
+        }
+        .app-container::-webkit-scrollbar {
+            display: none;
         }
 
-        .cyber-card::before {
+        /* Encabezado RAYKO PLAY */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 32px;
+            margin-top: 10px;
+        }
+
+        .main-title {
+            font-family: 'Oswald', 'Montserrat', sans-serif;
+            font-size: 44px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .title-rayko {
+            color: #e6e6e6;
+            text-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .title-play {
+            color: #ff0015;
+            text-shadow: 0 0 15px rgba(255, 0, 21, 0.8), 0 0 30px rgba(255, 0, 21, 0.5);
+        }
+
+        .subtitle {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            color: #a0a0a8;
+            margin-top: 12px;
+            text-transform: uppercase;
+        }
+
+        /* Lista de Menús / Botones */
+        .menu-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        /* Estilo base de los botones */
+        .btn-card {
+            width: 100%;
+            height: 82px;
+            background: linear-gradient(180deg, #1c1c20 0%, #121215 100%);
+            border-radius: 26px;
+            display: flex;
+            align-items: center;
+            padding: 0 28px;
+            gap: 22px;
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+            border: none;
+        }
+
+        .btn-card:hover {
+            transform: translateY(-2px) scale(1.01);
+        }
+
+        .btn-card:active {
+            transform: scale(0.97);
+        }
+
+        /* Bordes Neón Rojo (Servidor 1, Películas Plus, Series) */
+        .btn-card.border-red {
+            border-top: 2px solid #ff0022;
+            border-bottom: 2px solid #ff0022;
+            box-shadow: 0 0 15px rgba(255, 0, 34, 0.35), 0 8px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .btn-card.border-red::before {
             content: '';
             position: absolute;
-            top: 0; left: -100%;
-            width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
-            transition: 0.5s;
+            top: -2px;
+            left: 20%;
+            right: 20%;
+            height: 2px;
+            background: #ff4d6d;
+            box-shadow: 0 0 10px #ff0022;
         }
 
-        .cyber-card:hover::before, .cyber-card:active::before {
-            left: 100%;
+        /* Bordes Blanco / Plateado (Servidor 2, Películas Colección) */
+        .btn-card.border-silver {
+            border-top: 2px solid #e0e0e6;
+            border-bottom: 2px solid #b0b0b8;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.15), 0 8px 20px rgba(0, 0, 0, 0.7);
         }
 
-        .cyber-card:active {
-            transform: scale(0.98);
+        .btn-card.border-silver::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 25%;
+            right: 25%;
+            height: 2px;
+            background: #ffffff;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
         }
 
-        .cyber-border-red {
-            border-left: 3px solid #ff0044;
-        }
-        .cyber-border-cyan {
-            border-left: 3px solid #00f0ff;
-        }
-        .cyber-border-gold {
-            border-left: 3px solid #ffb700;
-        }
-
-        .screen {
-            display: none;
-            opacity: 0;
-            transform: translateY(10px);
-            transition: opacity 0.35s ease, transform 0.35s ease;
-        }
-
-        .screen.active {
+        /* Iconos de los botones */
+        .btn-icon {
+            width: 44px;
+            height: 44px;
             display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 32px;
+            filter: drop-shadow(0 3px 5px rgba(0,0,0,0.5));
+        }
+
+        /* Texto dentro de los botones */
+        .btn-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Modal para Contenidos */
+        .content-modal {
+            position: absolute;
+            inset: 0;
+            background: #07070b;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            transform: translateY(30px);
+        }
+
+        .content-modal.active {
             opacity: 1;
+            pointer-events: auto;
             transform: translateY(0);
         }
 
-        ::-webkit-scrollbar {
-            width: 4px;
-        }
-        ::-webkit-scrollbar-track {
-            background: rgba(0,0,0,0.2);
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #ff0044;
-            border-radius: 10px;
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 0, 34, 0.3);
         }
 
-        @keyframes cyberPulse {
-            0%, 100% {
-                box-shadow: 0 0 15px rgba(255,0,68,0.4), inset 0 0 15px rgba(255,0,68,0.2);
-                border-color: rgba(255,0,68,0.6);
-            }
-            50% {
-                box-shadow: 0 0 25px rgba(255,0,68,0.7), inset 0 0 20px rgba(255,0,68,0.4);
-                border-color: rgba(255,0,68,1);
-            }
+        .modal-title {
+            font-size: 20px;
+            font-weight: 800;
+            color: #ff0022;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
-        @keyframes goldPulse {
-            0%, 100% {
-                box-shadow: 0 0 15px rgba(255,183,0,0.4), inset 0 0 15px rgba(255,183,0,0.2);
-                border-color: rgba(255,183,0,0.6);
-            }
-            50% {
-                box-shadow: 0 0 25px rgba(255,183,0,0.7), inset 0 0 20px rgba(255,183,0,0.4);
-                border-color: rgba(255,183,0,1);
-            }
+        .btn-close {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: #fff;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .pulse-neon {
-            animation: cyberPulse 2.5s ease-in-out infinite;
+        /* Buscador */
+        .search-box {
+            position: relative;
+            margin-bottom: 14px;
         }
 
-        .pulse-gold {
-            animation: goldPulse 2.5s ease-in-out infinite;
-        }
-
-        @keyframes purplePulse {
-            0%, 100% {
-                box-shadow: 0 0 15px rgba(112,0,255,0.4), inset 0 0 15px rgba(112,0,255,0.2);
-                border-color: rgba(112,0,255,0.6);
-            }
-            50% {
-                box-shadow: 0 0 25px rgba(112,0,255,0.7), inset 0 0 20px rgba(112,0,255,0.4);
-                border-color: rgba(112,0,255,1);
-            }
-        }
-
-        .pulse-purple {
-            animation: purplePulse 2.5s ease-in-out infinite;
-        }
-
-        .scanline {
+        .search-input {
             width: 100%;
-            height: 2px;
-            background: rgba(0, 240, 255, 0.3);
-            position: absolute;
-            top: 0; left: 0;
-            animation: scan 8s linear infinite;
-            pointer-events: none;
-            z-index: 60;
-            opacity: 0.6;
+            background: #12121a;
+            border: 1px solid #282838;
+            border-radius: 12px;
+            padding: 12px 16px 12px 42px;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            outline: none;
         }
 
-        @keyframes scan {
-            0% { top: 0%; }
-            100% { top: 100%; }
+        .search-input:focus {
+            border-color: #ff0022;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Indicador de Carga */
+        .loader-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 0;
+            gap: 16px;
+            color: #888;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(255,0,34,0.2);
+            border-top: 3px solid #ff0022;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Lista de Canales */
+        .channel-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            overflow-y: auto;
+            flex: 1;
+            padding-right: 4px;
+            scrollbar-width: thin;
+            scrollbar-color: #ff0022 #12121a;
+        }
+
+        .channel-item {
+            background: #121218;
+            border: 1px solid #20202a;
+            border-radius: 14px;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .channel-item:hover, .channel-item:active {
+            background: #1c1c28;
+            border-color: #ff0022;
+            transform: translateX(4px);
+        }
+
+        .channel-logo {
+            width: 46px;
+            height: 46px;
+            border-radius: 10px;
+            background: #1e1e28;
+            object-fit: contain;
+            padding: 4px;
+            flex-shrink: 0;
+        }
+
+        /* Contenedor de Icono Dorado/Naranja por Categoría */
+        .channel-category-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 10px;
+            background: rgba(255, 157, 0, 0.08);
+            border: 1px solid rgba(255, 157, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ff9d00;
+            font-size: 24px;
+            flex-shrink: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .channel-details {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .channel-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #ffffff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .channel-group {
+            font-size: 12px;
+            color: #888899;
+            margin-top: 2px;
+        }
+
+        /* Reproductor Modal */
+        .player-view {
+            position: absolute;
+            inset: 0;
+            background: #000000;
+            z-index: 200;
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .player-view.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .video-container {
+            width: 100%;
+            height: 250px;
+            background: #000;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .btn-close-player {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: rgba(0,0,0,0.7);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .player-info {
+            padding: 20px;
+            flex: 1;
+            background: #0b0b10;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .playing-title {
+            font-size: 20px;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .playing-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 0, 34, 0.2);
+            color: #ff0022;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            width: fit-content;
+        }
+
+        /* Notificación Toast */
+        .toast {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: #ff0022;
+            color: #ffffff;
+            padding: 10px 22px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            box-shadow: 0 6px 20px rgba(255, 0, 34, 0.5);
+            z-index: 300;
+            transition: transform 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
         }
     </style>
 </head>
-<body class="flex justify-center items-center min-h-screen p-0 sm:p-4 bg-black">
+<body>
 
-    <div class="w-full max-w-md h-[100vh] sm:h-[880px] bg-cyber-dark sm:rounded-[44px] border-0 sm:border-[5px] border-zinc-800/80 shadow-card-glow flex flex-col justify-between relative overflow-hidden bg-grid">
+    <div class="app-container">
 
-        <div class="scanline"></div>
+        <!-- Logotipo Superior RAYKO PLAY -->
+        <header class="logo-container">
+            <h1 class="main-title">
+                <span class="title-rayko">RAYKO</span>
+                <span class="title-play">PLAY</span>
+            </h1>
+            <p class="subtitle">ENTRETENIMIENTO FREEMIUM</p>
+        </header>
 
-        <div class="absolute -top-24 -left-24 w-60 h-60 bg-cyber-accent/20 rounded-full blur-[80px] pointer-events-none"></div>
-        <div class="absolute -bottom-24 -right-24 w-60 h-60 bg-cyber-cyan/15 rounded-full blur-[80px] pointer-events-none"></div>
+        <!-- Lista de Secciones principales -->
+        <main class="menu-list">
 
-        <div id="nav-header" class="hidden px-5 pt-4 pb-2 flex items-center justify-between z-50">
-            <button onclick="goBack()" class="flex items-center space-x-2 text-white bg-zinc-900/90 hover:bg-zinc-800 px-3.5 py-1.5 rounded-xl border border-zinc-700/60 active:scale-95 transition shadow-lg backdrop-blur-md">
-                <i class="fas fa-chevron-left text-xs text-cyber-accent"></i>
-                <span class="text-xs font-bold tracking-wider uppercase font-cyber">Atrás</span>
-            </button>
-            <div class="flex items-center space-x-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-cyber-cyan"></span>
-                <span id="current-screen-title" class="text-[11px] tracking-widest text-zinc-400 uppercase font-cyber font-semibold"></span>
+            <!-- 1. SERVIDOR 1 (Icono de TV) -->
+            <div class="btn-card border-red" onmouseenter="playHoverSound()" onclick="loadM3uServer(1)">
+                <div class="btn-icon" style="color: #60a5fa;">
+                    <i class="fa-solid fa-tv"></i>
+                </div>
+                <div class="btn-text">SERVIDOR 1</div>
+            </div>
+
+            <!-- 2. SERVIDOR 2 (Icono de Transmisión/Antena de Servidor) -->
+            <div class="btn-card border-silver" onmouseenter="playHoverSound()" onclick="loadM3uServer(2)">
+                <div class="btn-icon" style="color: #38bdf8;">
+                    <i class="fa-solid fa-tower-broadcast"></i>
+                </div>
+                <div class="btn-text">SERVIDOR 2</div>
+            </div>
+
+            <!-- 3. PELÍCULAS PLUS -->
+            <div class="btn-card border-red" onmouseenter="playHoverSound()" onclick="openDummySection('PELÍCULAS PLUS')">
+                <div class="btn-icon" style="color: #9ca3af;">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <div class="btn-text">PELÍCULAS PLUS</div>
+            </div>
+
+            <!-- 4. PELÍCULAS COLECCIÓN -->
+            <div class="btn-card border-silver" onmouseenter="playHoverSound()" onclick="openDummySection('PELÍCULAS COLECCIÓN')">
+                <div class="btn-icon" style="color: #d1d5db;">
+                    <i class="fa-solid fa-film"></i>
+                </div>
+                <div class="btn-text">PELÍCULAS COLECCIÓN</div>
+            </div>
+
+            <!-- 5. SERIES -->
+            <div class="btn-card border-red" onmouseenter="playHoverSound()" onclick="openDummySection('SERIES')">
+                <div class="btn-icon" style="color: #38bdf8;">
+                    <i class="fa-solid fa-masks-theater"></i>
+                </div>
+                <div class="btn-text">SERIES</div>
+            </div>
+
+        </main>
+
+        <!-- Modal de Canales -->
+        <div class="content-modal" id="contentModal">
+            <div class="modal-header">
+                <div class="modal-title" id="modalTitle">
+                    <i class="fa-solid fa-tv"></i> SERVIDOR 1
+                </div>
+                <button class="btn-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <!-- Buscador de canales -->
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" class="search-input" id="searchInput" placeholder="Buscar por canal o categoría..." oninput="filterChannels()">
+            </div>
+
+            <!-- Loader / Lista de canales -->
+            <div id="loader" class="loader-box">
+                <div class="spinner"></div>
+                <span>Cargando lista M3U...</span>
+            </div>
+
+            <div class="channel-list" id="channelList" style="display: none;"></div>
+        </div>
+
+        <!-- Vista Reproductor HLS -->
+        <div class="player-view" id="playerView">
+            <div class="video-container">
+                <button class="btn-close-player" onclick="closePlayer()"><i class="fa-solid fa-xmark"></i></button>
+                <video id="videoPlayer" controls autoplay playsinline></video>
+            </div>
+            <div class="player-info">
+                <div class="playing-badge">
+                    <i class="fa-solid fa-signal"></i> TRANSMISIÓN EN VIVO
+                </div>
+                <div class="playing-title" id="playingTitle">Canal</div>
+                <p id="playingGroup" style="font-size: 13px; color: #888;">Servidor M3U</p>
             </div>
         </div>
 
-        <!-- VISTA 1: MENÚ PRINCIPAL -->
-        <div id="screen-home" class="screen active flex-col flex-1 px-5 py-6 justify-between overflow-y-auto z-10">
-
-            <div class="text-center my-4 relative">
-                <div class="inline-block relative">
-                    <h1 class="text-4xl font-black tracking-wider text-white font-cyber italic">
-                        RAYKO <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-accent to-cyber-cyan drop-shadow-[0_0_15px_rgba(255,0,68,0.8)]">PLAY</span>
-                    </h1>
-                </div>
-                <div class="flex items-center justify-center space-x-2 mt-1">
-                    <span class="h-[1px] w-6 bg-gradient-to-r from-transparent to-cyber-accent"></span>
-                    <p class="text-[10px] text-zinc-400 font-cyber tracking-[0.3em] uppercase font-bold">ENTRETENIMIENTO GRATUITO</p>
-                    <span class="h-[1px] w-6 bg-gradient-to-l from-transparent to-cyber-accent"></span>
-                </div>
-            </div>
-
-            <div class="space-y-3.5 my-auto">
-                <button onclick="navigateTo('screen-servers')" class="w-full cyber-card pulse-neon p-4 rounded-2xl flex items-center justify-between hover:border-cyber-accent/80 transition group">
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyber-accent/20 to-black border border-cyber-accent/40 flex items-center justify-center text-xl text-cyber-accent shadow-inner group-hover:scale-105 transition">
-                            <i class="fas fa-tv"></i>
-                        </div>
-                        <div class="text-left">
-                            <span class="block text-base font-extrabold text-white tracking-wider font-cyber">TV EN VIVO</span>
-                            <span class="text-[11px] text-zinc-400">Señales HD y Canales Digitales</span>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right text-xs text-cyber-accent opacity-70 group-hover:translate-x-1 transition"></i>
-                </button>
-
-                <button onclick="showToast('Sección de Películas Estreno')" class="w-full cyber-card cyber-border-cyan p-4 rounded-2xl flex items-center justify-between hover:bg-zinc-900/60 transition group">
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 rounded-xl bg-zinc-900/90 border border-zinc-700/60 flex items-center justify-center text-xl text-cyber-cyan group-hover:scale-105 transition">
-                            <i class="fas fa-film"></i>
-                        </div>
-                        <div class="text-left">
-                            <span class="block text-base font-bold text-white tracking-wider font-cyber">PELÍCULAS ESTRENO</span>
-                            <span class="text-[11px] text-zinc-400">Novedades del cine</span>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right text-xs text-zinc-600 group-hover:translate-x-1 transition"></i>
-                </button>
-
-                <button onclick="openPeliculasPlus()" class="w-full cyber-card pulse-purple p-4 rounded-2xl flex items-center justify-between hover:bg-zinc-900/60 transition group">
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 rounded-xl bg-zinc-900/90 border border-zinc-700/60 flex items-center justify-center text-xl text-purple-400 group-hover:scale-105 transition">
-                            <i class="fas fa-photo-video"></i>
-                        </div>
-                        <div class="text-left">
-                            <span class="block text-base font-bold text-white tracking-wider font-cyber">PELÍCULAS PLUS</span>
-                            <span class="text-[11px] text-zinc-400">Catálogo Premium</span>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right text-xs text-zinc-600 group-hover:translate-x-1 transition"></i>
-                </button>
-
-                <button onclick="showToast('Sección de Películas Colección')" class="w-full cyber-card p-4 rounded-2xl flex items-center justify-between hover:bg-zinc-900/60 transition group">
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 rounded-xl bg-zinc-900/90 border border-zinc-700/60 flex items-center justify-center text-xl text-amber-400 group-hover:scale-105 transition">
-                            <i class="fas fa-compact-disc"></i>
-                        </div>
-                        <div class="text-left">
-                            <span class="block text-base font-bold text-white tracking-wider font-cyber">COLECCIÓN</span>
-                            <span class="text-[11px] text-zinc-400">Sagas y Clásicos</span>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right text-xs text-zinc-600 group-hover:translate-x-1 transition"></i>
-                </button>
-
-                <button onclick="showToast('Sección de Series')" class="w-full cyber-card p-4 rounded-2xl flex items-center justify-between hover:bg-zinc-900/60 transition group">
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 rounded-xl bg-zinc-900/90 border border-zinc-700/60 flex items-center justify-center text-xl text-emerald-400 group-hover:scale-105 transition">
-                            <i class="fas fa-layer-group"></i>
-                        </div>
-                        <div class="text-left">
-                            <span class="block text-base font-bold text-white tracking-wider font-cyber">SERIES DE TV</span>
-                            <span class="text-[11px] text-zinc-400">Temporadas completas</span>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right text-xs text-zinc-600 group-hover:translate-x-1 transition"></i>
-                </button>
-            </div>
-
-            <div class="text-center py-2 flex flex-col items-center justify-center space-y-1">
-                <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-zinc-800 to-transparent mb-1"></div>
-                <span class="text-[10px] text-zinc-500 font-cyber tracking-widest uppercase">RAYKO PLAY FREEMIUM © 2026</span>
-            </div>
-        </div>
-
-        <!-- VISTA 2: SERVIDORES TV -->
-        <div id="screen-servers" class="screen flex-col flex-1 px-5 py-4 justify-between overflow-y-auto z-10">
-            <div class="text-center my-4">
-                <h1 class="text-2xl font-black tracking-wider text-white font-cyber uppercase">
-                    SERVIDORES <span class="text-cyber-accent drop-shadow-[0_0_10px_rgba(255,0,68,0.8)]">TV</span>
-                </h1>
-                <p class="text-[10px] text-cyber-cyan font-cyber tracking-[0.25em] mt-1 uppercase">Selecciona un nodo de transmisión</p>
-            </div>
-
-            <div class="space-y-4 my-auto">
-                <!-- SERVIDOR 1: FREEMIUM 1 (incluye Premium) -->
-                <button onclick="loadServerChannels(1)" class="w-full cyber-card pulse-neon p-5 rounded-2xl flex items-center justify-between hover:bg-zinc-900 transition group">
-                    <div class="flex items-center space-x-4">
-                        <div class="relative">
-                            <div class="w-12 h-12 rounded-xl bg-cyber-accent/20 border border-cyber-accent flex items-center justify-center text-cyber-accent text-xl">
-                                <i class="fas fa-server"></i>
-                            </div>
-                            <span class="absolute -top-1 -right-1 flex h-3 w-3">
-                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                              <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
-                            </span>
-                        </div>
-                        <div class="text-left">
-                            <span class="block text-base font-extrabold text-white tracking-wider font-cyber">TV FREEMIUM 1</span>
-                            <span class="text-[11px] text-emerald-400 font-mono">● EN LÍNEA (Principal)</span>
-                        </div>
-                    </div>
-                    <i class="fas fa-play text-xs text-cyber-accent group-hover:translate-x-1 transition"></i>
-                </button>
-
-                <!-- SERVIDOR 2: FREEMIUM 2 (Cine y Series / respaldos) -->
-                <button onclick="loadServerChannels(2)" class="w-full cyber-card cyber-border-cyan p-5 rounded-2xl flex items-center justify-between hover:bg-zinc-900 transition group">
-                    <div class="flex items-center space-x-4">
-                        <div class="relative">
-                            <div class="w-12 h-12 rounded-xl bg-cyber-cyan/20 border border-cyber-cyan flex items-center justify-center text-cyber-cyan text-xl">
-                                <i class="fas fa-satellite"></i>
-                            </div>
-                            <span class="absolute -top-1 -right-1 flex h-3 w-3">
-                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                              <span class="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
-                            </span>
-                        </div>
-                        <div class="text-left">
-                            <span class="block text-base font-extrabold text-white tracking-wider font-cyber">TV FREEMIUM 2</span>
-                            <span class="text-[11px] text-cyber-cyan font-mono">● ONLINE (Respaldos)</span>
-                        </div>
-                    </div>
-                    <i class="fas fa-play text-xs text-cyber-cyan group-hover:translate-x-1 transition"></i>
-                </button>
-
-                <!-- SERVIDOR 3: EVENTOS -->
-                <button onclick="loadServerChannels(3)" class="w-full cyber-card pulse-gold p-5 rounded-2xl flex items-center justify-between hover:bg-zinc-900 transition group">
-                    <div class="flex items-center space-x-4">
-                        <div class="relative">
-                            <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500 flex items-center justify-center text-amber-400 text-xl">
-                                <i class="fas fa-trophy"></i>
-                            </div>
-                            <span class="absolute -top-1 -right-1 flex h-3 w-3">
-                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                              <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
-                            </span>
-                        </div>
-                        <div class="text-left">
-                            <span class="block text-base font-extrabold text-white tracking-wider font-cyber">EVENTOS</span>
-                            <span class="text-[11px] text-amber-400 font-mono">⚡ ESPECIALES & EN VIVO</span>
-                        </div>
-                    </div>
-                    <i class="fas fa-bolt text-xs text-amber-400 group-hover:translate-x-1 transition"></i>
-                </button>
-            </div>
-
-            <div class="text-center py-3">
-                <span class="text-[10px] text-zinc-600 font-cyber tracking-widest uppercase">ESTADO DE RED: OPTIMIZADO</span>
-            </div>
-        </div>
-
-        <!-- VISTA 3: PARRILLA DE CANALES -->
-        <div id="screen-channels" class="screen flex-col flex-1 h-full overflow-hidden z-10">
-
-            <div class="px-4 pt-2 pb-2 flex-none bg-cyber-dark/80 backdrop-blur-md">
-                <div class="text-center mb-3">
-                    <h2 class="text-lg font-black text-white font-cyber tracking-wider" id="server-channels-title">CANALES DISPONIBLES</h2>
-                    <div class="flex items-center justify-center space-x-1.5">
-                        <span id="server-status-dot" class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                        <p id="active-server-badge" class="text-[10px] text-cyber-cyan font-mono uppercase tracking-wider">Servidor Freemium 1 Activo</p>
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-zinc-500">
-                        <i class="fas fa-search text-xs"></i>
-                    </div>
-                    <input
-                        type="text"
-                        id="channel-search"
-                        oninput="filterChannels()"
-                        placeholder="Buscar canal o evento..."
-                        class="w-full bg-zinc-900/90 border border-zinc-700/80 text-white placeholder-zinc-500 text-xs rounded-xl pl-9 pr-8 py-2.5 focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition backdrop-blur-md"
-                    >
-                    <button id="clear-search" onclick="clearSearch()" class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-zinc-400 hover:text-white">
-                        <i class="fas fa-times text-xs"></i>
-                    </button>
-                </div>
-            </div>
-
-            <div class="flex-1 overflow-y-auto px-4 py-2">
-                <div id="channels-grid" class="grid grid-cols-2 gap-3 pb-6">
-                </div>
-
-                <div id="no-results" class="hidden text-center py-12">
-                    <div class="w-16 h-16 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center mx-auto mb-3 text-zinc-600 text-2xl">
-                        <i class="fas fa-search-minus"></i>
-                    </div>
-                    <p class="text-zinc-400 text-xs font-cyber">No se encontraron coincidencias</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="toast" class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-zinc-900/95 border border-cyber-accent/60 text-white px-5 py-2.5 rounded-2xl text-xs font-semibold shadow-2xl opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center space-x-2.5 backdrop-blur-md">
-            <i class="fas fa-info-circle text-cyber-accent text-sm"></i>
-            <span id="toast-message" class="tracking-wide">Mensaje</span>
-        </div>
+        <!-- Toast Message -->
+        <div class="toast" id="toastMessage">Obteniendo canales...</div>
 
     </div>
 
+    <!-- Script de Integración M3U, Sonidos & Player -->
     <script>
-        let allChannels = [];
-        let currentServer = 1;
-        let currentCategoryFilter = null; // filtro exclusivo por categoría (no usado por Películas Plus)
+        // URLs de los servidores M3U (Modificables manualmente)
+        const M3U_URL_SERVER1 = "https://raw.githubusercontent.com/Barcelonista10/Proyecto-RAYKO-PLAY/refs/heads/main/Lista%20Premium1.m3u";
+        const M3U_URL_SERVER2 = "https://raw.githubusercontent.com/Barcelonista10/Proyecto-RAYKO-PLAY/refs/heads/main/Lista%20Premium1.m3u";
 
-        // Llamada desde la app Android para cargar la lista global de canales
-        function receiveChannelsFromApp(jsonData) {
-            try {
-                allChannels = JSON.parse(jsonData);
-                console.log("Canales cargados desde la App: " + allChannels.length);
-                if (document.getElementById('screen-channels').classList.contains('active')) {
-                    renderChannels();
-                }
-            } catch (e) {
-                console.error("Error al analizar los canales", e);
-            }
-        }
-
-        // Cada botón de servidor muestra solo su categoría de canal
-        const SERVER_CATEGORY_MAP = {
-            1: "Premium",       // Freemium 1 -> canales Premium
-            2: "Cine y Series", // Freemium 2 -> respaldos
-            3: "Eventos"        // Eventos
+        let serverCache = {
+            1: [],
+            2: []
         };
+        let currentServer = 1;
+        let activeChannels = [];
+        let hlsInstance = null;
 
-        function getChannelsForServer(serverNum) {
-            if (currentCategoryFilter) {
-                return allChannels.filter(ch => ch.category === currentCategoryFilter);
+        // Contexto de Audio Web Sintetizado para efectos sonoros
+        let audioCtx = null;
+
+        function getAudioContext() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
             }
-            const category = SERVER_CATEGORY_MAP[serverNum];
-            if (!category) return allChannels;
-            return allChannels.filter(ch => ch.category === category);
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+            return audioCtx;
         }
 
-        // Carga el servidor seleccionado (1, 2 o 3 para Eventos)
-        function loadServerChannels(serverNum = 1) {
-            currentCategoryFilter = null; // limpia cualquier filtro de categoría al usar TV EN VIVO
+        // Sonido de pasar sobre la tarjeta (Hover / Navigation)
+        function playHoverSound() {
+            try {
+                const ctx = getAudioContext();
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(450, ctx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(700, ctx.currentTime + 0.04);
+                
+                gain.gain.setValueAtTime(0.08, ctx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.04);
+                
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+                
+                osc.start();
+                osc.stop(ctx.currentTime + 0.04);
+            } catch (e) {}
+        }
+
+        // Sonido al presionar / seleccionar tarjeta (Click / Select)
+        function playSelectSound() {
+            try {
+                const ctx = getAudioContext();
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(600, ctx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(300, ctx.currentTime + 0.08);
+                
+                gain.gain.setValueAtTime(0.18, ctx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.08);
+                
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+                
+                osc.start();
+                osc.stop(ctx.currentTime + 0.08);
+            } catch (e) {}
+        }
+
+        // Función para obtener el icono FontAwesome exacto según el nombre del canal o la categoría
+        function getCategoryIcon(groupName, titleName = '') {
+            const text = (groupName + ' ' + titleName).toLowerCase();
+            
+            if (text.includes('deport') || text.includes('sport') || text.includes('espn') || text.includes('fox') || text.includes('liga') || text.includes('win') || text.includes('gol')) {
+                return 'fa-trophy'; // Trofeo para Deportes
+            }
+            if (text.includes('noticia') || text.includes('news') || text.includes('info') || text.includes('24') || text.includes('cnn')) {
+                return 'fa-newspaper'; // Periódico para Noticias
+            }
+            if (text.includes('music') || text.includes('música') || text.includes('hit') || text.includes('mtv') || text.includes('radio')) {
+                return 'fa-music'; // Nota Musical para Música
+            }
+            if (text.includes('docu') || text.includes('cultur') || text.includes('geo') || text.includes('discovery') || text.includes('history') || text.includes('planet')) {
+                return 'fa-globe'; // Globo terráqueo para Documentales/Cultura
+            }
+            if (text.includes('serie') || text.includes('novel') || text.includes('dram')) {
+                return 'fa-masks-theater'; // Máscaras para Series
+            }
+            if (text.includes('cine') || text.includes('pelicula') || text.includes('movie') || text.includes('hbo') || text.includes('star') || text.includes('estreno')) {
+                return 'fa-clapperboard'; // Claqueta para Cine/Películas
+            }
+            if (text.includes('infantil') || text.includes('kid') || text.includes('anim') || text.includes('disney') || text.includes('cartoon') || text.includes('nick')) {
+                return 'fa-child'; // Niños/Infantil
+            }
+            if (text.includes('adult') || text.includes('18') || text.includes('xxx')) {
+                return 'fa-lock';
+            }
+            
+            return 'fa-tv'; // Televisor por defecto para General/Entretenimiento
+        }
+
+        // Cargar Lista M3U para Servidores
+        async function loadM3uServer(serverNum) {
+            playSelectSound();
             currentServer = serverNum;
+            const modal = document.getElementById('contentModal');
+            const loader = document.getElementById('loader');
+            const channelList = document.getElementById('channelList');
+            const searchInput = document.getElementById('searchInput');
+            const targetUrl = serverNum === 1 ? M3U_URL_SERVER1 : M3U_URL_SERVER2;
 
-            if (allChannels.length === 0) {
-                showToast("Esperando datos de la App...");
-                if (window.Android) {
-                    window.Android.sendChannelsToWeb();
-                }
-                if (!window.Android) {
-                    navigateTo('screen-channels');
-                    updateServerBadge(serverNum);
-                    renderChannels();
-                }
+            document.getElementById('modalTitle').innerHTML = `<i class="fa-solid fa-${serverNum === 1 ? 'tv' : 'tower-broadcast'}"></i> SERVIDOR ${serverNum}`;
+            modal.classList.add('active');
+            searchInput.value = '';
+
+            if (serverCache[serverNum].length > 0) {
+                activeChannels = serverCache[serverNum];
+                loader.style.display = 'none';
+                channelList.style.display = 'flex';
+                renderChannels(activeChannels);
                 return;
             }
 
-            navigateTo('screen-channels');
-            updateServerBadge(serverNum);
-            renderChannels();
-        }
+            loader.style.display = 'flex';
+            channelList.style.display = 'none';
 
-        // Carga canales filtrados por una categoría exacta (disponible para futuras secciones)
-        function loadCategoryChannels(category, screenTitle) {
-            currentCategoryFilter = category;
-            currentServer = null;
-
-            if (allChannels.length === 0) {
-                showToast("Esperando datos de la App...");
-                if (window.Android) {
-                    window.Android.sendChannelsToWeb();
-                }
-                if (!window.Android) {
-                    navigateTo('screen-channels');
-                    updateCategoryBadge(screenTitle);
-                    renderChannels();
-                }
-                return;
-            }
-
-            navigateTo('screen-channels');
-            updateCategoryBadge(screenTitle);
-            renderChannels();
-        }
-
-        // PELÍCULAS PLUS: abre la web (stream4fun.net) directamente en el WebView de la app,
-        // en lugar de filtrar canales. No usa allChannels ni la parrilla.
-        function openPeliculasPlus() {
-            if (window.Android) {
-                window.Android.openPeliculasPlus();
-            } else {
-                // Modo navegador (fuera de la app): abre en una pestaña nueva
-                window.open('https://stream4fun.net/', '_blank');
+            try {
+                const response = await fetch(targetUrl);
+                if (!response.ok) throw new Error("Error al descargar lista M3U");
+                const text = await response.text();
+                
+                serverCache[serverNum] = parseM3U(text);
+                activeChannels = serverCache[serverNum];
+                
+                loader.style.display = 'none';
+                channelList.style.display = 'flex';
+                renderChannels(activeChannels);
+                showToast(`Servidor ${serverNum}: ${activeChannels.length} canales cargados`);
+            } catch (error) {
+                console.error(error);
+                loader.innerHTML = `<i class="fa-solid fa-triangle-exclamation" style="font-size:32px; color:#ff0022;"></i><span>Error al cargar Servidor ${serverNum}</span>`;
             }
         }
 
-        function updateServerBadge(serverNum) {
-            const badge = document.getElementById('active-server-badge');
-            const dot = document.getElementById('server-status-dot');
-            const title = document.getElementById('server-channels-title');
+        // Parseador de formato M3U
+        function parseM3U(m3uText) {
+            const lines = m3uText.split('\n');
+            const channels = [];
+            let currentChannel = null;
 
-            if (serverNum === 1) {
-                title.textContent = "CANALES DISPONIBLES";
-                badge.textContent = "Servidor Freemium 1 Activo";
-                badge.className = "text-[10px] text-cyber-cyan font-mono uppercase tracking-wider";
-                dot.className = "w-1.5 h-1.5 rounded-full bg-emerald-400";
-            } else if (serverNum === 2) {
-                title.textContent = "CANALES DISPONIBLES";
-                badge.textContent = "Servidor Freemium 2 Activo";
-                badge.className = "text-[10px] text-cyber-cyan font-mono uppercase tracking-wider";
-                dot.className = "w-1.5 h-1.5 rounded-full bg-cyan-400";
-            } else if (serverNum === 3) {
-                title.textContent = "EVENTOS Y TRANSMISIONES";
-                badge.textContent = "Servidor de Eventos Activo";
-                badge.className = "text-[10px] text-amber-400 font-mono uppercase tracking-wider";
-                dot.className = "w-1.5 h-1.5 rounded-full bg-amber-400";
-            }
-        }
+            for (let i = 0; i < lines.length; i++) {
+                let line = lines[i].trim();
 
-        // Badge/título para vistas filtradas por categoría (disponible para futuras secciones)
-        function updateCategoryBadge(screenTitle) {
-            const badge = document.getElementById('active-server-badge');
-            const dot = document.getElementById('server-status-dot');
-            const title = document.getElementById('server-channels-title');
+                if (line.startsWith('#EXTINF:')) {
+                    currentChannel = {};
 
-            title.textContent = screenTitle;
-            badge.textContent = screenTitle + " Activo";
-            badge.className = "text-[10px] text-purple-400 font-mono uppercase tracking-wider";
-            dot.className = "w-1.5 h-1.5 rounded-full bg-purple-400";
-        }
+                    // Extraer logo si existe tvg-logo="..."
+                    const logoMatch = line.match(/tvg-logo="([^"]*)"/);
+                    if (logoMatch && logoMatch[1]) {
+                        currentChannel.logo = logoMatch[1];
+                    }
 
-        function renderChannels() {
-            const grid = document.getElementById('channels-grid');
-            grid.innerHTML = '';
-            const noResults = document.getElementById('no-results');
-            noResults.classList.add('hidden');
-
-            const channels = getChannelsForServer(currentServer);
-
-            if (channels.length === 0) {
-                grid.innerHTML = `
-                    <div class="col-span-2 text-center py-12 text-zinc-500 text-xs font-cyber">
-                        <i class="fas fa-satellite-dish text-3xl mb-3 block text-zinc-600"></i>
-                        No hay transmisiones disponibles en este servidor.
-                    </div>
-                `;
-                return;
-            }
-
-            channels.forEach(ch => {
-                const card = document.createElement('div');
-                card.className = "channel-card cyber-card rounded-2xl p-2.5 flex flex-col justify-between border border-zinc-800/80 hover:border-cyber-accent/50 transition";
-                card.setAttribute('data-name', ch.name.toLowerCase());
-
-                let logoHtml = '';
-                if (ch.logoUrl && ch.logoUrl.trim() !== '' && ch.logoUrl !== 'default_icon') {
-                    logoHtml = `<img src="${ch.logoUrl}" alt="${ch.name}" class="max-h-16 max-w-full object-contain transition-transform duration-300 hover:scale-105" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\\'text-white font-bold text-center tracking-wider text-xs font-cyber\\'>${ch.name}</div>'"/>`;
-                } else {
-                    logoHtml = `
-                        <div class="flex flex-col items-center justify-center w-full h-full bg-zinc-950/80 rounded-xl p-1 border border-zinc-800/50">
-                            <span class="text-cyber-accent text-xl font-black font-cyber tracking-tight drop-shadow-[0_0_8px_rgba(255,0,68,0.8)]">RAYKO</span>
-                            <span class="text-white text-[9px] font-bold tracking-[0.2em] -mt-1 font-cyber">PLAY</span>
-                        </div>
-                    `;
-                }
-
-                card.innerHTML = `
-                    <div class="w-full h-20 flex items-center justify-center p-2 rounded-xl bg-zinc-950/60 overflow-hidden relative border border-zinc-800/40">
-                        ${logoHtml}
-                    </div>
-                    <div class="mt-2 text-center">
-                        <p class="text-[11px] font-bold text-zinc-200 truncate font-cyber mb-1.5 px-1">${ch.name}</p>
-                        <button onclick="playChannel('${ch.name.replace(/'/g, "\\'")}')" class="w-full bg-gradient-to-r from-cyber-accent to-red-600 hover:from-red-600 hover:to-cyber-accent text-white font-extrabold py-1.5 px-2 rounded-lg text-[10px] font-cyber uppercase tracking-wider transition active:scale-95 shadow-md flex items-center justify-center space-x-1">
-                            <i class="fas fa-play text-[9px]"></i>
-                            <span>VER CANAL</span>
-                        </button>
-                    </div>
-                `;
-
-                grid.appendChild(card);
-            });
-        }
-
-        function playChannel(channelName) {
-            showToast(`Cargando transmisión: ${channelName}`);
-            if (window.Android) {
-                window.Android.playChannelFromWeb(channelName);
-            } else {
-                console.log("Modo navegador: reproduciendo " + channelName);
-            }
-        }
-
-        const navigationHistory = ['screen-home'];
-
-        function navigateTo(screenId) {
-            const currentScreen = navigationHistory[navigationHistory.length - 1];
-            if (currentScreen === screenId) return;
-
-            document.getElementById(currentScreen).classList.remove('active');
-
-            navigationHistory.push(screenId);
-            const nextScreen = document.getElementById(screenId);
-            nextScreen.classList.add('active');
-
-            updateHeader();
-        }
-
-        function goBack() {
-            if (navigationHistory.length <= 1) return;
-            const currentScreen = navigationHistory.pop();
-            document.getElementById(currentScreen).classList.remove('active');
-            const previousScreen = navigationHistory[navigationHistory.length - 1];
-            document.getElementById(previousScreen).classList.add('active');
-            updateHeader();
-        }
-
-        function updateHeader() {
-            const header = document.getElementById('nav-header');
-            const titleSpan = document.getElementById('current-screen-title');
-            const currentScreen = navigationHistory[navigationHistory.length - 1];
-
-            if (currentScreen === 'screen-home') {
-                header.classList.add('hidden');
-            } else {
-                header.classList.remove('hidden');
-                if (currentScreen === 'screen-servers') {
-                    titleSpan.textContent = 'Servidores';
-                } else if (currentScreen === 'screen-channels') {
-                    if (currentCategoryFilter) {
-                        titleSpan.textContent = currentCategoryFilter;
+                    // Extraer grupo si existe group-title="..."
+                    const groupMatch = line.match(/group-title="([^"]*)"/);
+                    if (groupMatch && groupMatch[1]) {
+                        currentChannel.group = groupMatch[1];
                     } else {
-                        titleSpan.textContent = currentServer === 3 ? 'Eventos TV' : 'Parrilla TV';
+                        currentChannel.group = "General";
+                    }
+
+                    // Extraer Nombre del Canal (después de la coma)
+                    const commaIndex = line.lastIndexOf(',');
+                    if (commaIndex !== -1) {
+                        currentChannel.title = line.substring(commaIndex + 1).trim();
+                    } else {
+                        currentChannel.title = "Canal Sin Nombre";
+                    }
+                } else if (line.length > 0 && !line.startsWith('#')) {
+                    if (currentChannel) {
+                        currentChannel.url = line;
+                        channels.push(currentChannel);
+                        currentChannel = null;
                     }
                 }
             }
+            return channels;
         }
 
-        function filterChannels() {
-            const query = document.getElementById('channel-search').value.toLowerCase().trim();
-            const cards = document.querySelectorAll('.channel-card');
-            const clearBtn = document.getElementById('clear-search');
-            const noResults = document.getElementById('no-results');
-            let visibleCount = 0;
+        // Renderizar canales en la interfaz con sonido de hover/select
+        function renderChannels(channels) {
+            const channelList = document.getElementById('channelList');
+            channelList.innerHTML = '';
 
-            if (query.length > 0) {
-                clearBtn.classList.remove('hidden');
-            } else {
-                clearBtn.classList.add('hidden');
+            if (channels.length === 0) {
+                channelList.innerHTML = `<div style="text-align:center; color:#777; padding:20px;">No se encontraron canales</div>`;
+                return;
             }
 
-            cards.forEach(card => {
-                const channelName = card.getAttribute('data-name');
-                if (channelName.includes(query)) {
-                    card.style.display = 'flex';
-                    visibleCount++;
-                } else {
-                    card.style.display = 'none';
-                }
+            channels.forEach((ch) => {
+                const item = document.createElement('div');
+                item.className = 'channel-item';
+                item.onmouseenter = playHoverSound;
+                item.onclick = () => {
+                    playSelectSound();
+                    playStream(ch);
+                };
+
+                const iconClass = getCategoryIcon(ch.group, ch.title);
+
+                const logoHtml = ch.logo ? 
+                    `<img class="channel-logo" src="${ch.logo}" alt="Logo" onerror="this.onerror=null; this.outerHTML='<div class=\\'channel-category-icon\\'><i class=\\'fa-solid ${iconClass}\\'></i></div>';">` :
+                    `<div class="channel-category-icon"><i class="fa-solid ${iconClass}"></i></div>`;
+
+                item.innerHTML = `
+                    ${logoHtml}
+                    <div class="channel-details">
+                        <div class="channel-title">${ch.title}</div>
+                        <div class="channel-group"><i class="fa-solid fa-folder" style="font-size:10px; margin-right:4px;"></i>${ch.group}</div>
+                    </div>
+                `;
+                channelList.appendChild(item);
             });
+        }
 
-            if (visibleCount === 0) {
-                noResults.classList.remove('hidden');
+        // Filtrar canales por término de búsqueda
+        function filterChannels() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = activeChannels.filter(ch => 
+                ch.title.toLowerCase().includes(query) || 
+                ch.group.toLowerCase().includes(query)
+            );
+            renderChannels(filtered);
+        }
+
+        // Reproducir señal de video HLS
+        function playStream(channel) {
+            const playerView = document.getElementById('playerView');
+            const video = document.getElementById('videoPlayer');
+            document.getElementById('playingTitle').innerText = channel.title;
+            document.getElementById('playingGroup').innerText = `${channel.group} - Servidor ${currentServer}`;
+
+            playerView.classList.add('active');
+
+            if (Hls.isSupported()) {
+                if (hlsInstance) {
+                    hlsInstance.destroy();
+                }
+                hlsInstance = new Hls({
+                    enableWorker: true,
+                    lowLatencyMode: true
+                });
+                hlsInstance.loadSource(channel.url);
+                hlsInstance.attachMedia(video);
+                hlsInstance.on(Hls.Events.MANIFEST_PARSED, function() {
+                    video.play().catch(e => console.log("Autoplay interceptado:", e));
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                // Para iOS Safari
+                video.src = channel.url;
+                video.addEventListener('loadedmetadata', function() {
+                    video.play();
+                });
             } else {
-                noResults.classList.add('hidden');
+                showToast("Tu navegador no soporta reproducción HLS");
             }
         }
 
-        function clearSearch() {
-            const searchInput = document.getElementById('channel-search');
-            searchInput.value = '';
-            filterChannels();
-            searchInput.focus();
+        function closePlayer() {
+            playSelectSound();
+            const video = document.getElementById('videoPlayer');
+            video.pause();
+            if (hlsInstance) {
+                hlsInstance.destroy();
+                hlsInstance = null;
+            }
+            document.getElementById('playerView').classList.remove('active');
         }
 
-        function showToast(message) {
-            const toast = document.getElementById('toast');
-            const toastMessage = document.getElementById('toast-message');
-            toastMessage.textContent = message;
+        function closeModal() {
+            playSelectSound();
+            document.getElementById('contentModal').classList.remove('active');
+        }
 
-            toast.classList.remove('opacity-0', 'pointer-events-none');
-            toast.classList.add('opacity-100');
+        function openDummySection(title) {
+            playSelectSound();
+            showToast(`Sección ${title} próximamente disponible`);
+        }
 
-            setTimeout(() => {
-                toast.classList.remove('opacity-100');
-                toast.classList.add('opacity-0', 'pointer-events-none');
+        let toastTimeout;
+        function showToast(msg) {
+            const toast = document.getElementById('toastMessage');
+            toast.innerText = msg;
+            toast.classList.add('show');
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.remove('show');
             }, 2500);
         }
-
-        window.addEventListener('DOMContentLoaded', () => {
-            if (window.Android) {
-                window.Android.sendChannelsToWeb();
-            }
-        });
     </script>
 </body>
 </html>
+```
