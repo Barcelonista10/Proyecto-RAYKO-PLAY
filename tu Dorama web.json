@@ -5,6 +5,6 @@
   "clicksParaAd": 3,
   "rutaInicio": "/",
   "rutaPeliculas": "/peliculas",
-  "rutaSeries": "/series",
-  "rutaTv": "/tv-en-vivo"
+  "rutaSeries": "https://seriesretro.com",
+  "rutaTv": "https://pelotalibretv2.online"
 }
