@@ -1,0 +1,8 @@
+{
+  "partidos": [
+    { "liga": "Copa de Primera", "equipos": "Olimpia vs Guaraní", "hora": "16:30" },
+    { "liga": "Primera División", "equipos": "Coquimbo Unido vs Univ. Concepción", "hora": "17:00" },
+    { "liga": "Brasileirão", "equipos": "Flamengo vs Mirassol", "hora": "17:30" },
+    { "liga": "Copa Argentina", "equipos": "Vélez Sarsfield vs Boca Juniors", "hora": "19:15" }
+  ]
+}
