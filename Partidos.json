@@ -1,8 +1,24 @@
 {
   "partidos": [
-    { "liga": "Copa de Primera", "equipos": "Olimpia vs Guaraní", "hora": "16:30" },
-    { "liga": "Primera División", "equipos": "Coquimbo Unido vs Univ. Concepción", "hora": "17:00" },
-    { "liga": "Brasileirão", "equipos": "Flamengo vs Mirassol", "hora": "17:30" },
-    { "liga": "Copa Argentina", "equipos": "Vélez Sarsfield vs Boca Juniors", "hora": "19:15" }
+    { "liga": "F1", "equipos": "GP de Italia: Entrenamientos #2", "hora": "09:00" },
+    { "liga": "Ligue 1", "equipos": "Olympique Lyonnais vs Auxerre", "hora": "12:00" },
+    { "liga": "Super Lig", "equipos": "İstanbul Başakşehir vs Galatasaray", "hora": "12:00" },
+    { "liga": "Liga 1", "equipos": "FC Cajamarca vs Cienciano", "hora": "13:00" },
+    { "liga": "Liga Profesional Saudí", "equipos": "Al Shabab vs Al Hilal", "hora": "13:00" },
+    { "liga": "LaLiga 2", "equipos": "Las Palmas vs Leganés", "hora": "13:30" },
+    { "liga": "Bundesliga", "equipos": "Stuttgart vs Köln", "hora": "13:45" },
+    { "liga": "Serie A", "equipos": "Genoa vs Como", "hora": "13:45" },
+    { "liga": "LaLiga", "equipos": "Real Betis vs Real Madrid", "hora": "14:00" },
+    { "liga": "Premier League", "equipos": "Ipswich Town vs Liverpool", "hora": "14:00" },
+    { "liga": "Ligue 1", "equipos": "PSG vs Monaco", "hora": "14:05" },
+    { "liga": "Primeira Liga", "equipos": "Porto vs Moreirense", "hora": "14:15" },
+    { "liga": "Liga Profesional", "equipos": "Estudiantes Río Cuarto vs Sarmiento", "hora": "14:45" },
+    { "liga": "Liga 1", "equipos": "Alianza Atlético vs UTC Cajamarca", "hora": "15:15" },
+    { "liga": "Liga Profesional", "equipos": "Platense vs Deportivo Riestra", "hora": "17:00" },
+    { "liga": "Liga Profesional", "equipos": "Belgrano vs Huracán", "hora": "17:00" },
+    { "liga": "Primera División", "equipos": "Torque vs Cerro Largo", "hora": "17:00" },
+    { "liga": "MLS", "equipos": "New York City vs Nashville SC", "hora": "18:30" },
+    { "liga": "Primera División", "equipos": "Deportes Concepción vs Audax Italiano", "hora": "19:30" },
+    { "liga": "Liga MX", "equipos": "Juárez vs Pachuca", "hora": "22:00" }
   ]
 }
